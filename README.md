@@ -1,14 +1,14 @@
 # Course Materials for "Introduction to Data Science and Machine Learning"
 
-Note: everything in this repo is *currently* under construction.
+Note: everything in this repo is *currently* under construction. The script is not finished yet. Cross-references may be broken.
 
 ## Script
 
 The markdown script is meant to be a comprehensive content and learning materials reference.
 
-> The entry point for the is [the script's index](index.md).
+> The entry point for the script is [this index file](index.md).
 
-How to read markdown script:
+How to read the markdown script:
 
 - in Browser (GitHub renders markdown automatically)
 - after download (e.g., `git clone` repo, which will also allow you to pull updates)
