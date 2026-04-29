@@ -43,9 +43,6 @@ Thumbs.db
 
 # TEMP
 *.csv
-*.png
 *.odg
 
 *.html
-
-intro-ds-ml/_Legacy/NotebooksLabSession/*ipynb
