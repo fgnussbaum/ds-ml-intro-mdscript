@@ -1,10 +1,12 @@
-> **Navigation:** [<-- Finding Your Idea](02-finding-your-idea.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [What a Finished Mini-Project Could Look Like -->](04-mini-project-scope.md)
+> **Navigation:** [<-- Finding Your Idea](02-finding-your-idea.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [What a Finished Project Could Look Like -->](04-mini-project-scope.md)
+
+---
 
 # Reality-Checking Your Idea
 
-**Requires:** [Finding Your Idea](02-finding-your-idea.md)
+**Requires**: [Finding Your Idea](02-finding-your-idea.md)
 
-**Motivation:** You have a candidate idea — or maybe two or three. Before investing more time in any one of them, it is worth spending ten minutes checking whether it is actually workable. Not perfect, just doable.
+**Motivation**: You have a candidate idea — or maybe two or three. Before investing more time in any one of them, it is worth spending ten minutes checking whether it is actually workable. Not perfect, just doable.
 
 > This nugget walks you through two quick checks: data feasibility and scope. They will help you distinguish a viable idea from one that needs adjusting, without overthinking it.
 
@@ -12,8 +14,7 @@
 
 - [Data Feasibility](#data-feasibility)
 - [Scope and Timeline](#scope-and-timeline)
-
----
+- [Summary](#summary)
 
 ## Data Feasibility
 
@@ -31,7 +32,7 @@ A few things worth checking:
 
 Almost any form of data works: tabular measurements, time series, images from a camera or microscope, or a spreadsheet you fill in during your regular lab work. If you already have something sitting around, you are ahead.
 
-In terms of [The CRISP-DM Process Map](../part-01-the-big-picture/03-crisp-dm.md), you will recognize this as a light pass at the Data Understanding phase. Not yet a full analysis, just a check that starting is worth it.
+In terms of [🖝 CRISP-DM](../part-01-the-big-picture/04-crisp-dm.md), you will recognize this as a light pass at the Data Understanding phase. Not yet a full analysis, just a check that starting is worth it.
 
 > If a candidate idea falls apart here, that is useful information. Adjust the question or pick the next candidate.
 
@@ -60,6 +61,11 @@ If the scope seems too large, the fix is usually to narrow the question, not to 
 - Check that the idea is completable in a semester and that you can sketch what "done" looks like.
 - If an idea falls short, narrow the question before abandoning the topic.
 
+As always: Happy learning, happy life! 🫶
+
+
 ---
 
-> **Navigation:** [<-- Finding Your Idea](02-finding-your-idea.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [What a Finished Mini-Project Could Look Like -->](04-mini-project-scope.md)
+> **Navigation:** [<-- Finding Your Idea](02-finding-your-idea.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [What a Finished Project Could Look Like -->](04-mini-project-scope.md)
+
+Script v1.1 (2026-05-18) · FGN

@@ -1,10 +1,12 @@
 > **Navigation:** [<-- Why Data Work Dominates](01-why-data-work.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Datasets -->](03-datasets.md)
 
+---
+
 # Data Types and Measurement Scales
 
-**Requires:** [Why Data Work Dominates](01-why-data-work.md)
+**Requires**: [Why Data Work Dominates](01-why-data-work.md)
 
-**Motivation:** Before you can summarize, visualize, or model any column in your dataset, you need to know what kind of value it holds. The same column might look like a number and yet be meaningless to average. This nugget asks: what distinguishes a valid arithmetic operation on data from a meaningless one?
+**Motivation**: Before you can summarize, visualize, or model any column in your dataset, you need to know what kind of value it holds. The same column might look like a number and yet be meaningless to average. This nugget asks: what distinguishes a valid arithmetic operation on data from a meaningless one?
 
 > You will learn to classify any attribute by its measurement scale (nominal, ordinal, interval, ratio) and by whether it is discrete, continuous, or binary — knowledge that determines which statistics and encodings are valid for each column.
 
@@ -12,8 +14,7 @@
 
 - [Measurement Scales](#measurement-scales)
 - [Discrete, Continuous, and Binary Attributes](#discrete-continuous-and-binary-attributes)
-
----
+- [Summary](#summary)
 
 ## Measurement Scales
 
@@ -41,7 +42,7 @@ You can say one value is 5 units more than another, and that gap is meaningful a
 
 > **Common errors**: Applying an operation the scale does not support produces numbers that look real but mean nothing. The most common errors: computing the mean of nominal codes (the codes are just labels), treating ordinal gaps as equal intervals (e.g., averaging a 1–5 survey scale — technically wrong, but widely done and often acceptable for exploratory work), and computing ratios on interval data (e.g., claiming 20°C is "twice as warm" as 10°C).
 
-The scale also controls which encoding choices make sense when preparing data for a model: nominal attributes need one-hot or dummy encoding; ordinal attributes can sometimes be passed as ordered integers; interval and ratio attributes can be fed directly to numeric models, typically after scaling. You will apply these rules in [Cleaning and Encoding](../part-04-data-preparation/03-cleaning-encoding.md).
+The scale also controls which encoding choices make sense when preparing data for a model: nominal attributes need one-hot or dummy encoding; ordinal attributes can sometimes be passed as ordered integers; interval and ratio attributes can be fed directly to numeric models, typically after scaling. You will apply these rules in [🖝 Structural Cleaning and Encoding](../part-04-data-preparation/02-cleaning-encoding.md).
 
 [Source: Tan et al. (2020), *Introduction to Data Mining*, Pearson]
 
@@ -82,6 +83,9 @@ A **binary attribute** is a special case of discrete with exactly two values: tr
 
 As always: Happy learning, happy life! 🫶
 
+
 ---
 
 > **Navigation:** [<-- Why Data Work Dominates](01-why-data-work.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Datasets -->](03-datasets.md)
+
+Script v1.1 (2026-05-18) · FGN

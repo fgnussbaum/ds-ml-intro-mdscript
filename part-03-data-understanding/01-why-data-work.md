@@ -1,10 +1,12 @@
 > **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [Data Types and Measurement Scales -->](02-data-types.md)
 
+---
+
 # Why Data Work Dominates
 
-**Requires:** [The CRISP-DM Process Map](../part-01-the-big-picture/03-crisp-dm.md)
+**Requires**: [CRISP-DM](../part-01-the-big-picture/04-crisp-dm.md)
 
-**Motivation:** You have seen the CRISP-DM map, which places Data Understanding and Data Preparation as two of its central phases. You may have assumed that modeling would take up most of your time on a real project. This nugget challenges that assumption: what if data work is not a preliminary step you get through quickly, but the dominant activity — by a wide margin?
+**Motivation**: You have seen the CRISP-DM map, which places Data Understanding and Data Preparation as two of its central phases. You may have assumed that modeling would take up most of your time on a real project. This nugget challenges that assumption: what if data work is not a preliminary step you get through quickly, but the dominant activity — by a wide margin?
 
 > You will understand why data preparation typically consumes roughly 80% of real project time and learn to recognize the common failure modes that poor data quality introduces — from silent model errors to sampling bias — so that you enter projects with accurate expectations.
 
@@ -13,8 +15,7 @@
 - [The 80/20 Reality of Real Projects](#the-8020-reality-of-real-projects)
 - [What Can Go Wrong with Bad Data](#what-can-go-wrong-with-bad-data)
 - [Setting Your Expectations](#setting-your-expectations)
-
----
+- [Summary](#summary)
 
 ## The 80/20 Reality of Real Projects
 
@@ -73,6 +74,9 @@ In the following nuggets you will build the concrete vocabulary and habits that 
 
 As always: Happy learning, happy life! 🫶
 
+
 ---
 
 > **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [Data Types and Measurement Scales -->](02-data-types.md)
+
+Script v1.1 (2026-05-18) · FGN

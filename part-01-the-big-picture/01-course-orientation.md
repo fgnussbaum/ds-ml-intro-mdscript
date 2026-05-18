@@ -1,8 +1,10 @@
 > **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [What Is Artificial Intelligence? -->](02-intro-ai.md)
 
+---
+
 # Course Orientation
 
-**Motivation:** You are beginning an introductory course in Data Science and Machine Learning. Skills in that domain are increasingly valuable. When you combine them with your existing domain expertise, this will be a real  treasure.
+**Motivation**: You are beginning an introductory course in Data Science and Machine Learning. Skills in that domain are increasingly valuable. When you combine them with your existing domain expertise, this will be a real  treasure.
 
 > In this nugget you will learn who this course is designed for, how class sessions and course materials work together, and why building your learning around a personal project is strongly recommended.
 
@@ -11,8 +13,7 @@
 - [Who This Course Is For](#who-this-course-is-for)
 - [How This Course Works](#how-this-course-works)
 - [Course Materials](#course-materials)
-
----
+- [Summary](#summary)
 
 ## Who This Course Is For
 
@@ -47,7 +48,7 @@ The best learning happens when it is tied to personal motivation and stakes. The
 
 Every technical block in this course — data handling, modeling, evaluation — can feed directly into what you do with your own dataset. Students who work this way consistently get more out of the course.
 
-The full case for doing a personal project and how to find one is covered in [Part 2](../part-02-personal-projects/01-why-a-personal-project.md).
+The full case for doing a personal project and how to find one is covered in [🖝 Why a Personal Project?](../part-02-personal-projects/01-why-a-personal-project.md).
 
 ---
 
@@ -77,6 +78,9 @@ Lab materials will be a mix of practical resources introduced session by session
 
 As always: Happy learning, happy life! 🫶
 
+
 ---
 
-**Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [What Is Artificial Intelligence? -->](02-intro-ai.md)
+> **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [What Is Artificial Intelligence? -->](02-intro-ai.md)
+
+Script v1.1 (2026-05-18) · FGN

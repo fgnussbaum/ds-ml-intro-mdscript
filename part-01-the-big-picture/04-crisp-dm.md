@@ -1,18 +1,19 @@
 > **Navigation:** [<-- AI Ethics — A Primer](03-ethics-and-responsibility.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Academia vs. Business Data Science -->](05-academia-vs-business-ds.md)
 
-# The CRISP-DM Process Map
+---
 
-**Motivation:** Knowing what machine learning is does not tell you how a real project unfolds from first question to deployed result. Most tutorials start at modeling. But modeling is only one step in a longer process, and skipping the steps before and after it is one of the most common reasons data-science projects fail. You **don't** want projects to fail because the **process** was not right. 
+# CRISP-DM
+
+**Motivation**: Knowing what machine learning is does not tell you how a real project unfolds from first question to deployed result. Most tutorials start at modeling. But modeling is only one step in a longer process, and skipping the steps before and after it is one of the most common reasons data-science projects fail. You **don't** want projects to fail because the **process** was not right. 
 
 > In this nugget you will get to know CRISP-DM (which stands for the handy _"Cross-Industry Standard Process for Data Mining"_). This process will be a good live orientation tool throughout your own project and data-science work. You'll learn the six standard CRISP-DM phases plus two useful extensions.
 
 ## Table of Contents
 
-- [The Six Phases](#crisp-dm-the-six-phases)
-- [The Inner Data-Science Loop](#the-inner-loop)
+- [CRISP-DM: The Six Phases](#crisp-dm-the-six-phases)
+- [The Inner Loop](#the-inner-loop)
 - [Reading the Map as You Work](#reading-the-map-as-you-work)
-
----
+- [Summary](#summary)
 
 ## CRISP-DM: The Six Phases
 
@@ -26,7 +27,7 @@ The phases do not run strictly in sequence. Most real projects loop back, someti
 
 ### Business Understanding
 
-> See [Part II](../part-02-personal-projects/00-index.md) in this course.
+> See [🖝 Part II](../part-02-personal-projects/00-index.md) in this course.
 
 Here you define what you actually want to achieve.
 - You identify the business or research objective,
@@ -42,13 +43,13 @@ If you don't like to think of it exclusively as _business_ understanding, consid
 
 ### Data Understanding
 
-> See [Part III](../part-03-data-understanding/00-index.md) in this course.
+> See [🖝 Part III](../part-03-data-understanding/00-index.md) in this course.
 
 Data understanding is where you collect initial data and begin exploring it. You describe what you have, look for quality issues, and ask whether the data can support the goal you defined. Many projects discover at this stage that the original question needs adjusting.
 
 ### Data Preparation
 
-> See [Part IV](../part-04-data-preparation/00-index.md) in this course.
+> See [🖝 Part IV](../part-04-data-preparation/00-index.md) in this course.
 
 Data preparation covers everything needed to turn raw data into a form a model can use: selecting relevant attributes, cleaning errors and missing values, constructing new features, integrating multiple sources, and formatting the result. In practice, this phase consumes more time than any other.
 
@@ -92,12 +93,11 @@ Traditionally, most day-to-day iteration in a data-science project happens insid
 
 > The **inner** loop produces the model. The **outer** cycle determines whether it is the right model for the right reason.
 
-
 The **inner loop** consists of Data Understanding, Data Preparation, and Modeling/Evaluation. You iterate through this loop repeatedly within a single project: explore the data, prepare it, train a model, evaluate it, revise the preparation, retrain, re-evaluate. Each iteration produces either a better model or a clearer understanding of what the data can and cannot support. 
 
 > Inner-loops insights and actions should never be disconnected from Problem/Business Understanding.
 
-Business Understanding and Deployment frame the inner loop from the outside. They are not where the repeated iteration happens, but they are what give the iteration its purpose. As we noted in [Ethics and Responsibility](03-ethics-and-responsibility.md), keeping the work of building a model aligned with the actual objective is *always* a challenge. The outer cycle is the process-wise answer to that challenge.
+Business Understanding and Deployment frame the inner loop from the outside. They are not where the repeated iteration happens, but they are what give the iteration its purpose. As we noted in [🖝 AI Ethics — A Primer](../part-01-the-big-picture/03-ethics-and-responsibility.md), keeping the work of building a model aligned with the actual objective is *always* a challenge. The outer cycle is the process-wise answer to that challenge.
 
 ---
 
@@ -115,8 +115,7 @@ Return to this map whenever you feel lost in a project. It helps answer the ques
 
 > Which phase am I in, and what does that actually require of me right now?
 
-That question has a practical follow-up: *Which phases are actually yours to own?* The answer is not the same for everyone, and it depends heavily on the context you work in. We'll examine this next in the [Academia vs. Business Data Science](../part-01-the-big-picture/05-academia-vs-business-ds.md) nugget.
-
+That question has a practical follow-up: *Which phases are actually yours to own?* The answer is not the same for everyone, and it depends heavily on the context you work in. We'll examine this next in the [🖝 Academia vs. Business Data Science](../part-01-the-big-picture/05-academia-vs-business-ds.md) nugget.
 
 ---
 
@@ -129,6 +128,9 @@ That question has a practical follow-up: *Which phases are actually yours to own
 
 As always: Happy learning, happy life! 🫶
 
+
 ---
 
-**Navigation:** [<-- AI Ethics — A Primer](03-ethics-and-responsibility.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Academia vs. Business Data Science -->](05-academia-vs-business-ds.md)
+> **Navigation:** [<-- AI Ethics — A Primer](03-ethics-and-responsibility.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Academia vs. Business Data Science -->](05-academia-vs-business-ds.md)
+
+Script v1.1 (2026-05-18) · FGN

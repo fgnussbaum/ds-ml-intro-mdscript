@@ -1,19 +1,20 @@
 > **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [Finding Your Idea -->](02-finding-your-idea.md)
 
+---
+
 # Why a Personal Project?
 
-**Requires:** [What Is Artificial Intelligence?](../part-01-the-big-picture/02-intro-ai.md) · [The CRISP-DM Process Map](../part-01-the-big-picture/03-crisp-dm.md)
+**Requires**: [What Is Artificial Intelligence?](../part-01-the-big-picture/02-intro-ai.md) · [CRISP-DM](../part-01-the-big-picture/04-crisp-dm.md)
 
-**Motivation:** You have just seen what data science is and how CRISP-DM structures a project end to end. But there is a gap between understanding a process in the abstract and actually running it from start to finish. The most reliable way to close that gap is to work on a problem you genuinely care about.
+**Motivation**: You have just seen what data science is and how CRISP-DM structures a project end to end. But there is a gap between understanding a process in the abstract and actually running it from start to finish. The most reliable way to close that gap is to work on a problem you genuinely care about.
 
-> By the end you will understand why project-based learning builds transferable skills, what makes a project valid in this course, and why the process matters more than the specific solution you end up with.
+> You'll see why project-based learning builds transferable skills, what makes a project valid in this course, and why the process matters more than the specific solution you end up with.
 
 ## Table of Contents
 
 - [Learning Sticks When the Problem Is Yours](#learning-sticks-when-the-problem-is-yours)
 - [What Makes a Project Valid](#what-makes-a-project-valid)
-
----
+- [Summary](#summary)
 
 ## Learning Sticks When the Problem Is Yours
 
@@ -33,7 +34,7 @@ Personal projects give you this. You apply the process from this course (CRISP-D
 
 In practice, a good data scientist does not start by asking "which model should I use?" They start by asking "what problem are we solving?".That order matters.
 
-> In real work the problem determines what the solution should look like, not the other way areound.
+> In real work the problem determines what the solution should look like, not the other way around.
 
 Although this course teaches them, machine learning models are just one possibility among several.
 
@@ -45,7 +46,7 @@ For your project, that means: the goal is to learn the process, not to produce a
 
 2. **There is data you can access.** Tabular measurements, sensor logs, images, a spreadsheet you maintain yourself: All good. The data does not have to be large or clean at the start.
 
-3. **You work through the phases and can justify your decisions.** This is the core requirement. For each phase of CRISP-DM (see [CRISP-DM](../part-01-the-big-picture/04-crisp-dm.md)), from business understanding through evaluation, you document what you did and why. That is what you will be asked to explain and defend.
+3. **You work through the phases and can justify your decisions.** This is the core requirement. For each phase of CRISP-DM (see [🖝 CRISP-DM](../part-01-the-big-picture/04-crisp-dm.md)), from business understanding through evaluation, you document what you did and why. That is what you will be asked to explain and defend.
 
 What this means in practice: a project that ends with a rule-based threshold, a well-reasoned automation, or a simple formula counts **if** you applied the process and can justify why that solution fits the problem better than alternatives. The requirement is the same for ML-based solutions: If they are unnecessarily complex for the problem, that's actually not good.
 
@@ -64,6 +65,9 @@ A question you can state in one sentence, and data you can access: That is all y
 
 As always: Happy learning, happy life! 🫶
 
+
 ---
 
 > **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [Finding Your Idea -->](02-finding-your-idea.md)
+
+Script v1.1 (2026-05-18) · FGN

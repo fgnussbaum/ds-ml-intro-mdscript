@@ -1,10 +1,12 @@
-> **Navigation:** [<-- The CRISP-DM Process Map](04-crisp-dm.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part II: Personal Data-Science Projects -->](../part-02-personal-projects/00-index.md)
+> **Navigation:** [<-- CRISP-DM](04-crisp-dm.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part II: Personal Data-Science Projects -->](../part-02-personal-projects/00-index.md)
+
+---
 
 # Academia vs. Business Data Science
 
-**Requires:** [The CRISP-DM Process Map](04-crisp-dm.md)
+**Requires**: [CRISP-DM](04-crisp-dm.md)
 
-**Motivation:** The CRISP-DM phaes Business Understanding and Deployment go beyond fitting a model. But who is responsible for those phases? Here, academic and business data science are usually distinct. Both produce valid results, but they define success and scope differently. This shapes everything from the data that is used to the criteria by which you decide you are done.
+**Motivation**: The CRISP-DM phaes Business Understanding and Deployment go beyond fitting a model. But who is responsible for those phases? Here, academic and business data science are usually distinct. Both produce valid results, but they define success and scope differently. This shapes everything from the data that is used to the criteria by which you decide you are done.
 
 > In this nugget you'll contrast academic and business data science. You'll understand how real-world data differs from the clean benchmark datasets used in most tutorials, and see where this course sits on that spectrum.
 
@@ -13,8 +15,7 @@
 - [Different Goals and Success Criteria](#different-goals-and-success-criteria)
 - [Toy Datasets vs. Real-World Data](#toy-datasets-vs-real-world-data)
 - [Where This Course Sits](#where-this-course-sits)
-
----
+- [Summary](#summary)
 
 ## Different Goals and Success Criteria
 
@@ -53,7 +54,7 @@ In an engineering context, you can add to the real-world challenges: sensor drif
 
 > Your domain knowledge is immensely valuable  for recognizing these issues. A data scientist without that background will often miss them or misattribute them to the wrong cause.
 
-The 80/20 rule-of-thumb states that roughly 80% of project time goes to data work and only 20% to modeling (see also: [Why Data Work Dominates](../part-03-data-understanding/01-why-data-work.md)). It is a direct consequence of this gap between toy and real data. You will likely experience this once you work on real data.
+The 80/20 rule-of-thumb states that roughly 80% of project time goes to data work and only 20% to modeling (see also: [🖝 Why Data Work Dominates](../part-03-data-understanding/01-why-data-work.md)). It is a direct consequence of this gap between toy and real data. You will likely experience this once you work on real data.
 
 ---
 
@@ -73,7 +74,7 @@ At the same time, this course does not skip the inner-loop methods. You will lea
 
 For this course, I'd like to encourage you to work on a personal project alongside. The idea is to have a small but complete engineering data-science project. You define a question, assess the data, build a model, evaluate it honestly, and present the result.
 
-The benchmark-style shortcut is not the goal: We don't simply want to download a clean dataset and score a model against a preset metric. We'll try to move beyond. This is harder than standard tutorials. It is also closer to real work. We'll discuss how to find and initiate personal projects in [Part II: Personal Data-Science Projects](../part-02-personal-projects/00-index.md).
+The benchmark-style shortcut is not the goal: We don't simply want to download a clean dataset and score a model against a preset metric. We'll try to move beyond. This is harder than standard tutorials. It is also closer to real work. We'll discuss how to find and initiate personal projects in [🖝 Part II: Personal Data-Science Projects](../part-02-personal-projects/00-index.md).
 
 ---
 
@@ -87,6 +88,9 @@ The benchmark-style shortcut is not the goal: We don't simply want to download a
 
 As always: Happy learning, happy life! 🫶
 
+
 ---
 
-> **Navigation:** [<-- The CRISP-DM Process Map](04-crisp-dm.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part II: Personal Data-Science Projects -->](../part-02-personal-projects/00-index.md)
+> **Navigation:** [<-- CRISP-DM](04-crisp-dm.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part II: Personal Data-Science Projects -->](../part-02-personal-projects/00-index.md)
+
+Script v1.1 (2026-05-18) · FGN

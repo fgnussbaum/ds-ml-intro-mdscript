@@ -1,10 +1,12 @@
 > **Navigation:** [<-- EDA: Descriptive Statistics](04-eda-descriptive-stats.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [EDA: Distributions -->](06-eda-distributions.md)
 
+---
+
 # EDA: Data Quality
 
-**Requires:** [EDA: Descriptive Statistics](04-eda-descriptive-stats.md)
+**Requires**: [EDA: Descriptive Statistics](04-eda-descriptive-stats.md)
 
-**Motivation:** Summary statistics and first inspection give you the shape of the data. But numbers that appear in a column are not necessarily correct numbers. This nugget asks: what can go wrong at the level of individual measurements, records, and the collection process itself — and how do you recognize it?
+**Motivation**: Summary statistics and first inspection give you the shape of the data. But numbers that appear in a column are not necessarily correct numbers. This nugget asks: what can go wrong at the level of individual measurements, records, and the collection process itself — and how do you recognize it?
 
 > You will learn to classify data quality problems by their source — measurement errors, collection errors, and application-level concerns — and understand the key distinction between random and systematic missingness, which determines what handling strategy is appropriate.
 
@@ -13,8 +15,7 @@
 - [Measurement and Collection Errors](#measurement-and-collection-errors)
 - [Missing Values](#missing-values)
 - [Application-Level Concerns](#application-level-concerns)
-
----
+- [Summary](#summary)
 
 ## Measurement and Collection Errors
 
@@ -48,18 +49,17 @@ Other types of quality problems that should be spotted include:
 
 - **Duplicate records** are two or more records representing the same real-world entity. They inflate counts and bias statistics. When two records differ only in one or two fields, special attention may be needed: Were there data entry errors? Were datasets with different identifiers merged?
 
-
 > **Note:** Some apparent duplicates are not duplicates at all. Two customers at the same address are not the same person. Verify the business logic before deleting any record. Same for editing data to fix an apparent inconsistency.
 
 ---
 
 ## Missing Values
 
-Missing values are nearly universal in real datasets. The `count` row in `df.describe()` is your first check: it shows the number of non-null values per column (see [EDA: Descriptive Statistics](04-eda-descriptive-stats.md)). Any column where count falls below the total row count contains missing values. But `df.describe()` does not always make this visible at a glance. A column can have an apparently normal mean and standard deviation and still carry 15% missing data you have not noticed. 
+Missing values are nearly universal in real datasets. The `count` row in `df.describe()` is your first check: it shows the number of non-null values per column (see [🖝 EDA: Descriptive Statistics](../part-03-data-understanding/04-eda-descriptive-stats.md)). Any column where count falls below the total row count contains missing values. But `df.describe()` does not always make this visible at a glance. A column can have an apparently normal mean and standard deviation and still carry 15% missing data you have not noticed. 
 
 When there are many variables, a dedicated missing-value plot is an option. Here's one for a few variables from the ESS dataset. There are only few missing values for most columns (note the x-axis shows only a small range below 1%).
 
-![Missing values bar chart for the ESS well-being dataset](../media/plots/ess_wellbeing_missing_values.png)
+![Missing values bar chart for the ESS well-being dataset](../media/plots-ess/ess_wellbeing_missing_values.png)
 
 Understanding *why* values are missing matters more than just knowing how many are missing. The main question is whether missing values are random or systematic:
 
@@ -68,7 +68,7 @@ Understanding *why* values are missing matters more than just knowing how many a
 
 > Systematic missingness biases your results, which requires careful consideration. 
 
-Handling strategies for missing values, including deletion and various forms of imputation, are covered in [Data Cleaning and Encoding](../part-04-data-preparation/03-cleaning-encoding.md).
+Handling strategies for missing values, including deletion and various forms of imputation, are covered in [🖝 Scaling and Imputation](../part-04-data-preparation/03-scaling-imputation.md).
 
 ---
 
@@ -97,6 +97,9 @@ Another concern is that well-maintained data is that of documentation.
 
 As always: Happy learning, happy life! 🫶
 
+
 ---
 
 > **Navigation:** [<-- EDA: Descriptive Statistics](04-eda-descriptive-stats.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [EDA: Distributions -->](06-eda-distributions.md)
+
+Script v1.1 (2026-05-18) · FGN

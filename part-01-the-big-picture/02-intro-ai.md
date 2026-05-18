@@ -1,8 +1,10 @@
 > **Navigation:** [<-- Course Orientation](01-course-orientation.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [AI Ethics — A Primer -->](03-ethics-and-responsibility.md)
 
+---
+
 # What Is Artificial Intelligence?
 
-**Motivation:** You are about to spend a semester learning about data science - building data-driven solutions ("AI"). Terms like AI, data science and machine learning are often used interchangeably, though they do not mean the same. Conflating them leads to vague thinking, misunderstandings, and poor design choices. So: What exactly is AI?
+**Motivation**: You are about to spend a semester learning about data science - building data-driven solutions ("AI"). Terms like AI, data science and machine learning are often used interchangeably, though they do not mean the same. Conflating them leads to vague thinking, misunderstandings, and poor design choices. So: What exactly is AI?
 
 > In this nugget you will learn to distinguish key concepts in the field of AI and data science, get to know a mindset for approaching data-driven solutions. You'll also get to know key milestones that shaped the field of AI.
 
@@ -10,9 +12,8 @@
 
 - [Key Concepts at a Glance](#key-concepts-at-a-glance)
 - [A Design Hierarchy: From Rules to AI](#a-design-hierarchy-from-rules-to-ai)
-- [A Brief History of the field of AI](#a-brief-history-of-the-field-of-ai)
-
----
+- [A Brief History of the Field of AI](#a-brief-history-of-the-field-of-ai)
+- [Summary](#summary)
 
 ## Key Concepts at a Glance
 
@@ -73,7 +74,7 @@ Now, to understand why and how these methods ermerged, a brief look at the field
 
 ---
 
-## A Brief History of the field of AI
+## A Brief History of the Field of AI
 
 The formal beginning of AI as a discipline is usually placed at the **Dartmouth Workshop of 1956**, where a group of researchers proposed, as a working conjecture, that every aspect of intelligence could be described precisely enough for a machine to simulate it. The ambition was enormous. Near-term progress was... well, mixed.
 
@@ -95,7 +96,6 @@ For your work, the practical upshot is this: you are inheriting a generation of 
 
 ---
 
-
 ## Summary
 
 - AI, ML, deep learning are nested concepts — not synonyms. The table in "Key Concepts at a Glance" is the reference.
@@ -105,6 +105,9 @@ For your work, the practical upshot is this: you are inheriting a generation of 
 
 As always: Happy learning, happy life! 🫶
 
+
 ---
 
-**Navigation:** [<-- Course Orientation](01-course-orientation.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [AI Ethics — A Primer -->](03-ethics-and-responsibility.md)
+> **Navigation:** [<-- Course Orientation](01-course-orientation.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [AI Ethics — A Primer -->](03-ethics-and-responsibility.md)
+
+Script v1.1 (2026-05-18) · FGN

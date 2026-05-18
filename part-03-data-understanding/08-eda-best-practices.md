@@ -1,8 +1,10 @@
-> **Navigation:** [<-- EDA: Correlation and Visualizations](07-eda-correlation-visualizations.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part IV: Data Preparation -->](../part-04-data-preparation/00-index.md)
+> **Navigation:** [<-- EDA: Correlations](07-eda-correlations.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part IV: Data Preparation -->](../part-04-data-preparation/00-index.md)
+
+---
 
 # Data Understanding: Best Practices
 
-**Motivation:** You have now built the full EDA toolkit: loading data, checking structure, computing statistics, visualizing distributions, assessing quality, and examining correlations. Each skill was introduced in its own nugget. This one pulls them together into a single reference so you can apply them systematically whenever you face a new dataset — without having to retrace the whole part.
+**Motivation**: You have now built the full EDA toolkit: loading data, checking structure, computing statistics, visualizing distributions, assessing quality, and examining correlations. Each skill was introduced in its own nugget. This one pulls them together into a single reference so you can apply them systematically whenever you face a new dataset — without having to retrace the whole part.
 
 > You will find a concise EDA checklist consolidating the best practices from this part, a visualization reference table mapping analytical questions to the right plot type, and a set of pitfalls that cause charts to mislead — giving you both a practical workflow guide and a critical eye for data work.
 
@@ -11,8 +13,7 @@
 - [EDA Checklist](#eda-checklist)
 - [Visualizations Reference](#visualizations-reference)
 - [Visualization Pitfalls](#visualization-pitfalls)
-
----
+- [Summary](#summary)
 
 ## EDA Checklist
 
@@ -20,21 +21,21 @@ This nugget collects the key practices from Nuggets 3.1–3.7 into a single quic
 
 **Before you start**
 
-- **Profile every column before writing transformation code.** Check name, type, range, and missing-value count for every variable. `df.info()` and `df.describe()` give you this in two lines. The mechanics are covered in [Datasets](03-datasets.md) and [EDA: Descriptive Statistics](04-eda-descriptive-stats.md).
+- **Profile every column before writing transformation code.** Check name, type, range, and missing-value count for every variable. `df.info()` and `df.describe()` give you this in two lines. The mechanics are covered in [🖝 Datasets](../part-03-data-understanding/03-datasets.md) and [🖝 EDA: Descriptive Statistics](../part-03-data-understanding/04-eda-descriptive-stats.md).
 
 **Distributions and quality**
 
-- **Look at distributions, not just summary statistics.** Aggregates like mean or standard deviation collapse shape information. Use histograms and box plots to make skew, multimodality, and floor or ceiling effects visible. ([EDA: Distributions](06-eda-distributions.md))
+- **Look at distributions, not just summary statistics.** Aggregates like mean or standard deviation collapse shape information. Use histograms and box plots to make skew, multimodality, and floor or ceiling effects visible. ([🖝 EDA: Distributions](../part-03-data-understanding/../part-03-data-understanding/06-eda-distributions.md))
 - **Treat unexpected distributions as signals.** A heavily right-skewed variable or a suspicious spike at one value often reflects how the data was gathered, not just the underlying phenomenon. Question the data-generating process before touching the data.
-- **Identify outliers visually before deciding what to do with them.** Determine whether an outlier is a measurement artifact or a legitimate observation. Removal without investigation can delete real signal. ([EDA: Distributions](06-eda-distributions.md))
+- **Identify outliers visually before deciding what to do with them.** Determine whether an outlier is a measurement artifact or a legitimate observation. Removal without investigation can delete real signal. ([🖝 EDA: Distributions](../part-03-data-understanding/06-eda-distributions.md))
 
 **Missing values**
 
-- **Examine missing-value patterns before handling them.** Quantity matters, but pattern matters more. Random missingness (MCAR) and systematic missingness (MAR, MNAR) call for different responses. Handling strategies are covered in Part IV. ([EDA: Data Quality](05-eda-data-quality.md))
+- **Examine missing-value patterns before handling them.** Quantity matters, but pattern matters more. Random missingness (MCAR) and systematic missingness (MAR, MNAR) call for different responses. Handling strategies are covered in Part IV. ([🖝 EDA: Data Quality](../part-03-data-understanding/05-eda-data-quality.md))
 
 **Relationships**
 
-- **Use a correlation matrix as a starting point, not a conclusion.** Pearson correlation quantifies linear association. It does not establish causation, and it misses non-linear relationships entirely. Follow up with scatter plots where the coefficient warrants closer examination. ([EDA: Correlation and Visualizations](07-eda-correlation-visualizations.md))
+- **Use a correlation matrix as a starting point, not a conclusion.** Pearson correlation quantifies linear association. It does not establish causation, and it misses non-linear relationships entirely. Follow up with scatter plots where the coefficient warrants closer examination. ([🖝 EDA: Correlations](../part-03-data-understanding/07-eda-correlations.md))
 
 ---
 
@@ -50,7 +51,6 @@ The table below summarizes the full EDA visualization toolkit built across Nugge
 | Do these two variables move together linearly? | Scatter plot + Pearson $r$ |
 | Is there a monotonic or non-linear relationship? | Scatter plot + Spearman $r$ |
 | What is the pairwise structure of the whole dataset? | Pair plot + correlation heatmap |
-
 
 ---
 
@@ -76,6 +76,9 @@ Charts can make patterns appear that are not really there. Three habits cause mo
 
 As always: Happy learning, happy life! 🫶
 
+
 ---
 
-> **Navigation:** [<-- EDA: Correlation and Visualizations](07-eda-correlation-visualizations.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part IV: Data Preparation -->](../part-04-data-preparation/00-index.md)
+> **Navigation:** [<-- EDA: Correlations](07-eda-correlations.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part IV: Data Preparation -->](../part-04-data-preparation/00-index.md)
+
+Script v1.1 (2026-05-18) · FGN

@@ -1,10 +1,12 @@
 > **Navigation:** [<-- Data Types and Measurement Scales](02-data-types.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [EDA: Descriptive Statistics -->](04-eda-descriptive-stats.md)
 
+---
+
 # Datasets
 
-**Requires:** [Data Types and Measurement Scales](02-data-types.md)
+**Requires**: [Data Types and Measurement Scales](02-data-types.md)
 
-**Motivation:** You know that data arrives as collections of typed attributes. But before you can profile, clean, or model a dataset, you need to understand its overall shape: how many records, how many columns, and whether the structure itself creates challenges. This nugget answers: what does first contact with a new dataset look like in practice?
+**Motivation**: You know that data arrives as collections of typed attributes. But before you can profile, clean, or model a dataset, you need to understand its overall shape: how many records, how many columns, and whether the structure itself creates challenges. This nugget answers: what does first contact with a new dataset look like in practice?
 
 > You will learn the structural properties of tabular datasets — dimensionality, sparsity, and resolution — and practice the first-inspection workflow in pandas using `df.head()`, `df.info()`, and `df.shape` on the ESS Well-Being dataset that will serve as the running example throughout this part.
 
@@ -14,9 +16,8 @@
 
 - [From Attributes to a Dataset](#from-attributes-to-a-dataset)
 - [Loading and First Inspection](#loading-and-first-inspection)
-- [Running Examples for This Part](#running-examples-for-this-part)
-
----
+- [Running Examples](#running-examples)
+- [Summary](#summary)
 
 ## From Attributes to a Dataset
 
@@ -41,6 +42,8 @@ Now, let's discuss some of the most important structural properties that dataset
 **Resolution** refers to the granularity at which data was captured. The same underlying phenomenon can look quite different at different resolutions: daily vs. hourly temperature readings, or national vs. city-levek survey responses.
 
 > The resolution to chose depends on the question you are asking. It's a trade-off: Coarser resolution loses detail while requiring less storage space. Finer resolution gives more detail, but may introduce noise.
+
+---
 
 ## Loading and First Inspection
 
@@ -76,7 +79,6 @@ Check whether values look sensible, headers are readable, and no obvious formatt
 
 2,420 records and 12 attributes. One number tells you the dataset's size; the other its dimensionality.
 
-
 **Check for missing values.**
 
 ```python
@@ -92,7 +94,7 @@ df.info()   # column names, non-null counts, dtypes
  3   gender     2420 non-null   int
 ```
 
-`happiness` and `health` each have three missing values; `gender` is complete. You will investigate missing values further in the [Data Quality](05-eda-data-quality.md) nugget.
+`happiness` and `health` each have three missing values; `gender` is complete. You will investigate missing values further in the [🖝 EDA: Data Quality](../part-03-data-understanding/05-eda-data-quality.md) nugget.
 
 ```python
 df.dtypes   # dtype per column
@@ -135,6 +137,9 @@ We don't use all attributes of the dataset. Also, for presentation in this scrip
 
 As always: Happy learning, happy life! 🫶
 
+
 ---
 
 > **Navigation:** [<-- Data Types and Measurement Scales](02-data-types.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [EDA: Descriptive Statistics -->](04-eda-descriptive-stats.md)
+
+Script v1.1 (2026-05-18) · FGN

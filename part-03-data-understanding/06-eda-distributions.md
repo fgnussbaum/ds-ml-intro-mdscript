@@ -1,10 +1,12 @@
-> **Navigation:** [<-- EDA: Data Quality](05-eda-data-quality.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [EDA: Correlation and Visualizations -->](07-eda-correlation-visualizations.md)
+> **Navigation:** [<-- EDA: Data Quality](05-eda-data-quality.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [EDA: Correlations -->](07-eda-correlations.md)
+
+---
 
 # EDA: Distributions
 
-**Requires:** [EDA: Descriptive Statistics](04-eda-descriptive-stats.md)
+**Requires**: [EDA: Descriptive Statistics](04-eda-descriptive-stats.md)
 
-**Motivation:** Summary statistics compress a whole column into a handful of numbers. Two columns with the same mean and standard deviation can look completely different when plotted. This nugget asks: what does the actual shape of your data look like, and what does that shape tell you about the data and how it was collected?
+**Motivation**: Summary statistics compress a whole column into a handful of numbers. Two columns with the same mean and standard deviation can look completely different when plotted. This nugget asks: what does the actual shape of your data look like, and what does that shape tell you about the data and how it was collected?
 
 > You will learn to visualize distributions with histograms and boxplots, characterize their shapes (symmetric, skewed, bimodal), and distinguish genuine extreme observations from data artifacts — giving you the tools to decide whether an outlier warrants investigation, transformation, or retention.
 
@@ -13,8 +15,7 @@
 - [Histograms and Distribution Shapes](#histograms-and-distribution-shapes)
 - [Boxplots and Outliers](#boxplots-and-outliers)
 - [Comparing Distributions Across Groups](#comparing-distributions-across-groups)
-
----
+- [Summary](#summary)
 
 ## Histograms and Distribution Shapes
 
@@ -24,7 +25,7 @@ A **histogram** groups values into equally spaced intervals called bins and show
 
 Plotting many variables at once gives a rapid overview of them, here for some variables of the ESS well-being data: 
 
-![Histogram grid for ESS, age with KDE](../media/plots/ess_distributions_grid.png)
+![Histogram grid for ESS, age with KDE](../media/plots-ess/ess_distributions_grid.png)
 
 For two variables, age and religiosity, there's also a smooth curve overlayed. This is a so-called kernel density estimate (KDE), which can be used if the right bin width is unclear (it makes less sense for data that has few values anyway).
 Now let's take a look at what shapes we find in these plots:
@@ -47,11 +48,11 @@ Distribution shapes raise questions not just about the numbers, but about how th
 
 ## Boxplots and Outliers
 
-A boxplot encodes the **five-number summary** (minimum, Q1, median, Q3, maximum) as a compact visual. You computed these quantities with `df.describe()` in [EDA: Descriptive Statistics](04-eda-descriptive-stats.md). The boxplot makes them spatial.
+A boxplot encodes the **five-number summary** (minimum, Q1, median, Q3, maximum) as a compact visual. You computed these quantities with `df.describe()` in [🖝 EDA: Descriptive Statistics](../part-03-data-understanding/04-eda-descriptive-stats.md). The boxplot makes them spatial.
 
 The **box** spans from Q1 to Q3, covering the middle 50% of the data. This span is the **interquartile range (IQR)**. The **line inside the box** is the median. The **whiskers** extend from Q1 down to $Q1 - 1.5 \times \text{IQR}$ and from Q3 up to $Q3 + 1.5 \times \text{IQR}$, or to the furthest observed data point within those bounds, whichever is closer. Points beyond the whiskers are plotted individually as potential outliers.
 
-![Boxplots for happiness, age, and religiosity](../media/plots/ess_distributions_boxplots.png)
+![Boxplots for happiness, age, and religiosity](../media/plots-ess/ess_distributions_boxplots.png)
 
 Religiosity shows the widest spread and the most pronounced skew. The boxplot for happiness confirms the left skew seen in the histogram: the median sits closer to the top of the box than the bottom. Boxplots are compact enough to place several side by side for comparing spread across variables or groups.
 
@@ -77,9 +78,9 @@ Histograms and boxplots show the distribution of a variable across all records c
 
 **Faceted histograms** produce one histogram per group, arranged in a grid with a shared x-axis so that shapes are directly comparable. Here is an example of the happiness distribution after grouping the whole population by their indicated health values.
 
-![Facette](../media/plots/ess_distributions_happiness_by_health_faceted.png)
+![Facette](../media/plots-ess/ess_distributions_happiness_by_health_faceted.png)
 
-Based on the grouping value, the happiness distribution is shifting. Group differences, like the shift in center, spread and shape observed here, indicate an association between the variables. Group comparisons are therefore a natural bridge from distribution analysis to correlation analysis, which we will check out next: [EDA: Correlation and Visualizations](07-eda-correlation-visualizations.md).
+Based on the grouping value, the happiness distribution is shifting. Group differences, like the shift in center, spread and shape observed here, indicate an association between the variables. Group comparisons are therefore a natural bridge from distribution analysis to correlation analysis, which we will check out next: [🖝 EDA: Correlations](../part-03-data-understanding/07-eda-correlations.md).
 
 ---
 
@@ -92,6 +93,9 @@ Based on the grouping value, the happiness distribution is shifting. Group diffe
 
 As always: Happy learning, happy life! 🫶
 
+
 ---
 
-> **Navigation:** [<-- EDA: Data Quality](05-eda-data-quality.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [EDA: Correlation and Visualizations -->](07-eda-correlation-visualizations.md)
+> **Navigation:** [<-- EDA: Data Quality](05-eda-data-quality.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [EDA: Correlations -->](07-eda-correlations.md)
+
+Script v1.1 (2026-05-18) · FGN

@@ -1,10 +1,12 @@
-> **Navigation:** [<-- Reality-Checking Your Idea](03-reality-checking-your-idea.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part III: Data -->](../part-03-data/00-index.md)
+> **Navigation:** [<-- Reality-Checking Your Idea](03-reality-checking-your-idea.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part III: Data Understanding -->](../part-03-data-understanding/00-index.md)
+
+---
 
 # What a Finished Project Could Look Like
 
-**Requires:** [Reality-Checking Your Idea](03-reality-checking-your-idea.md)
+**Requires**: [Reality-Checking Your Idea](03-reality-checking-your-idea.md)
 
-**Motivation:** You have an idea that passed the initial feasibility check. Now let's refine the answer to the question: How do you know when you are done? What should you actually produce?
+**Motivation**: You have an idea that passed the initial feasibility check. Now let's refine the answer to the question: How do you know when you are done? What should you actually produce?
 
 > Here you will see what a completed project typically contains, why "done" means documented rather than polished, and why **starting now** (even without feeling ready) is the move that makes everything else possible.
 
@@ -12,8 +14,7 @@
 
 - [The Anatomy of a Finished Result](#the-anatomy-of-a-finished-result)
 - [Start. The Work Teaches You.](#start-the-work-teaches-you)
-
----
+- [Summary](#summary)
 
 ## The Anatomy of a Finished Result
 
@@ -33,14 +34,14 @@ These are just tendencies. Rough in all four is better than polished in two. The
 
 ## Start. The Work Teaches You.
 
-The most common reason students do not do a project is not that they lack a good idea. It is that they are waiting to feel ready.
+The most common reason students do not do a project is not a lack of good ideas. It is waiting to feel ready.
 
 > You will not feel ready. Don't wait for that feeling.
 
 That feeling does not go away before you start: it becomes weaker in the process. Every data scientist working in industry today has at some point opened a dataset they did not fully understand, framed a question they were not sure was answerable, and started anyway. That is how the skill is built.
 
 You have more going for you than you think:
-Your domain background gives you a real advantage over someone who only knows the technical part of data science: You know what the data means. As an engineer, e.g., you can tell when a sensor reading is physically plausible.
+Your domain background gives you a real advantage over someone who only knows the technical part of data science: You know what the data means. E.g., as an engineer, you can tell when a sensor reading is physically plausible.
 
 > Domain knowledge is worth more than technical fluency at the start of a project.
 
@@ -65,6 +66,9 @@ That is enough for today. Unless [Zaigarnik effect](https://en.wikipedia.org/wik
 
 As always: Happy learning, happy life! 🫶
 
+
 ---
 
-> **Navigation:** [<-- Reality-Checking Your Idea](03-reality-checking-your-idea.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part III: Data -->](../part-03-data/00-index.md)
+> **Navigation:** [<-- Reality-Checking Your Idea](03-reality-checking-your-idea.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part III: Data Understanding -->](../part-03-data-understanding/00-index.md)
+
+Script v1.1 (2026-05-18) · FGN

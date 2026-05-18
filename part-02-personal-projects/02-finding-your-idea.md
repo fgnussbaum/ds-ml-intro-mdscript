@@ -1,10 +1,12 @@
 > **Navigation:** [<-- Why a Personal Project?](01-why-a-personal-project.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Reality-Checking Your Idea -->](03-reality-checking-your-idea.md)
 
+---
+
 # Finding Your Idea
 
-**Requires:** [Why a Personal Project?](01-why-a-personal-project.md)
+**Requires**: [Why a Personal Project?](01-why-a-personal-project.md)
 
-**Motivation:** You know why a personal project is worth doing. The harder question can sometimes be: What should the project be? Most people have more potential ideas than they realize. The challenge is 1) surfacing them deliberately rather than waiting for inspiration, and 2),doing so without immediately asking "Could I build a model for this?"
+**Motivation**: You know why a personal project is worth doing. The harder question can sometimes be: What should the project be? Worry not; you probably have more potential ideas than you realize.
 
 > This nugget gives you a set of prompts to surface candidate problems from your own background, a template to sharpen each one into a concrete, workable question, and a short list of examples to calibrate what a completed project looks like.
 
@@ -12,8 +14,7 @@
 
 - [Where to Look for Problems](#where-to-look-for-problems)
 - [From Problem to a Workable Question](#from-problem-to-a-workable-question)
-
----
+- [Summary](#summary)
 
 ## Where to Look for Problems
 
@@ -45,7 +46,7 @@ Look at data you already have — calibration records, measurement logs, sensor 
 
 ### A few example ideas
 
-Here are some exemplary, still vague problem statements as may be typical when the idea first surfaces. Though the following examples are mostly engineering-specific, you are FREE and WELCOME to figure out anything that you are interested in yourself.
+Here are some exemplary, still vague problem statements as may be typical when the idea first surfaces. Though the following examples are mostly engineering-specific, you are WELCOME to figure out anything that you are interested in yourself.
 
 - "The spectra look different depending on material, but we have never examined why."
 - "Our sensor seems to degrade, but we have no systematic way to tell when it is about to fail."
@@ -73,14 +74,14 @@ Scan the first column below (ignore the last column, it's just for look-up later
 | What drives this outcome? | **explain** | Causal inference, interpretability |
 | What is the underlying structure? | **reduce** | Dimensionality reduction, embeddings |
 
-If a row resonates, note the verb. You can use it in the next step. If nothing fits cleanly, that is fine too: carry the problem forward as an open question.
+If a row resonates, note the verb and use it in the next step. Try to find the best fit. Everything can be refined later.
 
 ### Step 2: Frame It as a Sentence
 
-Complete the sentence: **"I want to [verb] X from Y."**
+Complete the sentence: **"I want to [VERB] [WHAT] from [DATA]."**
 
-- **X** is what you want to know, produce, or uncover.
-- **Y** is the data you have or could collect.
+- **WHAT** is what you want to know, produce, or uncover (derived from your problem statement).
+- **DATA** is the data you have or could collect.
 
 Here are the three example ideas from the previous section with the template applied:
 
@@ -90,9 +91,9 @@ Here are the three example ideas from the previous section with the template app
 | "Our sensor seems to degrade, but we have no systematic way to tell when it is about to fail." | "I want to **detect** imminent failures in a sensor component from its usage patterns." | Detect |
 | "Yield varies batch to batch and nobody is sure what drives it." | "I want to **estimate** batch yield from process temperature and pressure logs." | Estimate |
 
-If you can fill in X and Y with concrete things (like the bold pieces in the table), you have a workable question. If you cannot, the problem needs more specificity, not more ambition.
+If you can fill in WHAT and DATA with concrete things (like the bold pieces in the table), you have a workable question. If you cannot, the problem needs more specificity, not more ambition.
 
-The framing template provided here is a translation tool. It may not be perfect for all ideas you have. In doubt: adjust wording slightly. The goal here is to have at least 2-3 sharpened candidate problems to carry into the next nugget: [Reality-Checking Your Idea](../part-02-personal-projects/03-reality-checking-your-idea.md). Only there will we filter ideas more in details.
+The framing template provided here is a translation tool. It may not be perfect for all ideas you have. In doubt: adjust wording slightly. The goal here is to have at least 2-3 sharpened candidate problems to carry into the next nugget: [🖝 Reality-Checking Your Idea](../part-02-personal-projects/03-reality-checking-your-idea.md). Only there will we filter ideas more in details.
 
 <!--This nugget here is really mostly for generating ideas.-->
 
@@ -103,11 +104,14 @@ The framing template provided here is a translation tool. It may not be perfect 
 - Start with the problem, not the solution: ask where something is difficult or uncertain before asking what a model could do.
 - Three reliable sources: your own workflow, problems you observe in others, and data you already have.
 - Write several candidates before filtering; name who benefits for each.
-- Scan the problem-type table by business question to recognize which kind of question yours is, then frame it as "I want to [verb] X from Y."
+- Scan the problem-type table by business question to recognize which kind of question yours is, then frame it as "I want to [VERB] [WHAT] from [DATA]."
 - Carry two or three sharpened questions into the next nugget for a reality-check.
 
 As always: Happy learning, happy life! 🫶
 
+
 ---
 
 > **Navigation:** [<-- Why a Personal Project?](01-why-a-personal-project.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Reality-Checking Your Idea -->](03-reality-checking-your-idea.md)
+
+Script v1.1 (2026-05-18) · FGN

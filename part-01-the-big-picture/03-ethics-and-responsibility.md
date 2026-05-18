@@ -1,10 +1,12 @@
-> **Navigation:** [<-- What Is Artificial Intelligence?](02-intro-ai.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [The CRISP-DM Process Map -->](04-crisp-dm.md)
+> **Navigation:** [<-- What Is Artificial Intelligence?](02-intro-ai.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [CRISP-DM -->](04-crisp-dm.md)
+
+---
 
 # AI Ethics — A Primer
 
-**Requires:** [What Is Artificial Intelligence?](02-intro-ai.md)
+**Requires**: [What Is Artificial Intelligence?](02-intro-ai.md)
 
-**Motivation:** Building AI systems well includes building them *responsibly*. A model can score well on every benchmark and still cause harm in deployment. **We don't want that.** So, what does it mean to build AI responsibly? And what does society, and increasingly the law, expect from those who do?
+Building AI systems well includes building them *responsibly*. A model can score well on every benchmark and still cause harm in deployment. **We don't want that.** So, what does it mean to build AI responsibly? And what does society, and increasingly the law, expect from those who do?
 
 > In this nugget you will encounter three challenges that run through all of AI practice: misaligned objectives, anthropomorphism, and algorithmic bias. You will also get a first look at the EU AI Act — the world's first comprehensive AI regulation — and what its risk classification means for the systems you build.
 
@@ -13,8 +15,7 @@
 - [The Stakes: AI Systems Act on the World](#the-stakes-ai-systems-act-on-the-world)
 - [Key Challenges](#key-challenges)
 - [The Regulatory Landscape](#the-regulatory-landscape)
-
----
+- [Summary](#summary)
 
 ## The Stakes: AI Systems Act on the World
 
@@ -90,7 +91,7 @@ Additionally, certain transparency obligations apply broadly across risk tiers:
 
 The EU AI Act is a living regulation with phased implementation timelines. What matters for now is the underlying logic: risk scales with consequence, and consequence creates obligation.
 
-We return to these questions in [Ethics and Accountability](../part-10-capstone/07-ethics-accountability.md) once you have the technical vocabulary to reason about failure modes and model documentation concretely.
+We return to these questions in [🖝 Ethics and Accountability](../part-10-capstone/07-ethics-accountability.md) once you have the technical vocabulary to reason about failure modes and model documentation concretely.
 
 ---
 
@@ -104,6 +105,9 @@ We return to these questions in [Ethics and Accountability](../part-10-capstone/
 
 As always: Happy learning, happy life! 🫶
 
+
 ---
 
-> **Navigation:** [<-- What Is Artificial Intelligence?](02-intro-ai.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [The CRISP-DM Process Map -->](04-crisp-dm.md)
+> **Navigation:** [<-- What Is Artificial Intelligence?](02-intro-ai.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [CRISP-DM -->](04-crisp-dm.md)
+
+Script v1.1 (2026-05-18) · FGN
