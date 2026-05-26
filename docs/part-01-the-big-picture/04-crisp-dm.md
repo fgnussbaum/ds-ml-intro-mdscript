@@ -27,7 +27,7 @@ The phases do not run strictly in sequence. Most real projects loop back, someti
 
 ### Business Understanding
 
-> See [🖝 Part II](../part-02-personal-projects/00-index.md) in this course.
+> See [🖝 Part II](../part-02-ds-projects/00-index.md) in this course.
 
 Here you define what you actually want to achieve.
 - You identify the business or research objective,
@@ -133,4 +133,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- AI Ethics — A Primer](03-ethics-and-responsibility.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Academia vs. Business Data Science -->](05-academia-vs-business-ds.md)
 
-Script v1.1 (2026-05-18) · FGN
+Script v1.2 (2026-05-26) · FGN

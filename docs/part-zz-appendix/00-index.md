@@ -1,8 +1,10 @@
-# Part V: 1st Pass — Supervised Learning
+> **Navigation:** [<-- Part IX: Closing the Loop — Projects in Practice](../part-09-projects-in-practice/00-index.md) | [Main Index](../index.md)
 
-**Supervised learning** is the family of ML methods where every training example comes with a known answer: a label for classification tasks or a numeric value for regression tasks. The model learns a mapping from inputs to outputs that generalizes beyond the training examples it saw. In this part you complete your first full inner-loop pass through the CRISP-DM Modeling and Evaluation phases — fitting real models to data, evaluating how well they generalize, and building the practical vocabulary every subsequent part assumes.
+---
 
-> **Navigation:** [<-- Part VI: Reflection — Principles That Transfer](../part-06-reflection/00-index.md) | [Main Index](../index.md)
+# Appendix
+
+# TODO: write correct appendix intro (current 00-index.md has a copy-paste from part-05)
 
 ---
 
@@ -10,12 +12,13 @@
 
 | # | Nugget | Prerequisites |
 |---|--------|---------------|
-
-| 2 | [Beyond Tabular Data](01-beyond-tabular-eda.md) *(optional)* | -- |
-| 3 | [Statistical Significance](06-statistical-significance.md) *(optional)* | [Linear Regression](02-linear-regression.md) |
-| 4 | [Logistic Regression](04-logistic-regression) *(optional, bridge to deep learning)* | [Linear Regression](02-linear-regression.md) |
-| 5 | [Support Vector Machines](05-support-vector-machines.md) *(optional)* | [Framing Supervised Learning](01-framing-supervised-learning.md) |
+| 1 | [Beyond Tabular Data](01-beyond-tabular-eda.md) | -- |
+| 2 | [Preparing Non-Tabular Data](02-beyond-tabular-prep.md) | [Beyond Tabular Data](01-beyond-tabular-eda.md) |
+| 3 | [Logistic Regression](03-logistic-regression.md) | [Linear Regression](../part-05-supervised-learning/02-linear-regression.md) |
+| 4 | [Regression: Interpretation and Assumptions](04-regression-depth.md) | [Linear Regression](../part-05-supervised-learning/02-linear-regression.md) |
+| 5 | [Statistical Significance](05-statistical-significance.md) | [Linear Regression](../part-05-supervised-learning/02-linear-regression.md) |
+| 6 | [Support Vector Machines](06-support-vector-machines.md) | [Supervised Learning](../part-05-supervised-learning/01-supervised-learning.md) |
 
 ---
 
-> **Navigation:** [<-- Part VI: Reflection — Principles That Transfer](../part-06-reflection/00-index.md) | [Main Index](../index.md)
+Script v1.2 (2026-05-26) · FGN

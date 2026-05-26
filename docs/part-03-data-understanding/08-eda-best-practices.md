@@ -25,7 +25,7 @@ This nugget collects the key practices from Nuggets 3.1–3.7 into a single quic
 
 **Distributions and quality**
 
-- **Look at distributions, not just summary statistics.** Aggregates like mean or standard deviation collapse shape information. Use histograms and box plots to make skew, multimodality, and floor or ceiling effects visible. ([🖝 EDA: Distributions](../part-03-data-understanding/../part-03-data-understanding/06-eda-distributions.md))
+- **Look at distributions, not just summary statistics.** Aggregates like mean or standard deviation collapse shape information. Use histograms and box plots to make skew, multimodality, and floor or ceiling effects visible. ([🖝 EDA: Distributions](../part-03-data-understanding/06-eda-distributions.md))
 - **Treat unexpected distributions as signals.** A heavily right-skewed variable or a suspicious spike at one value often reflects how the data was gathered, not just the underlying phenomenon. Question the data-generating process before touching the data.
 - **Identify outliers visually before deciding what to do with them.** Determine whether an outlier is a measurement artifact or a legitimate observation. Removal without investigation can delete real signal. ([🖝 EDA: Distributions](../part-03-data-understanding/06-eda-distributions.md))
 
@@ -81,4 +81,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- EDA: Correlations](07-eda-correlations.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part IV: Data Preparation -->](../part-04-data-preparation/00-index.md)
 
-Script v1.1 (2026-05-18) · FGN
+Script v1.2 (2026-05-26) · FGN

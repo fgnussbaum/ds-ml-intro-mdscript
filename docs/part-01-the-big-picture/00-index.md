@@ -1,4 +1,4 @@
-> **Navigation:** [Main Index](../index.md) | [Part II: Personal Data-Science Projects -->](../part-02-personal-projects/00-index.md)
+> **Navigation:** [Main Index](../index.md) | [Part II: Data-Science Projects -->](../part-02-ds-projects/00-index.md)
 
 ---
 
@@ -20,4 +20,4 @@ This part orients you to the course, introduces artificial intelligence and data
 
 ---
 
-Script v1.1 (2026-05-18) · FGN
+Script v1.2 (2026-05-26) · FGN

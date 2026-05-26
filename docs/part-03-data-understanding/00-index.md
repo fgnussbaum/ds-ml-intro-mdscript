@@ -1,4 +1,4 @@
-> **Navigation:** [<-- Part II: Personal Data-Science Projects](../part-02-personal-projects/00-index.md) | [Main Index](../index.md) | [Part IV: Data Preparation -->](../part-04-data-preparation/00-index.md)
+> **Navigation:** [<-- Part II: Data-Science Projects](../part-02-ds-projects/00-index.md) | [Main Index](../index.md) | [Part IV: Data Preparation -->](../part-04-data-preparation/00-index.md)
 
 ---
 
@@ -23,4 +23,4 @@ Before you can train a model, you need to understand what you have. This part bu
 
 ---
 
-Script v1.1 (2026-05-18) · FGN
+Script v1.2 (2026-05-26) · FGN

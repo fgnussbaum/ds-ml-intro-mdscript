@@ -1,12 +1,14 @@
-> **Navigation:** [<-- Beyond Tabular Data](01-beyond-tabular-eda.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Statistical Significance -->](03-statistical-significance.md)
+> **Navigation:** [<-- Beyond Tabular Data](01-beyond-tabular-eda.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Logistic Regression -->](03-logistic-regression.md)
+
+---
 
 # Preparing Non-Tabular Data
 
-**Requires:** [EDA: Beyond Tabular Data](../part-03-data-understanding/01-beyond-tabular-eda.md) · [Data Pipelines](04-data-pipelines.md)
+**Requires**: [Beyond Tabular Data](01-beyond-tabular-eda.md)
 
-**Motivation:** Your preprocessing pipeline handles a tabular feature matrix — impute, encode, scale, done. But what do you do when the input is a string of text, a sequence of sensor readings, or a folder of images? [Beyond Tabular Data](../part-03-data-understanding/01-beyond-tabular-eda.md) established that these formats exist and why they resist tabular treatment. This nugget asks the practical follow-up: how do you actually prepare them?
+**Motivation**: Your preprocessing pipeline handles a tabular feature matrix — impute, encode, scale, done. But what do you do when the input is a string of text, a sequence of sensor readings, or a folder of images? [🖝 Beyond Tabular Data](../part-zz-appendix/01-beyond-tabular-eda.md) established that these formats exist and why they resist tabular treatment. This nugget asks the practical follow-up: how do you actually prepare them?
 
-> You will see how each non-tabular data type requires a specific conversion step before any model can operate on it, how the fit-on-train discipline from [Data Pipelines](04-data-pipelines.md) carries through unchanged, and where sklearn pipelines extend naturally versus where you need different tooling.
+> You will see how each non-tabular data type requires a specific conversion step before any model can operate on it, how the fit-on-train discipline from [🖝 Data Splits](../part-04-data-preparation/04-data-splits.md) carries through unchanged, and where sklearn pipelines extend naturally versus where you need different tooling.
 
 ## Table of Contents
 
@@ -14,8 +16,7 @@
 - [Text Data](#text-data)
 - [Time Series Data](#time-series-data)
 - [Spatial Data](#spatial-data)
-
----
+- [Summary](#summary)
 
 ## Images and Video
 
@@ -99,7 +100,7 @@ The vocabulary and IDF weights are fit once on the training corpus and travel wi
 
 Time series preparation differs fundamentally from tabular preparation because rows are not exchangeable. The standard `train_test_split` shuffles rows — for time series, this is wrong.
 
-### Temporal Train/Test Split
+### Temporal Data Splits
 
 If the training fold contains observations from the end of the series and the test fold contains observations from the middle, the model has effectively seen the future during training. The correct split is strictly temporal: all training observations come before all test observations.
 
@@ -137,7 +138,7 @@ Any within-window normalization must be fit on training windows only. Specialize
 
 Spatial data preparation focuses less on feature conversion — the measurements are already numeric — and more on the split strategy and coordinate handling.
 
-### Spatial Train/Test Split
+### Spatial Data Splits
 
 A random split assigns nearby, correlated measurements to both train and test. Because those observations are not independent, test-set performance will be optimistic: the model has effectively trained on measurements that look nearly identical to the ones it is evaluated on. A spatial split holds out an entire geographic region — all measurements from that region go to test, none to train. This better reflects how the model will generalize to new locations.
 
@@ -160,6 +161,9 @@ The common thread across all four data types: whenever observations are not exch
 
 As always: Happy learning, happy life! 🫶
 
+
 ---
 
-> **Navigation:** [<-- Beyond Tabular Data](01-beyond-tabular-eda.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Statistical Significance -->](03-statistical-significance.md)
+> **Navigation:** [<-- Beyond Tabular Data](01-beyond-tabular-eda.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Logistic Regression -->](03-logistic-regression.md)
+
+Script v1.2 (2026-05-26) · FGN

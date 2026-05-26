@@ -1,4 +1,4 @@
-> **Navigation:** [<-- Hyperparameter Optimization](06-hyperparameter-optimization.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Classification Evaluation -->](08-classification-evaluation.md)
+> **Navigation:** [<-- Hyperparameter Optimization](06-hyperparameters.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Classification Evaluation -->](08-classification-evaluation.md)
 
 ---
 
@@ -44,7 +44,7 @@ Many classifiers work in two steps: first they compute a continuous **score** fo
 
 $$\hat{y} = \begin{cases} 1 & \text{if score} \geq \tau \\ 0 & \text{otherwise} \end{cases}$$
 
-The **classification** demo from the [✪ interactive data-science demos](https://github.com/fgnussbaum/ds-ml-interactive-demos) repository illustrates the idea:
+The **classification** demo from the [🔗 interactive data-science demos](https://github.com/fgnussbaum/ds-ml-interactive-demos) repository illustrates the idea:
 
 <p><center><img src="../media/demos-screenshots/cf-threshold2.jpg" alt="" width="500px"/></center></p>
 
@@ -118,6 +118,6 @@ As always: Happy learning, happy life! 🫶
 
 ---
 
-> **Navigation:** [<-- Hyperparameter Optimization](06-hyperparameter-optimization.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Classification Evaluation -->](08-classification-evaluation.md)
+> **Navigation:** [<-- Hyperparameter Optimization](06-hyperparameters.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Classification Evaluation -->](08-classification-evaluation.md)
 
-Script v1.1 (2026-05-18) · FGN
+Script v1.2 (2026-05-26) · FGN

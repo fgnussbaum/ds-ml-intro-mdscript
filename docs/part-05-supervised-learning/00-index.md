@@ -13,11 +13,11 @@
 | # | Nugget | Prerequisites |
 |---|--------|---------------|
 | 1 | [Supervised Learning](01-supervised-learning.md) | -- |
-| 2 | [Train/Test Split](02-train-test-split.md) | [Supervised Learning](01-supervised-learning.md) |
-| 3 | [Linear Regression](03-linear-regression.md) | [Train/Test Split](02-train-test-split.md) |
-| 4 | [Gradient Descent](04-gradient-descent.md) | [Linear Regression](03-linear-regression.md) |
-| 5 | [Regularized Regression](05-regularized-regression.md) | [Linear Regression](03-linear-regression.md) · [Gradient Descent](04-gradient-descent.md) |
-| 6 | [Hyperparameter Optimization](06-hyperparameter-optimization.md) | [Train/Test Split](02-train-test-split.md) · [Regularized Regression](05-regularized-regression.md) |
+| 2 | [Linear Regression](02-linear-regression.md) | [Data Splits](../part-04-data-preparation/04-data-splits.md) |
+| 3 | [Gradient Descent](03-gradient-descent.md) | [Linear Regression](02-linear-regression.md) |
+| 4 | [Underfitting and Overfitting](04-under-overfitting.md) | -- |
+| 5 | [Regularized Regression](05-regularized-regression.md) | [Linear Regression](02-linear-regression.md) · [Gradient Descent](03-gradient-descent.md) |
+| 6 | [Hyperparameter Optimization](06-hyperparameters.md) | [Regularized Regression](05-regularized-regression.md) · [Underfitting and Overfitting](04-under-overfitting.md) |
 | 7 | [Classification Tasks](07-classification-tasks.md) | [Supervised Learning](01-supervised-learning.md) |
 | 8 | [Classification Evaluation](08-classification-evaluation.md) | [Classification Tasks](07-classification-tasks.md) |
 | 9 | [Decision Trees](09-decision-trees.md) | [Supervised Learning](01-supervised-learning.md) · [Classification Evaluation](08-classification-evaluation.md) |
@@ -25,4 +25,4 @@
 
 ---
 
-Script v1.1 (2026-05-18) · FGN
+Script v1.2 (2026-05-26) · FGN

@@ -46,7 +46,7 @@ How does it work? For each feature, the importance score sums the information ga
 
 > **Note:** Feature importance is a useful first signal, but it can underestimate correlated features: When two features carry similar information, the total importance gets split between them, making each look less influential than it actually is. Do not over-interpret the relative ranking of highly correlated variables.
 
-*See also: [🖝 Explainability](../part-06-reflection/04-explainability.md) for post-hoc tools (SHAP) that provide sharper per-prediction attribution.*
+*See also: [🖝 Explainability](../part-06-reflection/05-explainability.md) for post-hoc tools (SHAP) that provide sharper per-prediction attribution.*
 
 ---
 
@@ -103,4 +103,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Decision Trees](09-decision-trees.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part VI: Principles That Transfer (Reflection) -->](../part-06-reflection/00-index.md)
 
-Script v1.1 (2026-05-18) · FGN
+Script v1.2 (2026-05-26) · FGN

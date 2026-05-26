@@ -44,7 +44,7 @@ When using scikit-learn `DecisionTreeClassifier`, all these options can be contr
 
 > **Discussion:** You train a decision tree that achieves 98% training accuracy and 67% test accuracy. Your manager says: "We should deploy this: 98% is excellent." How do you explain the problem, and what would you do next?
 
-_See also: [🖝 Overfitting and Generalization](../part-06-reflection/01-overfitting-and-generalization.md)._
+_See also: [🖝 Generalization](../part-06-reflection/01-generalization.md)._
 
 ---
 
@@ -82,7 +82,7 @@ Three signals to read from a trained tree:
 - **Leaf purity** shows how confident each prediction is. A leaf where 95% of training records belong to one class is a confident predictor. A 55/45 split is close to a coin flip.
 - **Depth trades interpretability for expressiveness.** Trees with depth roughly greater than three become harder to explain to an audience.
 
-This shows that trees are simple models with good [🖝 Explainability](../part-06-reflection/06-explainability.md) properties. *See also [🖝 Random Forests](../part-05-supervised-learning/10-random-forests.md) for how combining many trees addresses fragility, overfitting, and global feature importance.*
+This shows that trees are simple models with good [🖝 Explainability](../part-06-reflection/05-explainability.md) properties. *See also [🖝 Random Forests](../part-05-supervised-learning/10-random-forests.md) for how combining many trees addresses fragility, overfitting, and global feature importance.*
 
 ---
 
@@ -145,4 +145,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Classification Evaluation](08-classification-evaluation.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Random Forests -->](10-random-forests.md)
 
-Script v1.1 (2026-05-18) · FGN
+Script v1.2 (2026-05-26) · FGN

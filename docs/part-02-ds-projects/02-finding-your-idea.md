@@ -1,12 +1,12 @@
-> **Navigation:** [<-- Why a Personal Project?](01-why-a-personal-project.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Reality-Checking Your Idea -->](03-reality-checking-your-idea.md)
+> **Navigation:** [<-- Why a Project?](01-why-a-project.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Working as a Team on a DS Project -->](03-team-project-basics.md)
 
 ---
 
 # Finding Your Idea
 
-**Requires**: [Why a Personal Project?](01-why-a-personal-project.md)
+**Requires**: [Why a Project?](01-why-a-project.md)
 
-**Motivation**: You know why a personal project is worth doing. The harder question can sometimes be: What should the project be? Worry not; you probably have more potential ideas than you realize.
+**Motivation**: You know why a project is worth doing. The harder question can sometimes be: What should it be? Worry not; you probably have more potential ideas than you realize.
 
 > This nugget gives you a set of prompts to surface candidate problems from your own background, a template to sharpen each one into a concrete, workable question, and a short list of examples to calibrate what a completed project looks like.
 
@@ -14,6 +14,7 @@
 
 - [Where to Look for Problems](#where-to-look-for-problems)
 - [From Problem to a Workable Question](#from-problem-to-a-workable-question)
+- [Committing to One Idea as a Group](#committing-to-one-idea-as-a-group)
 - [Summary](#summary)
 
 ## Where to Look for Problems
@@ -93,9 +94,28 @@ Here are the three example ideas from the previous section with the template app
 
 If you can fill in WHAT and DATA with concrete things (like the bold pieces in the table), you have a workable question. If you cannot, the problem needs more specificity, not more ambition.
 
-The framing template provided here is a translation tool. It may not be perfect for all ideas you have. In doubt: adjust wording slightly. The goal here is to have at least 2-3 sharpened candidate problems to carry into the next nugget: [🖝 Reality-Checking Your Idea](../part-02-personal-projects/03-reality-checking-your-idea.md). Only there will we filter ideas more in details.
+The framing template provided here is a translation tool. It may not be perfect for all ideas you have. In doubt: adjust wording slightly. Carry two or three sharpened questions into the next section.
 
 <!--This nugget here is really mostly for generating ideas.-->
+
+---
+
+## Committing to One Idea as a Group
+
+Each team member now has two or three sharpened candidate questions. The next task is to select one.
+
+This is a coordination problem, not a technical one. The goal is to find a question the whole group can invest in, where accessible data already exists, and where the framing is concrete enough to get started.
+
+A workable selection process:
+
+1. Each person presents their candidates using the sentence template. One sentence per idea, plus who benefits.
+2. After everyone has presented, mark the ideas that already have a known data source behind them. Ideas without a clear data source are harder to move forward at this stage.
+3. Discuss genuine interest and feasibility. You are looking for overlap: a question that at least two people find interesting and where the group believes data is accessible.
+4. When there is no clear winner, choose the idea with the most concrete data source, not the most ambitious question.
+
+Once your group commits to a question, it is the group's question, regardless of who proposed it.
+
+> You will not know for certain whether the idea is feasible at this point. That is fine: [🖝 Reality-Checking Your Idea](../part-02-ds-projects/04-reality-checking-your-idea.md) is exactly for that. Commit now, verify next.
 
 ---
 
@@ -105,13 +125,13 @@ The framing template provided here is a translation tool. It may not be perfect 
 - Three reliable sources: your own workflow, problems you observe in others, and data you already have.
 - Write several candidates before filtering; name who benefits for each.
 - Scan the problem-type table by business question to recognize which kind of question yours is, then frame it as "I want to [VERB] [WHAT] from [DATA]."
-- Carry two or three sharpened questions into the next nugget for a reality-check.
+- For group selection: mark ideas with known data sources, look for shared interest, and when in doubt pick the most concrete option over the most ambitious one.
 
 As always: Happy learning, happy life! 🫶
 
 
 ---
 
-> **Navigation:** [<-- Why a Personal Project?](01-why-a-personal-project.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Reality-Checking Your Idea -->](03-reality-checking-your-idea.md)
+> **Navigation:** [<-- Why a Project?](01-why-a-project.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Working as a Team on a DS Project -->](03-team-project-basics.md)
 
-Script v1.1 (2026-05-18) · FGN
+Script v1.2 (2026-05-26) · FGN

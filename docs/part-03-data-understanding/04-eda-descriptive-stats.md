@@ -99,7 +99,7 @@ $$s^2 = \frac{1}{N-1} \sum_{i=1}^{N} (x_i - \bar{x})^2 \qquad \text{(sample)}$$
 
 $$\sigma^2 = \frac{1}{N} \sum_{i=1}^{N} (x_i - \bar{x})^2 \qquad \text{(population)}$$
 
-In data science you almost always work with samples, so $s^2$ with $N-1$ in the denominator is the default. The $N-1$ adjustment ([Bessel's correction](https://en.wikipedia.org/wiki/Bessel%27s_correction)) accounts for the fact that the sample mean is itself an estimate, which causes a naive formula to slightly underestimate the true spread.
+In data science you almost always work with samples, so $s^2$ with $N-1$ in the denominator is the default. The $N-1$ adjustment ([🔗 Bessel's correction](https://en.wikipedia.org/wiki/Bessel%27s_correction)) accounts for the fact that the sample mean is itself an estimate, which causes a naive formula to slightly underestimate the true spread.
 
 The **standard deviation** is the square root of the variance: $s = \sqrt{s^2}$. It restores the original units. For ESS happiness, $s \approx 1.68$, meaning roughly two-thirds of respondents fall within $7.76 \pm 1.68$, that is, between about 6.1 and 9.4.
 
@@ -137,4 +137,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Datasets](03-datasets.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [EDA: Data Quality -->](05-eda-data-quality.md)
 
-Script v1.1 (2026-05-18) · FGN
+Script v1.2 (2026-05-26) · FGN

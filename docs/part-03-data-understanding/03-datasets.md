@@ -10,7 +10,7 @@
 
 > You will learn the structural properties of tabular datasets — dimensionality, sparsity, and resolution — and practice the first-inspection workflow in pandas using `df.head()`, `df.info()`, and `df.shape` on the ESS Well-Being dataset that will serve as the running example throughout this part.
 
-> **Note:** This nugget covers tabular data, the dominant format in this course. For non-tabular formats (images, text, time series, and spatial data), see [Beyond Tabular Data](..part-zz-appendix/01-beyond-tabular-eda.md).
+> **Note:** This nugget covers tabular data, the dominant format in this course. For non-tabular formats (images, text, time series, and spatial data), see [🖝 Beyond Tabular Data](../part-zz-appendix/01-beyond-tabular-eda.md).
 
 ## Table of Contents
 
@@ -142,4 +142,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Data Types and Measurement Scales](02-data-types.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [EDA: Descriptive Statistics -->](04-eda-descriptive-stats.md)
 
-Script v1.1 (2026-05-18) · FGN
+Script v1.2 (2026-05-26) · FGN

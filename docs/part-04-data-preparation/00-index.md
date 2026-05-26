@@ -15,8 +15,10 @@ Raw data rarely arrives ready for modeling. This part covers foundational prepar
 | 1 | [Feature Engineering](01-feature-engineering.md) | [Data Types and Measurement Scales](../part-03-data-understanding/02-data-types.md) · `eda-correlation-visualizations` |
 | 2 | [Structural Cleaning and Encoding](02-cleaning-encoding.md) | [Data Types and Measurement Scales](../part-03-data-understanding/02-data-types.md) · [EDA: Data Quality](../part-03-data-understanding/05-eda-data-quality.md) |
 | 3 | [Scaling and Imputation](03-scaling-imputation.md) | [Structural Cleaning and Encoding](02-cleaning-encoding.md) · [EDA: Descriptive Statistics](../part-03-data-understanding/04-eda-descriptive-stats.md) |
-| 4 | [Data Preparation Best Practices](04-prep-best-practices.md) | -- |
+| 4 | [Data Splits](04-data-splits.md) | [Supervised Learning](../part-05-supervised-learning/01-supervised-learning.md) |
+| 5 | [Data Preparation Checklist](05-prep-checklist.md) | -- |
+| 6 | [Data Preparation Best Practices](06-prep-principles.md) | -- |
 
 ---
 
-Script v1.1 (2026-05-18) · FGN
+Script v1.2 (2026-05-26) · FGN

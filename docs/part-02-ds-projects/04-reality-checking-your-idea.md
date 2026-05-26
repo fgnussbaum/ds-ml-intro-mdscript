@@ -1,12 +1,12 @@
-> **Navigation:** [<-- Finding Your Idea](02-finding-your-idea.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [What a Finished Project Could Look Like -->](04-mini-project-scope.md)
+> **Navigation:** [<-- Working as a Team on a DS Project](03-team-project-basics.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [What a Finished Project Looks Like -->](05-project-scope.md)
 
 ---
 
 # Reality-Checking Your Idea
 
-**Requires**: [Finding Your Idea](02-finding-your-idea.md)
+**Requires**: [Working as a Team on a DS Project](03-team-project-basics.md)
 
-**Motivation**: You have a candidate idea — or maybe two or three. Before investing more time in any one of them, it is worth spending ten minutes checking whether it is actually workable. Not perfect, just doable.
+**Motivation**: You or your group have committed to a question. Before investing further in it, it is worth spending ten minutes checking whether it is actually workable. Not perfect, just doable.
 
 > This nugget walks you through two quick checks: data feasibility and scope. They will help you distinguish a viable idea from one that needs adjusting, without overthinking it.
 
@@ -18,7 +18,7 @@
 
 ## Data Feasibility
 
-Before committing to an idea, ask one practical question:
+Ask one practical question first:
 
 > Can you actually access relevant data in the near term?
 
@@ -66,6 +66,6 @@ As always: Happy learning, happy life! 🫶
 
 ---
 
-> **Navigation:** [<-- Finding Your Idea](02-finding-your-idea.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [What a Finished Project Could Look Like -->](04-mini-project-scope.md)
+> **Navigation:** [<-- Working as a Team on a DS Project](03-team-project-basics.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [What a Finished Project Looks Like -->](05-project-scope.md)
 
-Script v1.1 (2026-05-18) · FGN
+Script v1.2 (2026-05-26) · FGN

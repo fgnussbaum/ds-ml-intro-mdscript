@@ -48,7 +48,7 @@ The best learning happens when it is tied to personal motivation and stakes. The
 
 Every technical block in this course — data handling, modeling, evaluation — can feed directly into what you do with your own dataset. Students who work this way consistently get more out of the course.
 
-The full case for doing a personal project and how to find one is covered in [🖝 Why a Personal Project?](../part-02-personal-projects/01-why-a-personal-project.md).
+The full case for doing a personal project and how to find one is covered in [🖝 Why a Project?](../part-02-ds-projects/01-why-a-project.md).
 
 ---
 
@@ -83,4 +83,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [What Is Artificial Intelligence? -->](02-intro-ai.md)
 
-Script v1.1 (2026-05-18) · FGN
+Script v1.2 (2026-05-26) · FGN

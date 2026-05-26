@@ -75,7 +75,7 @@ Again: Correlation is a hypothesis starter, not a conclusion. A high $r$ value s
 
 Pearson correlation can sometimes be misleading:
 
-- **Non-linearity**: Pearson only measure linear relationship. The same value $r$ can be obtained by all kinds of non-linear relationships (see this [wonderful demo](https://www.research.autodesk.com/publications/same-stats-different-graphs/)). Scatter plots are better at revealing non-linear relationships.
+- **Non-linearity**: Pearson only measure linear relationship. The same value $r$ can be obtained by all kinds of non-linear relationships (see this [🔗 wonderful demo](https://www.research.autodesk.com/publications/same-stats-different-graphs/)). Scatter plots are better at revealing non-linear relationships.
 
 - **Outlier sensitivity**: Pearson is computed on raw values, so a single extreme point can strongly influence $r$.
 
@@ -121,4 +121,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- EDA: Distributions](06-eda-distributions.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Data Understanding: Best Practices -->](08-eda-best-practices.md)
 
-Script v1.1 (2026-05-18) · FGN
+Script v1.2 (2026-05-26) · FGN

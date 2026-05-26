@@ -4,7 +4,7 @@
 
 # Feature Engineering
 
-**Requires**: [Data Types and Measurement Scales](../part-03-data-understanding/02-data-types.md) · `eda-correlation-visualizations`
+**Requires**: [Data Types and Measurement Scales](../part-03-data-understanding/02-data-types.md)
 
 **Motivation:** EDA usually leaves you with a "pot-pourri" of findings: a skewed distribution here, a cluster of correlated survey items there, a categorical column with dozens of rare values. Often it turns out that raw columns are not the best input for a model or analysis. How do you systematically convert your columns into better-structured columns that actually represent what you care about?
 
@@ -47,12 +47,12 @@ df["health_good"] = (df["health"] >= 4).astype(int)
 
 **Trigger:** Several items in the dataset measure the same underlying construct.
 
-This is common for [Likert-scale](https://en.wikipedia.org/wiki/Likert_scale) survey questions, which yield ordinal variables. Surveys often use several questions to  measure the same concept more reliably. A **composite index** then helps to quantify this concept.
+This is common for [🔗 Likert-scale](https://en.wikipedia.org/wiki/Likert_scale) survey questions, which yield ordinal variables. Surveys often use several questions to  measure the same concept more reliably. A **composite index** then helps to quantify this concept.
 You usually obtain it by averaging. Before doing so, verify two things:
 1. all source columns point in the same direction (e.g., higher means "more"), and
 2. a unit increase must mean the same thing across columns.
 
-If those conditions hold, a simple mean is a valid summary. In the ESS, the [Schwartz-style value](https://en.wikipedia.org/wiki/Theory_of_basic_human_values) columns all run from 1 ("Not like me at all") to 6 ("Very much like me"), so both conditions are satisfied. Here's some example code for building the corresponding average composite:
+If those conditions hold, a simple mean is a valid summary. In the ESS, the [🔗 Schwartz-style value](https://en.wikipedia.org/wiki/Theory_of_basic_human_values) columns all run from 1 ("Not like me at all") to 6 ("Very much like me"), so both conditions are satisfied. Here's some example code for building the corresponding average composite:
 
 ```python
 SELF_TRANSCENDENCE_COLS = ["val_equality", "val_understand_others", "val_helping_others", "val_environment"]
@@ -88,14 +88,14 @@ These combinations are only meaningful for numeric attributes (at least interval
 
 <!-- example: predict tip given total_bill, engineer feature tip_rate=tip/total_bill -->
 
-*See also [🖝 Data Preparation Best Practices](../part-04-data-preparation/04-prep-best-practices.md): the target leakage principle. A constructed feature is only valid if its value does not depend on the outcome/target variable.*
+*See also [🖝 Data Preparation Checklist](../part-04-data-preparation/05-prep-checklist.md): the target leakage principle. A constructed feature is only valid if its value does not depend on the outcome/target variable.*
 <!-- TODO overfitting, data leakage nugget link-->
 
 ---
 
 ## General-Purpose Transformations
 
-Beyond EDA-driven construction, several transformations reshape data structurally without being motivated by a specific finding. They appear regularly in preprocessing pipelines and can be applied before the [🖝 Train/Test Split](../part-05-supervised-learning/02-train-test-split.md).
+Beyond EDA-driven construction, several transformations reshape data structurally without being motivated by a specific finding. They appear regularly in preprocessing pipelines and can be applied before the [🖝 Data Splits](../part-04-data-preparation/04-data-splits.md).
 
 ---
 
@@ -154,4 +154,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [Structural Cleaning and Encoding -->](02-cleaning-encoding.md)
 
-Script v1.1 (2026-05-18) · FGN
+Script v1.2 (2026-05-26) · FGN

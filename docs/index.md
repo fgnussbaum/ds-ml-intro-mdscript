@@ -14,7 +14,7 @@ The technical layer is only a middle layer. The before and after are at least as
 | Part | Topics | Nuggets |
 |------|--------|---------|
 | [Part I: The Big Picture](part-01-the-big-picture/00-index.md) | AI and data science definitions, CRISP-DM process map, academia vs. business DS | 5 |
-| [Part II: Personal Data-Science Projects](part-02-personal-projects/00-index.md) | Why a personal project, idea generation, feasibility checking, scoping a result | 4 |
+| [Part II: Personal Data-Science Projects](part-02-ds-projects/00-index.md) | Why a personal project, idea generation, feasibility checking, scoping a result | 4 |
 | [Part III: Data Understanding](part-03-data-understanding/00-index.md) | Data work reality, attribute types, exploratory data anlysis (EDA) | 8 |
 | [Part IV: Data Preparation](part-04-data-preparation/00-index.md) | Train-test splits, transformations, cleaning and encoding, data-processing pipelines | 4 |
 | [Part V: 1st Pass: Supervised Learning](part-05-supervised-learning/00-index.md) | Regression, decision trees, classification evaluation, random forests | 10 |

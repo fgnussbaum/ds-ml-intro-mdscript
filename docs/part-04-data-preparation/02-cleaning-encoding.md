@@ -50,7 +50,7 @@ Most models expect numeric inputs: Categorical attributes must be converted befo
 
 > **Leaving out one column**: If you have $k$ categories, you only need $k - 1$ indicator columns to encode it because the $k$-th column is then fully determined by the others: $x_k=1-x_1-\ldots​-x_{k-1}$. The $k$ columns are perfectly _colinear_.
 
-Including all $k$ indicators is redundant but harmless for many models. For models with learnable parameters, perfect collinearity can prevent a unique solution and complicate interpretation of those parameters, as you will see later in [🖝 Linear Regression](../part-05-supervised-learning/03-linear-regression.md). Dropping one column resolves this: the omitted category becomes the reference level, and every remaining coefficient is interpreted as a difference relative to it.
+Including all $k$ indicators is redundant but harmless for many models. For models with learnable parameters, perfect collinearity can prevent a unique solution and complicate interpretation of those parameters, as you will see later in [🖝 Linear Regression](../part-05-supervised-learning/02-linear-regression.md). Dropping one column resolves this: the omitted category becomes the reference level, and every remaining coefficient is interpreted as a difference relative to it.
 
 **Ordinal encoding** handles ordinal attributes by assigning consecutive integers that respect the rank order. An education level column (primary, secondary, tertiary) could be encoded as 1, 2, 3. This assumes equal spacing between levels. If the model is sensitive to that assumption, one-hot encoding is a safer alternative.
 
@@ -68,7 +68,7 @@ Including all $k$ indicators is redundant but harmless for many models. For mode
 - Structural cleaning addresses duplicates, type coercion, sentinel values, and rows with data entry errors.
 - Always consult the data dictionary ("code book") before treating data.
 - Encoding converts categorical attributes to numeric form: binary for two-category nominal, one-hot for multi-category nominal (dropping one column), and ordered integers for ordinal attributes.
-- Neither cleaning nor encoding requires distributional estimates. Apply both to the full dataset before the train/test split.
+- Neither cleaning nor encoding requires distributional estimates. Apply both to the full dataset before the Data Splits.
 
 As always: Happy learning, happy life! 🫶
 
@@ -77,4 +77,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Feature Engineering](01-feature-engineering.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Scaling and Imputation -->](03-scaling-imputation.md)
 
-Script v1.1 (2026-05-18) · FGN
+Script v1.2 (2026-05-26) · FGN

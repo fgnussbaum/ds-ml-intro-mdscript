@@ -1,8 +1,10 @@
 > **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [Preparing Non-Tabular Data -->](02-beyond-tabular-prep.md)
 
+---
+
 # Beyond Tabular Data
 
-**Motivation:** Everything you have learned so far assumes the data fits in a table: one row per record, one column per attribute, no meaningful ordering among rows. But a photograph is not a row, a heartbeat trace is not a column, and a text document has no fixed schema. This nugget asks: When does the tabular assumption break down, and what changes when it does?
+**Motivation**: Everything you have learned so far assumes the data fits in a table: one row per record, one column per attribute, no meaningful ordering among rows. But a photograph is not a row, a heartbeat trace is not a column, and a text document has no fixed schema. This nugget asks: When does the tabular assumption break down, and what changes when it does?
 
 > You will learn to recognize the structural properties of images, video, text, time series, and spatial data, understand why each format requires tools beyond standard tabular workflows. For each type you'll see what the EDA mindset looks like when applied to the respective type of data.
 
@@ -13,8 +15,7 @@
 - [Text](#text)
 - [Time Series Data](#time-series-data)
 - [Spatial Data](#spatial-data)
-
----
+- [Summary](#summary)
 
 ## When Tabular Isn't Enough
 
@@ -70,7 +71,7 @@ The simplest approach is the **bag-of-words** model: count how often each word f
 
 A time series records observations of one or more variables at successive time points: daily temperatures, hourly power consumption, weekly sales, a patient's heart rate during surgery. The defining structural property is that **order matters**. A standard tabular ML model treats rows as exchangeable — shuffle them, and nothing changes. For a time series, shuffling destroys the signal.
 
-The dependence structure is called **autocorrelation**: observations close together in time tend to be more similar than observations far apart. Tomorrow's temperature depends on today's in a way that yesterday's temperature does not depend on tomorrow's. Ignoring this structure leads to models that look good in cross-validation but fail in production, because the standard random train/test split is not appropriate for time-ordered data.
+The dependence structure is called **autocorrelation**: observations close together in time tend to be more similar than observations far apart. Tomorrow's temperature depends on today's in a way that yesterday's temperature does not depend on tomorrow's. Ignoring this structure leads to models that look good in cross-validation but fail in production, because the standard random Data Splits is not appropriate for time-ordered data.
 
 Specialized tools include classical methods such as ARIMA and its variants, and neural approaches such as recurrent networks (RNNs, LSTMs) and sequence transformers.
 
@@ -89,7 +90,7 @@ Specialized tools include classical methods such as ARIMA and its variants, and 
 
 Spatial data comes from measurements tied to geographic coordinates: soil samples, sensor readings across a city grid, satellite imagery bands, census block estimates. The structural property that distinguishes it from tabular data is **spatial autocorrelation**: nearby locations tend to have more similar values than distant ones. This is Tobler's first law of geography: "everything is related to everything else, but near things are more related than distant things."
 
-A model that ignores this structure will underestimate uncertainty and produce misleading confidence intervals. A random train/test split risks placing spatially correlated observations on both sides of the split boundary, making evaluation look better than it is.
+A model that ignores this structure will underestimate uncertainty and produce misleading confidence intervals. A random Data Splits risks placing spatially correlated observations on both sides of the split boundary, making evaluation look better than it is.
 
 Spatial analysis uses tools from **geographic information systems (GIS)**, geostatistics (kriging, spatial regression), and increasingly deep learning on graph-structured data.
 
@@ -101,7 +102,7 @@ Spatial analysis uses tools from **geographic information systems (GIS)**, geost
 - **Missing spatial regions.** Gaps in coverage mean the model will extrapolate to locations unlike anything in the training data. Flag these before reporting results.
 - **Coordinate reference systems.** Check that all data uses a consistent coordinate system and projection. Mixing coordinate systems (degrees vs. meters, or different datums) produces incorrect distances and areas.
 
-*See also: [Preparing Non-Tabular Data](../part-04-data-preparation/02-beyond-tabular-prep.md) for how each of these data types is converted into a feature matrix and what the fit-on-train rule looks like in practice.*
+*See also: [🖝 Preparing Non-Tabular Data](../part-zz-appendix/02-beyond-tabular-prep.md) for how each of these data types is converted into a feature matrix and what the fit-on-train rule looks like in practice.*
 
 ---
 
@@ -114,6 +115,9 @@ Spatial analysis uses tools from **geographic information systems (GIS)**, geost
 
 As always: Happy learning, happy life! 🫶
 
+
 ---
 
 > **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [Preparing Non-Tabular Data -->](02-beyond-tabular-prep.md)
+
+Script v1.2 (2026-05-26) · FGN

@@ -32,7 +32,7 @@ The definitions in detail:
 - **False Positive (FP):** the model predicted positive but was wrong = a false alarm.
 - **False Negative (FN):** the model predicted negative but missed a real case = a miss.
 
-In the **classification** demo from [✪ interactive data-science demos](https://github.com/fgnussbaum/ds-ml-interactive-demos) you can also explore the confusion matrix and what it change while you adjust the threshold slider: 
+In the **classification** demo from [🔗 interactive data-science demos](https://github.com/fgnussbaum/ds-ml-interactive-demos) you can also explore the confusion matrix and what it change while you adjust the threshold slider: 
 <p><center><img src="../media/demos-screenshots/cf-confusion-matrix.jpg" alt="Confusion Matrix" width="220px"/></center></p>
 
 > **Tipp:** A confusion matrix immediately reveals the potential pitfall of a classifier that just predicts the majority class (common for imbalanced classes). In the confusion matrix, one entire row will be empty or near-empty.
@@ -115,4 +115,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Classification Tasks](07-classification-tasks.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Decision Trees -->](09-decision-trees.md)
 
-Script v1.1 (2026-05-18) · FGN
+Script v1.2 (2026-05-26) · FGN

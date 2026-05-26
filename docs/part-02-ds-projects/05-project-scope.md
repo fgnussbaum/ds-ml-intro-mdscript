@@ -1,10 +1,10 @@
-> **Navigation:** [<-- Reality-Checking Your Idea](03-reality-checking-your-idea.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part III: Data Understanding -->](../part-03-data-understanding/00-index.md)
+> **Navigation:** [<-- Reality-Checking Your Idea](04-reality-checking-your-idea.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part III: Data Understanding -->](../part-03-data-understanding/00-index.md)
 
 ---
 
-# What a Finished Project Could Look Like
+# What a Finished Project Looks Like
 
-**Requires**: [Reality-Checking Your Idea](03-reality-checking-your-idea.md)
+**Requires**: [Reality-Checking Your Idea](04-reality-checking-your-idea.md)
 
 **Motivation**: You have an idea that passed the initial feasibility check. Now let's refine the answer to the question: How do you know when you are done? What should you actually produce?
 
@@ -53,7 +53,7 @@ The technical blocks in the rest of this course will land differently when you h
 
 > Pick your roughest candidate idea. Find out if there is data. **Open it**.
 
-That is enough for today. Unless [Zaigarnik effect](https://en.wikipedia.org/wiki/Zeigarnik_effect) carries you on.
+That is enough for today. Unless [🔗 Zaigarnik effect](https://en.wikipedia.org/wiki/Zeigarnik_effect) carries you on.
 
 ---
 
@@ -69,6 +69,6 @@ As always: Happy learning, happy life! 🫶
 
 ---
 
-> **Navigation:** [<-- Reality-Checking Your Idea](03-reality-checking-your-idea.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part III: Data Understanding -->](../part-03-data-understanding/00-index.md)
+> **Navigation:** [<-- Reality-Checking Your Idea](04-reality-checking-your-idea.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part III: Data Understanding -->](../part-03-data-understanding/00-index.md)
 
-Script v1.1 (2026-05-18) · FGN
+Script v1.2 (2026-05-26) · FGN

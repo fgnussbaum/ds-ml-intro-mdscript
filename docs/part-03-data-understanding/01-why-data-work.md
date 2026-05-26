@@ -23,7 +23,7 @@ You may have come into this course expecting to spend most of your time building
 
 > In practice, roughly 80% of technical work during projects goes into finding, understanding, cleaning data and building robust data pipelines for it. The remaining 20% covers modelling and evaluation.
 
-Surveys (TODO source) consistently report the same pattern, and it aligns with what the [CRISP-DM process map](part-01-the-big-picture/03-crisp-dm.md) shows: Data Understanding (this part) and Data Preparation (part IV) together usually span the largest share of project lifecycles.
+Surveys (TODO source) consistently report the same pattern, and it aligns with what the [🖝 CRISP-DM](../part-01-the-big-picture/04-crisp-dm.md) shows: Data Understanding (this part) and Data Preparation (part IV) together usually span the largest share of project lifecycles.
 
 Several forces drive this:
 
@@ -79,4 +79,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [Data Types and Measurement Scales -->](02-data-types.md)
 
-Script v1.1 (2026-05-18) · FGN
+Script v1.2 (2026-05-26) · FGN

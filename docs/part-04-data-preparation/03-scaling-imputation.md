@@ -1,4 +1,4 @@
-> **Navigation:** [<-- Structural Cleaning and Encoding](02-cleaning-encoding.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Data Preparation Best Practices -->](04-prep-best-practices.md)
+> **Navigation:** [<-- Structural Cleaning and Encoding](02-cleaning-encoding.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Data Splits -->](04-data-splits.md)
 
 ---
 
@@ -6,7 +6,7 @@
 
 **Requires**: [Structural Cleaning and Encoding](02-cleaning-encoding.md) · [EDA: Descriptive Statistics](../part-03-data-understanding/04-eda-descriptive-stats.md)
 
-**Motivation**: After structural cleaning and encoding, three data-preparation steps remain: handling missing values, managing extreme values, and bringing numeric features onto a comparable scale. We group these here because they rely on statistics from data like a mean or a maximum. As we'll see later in [🖝 Train/Test Split](../part-05-supervised-learning/02-train-test-split.md), those statistics must be computed on training data only.
+**Motivation**: After structural cleaning and encoding, three data-preparation steps remain: handling missing values, managing extreme values, and bringing numeric features onto a comparable scale. We group these here because they rely on statistics from data like a mean or a maximum. As we'll see later in [🖝 Data Splits](../part-04-data-preparation/04-data-splits.md), those statistics must be computed on training data only.
 
 > In this nugget, you'll learn how to decide when to cap versus keep extreme values, how to choose an imputation strategy for missing values, and how to apply min-max or z-score scaling.
 
@@ -27,7 +27,7 @@ There are two main strategies:
 
 - **Cap (winsorize).** Replace values beyond a threshold with the threshold value itself. For example, capping `age` at the 99th percentile of the training set. This retains the row while limiting the outlier's influence on scaling and model fitting.
 
-> **Warning:** The cap thresholds for winsorizing must be computed on the training set only and applied to all splits. We formally discuss why in [🖝 Train/Test Split](../part-05-supervised-learning/02-train-test-split.md) when we introduce train and test sets.
+> **Warning:** The cap thresholds for winsorizing must be computed on the training set only and applied to all splits. We formally discuss why in the next nugget [🖝 Data Splits](../part-04-data-preparation/04-data-splits.md).
 
 > **Tip:** Outlier capping should be applied before the scaling operations that we'll discuss in the next section. This is to prevent that extreme values "compress" ranges. 
 
@@ -50,7 +50,7 @@ Which strategy you choose follows from the missingness mechanism you identified 
 
 > **Tip:** When you impute, consider adding a binary indicator column recording which rows had missing values. Some models benefit from knowing that a value was substituted rather than observed.
 
-> **Warning (again):** Imputation statistics (mean, median, mode) must be computed on the **training set only** and then applied to both training and test data, see [🖝 Train/Test Split](../part-05-supervised-learning/02-train-test-split.md).
+> **Warning (again):** Imputation statistics (mean, median, mode) must be computed on the **training set only** and then applied to both training and held-out data, see [🖝 Data Splits](../part-04-data-preparation/04-data-splits.md).
 
 ---
 
@@ -112,7 +112,7 @@ Because of these limitations, z-score standardization is the more robust standar
 
 > **Warning (again, again):** The mean, standard deviation, minimum, and maximum used for scaling are statistics computed from data. They must be determined on the training set only and then applied to all splits: same as for outlier capping and imputation before.
 
-> **Tip:** You'll find a checklist for the overall preparation sequence in [🖝 Data Preparation Best Practices](../part-04-data-preparation/04-prep-best-practices.md) with a clear before/after for the [🖝 Train/Test Split](../part-05-supervised-learning/02-train-test-split.md). We'll also discuss programmatic patterns that enforce sequencing in [🖝 Data Pipelines](../part-06-reflection/02-data-pipelines.md).
+> **Tip:** You'll find a checklist for the overall preparation sequence in [🖝 Data Preparation Checklist](../part-04-data-preparation/05-prep-checklist.md) with a clear before/after for the [🖝 Data Splits](../part-04-data-preparation/04-data-splits.md).
 
 ---
 
@@ -121,13 +121,13 @@ Because of these limitations, z-score standardization is the more robust standar
 - Genuine extreme values can be capped to limit their influence on scaling and model fitting, or kept as-is when the model is not sensitive to extremes.
 - Imputation fills missing values using statistics: mean for symmetric distributions, median for skewed or ordinal data, mode for categoricals. Alternatively, listwise deletion removes incomplete rows at the cost of data.
 - Scaling brings numeric features to a comparable range. Z-score standardization centers and scales by standard deviation and is a safe default. Min-max scaling maps values to a fixed interval but is sensitive to outliers. 
-- All three families estimate statistics from data and must be fitted on the training set only, then applied identically to all splits. Why this matters is explained in [🖝 Train/Test Split](../part-05-supervised-learning/02-train-test-split.md).
+- All three families estimate statistics from data and must be fitted on the training set only, then applied identically to all splits, see [🖝 Data Splits](../part-04-data-preparation/04-data-splits.md).
 
 As always: Happy learning, happy life! 🫶
 
 
 ---
 
-> **Navigation:** [<-- Structural Cleaning and Encoding](02-cleaning-encoding.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Data Preparation Best Practices -->](04-prep-best-practices.md)
+> **Navigation:** [<-- Structural Cleaning and Encoding](02-cleaning-encoding.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Data Splits -->](04-data-splits.md)
 
-Script v1.1 (2026-05-18) · FGN
+Script v1.2 (2026-05-26) · FGN

@@ -2,7 +2,7 @@
 
 ---
 
-# Why a Personal Project?
+# Why a Project?
 
 **Requires**: [What Is Artificial Intelligence?](../part-01-the-big-picture/02-intro-ai.md) · [CRISP-DM](../part-01-the-big-picture/04-crisp-dm.md)
 
@@ -24,9 +24,9 @@ Skill learning transfers when you care about the skills.
 - When you encounter the same technique in a new situation, you already know it can do something useful.
 - Motivation matters too: when the problem is yours, you push through the challenging parts.
 
-Personal projects give you this. You apply the process from this course (CRISP-DM) to a question from your own field, using data you actually care about. The result is something concrete you can point to, explain, and build on.
+A project you genuinely care about gives you this, whether you work alone or in a group. You apply the process from this course (CRISP-DM) to a question from your own field, using data that actually matters to you. The result is something concrete you can point to, explain, and build on.
 
-> Working on a personal project is an invitation. Students who take it up tend to get more out of the course and leave with something to show for it.
+> Working on a project you care about is an invitation. Students who take it up tend to get more out of the course and leave with something to show for it.
 
 ---
 
@@ -58,7 +58,7 @@ A question you can state in one sentence, and data you can access: That is all y
 
 ## Summary
 
-- Skills transfer better when learned on a problem you care about: a personal project creates that effect.
+- Skills transfer better when learned on a problem you care about: a project creates that effect, whether you work alone or in a group.
 - The project is about learning the CRISP-DM process, not about producing a particular type of solution.
 - A valid project has a real problem, accessible data, and documented decisions at each phase.
 - Machine learning is one possible outcome. A rule-based solution or simple automation also counts if the process was applied and decisions are justified.
@@ -70,4 +70,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [Finding Your Idea -->](02-finding-your-idea.md)
 
-Script v1.1 (2026-05-18) · FGN
+Script v1.2 (2026-05-26) · FGN

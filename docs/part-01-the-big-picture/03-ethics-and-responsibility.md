@@ -54,7 +54,7 @@ The same dynamic is present today with large language models. Fluent, confident 
 
 For practitioners, this has a concrete implication: testing whether output "sounds right" is not the same as testing whether it *is* right. Users will over-trust outputs. Developers are not immune. 
 
-> Anthropomorphism is just one category of human biases. We have many more when interacting with AI systems. I listed some of them here: [Biases when working with chatbots](https://fgnussbaum.com/ai-digital/collaborating-with-chatbots/).
+> Anthropomorphism is just one category of human biases. We have many more when interacting with AI systems. I listed some of them here: [🔗 Biases when working with chatbots](https://fgnussbaum.com/ai-digital/collaborating-with-chatbots/).
 
 Our human biases do not only affect our work with chatbots, large language models, or in fact any AI model. Some of these biases also translate into biases in AI models themselves.
 
@@ -70,7 +70,7 @@ The **accountability** question compounds this: when an AI system causes harm, w
 
 ## The Regulatory Landscape
 
-The [**EU AI Act**](https://artificialintelligenceact.eu/) (entered into force August 2024) is the world's first comprehensive legal framework for AI. Its core idea is a **risk-based classification**: the obligations placed on a system scale with the harm it could cause.
+The [🔗 **EU AI Act**](https://artificialintelligenceact.eu/) (entered into force August 2024) is the world's first comprehensive legal framework for AI. Its core idea is a **risk-based classification**: the obligations placed on a system scale with the harm it could cause.
 
 | Risk tier | Examples | Obligations |
 |-----------|----------|-------------|
@@ -91,7 +91,7 @@ Additionally, certain transparency obligations apply broadly across risk tiers:
 
 The EU AI Act is a living regulation with phased implementation timelines. What matters for now is the underlying logic: risk scales with consequence, and consequence creates obligation.
 
-We return to these questions in [🖝 Ethics and Accountability](../part-10-capstone/07-ethics-accountability.md) once you have the technical vocabulary to reason about failure modes and model documentation concretely.
+We return to these questions in [🖝 Ethics and Accountability in Production](../part-09-projects-in-practice/08-ethics-accountability.md) once you have the technical vocabulary to reason about failure modes and model documentation concretely.
 
 ---
 
@@ -110,4 +110,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- What Is Artificial Intelligence?](02-intro-ai.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [CRISP-DM -->](04-crisp-dm.md)
 
-Script v1.1 (2026-05-18) · FGN
+Script v1.2 (2026-05-26) · FGN

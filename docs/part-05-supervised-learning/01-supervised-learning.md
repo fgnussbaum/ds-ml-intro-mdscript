@@ -1,4 +1,4 @@
-> **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [Train/Test Split -->](02-train-test-split.md)
+> **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [Linear Regression -->](02-linear-regression.md)
 
 ---
 
@@ -19,14 +19,12 @@
 
 **Supervised learning** is a form of machine learning where the model learns from labeled examples. Each example in the training set consists of two parts:
 
-- **Features** (also called inputs, attributes, or the feature matrix $X$): the information the model receives. In the ESS dataset, features might be age, self-rated health, frequency of social contact, and trust in institutions.
-- **Target** (also called the label, output, or response variable $y$): the quantity the model must learn to predict. For regression, $y$ is a number (happiness score on a 0–10 scale). For classification, $y$ is a category (supported EU membership / not supported).
+- **Features** (also called inputs, attributes, or the feature matrix $X$): the information the model receives. In the ESS dataset, features might be age, self-rated health, or frequency of social contact.
+- **Target** (also called the label, output, or response variable $y$): the quantity the model must learn to predict. For regression, $y$ is a number (happiness score on a 0–10 scale). For classification, $y$ is a category (support EU membership yes/no).
 
-The "supervision" in supervised learning comes from those known target values. During training the model sees both $X$ and $y$ and adjusts its internal parameters to minimize prediction error. After training it receives only $X$ for new, unseen observations and must infer $y$.
+The "supervision" in supervised learning comes from those known target values. During training, the model sees both $X$ and $y$ from the training data and adjusts its internal parameters to minimize prediction error. After training it receives only $X$ for new, unseen observations and must infer $y$. So, for any held-out/ test data, the model never sees its labels during training.
 
-This is exactly the situation you'll design in the upcoming nugget [🖝 Train/Test Split](../part-05-supervised-learning//02-train-test-split.md): The model never sees the test labels during training, so the test set gives an honest estimate of how well it learned the mapping.
-
-Let's introduce the two main families of supervised models and example tasks in the next section.
+Let's now introduce the two main families of supervised models.
 
 ---
 
@@ -46,17 +44,17 @@ Examples:
 - Deciding whether an email is spam or not.
 - Diagnosing whether a sensor vibration pattern indicates a machine fault (fault / normal).
 
-Let's close with an overview of both supervised learning families:
+For reference, here's an overview of both supervised learning families:
 
 | | Regression | Classification |
 |-|-----------|---------------|
 | Output type | Continuous number | Discrete category |
-| Evaluation metrics | MSE, RMSE, R² | Accuracy, precision, recall, F1 |
-| Typical algorithms | [🖝 Linear Regression](../part-05-supervised-learning/03-linear-regression.md), gradient boosting | [🖝 Decision Trees](../part-05-supervised-learning/09-decision-trees.md), SVM, logistic regression |
+| Evaluation metrics | MSE, RMSE, R² | Accuracy, precision, recall, F1:  [🖝 Classification Evaluation](../part-05-supervised-learning/08-classification-evaluation.md) |
+| Typical algorithms | [🖝 Linear Regression](../part-05-supervised-learning/02-linear-regression.md) | [🖝 Decision Trees](../part-05-supervised-learning/09-decision-trees.md), [🖝 Support Vector Machines](../part-zz-appendix/06-support-vector-machines.md), [🖝 Logistic Regression](../part-zz-appendix/03-logistic-regression.md) |
 
 The line between regression and classification can sometimes blur. Ordinal ratings (1–5 Likert scale) sit somewhere between the two, and many algorithms handle both. When in doubt, ask: does the distance between output values carry meaning? A happiness score of 8 is meaningfully more than 6. A category label "supported" is not numerically greater than "not supported".
 
-> **🔎 Discussion:** You are building a model to flag patients who may be at risk of a medical condition. Would you frame this as regression or classification? What would you choose as the target variable, and what are the trade-offs of each framing?
+> **Discussion:** You are building a model to flag patients who may be at risk of a medical condition. Would you frame this as regression or classification? What would you choose as the target variable, and what are the trade-offs of each framing?
 
 ---
 
@@ -66,7 +64,7 @@ From [🖝 CRISP-DM](../part-01-the-big-picture/04-crisp-dm.md), you'll recall t
 
 <center><img src="../media/selfmade/crisp_dm_inner.jpg" alt="CRISP-DM inner" width="200px"/></center>
 
-You enter the inner loop after Data Preparation and exit it, for now, with models that have been evaluated and compared on the test set (see next nugget [🖝 Train/Test Split](../part-05-supervised-learning//02-train-test-split.md)).
+You enter the inner loop after Data Preparation and exit it, for now, with models that have been evaluated and compared on held-out data.
 
 The insights from evaluation may prompt you to revisit earlier phases: You may discover that a feature needs re-engineering, that your training data has a class-imbalance problem, or that the problem is better framed differently.
 
@@ -87,6 +85,6 @@ As always: Happy learning, happy life! 🫶
 
 ---
 
-> **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [Train/Test Split -->](02-train-test-split.md)
+> **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [Linear Regression -->](02-linear-regression.md)
 
-Script v1.1 (2026-05-18) · FGN
+Script v1.2 (2026-05-26) · FGN
