@@ -6,7 +6,7 @@ Note: everything in this repo is *currently* under construction. The script is n
 
 The markdown script is meant to be a comprehensive content and learning materials reference.
 
-> The entry point for the script is [this index file](index.md).
+> The entry point for the script is this [index file](docs/index.md).
 
 ## How to read the markdown script
 
