@@ -29,12 +29,32 @@
       
     
     
+  
       <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
       
 
 
     
+  <style>
+    :root {
+      --md-primary-fg-color: #00662c;
+      --md-primary-fg-color--light: #008c3a;
+      --md-primary-fg-color--dark: #004d21;
+      --md-accent-fg-color: #f9a607;
+    }
+    .md-header {
+      background-color: #49080e;
+    }
+    .md-content blockquote {
+      color: black;
+      background-color: #e8f5ec;
+    }
+    .md-typeset blockquote {
+      --md-default-fg-color--lighter: #00662c;
+    }
+  </style>
+
     
       
     
@@ -363,7 +383,7 @@
   <span class="md-ellipsis">
     
   
-    AI Ethics — A Primer
+    AI Ethics: A Primer
   
 
     
@@ -1375,7 +1395,7 @@
   <span class="md-ellipsis">
     
   
-    Part V: 1st Pass — Supervised Learning
+    Part V: 1st Pass - Supervised Learning
   
 
     
@@ -1391,7 +1411,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part V: 1st Pass — Supervised Learning
+    Part V: 1st Pass - Supervised Learning
   
 
           </label>
@@ -1737,7 +1757,7 @@
   <span class="md-ellipsis">
     
   
-    Appendix
+    Part VI: Principles That Transfer (Reflection)
   
 
     
@@ -1750,6 +1770,228 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part VI: Principles That Transfer (Reflection)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/00-index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/01-generalization.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Generalization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/02-start-simple.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Start Simple
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/03-baselines.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Baselines and the Good-Enough Bar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/04-aligning-metrics.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choosing and Aligning Metrics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/05-explainability.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Explainability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2108,9 +2350,9 @@
 </ul>
 <h2 id="scatter-plots">Scatter Plots</h2>
 <p>The first tool is the <strong>scatter plot</strong>: each observation is drawn as a point, with one variable on the horizontal axis and the other on the vertical axis. This gives a cloud of points that reveals structure of the joint distribution.</p>
-<center><img src="../media/plots-ess/ess_wellbeing_scatter_health_vs_happiness.png" alt="Happiness versus self-rated health scatter plot" width="400px"/></center>
+<p>Here's an example for the seaborn Penguins dataset:</p>
+<center><img src="../media/plots-penguins/penguins_flipper_vs_bill.png" alt="scatter plot" width="400px"/></center>
 
-<p>The orange trend line is added - it's a simple linear fit between happiness and self-rated health that shows a positive trend.</p>
 <blockquote>
 <p>A scatter plot is most useful for numeric/continuous data. In this example, we have discrete/ordinal data from our ESS data set. We can still use a scatter plot, but some values will be plotted on top of each other.</p>
 </blockquote>
@@ -2145,20 +2387,14 @@
 <li><strong>Age and climate worry</strong>: a negative association, suggesting older respondents report less concern about climate.</li>
 <li>Most pairs cluster near zero, indicating limited linear dependence among the remaining variables.</li>
 </ul>
-<p>Again: Correlation is a hypothesis starter, not a conclusion. A high <span class="arithmatex">\(r\)</span> value says two variables move together. It says nothing about which causes the other, or whether both are driven by an unmeasured third variable. This all too often confused!</p>
+<p>Again: Correlation may suggest hypotheses, but that's it. A high <span class="arithmatex">\(r\)</span> value says two variables move together. It says nothing about which causes the other, or whether both are driven by an unmeasured third variable. This often confused!</p>
 <hr />
 <h2 id="when-pearson-is-not-enough">When Pearson Is Not Enough</h2>
 <p>Pearson correlation can sometimes be misleading:</p>
 <ul>
-<li>
-<p><strong>Non-linearity</strong>: Pearson only measure linear relationship. The same value <span class="arithmatex">\(r\)</span> can be obtained by all kinds of non-linear relationships (see this <a href="https://www.research.autodesk.com/publications/same-stats-different-graphs/">🔗 wonderful demo</a>). Scatter plots are better at revealing non-linear relationships.</p>
-</li>
-<li>
-<p><strong>Outlier sensitivity</strong>: Pearson is computed on raw values, so a single extreme point can strongly influence <span class="arithmatex">\(r\)</span>.</p>
-</li>
-<li>
-<p><strong>Ordinal variables</strong>: Pearson assumes that the intervals between scale points are equal. For ordinal variables such as the ESS health rating (1 = very bad, 5 = very good), the assumption that the gap between 1 and 2 equals the gap between 4 and 5 is not guaranteed.</p>
-</li>
+<li><strong>Non-linearity</strong>: Pearson only measure linear relationship. The same value <span class="arithmatex">\(r\)</span> can be obtained by all kinds of non-linear relationships (see this <a href="https://www.research.autodesk.com/publications/same-stats-different-graphs/">🔗 wonderful demo</a>). Scatter plots are better at revealing non-linear relationships.</li>
+<li><strong>Outlier sensitivity</strong>: Pearson is computed on raw values, so a single extreme point can strongly influence <span class="arithmatex">\(r\)</span>.</li>
+<li><strong>Ordinal variables</strong>: Pearson assumes that the intervals between scale points are equal. For ordinal variables such as the ESS health rating (1 = very bad, 5 = very good), the assumption that the gap between 1 and 2 equals the gap between 4 and 5 is not guaranteed.</li>
 </ul>
 <h3 id="spearman-rank-correlation">Spearman rank correlation</h3>
 <p><strong>Spearman rank correlation</strong> addresses all three concerns. It replaces raw values with their rank orders and then applies the Pearson formula to those ranks. This makes it robust to outliers and appropriate for monotonic but non-linear relationships, as well as for ordinal data. The tradeoff is that Spearman discards information about the exact spacing of values: if intervals genuinely are equal, Pearson is more powerful.</p>
@@ -2210,7 +2446,7 @@
 <blockquote>
 <p><strong>Navigation:</strong> <a href="06-eda-distributions.html">&lt;-- EDA: Distributions</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="08-eda-best-practices.html">Data Understanding: Best Practices --&gt;</a></p>
 </blockquote>
-<p>Script v1.2 (2026-05-26) · FGN</p>
+<p>Script v1.3 (2026-06-09) · FGN</p>
 
 
 

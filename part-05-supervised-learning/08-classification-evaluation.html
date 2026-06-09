@@ -29,12 +29,32 @@
       
     
     
+  
       <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
       
 
 
     
+  <style>
+    :root {
+      --md-primary-fg-color: #00662c;
+      --md-primary-fg-color--light: #008c3a;
+      --md-primary-fg-color--dark: #004d21;
+      --md-accent-fg-color: #f9a607;
+    }
+    .md-header {
+      background-color: #49080e;
+    }
+    .md-content blockquote {
+      color: black;
+      background-color: #e8f5ec;
+    }
+    .md-typeset blockquote {
+      --md-default-fg-color--lighter: #00662c;
+    }
+  </style>
+
     
       
     
@@ -363,7 +383,7 @@
   <span class="md-ellipsis">
     
   
-    AI Ethics — A Primer
+    AI Ethics: A Primer
   
 
     
@@ -1245,7 +1265,7 @@
   <span class="md-ellipsis">
     
   
-    Part V: 1st Pass — Supervised Learning
+    Part V: 1st Pass - Supervised Learning
   
 
     
@@ -1261,7 +1281,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part V: 1st Pass — Supervised Learning
+    Part V: 1st Pass - Supervised Learning
   
 
           </label>
@@ -1588,6 +1608,56 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Precision, Recall, and F1: When Accuracy Is Not Enough">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introducing-precision-and-recall" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introducing precision and recall
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#precision-recall-trade-off" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Precision-recall trade-off
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f1-as-a-compromise-between-precision-and-recall" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F1 as a compromise between precision and recall
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overview-of-all-quantities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview of all quantities
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1709,7 +1779,7 @@
   <span class="md-ellipsis">
     
   
-    Appendix
+    Part VI: Principles That Transfer (Reflection)
   
 
     
@@ -1722,6 +1792,228 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part VI: Principles That Transfer (Reflection)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/00-index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/01-generalization.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Generalization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/02-start-simple.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Start Simple
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/03-baselines.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Baselines and the Good-Enough Bar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/04-aligning-metrics.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choosing and Aligning Metrics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/05-explainability.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Explainability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1991,6 +2283,56 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Precision, Recall, and F1: When Accuracy Is Not Enough">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introducing-precision-and-recall" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introducing precision and recall
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#precision-recall-trade-off" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Precision-recall trade-off
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f1-as-a-compromise-between-precision-and-recall" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        F1 as a compromise between precision and recall
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#overview-of-all-quantities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview of all quantities
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2041,6 +2383,7 @@
 <p><strong>Motivation</strong>: Your classifier reports 90% accuracy. That sounds good. But 90% of what? If 90% of examples in your dataset belong to the majority class, a model that always predicts "majority class" achieves 90% accuracy without learning a single pattern. So if accuracy is not the full story, how should we approach it?</p>
 <blockquote>
 <p>In this nugget you'll learn to read a confusion matrix, derive precision, recall, and F1 from it, and match the right metric to the problem at hand. These tools apply to any classifier.</p>
+<p><strong>Interactive demo note:</strong> You can explore the behavior of all metrics in this nugget using the <strong>Classification Threshold &amp; Metrics</strong> demo from my <a href="https://github.com/fgnussbaum/ds-ml-interactive-demos">✪ interactive data-science demos</a> repository.</p>
 </blockquote>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ul>
@@ -2072,43 +2415,56 @@
 </tr>
 </tbody>
 </table>
-<p>The definitions in detail:
-- <strong>True Positive (TP):</strong> the model predicted positive and was right = a correct detection.
-- <strong>True Negative (TN):</strong> the model predicted negative and was right = a correct dismissal.
-- <strong>False Positive (FP):</strong> the model predicted positive but was wrong = a false alarm.
-- <strong>False Negative (FN):</strong> the model predicted negative but missed a real case = a miss.</p>
-<p>In the <strong>classification</strong> demo from <a href="https://github.com/fgnussbaum/ds-ml-interactive-demos">🔗 interactive data-science demos</a> you can also explore the confusion matrix and what it change while you adjust the threshold slider: </p>
-<p><center><img src="../media/demos-screenshots/cf-confusion-matrix.jpg" alt="Confusion Matrix" width="220px"/></center></p>
+<p>The definitions in detail:</p>
+<ul>
+<li><strong>True Positive (TP):</strong> the model predicted positive and was right = a correct detection.</li>
+<li><strong>True Negative (TN):</strong> the model predicted negative and was right = a correct dismissal.</li>
+<li><strong>False Positive (FP):</strong> the model predicted positive but was wrong = a false alarm.</li>
+<li><strong>False Negative (FN):</strong> the model predicted negative but missed a real case = a miss.</li>
+</ul>
+<p>In the <strong>classification</strong> demo from <a href="https://github.com/fgnussbaum/ds-ml-interactive-demos">✪ interactive data-science demos</a> you can also explore the confusion matrix and what it change while you adjust the threshold slider: </p>
+<p><center><img src="../media/demos-screenshots/cf-confusionmatrix-85.png" alt="Confusion Matrix" width="220px"/></center></p>
 
 <blockquote>
 <p><strong>Tipp:</strong> A confusion matrix immediately reveals the potential pitfall of a classifier that just predicts the majority class (common for imbalanced classes). In the confusion matrix, one entire row will be empty or near-empty.</p>
 </blockquote>
 <hr />
 <h2 id="precision-recall-and-f1-when-accuracy-is-not-enough">Precision, Recall, and F1: When Accuracy Is Not Enough</h2>
+<h3 id="introducing-precision-and-recall">Introducing precision and recall</h3>
 <p>Class imbalance and assymetric error costs can be addressed by two complementary metrics.
-FOr these formulas we also use <span class="arithmatex">\(\text{P}\)</span> and <span class="arithmatex">\(\text{P'}\)</span> - the number of <em>actual</em> positives in the ground truth vs. the number of <em>predicted</em> positives.</p>
+For these formulas we also use <span class="arithmatex">\(\text{P}\)</span> and <span class="arithmatex">\(\text{P'}\)</span> - the number of <em>actual</em> positives in the ground truth vs. the number of <em>predicted</em> positives.</p>
 <p><strong>Precision</strong> answers: "Of all the records I predicted as positive, how many actually are?"</p>
 <div class="arithmatex">\[\text{Precision} = \frac{\text{TP}}{\text{P'}} = \frac{\text{TP}}{\text{TP} + \text{FP}}\]</div>
 <p><strong>Recall</strong> (also called sensitivity or true positive rate) answers: "Of all records that are actually positive, how many did I find?"</p>
 <div class="arithmatex">\[\text{Recall} =  \frac{\text{TP}}{\text{P}} = \frac{\text{TP}}{\text{TP} + \text{FN}}\]</div>
-<hr />
-<p>Precision and recall together represent a trade-off: 
-- You can always increase recall by predicting positive more aggressively, but then precision drops.
-- You can increase precision by predicting positive only when very confident, but then recall drops. </p>
-<p><center><img src="../media/demos-screenshots/df-metrics-vs-threshold.jpg" alt="PR trade-off" width="500px"/></center></p>
+<p>Here's an illustration of both metrics, using Venn diagrams:</p>
+<p><center><img src="../media/plots/classification_metrics_venn_precision_recall_balanced.png" alt="Precision and Recall" width="500px"/></center></p>
 
-<hr />
+<h3 id="precision-recall-trade-off">Precision-recall trade-off</h3>
+<p>Precision and recall together represent a trade-off: </p>
+<ul>
+<li>You can always increase recall by predicting positive more aggressively, but then precision drops.</li>
+<li>You can increase precision by predicting positive only when very confident, but then recall drops. </li>
+</ul>
+<p>The trade-off can be seen via precision-recall curves (their behavior is best explored with the interactive demo):</p>
+<p><center><img src="../media/demos-screenshots/cf-pr-tradeoff-curves.png" alt="PR trade-off" width="500px"/></center></p>
+
+<h3 id="f1-as-a-compromise-between-precision-and-recall">F1 as a compromise between precision and recall</h3>
 <p>Next, <strong>F1</strong> is the harmonic mean of precision and recall. It penalizes extreme imbalance between the two:</p>
-<div class="arithmatex">\[F1 = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}\]</div>
-<p>A model with precision = 0.9 and recall = 0.1 gets <span class="arithmatex">\(F1 = 0.18\)</span>, not 0.5. This is the often desired  behavior: A model that almost never fires for positives is not useful, even if it is almost always correct when it does.</p>
-<hr />
+<div class="arithmatex">\[F1 = \frac{2 \cdot\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}\]</div>
+<!-- = \frac{2}{1/\text{Precision} + 1/\text{Recall}} -->
+
+<p>A model with precision = 0.9 and recall = 0.1 gets <span class="arithmatex">\(F1 = 0.18\)</span>. In contrast, using arithmetic mean would give use a value of 0.5.
+Therefore, the harmonic mean penalizes strong discrepancy between precision and recall more, which is often desired. For example, a model that almost never fires for positives is seldomly useful.</p>
+<h3 id="overview-of-all-quantities">Overview of all quantities</h3>
 <p>Finally, here's another view to build some intuition about the quantities that appear in the confusion matrix and the metric definitions. It shows how quantities <em>flow</em> into one another: from <span class="arithmatex">\(\text{Total}\)</span> (all examples) → <span class="arithmatex">\(\text{P}\)</span> and <span class="arithmatex">\(\text{N}\)</span> (the number of <em>actual</em> positive/negative examples) → <span class="arithmatex">\(\text{TP}\)</span>, <span class="arithmatex">\(\text{FN}\)</span>, <span class="arithmatex">\(\text{FP}\)</span>, <span class="arithmatex">\(\text{TN}\)</span> (the confusion matrix cells, red arrows indicate "error" paths) → <span class="arithmatex">\(\text{P'}\)</span> and <span class="arithmatex">\(\text{N'}\)</span> (the number of examples that where <em>predicted</em> as positve/negative) → <span class="arithmatex">\(\text{Total}\)</span> again (all predictions).</p>
-<p><center><img src="../media/demos-screenshots/cf-all-quantities.jpg" alt="All Quantities and how they flow into each other" width="500px"/></center></p>
+<p><center><img src="../media/demos-screenshots/cf-all-quantities.png" alt="All Quantities and how they flow into each other" width="500px"/></center></p>
 
 <p>The left side in this diagram coresponds to the ground truth (actual labels) and the right side to "what the model predicts".</p>
 <hr />
 <h2 id="first-metric-choice-matching-the-metric-to-the-use-case">First Metric Choice: Matching the Metric to the Use Case</h2>
-<p>The right metric depends on the cost of each type of error in your specific application:</p>
+<p>The right metric depends on the cost of each type of error in your specific application.
+We cover this in detail in <a href="../part-06-reflection/04-aligning-metrics.html">🖝 Choosing and Aligning Metrics</a>. Here's an overview already:</p>
 <p><strong>When false negatives are more costly</strong> (missing a real case is worse than a false alarm): prioritize <strong>recall</strong>.</p>
 <blockquote>
 <p>Examples: screening for a disease, flagging safety incidents.</p>
@@ -2122,8 +2478,7 @@ FOr these formulas we also use <span class="arithmatex">\(\text{P}\)</span> and 
 <blockquote>
 <p><strong>Discussion:</strong> You build a model to predict whether a machine component is about to fail. Missing a failure (FN) causes expensive downtime and a safety risk. A false alarm (FP) triggers an unnecessary maintenance check costing a few hours. Which metric would you optimize for?</p>
 </blockquote>
-<p>In real-world business applications, it is not uncommon to model the actual costs using the FN and FP rates of a model explicitly.
-TODO: see business case writing.</p>
+<p>In real-world business applications, it is not uncommon to model the actual costs using the FN and FP rates of a model explicitly.</p>
 <hr />
 <h2 id="summary">Summary</h2>
 <ul>
@@ -2137,7 +2492,7 @@ TODO: see business case writing.</p>
 <blockquote>
 <p><strong>Navigation:</strong> <a href="07-classification-tasks.html">&lt;-- Classification Tasks</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="09-decision-trees.html">Decision Trees --&gt;</a></p>
 </blockquote>
-<p>Script v1.2 (2026-05-26) · FGN</p>
+<p>Script v1.3 (2026-06-09) · FGN</p>
 
 
 

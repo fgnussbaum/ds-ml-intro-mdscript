@@ -29,12 +29,32 @@
       
     
     
+  
       <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
       
 
 
     
+  <style>
+    :root {
+      --md-primary-fg-color: #00662c;
+      --md-primary-fg-color--light: #008c3a;
+      --md-primary-fg-color--dark: #004d21;
+      --md-accent-fg-color: #f9a607;
+    }
+    .md-header {
+      background-color: #49080e;
+    }
+    .md-content blockquote {
+      color: black;
+      background-color: #e8f5ec;
+    }
+    .md-typeset blockquote {
+      --md-default-fg-color--lighter: #00662c;
+    }
+  </style>
+
     
       
     
@@ -363,7 +383,7 @@
   <span class="md-ellipsis">
     
   
-    AI Ethics — A Primer
+    AI Ethics: A Primer
   
 
     
@@ -1375,7 +1395,7 @@
   <span class="md-ellipsis">
     
   
-    Part V: 1st Pass — Supervised Learning
+    Part V: 1st Pass - Supervised Learning
   
 
     
@@ -1391,7 +1411,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part V: 1st Pass — Supervised Learning
+    Part V: 1st Pass - Supervised Learning
   
 
           </label>
@@ -1737,7 +1757,7 @@
   <span class="md-ellipsis">
     
   
-    Appendix
+    Part VI: Principles That Transfer (Reflection)
   
 
     
@@ -1750,6 +1770,228 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part VI: Principles That Transfer (Reflection)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/00-index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/01-generalization.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Generalization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/02-start-simple.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Start Simple
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/03-baselines.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Baselines and the Good-Enough Bar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/04-aligning-metrics.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choosing and Aligning Metrics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/05-explainability.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Explainability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2109,12 +2351,8 @@
 <h3 id="measurement-errors">Measurement errors</h3>
 <p>Measurement error arise during the measurement process. For a continuous attribute, it is the numerical difference between the measured value and the true value. Two subtypes matter in practice:</p>
 <ul>
-<li>
-<p><strong>Noise</strong>: This is the random component of measurement error. A temperature sensor that fluctuates around the true value by ±0.5°C produces noise. Noise in a single measurement can often not be avoided. Averaging repeated measurements can reduce it.</p>
-</li>
-<li>
-<p><strong>Artifacts</strong>: These are deterministic (non-random) deviations. A camera that always produces a bright streak at the same pixel position introduces a systematic distortion. Averaging won't help here.</p>
-</li>
+<li><strong>Noise</strong>: This is the random component of measurement error. A temperature sensor that fluctuates around the true value by ±0.5°C produces noise. Noise in a single measurement can often not be avoided. Averaging repeated measurements can reduce it.</li>
+<li><strong>Artifacts</strong>: These are deterministic (non-random) deviations. A camera that always produces a bright streak at the same pixel position introduces a systematic distortion. Averaging won't help here.</li>
 </ul>
 <p>The following related concepts describe the costs of measurement errors:</p>
 <ul>
@@ -2131,12 +2369,8 @@
 </blockquote>
 <p>Other types of quality problems that should be spotted include:</p>
 <ul>
-<li>
-<p><strong>Inconsistencies</strong>: These can range from attribute values contradict another value (like a city name that does not match its zip code). Typos and mismatched units can also cause inconsistencies that need fixing.</p>
-</li>
-<li>
-<p><strong>Duplicate records</strong> are two or more records representing the same real-world entity. They inflate counts and bias statistics. When two records differ only in one or two fields, special attention may be needed: Were there data entry errors? Were datasets with different identifiers merged?</p>
-</li>
+<li><strong>Inconsistencies</strong>: These can range from attribute values contradict another value (like a city name that does not match its zip code). Typos and mismatched units can also cause inconsistencies that need fixing.</li>
+<li><strong>Duplicate records</strong> are two or more records representing the same real-world entity. They inflate counts and bias statistics. When two records differ only in one or two fields, special attention may be needed: Were there data entry errors? Were datasets with different identifiers merged?</li>
 </ul>
 <blockquote>
 <p><strong>Note:</strong> Some apparent duplicates are not duplicates at all. Two customers at the same address are not the same person. Verify the business logic before deleting any record. Same for editing data to fix an apparent inconsistency.</p>
@@ -2159,15 +2393,9 @@
 <h2 id="application-level-concerns">Application-Level Concerns</h2>
 <p>Some data quality problems have nothing to do with everything discussed so far, but with whether the data fits the intended use.</p>
 <ul>
-<li>
-<p><strong>Timeliness</strong>: Data ages. Customer behavior recorded three years ago may no longer reflect current patterns. Check when the data was collected and whether the underlying phenomenon could have shifted since then.</p>
-</li>
-<li>
-<p><strong>Relevance</strong>: The data must contain the right attributes to answer the question. Predicting car accident rates without age or driving-experience information is unlikely to produce a useful model, regardless of how clean the data is.</p>
-</li>
-<li>
-<p><strong>Sampling bias</strong>: The sample may not represent the population you care about. A voluntary survey reaches people who choose to respond, which systematically underrepresents disengaged groups. This is not a measurement error in individual records. It is a structural problem in how the data was gathered (survey like ESS take greate care to avoid this kind of bias).</p>
-</li>
+<li><strong>Timeliness</strong>: Data ages. Customer behavior recorded three years ago may no longer reflect current patterns. Check when the data was collected and whether the underlying phenomenon could have shifted since then.</li>
+<li><strong>Relevance</strong>: The data must contain the right attributes to answer the question. Predicting car accident rates without age or driving-experience information is unlikely to produce a useful model, regardless of how clean the data is.</li>
+<li><strong>Sampling bias</strong>: The sample may not represent the population you care about. A voluntary survey reaches people who choose to respond, which systematically underrepresents disengaged groups. This is not a measurement error in individual records. It is a structural problem in how the data was gathered (survey like ESS take greate care to avoid this kind of bias).</li>
 </ul>
 <p>Another concern is that well-maintained data is that of documentation.</p>
 <blockquote>
@@ -2178,7 +2406,7 @@
 <ul>
 <li>Measurement errors include noise (random, can be averaged out) and artifacts (systematic, cannot). Precision, bias, and accuracy describe different ways measurement can fail.</li>
 <li>Data collection errors introduce omissions or inappropriate inclusions. Inconsistencies and duplicate records are structural quality problems that require domain knowledge to resolve.</li>
-<li>The <code>count</code> row in <code>df.describe()</code> is your first missing-value check. MCAR, MAR, and MNAR patterns determine which handling strategy makes sense. Strategies are covered in Part 4.</li>
+<li>The <code>count</code> row in <code>df.describe()</code> is your first missing-value check. The randomness pattern determine which handling strategy makes sense. Strategies are covered in Part 4.</li>
 <li>Application-level concerns, including timeliness, relevance, sampling bias, and data documentation, determine whether data is fit for purpose regardless of its technical cleanliness.</li>
 </ul>
 <p>As always: Happy learning, happy life! 🫶</p>
@@ -2186,7 +2414,7 @@
 <blockquote>
 <p><strong>Navigation:</strong> <a href="04-eda-descriptive-stats.html">&lt;-- EDA: Descriptive Statistics</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="06-eda-distributions.html">EDA: Distributions --&gt;</a></p>
 </blockquote>
-<p>Script v1.2 (2026-05-26) · FGN</p>
+<p>Script v1.3 (2026-06-09) · FGN</p>
 
 
 

@@ -29,12 +29,32 @@
       
     
     
+  
       <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
       
 
 
     
+  <style>
+    :root {
+      --md-primary-fg-color: #00662c;
+      --md-primary-fg-color--light: #008c3a;
+      --md-primary-fg-color--dark: #004d21;
+      --md-accent-fg-color: #f9a607;
+    }
+    .md-header {
+      background-color: #49080e;
+    }
+    .md-content blockquote {
+      color: black;
+      background-color: #e8f5ec;
+    }
+    .md-typeset blockquote {
+      --md-default-fg-color--lighter: #00662c;
+    }
+  </style>
+
     
       
     
@@ -363,7 +383,7 @@
   <span class="md-ellipsis">
     
   
-    AI Ethics — A Primer
+    AI Ethics: A Primer
   
 
     
@@ -1245,7 +1265,7 @@
   <span class="md-ellipsis">
     
   
-    Part V: 1st Pass — Supervised Learning
+    Part V: 1st Pass - Supervised Learning
   
 
     
@@ -1261,7 +1281,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part V: 1st Pass — Supervised Learning
+    Part V: 1st Pass - Supervised Learning
   
 
           </label>
@@ -1748,7 +1768,7 @@
   <span class="md-ellipsis">
     
   
-    Appendix
+    Part VI: Principles That Transfer (Reflection)
   
 
     
@@ -1761,6 +1781,228 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part VI: Principles That Transfer (Reflection)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/00-index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/01-generalization.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Generalization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/02-start-simple.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Start Simple
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/03-baselines.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Baselines and the Good-Enough Bar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/04-aligning-metrics.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choosing and Aligning Metrics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/05-explainability.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Explainability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2119,6 +2361,7 @@
 <p><strong>Motivation</strong>: Let's say you want to predict tips in a restaurant setting: larger bills tend to produce larger tips, but the relationship is not perfectly consistent. Group size, day of the week, and other factors all could play a role. Linear regression is the first tool for capturing that structure: it fits a line (or a hyperplane) through the data and uses it to make predictions.</p>
 <blockquote>
 <p>In this nugget you will learn how to fit a linear regression model to one or more input variables. You will see how the model's parameters are found by minimizing a loss function, and you will learn the standard metrics for evaluating a regression result.</p>
+<p><strong>Interactive demo note:</strong> You can try everything explained here using the <strong>Loss Functions</strong> demo from my <a href="https://github.com/fgnussbaum/ds-ml-interactive-demos">✪ interactive data-science demos</a> repository.</p>
 </blockquote>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ul>
@@ -2155,10 +2398,10 @@ For many input features, visualizing the hyperplane is difficult, so we often de
 <p>Training the model is now an optimization problem: find the weight vector <span class="arithmatex">\(\mathbf{w}\)</span> that minimizes the prediction error <span class="arithmatex">\(\text{MSE}(\mathbf{w})\)</span>. For <strong>ordinary least squares (OLS)</strong>, setting the partial derivatives to zero yields an exact solution: see the bonus section below.</p>
 <p>Closed-form solutions don't always exist, which then requires algorithms like <a href="03-gradient-descent.html">🖝 Gradient Descent</a> that we discuss next.</p>
 <hr />
-<p>There are usually several options for loss functions. MSE that we discussed so far sensitive to outliers: a single very large residual, once squared, can dominate the total. An alternative is <strong>least absolute deviations (LAD)</strong>, which sums absolute residuals rather than squared ones:</p>
-<div class="arithmatex">\[\text{LAD}(\mathbf{w}) = \frac{1}{n} \sum_{j=1}^{n} \bigl|y_j - h_\mathbf{w}(\mathbf{x}_j)\bigr|.\]</div>
-<p>LAD gives large errors the same linear weight as small ones, so outliers have less pull on the fitted line. You can try it in the <strong>regression: loss functions</strong> demo from <a href="https://github.com/fgnussbaum/ds-ml-interactive-demos">🔗 interactive data-science demos</a>. This demo allows you to add/move points and see what happens with the fitted regression lines.</p>
-<p><center><img src="../media/demos-screenshots/LAD-vs-OLS.jpg" alt="Screenshot of interactive demo: LAD (orange) vs OLS (blue); outlier heavily influence OLS fit" width="500px"/></center></p>
+<p>There are usually several options for loss functions. MSE that we discussed so far sensitive to outliers: a single very large residual, once squared, can dominate the total. An alternative is <strong>mean average error (MAE)</strong>, which sums absolute residuals rather than squared ones:</p>
+<div class="arithmatex">\[\text{MAE}(\mathbf{w}) = \frac{1}{n} \sum_{j=1}^{n} \bigl|y_j - h_\mathbf{w}(\mathbf{x}_j)\bigr|.\]</div>
+<p>MAE gives large errors the same linear weight as small ones, so outliers have less pull on the fitted line. You can try it in the <strong>regression: loss functions</strong> demo from <a href="https://github.com/fgnussbaum/ds-ml-interactive-demos">✪ interactive data-science demos</a>. This demo allows you to add/move points and see what happens with the fitted regression lines.</p>
+<p><center><img src="../media/demos-screenshots/LAD-vs-OLS.png" alt="Screenshot of interactive demo: LAD (orange) vs OLS (blue); outlier heavily influence OLS fit" width="500px"/></center></p>
 
 <hr />
 <h2 id="evaluating-regression">Evaluating Regression</h2>
@@ -2166,9 +2409,15 @@ For many input features, visualizing the hyperplane is difficult, so we often de
 <p><strong>Mean Squared Error (MSE):</strong> the average squared residual on the test set. Squaring ensures negative and positive errors do not cancel and penalizes large misses more than small ones.</p>
 <div class="arithmatex">\[\text{MSE} = \frac{1}{n_\text{test}} \sum_{j=1}^{n_\text{test}} (y_j - \hat{y}_j)^2\]</div>
 <p>This is the same MSE used in the MSE loss function, now evaluated on the test set with the <em>learned</em> weights.</p>
-<p><strong>Root Mean Squared Error (RMSE):</strong> <span class="arithmatex">\(\sqrt{\text{MSE}}\)</span>. This restores the original unit. An RMSE of $0.90 on the tips dataset means predictions are off by about 90 cents on average. RMSE is the standard metric for reporting regression results to stakeholders.</p>
+<p><strong>Root Mean Squared Error (RMSE):</strong> <span class="arithmatex">\(\sqrt{\text{MSE}}\)</span>. This restores the original unit. An RMSE of 0.90 on the tips dataset means predictions are off by about 90 cents on average. RMSE is the standard metric for reporting regression results to stakeholders.</p>
 <blockquote>
 <p><strong>Discussion 1:</strong> Your regression model for restaurant tips achieves RMSE = $0.90. Is that a useful result? What would you need to know before answering?</p>
+</blockquote>
+<p><strong>Coefficient of Determination (R²):</strong> measures what fraction of the variance in the target is explained by the model:</p>
+<div class="arithmatex">\[R^2 = 1 - \frac{\sum_{j=1}^{n_\text{test}} (y_j - \hat{y}_j)^2}{\sum_{j=1}^{n_\text{test}} (y_j - \bar{y})^2} = 1 - \frac{\text{MSE}}{\text{Var}(y)}.\]</div>
+<p>Here, the numerator represents the unexplained variance left in the residuals, and the denominator represents the total variance of the target.</p>
+<p>A perfect model yields <span class="arithmatex">\(R^2 = 1\)</span>, and the baseline model that always predicts the mean yields <span class="arithmatex">\(R^2 = 0\)</span>. Negative values are possible when the model is worse than the mean baseline (see also <a href="../part-06-reflection/03-baselines.html">🖝 Baselines and the Good-Enough Bar</a>). R² is unit-free, which makes it easy to compare models across different targets and scales.</p>
+<blockquote>
 <p><strong>Discussion 2:</strong> Is trying to predict <code>tip</code> from <code>total_bill</code> really an interesting question? Or could there actually ba a far more interesting question? (Data science is about finding good questions: Here's one - can you spot it?)</p>
 </blockquote>
 <p>See also <a href="../part-zz-appendix/04-regression-depth.html">🖝 Regression: Interpretation and Assumptions</a> for additional details and aspects of evaluation.</p>
@@ -2184,7 +2433,8 @@ For many input features, visualizing the hyperplane is difficult, so we often de
 </blockquote>
 <hr />
 <h2 id="bonus-the-combinatorial-solution-for-lad">Bonus: The Combinatorial Solution for LAD</h2>
-<p>If you tilt or shift a candidate line slightly, every residual <span class="arithmatex">\(r_j = y_j - h_\mathbf{w}(\mathbf{x}_j)\)</span> changes smoothly, so <span class="arithmatex">\(\sum |r_j|\)</span> also changes smoothly: It decreases or increases at a "constant" rate. The only disruption comes when the line crosses a data point: This causes its residual to flip sign, and thereby the LAD loss changes its rate of change (intuively, the sign change causes this residual to contribute in the "other" direction).</p>
+<p><strong>Least absolute deviations (LAD)</strong>
+If you tilt or shift a candidate line slightly, every residual <span class="arithmatex">\(r_j = y_j - h_\mathbf{w}(\mathbf{x}_j)\)</span> changes smoothly, so <span class="arithmatex">\(\sum |r_j|\)</span> also changes smoothly: It decreases or increases at a "constant" rate. The only disruption comes when the line crosses a data point: This causes its residual to flip sign, and thereby the LAD loss changes its rate of change (intuively, the sign change causes this residual to contribute in the "other" direction).</p>
 <p>The LAD loss is therefore <strong>piecewise-linear</strong>, with "kinks" only where the line passes through a data point, and the minimum always sits at one of those kinks. A line has two free parameters (slope and intercept), so the piecewise-linear loss surface has vertices where exactly two faces meet — two residuals are simultaneously zero — meaning <strong>an optimal solution can always be found where the line passes through two data points</strong>. You can find it in principle by checking all <span class="arithmatex">\(\binom{n}{2}\)</span> pairs and keeping the one with the smallest total absolute deviation.</p>
 <p><strong>The equal-split condition</strong> tells you when a candidate line is optimal: the points above and below must balance. Formally, the optimality condition is</p>
 <div class="arithmatex">\[\sum_{j=1}^{n} \operatorname{sgn}(r_j) = 0, \qquad \sum_{j=1}^{n} \operatorname{sgn}(r_j)\, x_j = 0.\]</div>
@@ -2201,7 +2451,7 @@ For many input features, visualizing the hyperplane is difficult, so we often de
 <blockquote>
 <p><strong>Navigation:</strong> <a href="01-supervised-learning.html">&lt;-- Supervised Learning</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="03-gradient-descent.html">Gradient Descent --&gt;</a></p>
 </blockquote>
-<p>Script v1.2 (2026-05-26) · FGN</p>
+<p>Script v1.3 (2026-06-09) · FGN</p>
 
 
 

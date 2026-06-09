@@ -29,12 +29,32 @@
       
     
     
+  
       <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
       
 
 
     
+  <style>
+    :root {
+      --md-primary-fg-color: #00662c;
+      --md-primary-fg-color--light: #008c3a;
+      --md-primary-fg-color--dark: #004d21;
+      --md-accent-fg-color: #f9a607;
+    }
+    .md-header {
+      background-color: #49080e;
+    }
+    .md-content blockquote {
+      color: black;
+      background-color: #e8f5ec;
+    }
+    .md-typeset blockquote {
+      --md-default-fg-color--lighter: #00662c;
+    }
+  </style>
+
     
       
     
@@ -363,7 +383,7 @@
   <span class="md-ellipsis">
     
   
-    AI Ethics — A Primer
+    AI Ethics: A Primer
   
 
     
@@ -1245,7 +1265,7 @@
   <span class="md-ellipsis">
     
   
-    Part V: 1st Pass — Supervised Learning
+    Part V: 1st Pass - Supervised Learning
   
 
     
@@ -1261,7 +1281,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part V: 1st Pass — Supervised Learning
+    Part V: 1st Pass - Supervised Learning
   
 
           </label>
@@ -1709,7 +1729,7 @@
   <span class="md-ellipsis">
     
   
-    Appendix
+    Part VI: Principles That Transfer (Reflection)
   
 
     
@@ -1722,6 +1742,228 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part VI: Principles That Transfer (Reflection)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/00-index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/01-generalization.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Generalization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/02-start-simple.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Start Simple
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/03-baselines.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Baselines and the Good-Enough Bar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/04-aligning-metrics.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choosing and Aligning Metrics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/05-explainability.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Explainability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2060,15 +2302,19 @@
 <h2 id="regression-vs-classification">Regression vs. Classification</h2>
 <p>The output type determines which supervised family you are in.</p>
 <p><strong>Regression</strong> predicts a continuous numeric value. The target can be any real number within a range.
-Examples:
-- Predicting a respondent's happiness score from their age, health, and social circumstances.
-- Forecasting tomorrow's temperature from today's pressure and wind data.
-- Estimating the load on a structural component from sensor readings.</p>
+Examples:</p>
+<ul>
+<li>Predicting a respondent's happiness score from their age, health, and social circumstances.</li>
+<li>Forecasting tomorrow's temperature from today's pressure and wind data.</li>
+<li>Estimating the load on a structural component from sensor readings.</li>
+</ul>
 <p><strong>Classification</strong> predicts a discrete category. The target is one of a fixed set of class labels.
-Examples:
-- Predicting whether a respondent supports EU membership (yes / no).
-- Deciding whether an email is spam or not.
-- Diagnosing whether a sensor vibration pattern indicates a machine fault (fault / normal).</p>
+Examples:</p>
+<ul>
+<li>Predicting whether a respondent supports EU membership (yes / no).</li>
+<li>Deciding whether an email is spam or not.</li>
+<li>Diagnosing whether a sensor vibration pattern indicates a machine fault (fault / normal).</li>
+</ul>
 <p>For reference, here's an overview of both supervised learning families:</p>
 <table>
 <thead>
@@ -2107,7 +2353,7 @@ Examples:
 
 <p>You enter the inner loop after Data Preparation and exit it, for now, with models that have been evaluated and compared on held-out data.</p>
 <p>The insights from evaluation may prompt you to revisit earlier phases: You may discover that a feature needs re-engineering, that your training data has a class-imbalance problem, or that the problem is better framed differently.</p>
-<p>This is the <strong>first pass</strong>: breadth over depth. In the next part, we'll pause for some deeper reflection, see <a href="../part-06-reflection/00-index.md">🖝 Part VI: Principles That Transfer (Reflection)</a>.</p>
+<p>This is the <strong>first pass</strong>: breadth over depth. In the next part, we'll pause for some deeper reflection, see <a href="../part-06-reflection/00-index.html">🖝 Part VI: Principles That Transfer (Reflection)</a>.</p>
 <hr />
 <h2 id="summary">Summary</h2>
 <ul>
@@ -2122,7 +2368,7 @@ Examples:
 <blockquote>
 <p><strong>Navigation:</strong> <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="02-linear-regression.html">Linear Regression --&gt;</a></p>
 </blockquote>
-<p>Script v1.2 (2026-05-26) · FGN</p>
+<p>Script v1.3 (2026-06-09) · FGN</p>
 
 
 

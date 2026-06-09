@@ -29,12 +29,32 @@
       
     
     
+  
       <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
       
 
 
     
+  <style>
+    :root {
+      --md-primary-fg-color: #00662c;
+      --md-primary-fg-color--light: #008c3a;
+      --md-primary-fg-color--dark: #004d21;
+      --md-accent-fg-color: #f9a607;
+    }
+    .md-header {
+      background-color: #49080e;
+    }
+    .md-content blockquote {
+      color: black;
+      background-color: #e8f5ec;
+    }
+    .md-typeset blockquote {
+      --md-default-fg-color--lighter: #00662c;
+    }
+  </style>
+
     
       
     
@@ -363,7 +383,7 @@
   <span class="md-ellipsis">
     
   
-    AI Ethics — A Primer
+    AI Ethics: A Primer
   
 
     
@@ -1245,7 +1265,7 @@
   <span class="md-ellipsis">
     
   
-    Part V: 1st Pass — Supervised Learning
+    Part V: 1st Pass - Supervised Learning
   
 
     
@@ -1261,7 +1281,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part V: 1st Pass — Supervised Learning
+    Part V: 1st Pass - Supervised Learning
   
 
           </label>
@@ -1720,7 +1740,7 @@
   <span class="md-ellipsis">
     
   
-    Appendix
+    Part VI: Principles That Transfer (Reflection)
   
 
     
@@ -1733,6 +1753,228 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part VI: Principles That Transfer (Reflection)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/00-index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/01-generalization.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Generalization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/02-start-simple.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Start Simple
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/03-baselines.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Baselines and the Good-Enough Bar
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/04-aligning-metrics.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Choosing and Aligning Metrics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-06-reflection/05-explainability.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Explainability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2062,6 +2304,7 @@
 <p><strong>Motivation</strong>: Every supervised model is trained to minimize error on training data. But the goal is to predict well on data the model has never seen. These two objectives can work against each other. When they do, the model fails in practice even when the training numbers look good.</p>
 <blockquote>
 <p>You will use polynomial regression as a visually transparent lens to study this problem. You will observe what underfitting and overfitting look like concretely Then, we'll consider bias-variance trade-off, the underlying tension that governs every supervised learning model.</p>
+<p><strong>Interactive demo note:</strong> You can try everything explained here using the <strong>Under- &amp; Overfitting</strong> demo from my <a href="https://github.com/fgnussbaum/ds-ml-interactive-demos">✪ interactive data-science demos</a> repository.</p>
 </blockquote>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ul>
@@ -2084,8 +2327,8 @@
 <p>The degree <span class="arithmatex">\(d\)</span> is not a weight the optimizer adjusts. You set it before training begins. Turning <span class="arithmatex">\(d\)</span> up or down directly controls how flexible the model is, making it an ideal tool for observing what happens at the extremes.</p>
 <hr />
 <h2 id="underfitting-overfitting-and-the-sweet-spot">Underfitting, Overfitting, and the Sweet Spot</h2>
-<p>Consider a dataset generated from a cubic relationship with noise added. The true pattern has degree 3, but you do not know that. You fit polynomial models of increasing degree and compare how each curve follows the data.</p>
-<p><center><img src="../media/demos-screenshots/of-under-best-overfit.jpg" alt="Plot with underfitting (degree 0/1), best fit (degree 7; though true model has degree three, curve fits smoothly nonetheless), overfitting (degree 20)" width="500px"/></center></p>
+<p>Consider a datasets is generated from a cubic relationship with noise added. The true pattern has degree 3, but you do not know that. You fit polynomial models of increasing degree and compare how each curve follows the data.</p>
+<p><center><img src="../media/demos-screenshots/of-under-best-overfit.png" alt="Plot with underfitting (degree 0/1), best fit (degree 7; though true model has degree three, curve fits smoothly nonetheless), overfitting (degree 20)" width="500px"/></center></p>
 
 <p>Three regimes are visible:</p>
 <ul>
@@ -2094,7 +2337,7 @@
 <li><strong>Overfitting (high degree):</strong> The curve threads through nearly every training point, including the noise. Training error approaches zero. Validation error climbs sharply. The model has memorized the particular sample rather than learned the pattern.</li>
 </ul>
 <p>The RMSE plot below makes the story quantitative. It shows training and validation error across degrees 0 to 20 for a single training dataset.</p>
-<p><center><img src="../media/demos-screenshots/of-rsme-by-degree.jpg" alt="plot of train and validation RSMEs for degree 0...20." width="500px"/></center></p>
+<p><center><img src="../media/demos-screenshots/of-rsme-by-degree.png" alt="plot of train and validation RSMEs for degree 0...20." width="500px"/></center></p>
 
 <p>Training error falls continuously as degree increases: more flexibility always reduces error on data the model is training on. Validation error follows roughly a U-shape. It decreases as the model gains enough capacity to represent the true pattern, reaches a minimum, then rises as the model begins fitting noise. The target is the degree that minimizes validation error, not training error.</p>
 <p>Note that here the minimum sits in a plateau rather than a sharp point. Degrees 3 through roughly 5 perform similarly. The model does not need to match the exact true degree to generalize well.</p>
@@ -2105,14 +2348,14 @@
 <hr />
 <h2 id="bias-and-variance-two-failure-modes">Bias and Variance: Two Failure Modes</h2>
 <p>The plots above show results for one particular training dataset. A natural question follows: How stable are these results? Would a different sample of the same size, drawn from the same population, give a similar picture?</p>
-<p>The plot below repeats the experiment across 100 different samples from the true population <em>(which here means: different noisy observations from the "true" cubic data-generating function.)</em>. For each sample and each degree, the model is trained and evaluated. Individual error curves are shown faintly behind the average error curves:</p>
-<p><center><img src="../media/demos-screenshots/of-biasvariance.jpg" alt="bias-variance trade-off with polynomial fit degree 0 to 10" width="500px"/></center></p>
+<p>The plot below from the <a href="https://github.com/fgnussbaum/ds-ml-interactive-demos">✪ Under-/Overfitting demo</a> repeats the experiment across 100 different samples from the true population <em>(which here means: different noisy observations from the "true" cubic data-generating function.)</em>. For each sample and each degree, the model is trained and evaluated. Individual error curves are shown faintly behind the average error curves:</p>
+<p><center><img src="../media/demos-screenshots/of-biasvariance.png" alt="bias-variance trade-off with polynomial fit degree 0 to 10" width="500px"/></center></p>
 
 <p>The plots provides a sense how much error rates varies across samples. Two distinct failure modes become visible:</p>
 <p><strong>High bias (low degree).</strong> Models of very low degree produce high error on both training and validation data, regardless of which sample they trained on. The error is consistently high because the model class itself cannot capture the pattern. This is <strong>underfitting</strong>. Its defining signature: both errors are high and close together, and adding more training data would not help.</p>
 <p><strong>High variance (high degree).</strong> Models of very high degree achieve low training error on every sample, but their validation errors are high and vary considerably across samples (do you see the "spagetthi" curves?). Explanation: Each model fits its particular training sample closely, including that sample's noise, so different samples produce very different fitted curves. This is overfitting. Its defining signature: a large gap between training error (low) and validation error (high).</p>
 <p>The underlying tension has a name: the <strong>bias-variance trade-off</strong>. Increasing complexity reduces bias and increases variance. Decreasing it does the opposite. The sweet spot, where total validation error is lowest, lies between the extremes.</p>
-<p>Here, the complexity dial was polynomial degree. Every supervised model has an analogous dial that governs this trade-off. How to treat it systematically will be the subject of <a href="06-hyperparameters.html">🖝 Hyperparameter Optimization</a>. How to measure and diagnose generalization more rigorously, including learning curves and cross-validation, is covered in <a href="../part-06-reflection/01-generalization.md">🖝 Generalization</a>. In the next nugget, we take another view on overfitting, when we discuss <a href="05-regularized-regression.html">🖝 Regularized Regression</a>.</p>
+<p>Here, the complexity dial was polynomial degree. Every supervised model has an analogous dial that governs this trade-off. How to treat it systematically will be the subject of <a href="06-hyperparameters.html">🖝 Hyperparameter Optimization</a>. How to measure and diagnose generalization more rigorously, including learning curves and cross-validation, is covered in <a href="../part-06-reflection/01-generalization.html">🖝 Generalization</a>. In the next nugget, we take another view on overfitting, when we discuss <a href="05-regularized-regression.html">🖝 Regularized Regression</a>.</p>
 <hr />
 <h2 id="summary">Summary</h2>
 <ul>
@@ -2127,7 +2370,7 @@
 <blockquote>
 <p><strong>Navigation:</strong> <a href="03-gradient-descent.html">&lt;-- Gradient Descent</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="05-regularized-regression.html">Regularized Regression --&gt;</a></p>
 </blockquote>
-<p>Script v1.2 (2026-05-26) · FGN</p>
+<p>Script v1.3 (2026-06-09) · FGN</p>
 
 
 
