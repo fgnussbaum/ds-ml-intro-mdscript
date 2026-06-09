@@ -34,12 +34,14 @@ The output type determines which supervised family you are in.
 
 **Regression** predicts a continuous numeric value. The target can be any real number within a range.
 Examples:
+
 - Predicting a respondent's happiness score from their age, health, and social circumstances.
 - Forecasting tomorrow's temperature from today's pressure and wind data.
 - Estimating the load on a structural component from sensor readings.
 
 **Classification** predicts a discrete category. The target is one of a fixed set of class labels.
 Examples:
+
 - Predicting whether a respondent supports EU membership (yes / no).
 - Deciding whether an email is spam or not.
 - Diagnosing whether a sensor vibration pattern indicates a machine fault (fault / normal).
@@ -87,4 +89,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [Linear Regression -->](02-linear-regression.md)
 
-Script v1.2 (2026-05-26) · FGN
+Script v1.3 (2026-06-09) · FGN

@@ -53,7 +53,7 @@ The technical blocks in the rest of this course will land differently when you h
 
 > Pick your roughest candidate idea. Find out if there is data. **Open it**.
 
-That is enough for today. Unless [🔗 Zaigarnik effect](https://en.wikipedia.org/wiki/Zeigarnik_effect) carries you on.
+That is enough for today. Unless [🔗 Zeigarnik effect](https://en.wikipedia.org/wiki/Zeigarnik_effect) carries you on.
 
 ---
 
@@ -71,4 +71,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Reality-Checking Your Idea](04-reality-checking-your-idea.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part III: Data Understanding -->](../part-03-data-understanding/00-index.md)
 
-Script v1.2 (2026-05-26) · FGN
+Script v1.3 (2026-06-09) · FGN

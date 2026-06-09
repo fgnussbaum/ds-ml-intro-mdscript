@@ -4,6 +4,7 @@ site_url: https://fgnussbaum.github.io/ds-ml-intro-mdscript/
 docs_dir: docs
 theme:
   name: material
+  custom_dir: overrides
 
 markdown_extensions:
   - pymdownx.arithmatex:
@@ -17,7 +18,7 @@ nav:
     - Overview: part-01-the-big-picture/00-index.md
     - Course Orientation: part-01-the-big-picture/01-course-orientation.md
     - What Is Artificial Intelligence?: part-01-the-big-picture/02-intro-ai.md
-    - AI Ethics — A Primer: part-01-the-big-picture/03-ethics-and-responsibility.md
+    - "AI Ethics: A Primer": part-01-the-big-picture/03-ethics-and-responsibility.md
     - CRISP-DM: part-01-the-big-picture/04-crisp-dm.md
     - Academia vs. Business Data Science: part-01-the-big-picture/05-academia-vs-business-ds.md
   - "Part II: Data-Science Projects":
@@ -45,7 +46,7 @@ nav:
     - Data Splits: part-04-data-preparation/04-data-splits.md
     - Data Preparation Checklist: part-04-data-preparation/05-prep-checklist.md
     - Data Preparation Best Practices: part-04-data-preparation/06-prep-principles.md
-  - "Part V: 1st Pass — Supervised Learning":
+  - "Part V: 1st Pass - Supervised Learning":
     - Overview: part-05-supervised-learning/00-index.md
     - Supervised Learning: part-05-supervised-learning/01-supervised-learning.md
     - Linear Regression: part-05-supervised-learning/02-linear-regression.md
@@ -57,6 +58,13 @@ nav:
     - Classification Evaluation: part-05-supervised-learning/08-classification-evaluation.md
     - Decision Trees: part-05-supervised-learning/09-decision-trees.md
     - Random Forests: part-05-supervised-learning/10-random-forests.md
+  - "Part VI: Principles That Transfer (Reflection)":
+    - Overview: part-06-reflection/00-index.md
+    - Generalization: part-06-reflection/01-generalization.md
+    - Start Simple: part-06-reflection/02-start-simple.md
+    - Baselines and the Good-Enough Bar: part-06-reflection/03-baselines.md
+    - Choosing and Aligning Metrics: part-06-reflection/04-aligning-metrics.md
+    - Explainability: part-06-reflection/05-explainability.md
   - Appendix:
     - Overview: part-zz-appendix/00-index.md
     - Beyond Tabular Data: part-zz-appendix/01-beyond-tabular-eda.md

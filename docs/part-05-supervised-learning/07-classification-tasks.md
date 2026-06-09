@@ -44,11 +44,11 @@ Many classifiers work in two steps: first they compute a continuous **score** fo
 
 $$\hat{y} = \begin{cases} 1 & \text{if score} \geq \tau \\ 0 & \text{otherwise} \end{cases}$$
 
-The **classification** demo from the [🔗 interactive data-science demos](https://github.com/fgnussbaum/ds-ml-interactive-demos) repository illustrates the idea:
+The **classification** demo from the [✪ interactive data-science demos](https://github.com/fgnussbaum/ds-ml-interactive-demos) repository illustrates the idea:
 
-<p><center><img src="../media/demos-screenshots/cf-threshold2.jpg" alt="" width="500px"/></center></p>
+<p><center><img src="../media/demos-screenshots/cf-threshold-85.png" alt="" width="500px"/></center></p>
 
-In this chart, each point corresponds to a training example: circles are the negative class, squares are the positive class. The slider controls $\tau$=$t$, and every point above it is predicted positive. Examples that are classified incorrect are crossed out.
+In this chart, each point corresponds to a training example: circles are the negative class, squares are the positive class. The slider controls $\tau$, and every point above it is predicted positive. Examples that are classified incorrect are crossed out.
 
 - Moving $\tau$ lower catches more positive examples but also misclassifies more negatives.
 - Moving it higher reduces false alarms but misses real cases.
@@ -120,4 +120,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Hyperparameter Optimization](06-hyperparameters.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Classification Evaluation -->](08-classification-evaluation.md)
 
-Script v1.2 (2026-05-26) · FGN
+Script v1.3 (2026-06-09) · FGN

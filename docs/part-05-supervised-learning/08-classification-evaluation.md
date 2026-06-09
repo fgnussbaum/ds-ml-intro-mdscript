@@ -10,6 +10,8 @@
 
 > In this nugget you'll learn to read a confusion matrix, derive precision, recall, and F1 from it, and match the right metric to the problem at hand. These tools apply to any classifier.
 
+> **Interactive demo note:** You can explore the behavior of all metrics in this nugget using the **Classification Threshold & Metrics** demo from my [✪ interactive data-science demos](https://github.com/fgnussbaum/ds-ml-interactive-demos) repository.
+
 ## Table of Contents
 
 - [The Confusion Matrix](#the-confusion-matrix)
@@ -27,13 +29,14 @@ In [🖝 Classification Tasks](../part-05-supervised-learning/07-classification-
 | **Actual Negative** | False Positive (FP) | True Negative (TN) |
 
 The definitions in detail:
+
 - **True Positive (TP):** the model predicted positive and was right = a correct detection.
 - **True Negative (TN):** the model predicted negative and was right = a correct dismissal.
 - **False Positive (FP):** the model predicted positive but was wrong = a false alarm.
 - **False Negative (FN):** the model predicted negative but missed a real case = a miss.
 
-In the **classification** demo from [🔗 interactive data-science demos](https://github.com/fgnussbaum/ds-ml-interactive-demos) you can also explore the confusion matrix and what it change while you adjust the threshold slider: 
-<p><center><img src="../media/demos-screenshots/cf-confusion-matrix.jpg" alt="Confusion Matrix" width="220px"/></center></p>
+In the **classification** demo from [✪ interactive data-science demos](https://github.com/fgnussbaum/ds-ml-interactive-demos) you can also explore the confusion matrix and what it change while you adjust the threshold slider: 
+<p><center><img src="../media/demos-screenshots/cf-confusionmatrix-85.png" alt="Confusion Matrix" width="220px"/></center></p>
 
 > **Tipp:** A confusion matrix immediately reveals the potential pitfall of a classifier that just predicts the majority class (common for imbalanced classes). In the confusion matrix, one entire row will be empty or near-empty.
 
@@ -41,8 +44,10 @@ In the **classification** demo from [🔗 interactive data-science demos](https:
 
 ## Precision, Recall, and F1: When Accuracy Is Not Enough
 
+### Introducing precision and recall
+
 Class imbalance and assymetric error costs can be addressed by two complementary metrics.
-FOr these formulas we also use $\text{P}$ and $\text{P'}$ - the number of _actual_ positives in the ground truth vs. the number of _predicted_ positives.
+For these formulas we also use $\text{P}$ and $\text{P'}$ - the number of _actual_ positives in the ground truth vs. the number of _predicted_ positives.
 
 **Precision** answers: "Of all the records I predicted as positive, how many actually are?"
 
@@ -52,27 +57,35 @@ $$\text{Precision} = \frac{\text{TP}}{\text{P'}} = \frac{\text{TP}}{\text{TP} + 
 
 $$\text{Recall} =  \frac{\text{TP}}{\text{P}} = \frac{\text{TP}}{\text{TP} + \text{FN}}$$
 
----
+Here's an illustration of both metrics, using Venn diagrams:
+<p><center><img src="../media/plots/classification_metrics_venn_precision_recall_balanced.png" alt="Precision and Recall" width="500px"/></center></p>
+
+### Precision-recall trade-off
 
 Precision and recall together represent a trade-off: 
+
 - You can always increase recall by predicting positive more aggressively, but then precision drops.
 - You can increase precision by predicting positive only when very confident, but then recall drops. 
 
-<p><center><img src="../media/demos-screenshots/df-metrics-vs-threshold.jpg" alt="PR trade-off" width="500px"/></center></p>
+The trade-off can be seen via precision-recall curves (their behavior is best explored with the interactive demo):
 
----
+<p><center><img src="../media/demos-screenshots/cf-pr-tradeoff-curves.png" alt="PR trade-off" width="500px"/></center></p>
+
+### F1 as a compromise between precision and recall
 
 Next, **F1** is the harmonic mean of precision and recall. It penalizes extreme imbalance between the two:
 
-$$F1 = 2 \cdot \frac{\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}$$
+$$F1 = \frac{2 \cdot\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}$$
+<!-- = \frac{2}{1/\text{Precision} + 1/\text{Recall}} -->
 
-A model with precision = 0.9 and recall = 0.1 gets $F1 = 0.18$, not 0.5. This is the often desired  behavior: A model that almost never fires for positives is not useful, even if it is almost always correct when it does.
+A model with precision = 0.9 and recall = 0.1 gets $F1 = 0.18$. In contrast, using arithmetic mean would give use a value of 0.5.
+Therefore, the harmonic mean penalizes strong discrepancy between precision and recall more, which is often desired. For example, a model that almost never fires for positives is seldomly useful.
 
----
+### Overview of all quantities
 
 Finally, here's another view to build some intuition about the quantities that appear in the confusion matrix and the metric definitions. It shows how quantities _flow_ into one another: from $\text{Total}$ (all examples) → $\text{P}$ and $\text{N}$ (the number of _actual_ positive/negative examples) → $\text{TP}$, $\text{FN}$, $\text{FP}$, $\text{TN}$ (the confusion matrix cells, red arrows indicate "error" paths) → $\text{P'}$ and $\text{N'}$ (the number of examples that where _predicted_ as positve/negative) → $\text{Total}$ again (all predictions).
 
-<p><center><img src="../media/demos-screenshots/cf-all-quantities.jpg" alt="All Quantities and how they flow into each other" width="500px"/></center></p>
+<p><center><img src="../media/demos-screenshots/cf-all-quantities.png" alt="All Quantities and how they flow into each other" width="500px"/></center></p>
 
 The left side in this diagram coresponds to the ground truth (actual labels) and the right side to "what the model predicts".
 
@@ -80,7 +93,8 @@ The left side in this diagram coresponds to the ground truth (actual labels) and
 
 ## First Metric Choice: Matching the Metric to the Use Case
 
-The right metric depends on the cost of each type of error in your specific application:
+The right metric depends on the cost of each type of error in your specific application.
+We cover this in detail in [🖝 Choosing and Aligning Metrics](../part-06-reflection/04-aligning-metrics.md). Here's an overview already:
 
 **When false negatives are more costly** (missing a real case is worse than a false alarm): prioritize **recall**.
 
@@ -97,7 +111,6 @@ The right metric depends on the cost of each type of error in your specific appl
 > **Discussion:** You build a model to predict whether a machine component is about to fail. Missing a failure (FN) causes expensive downtime and a safety risk. A false alarm (FP) triggers an unnecessary maintenance check costing a few hours. Which metric would you optimize for?
 
 In real-world business applications, it is not uncommon to model the actual costs using the FN and FP rates of a model explicitly.
-TODO: see business case writing.
 
 ---
 
@@ -115,4 +128,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Classification Tasks](07-classification-tasks.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Decision Trees -->](09-decision-trees.md)
 
-Script v1.2 (2026-05-26) · FGN
+Script v1.3 (2026-06-09) · FGN

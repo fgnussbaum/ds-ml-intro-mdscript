@@ -10,6 +10,8 @@
 
 > In this nugget you will learn how a **decision tree** converts training data into if-then-else rules and how the best splits are chosen. You will also extend the evaluation tools from [🖝 Classification Evaluation](../part-05-supervised-learning/08-classification-evaluation.md) to multi-class problems, where each class receives its own precision, recall, and F1 score. Finally, you will learn to interpret a trained tree and see why interpretability is the tree's defining strength.
 
+> **Interactive demo note:** You can try everything from this nugget using the **Decision trees** demo from my [✪ interactive data-science demos](https://github.com/fgnussbaum/ds-ml-interactive-demos) repository.
+
 ## Table of Contents
 
 - [Decision Trees](#decision-trees)
@@ -23,9 +25,9 @@
 
 A **decision tree** is a flowchart. Each internal node tests one feature against a threshold. Each branch follows one outcome of that test. Each leaf assigns a class label via the leaf's majority class (so among the training examples that end in this leaf). To classify a new example, you walk from the root to a leaf, following the branches that match the example's feature values.
 
-Let's take a look at an example. The Palmer Penguins dataset has three species (Adelie, Chinstrap, Gentoo), four features, and 333 samples. The next figure shows a decision tree of depth 2. Colors in each node show the class proportions among the training examples that reached that node:
+Let's take a look at an example. The Palmer Penguins dataset has three species (Adelie: _blue_, Chinstrap: _orange_, Gentoo: _green_), four features, and 333 samples. Here's a decision tree of depth 2 trained on the dataset. Colors in each node show the class proportions among the training examples that reached that node:
 
-<p><center><img src="../media/demos-screenshots/dt-depth2-penguins.jpg" alt="decision tree: colors indicate proportion of class at each node" width="400px"/></center></p>
+<p><center><img src="../media/demos-screenshots/dt-depth2-penguins.png" alt="decision tree: colors indicate proportion of class at each node" width="400px"/></center></p>
 
 - The root splits on **flipper length ≤ 207.5 mm**: examples above the threshold flow right, the examples that land here are almost exclusively Gentoo.
 - The right branch splits on **bill depth ≤ 17.6** next, which perfectly separates the Gentoo class on the training data.
@@ -50,6 +52,11 @@ _See also: [🖝 Generalization](../part-06-reflection/01-generalization.md)._
 
 ## Multi-Class Evaluation
 
+First of all, the concept of a confusion matrix from [🖝 Classification Evaluation](../part-05-supervised-learning/08-classification-evaluation.md) generalizes straight-forward to a multi-class setting:
+
+<p><center><img src="../media/demos-screenshots/dt-confusionmatrix.png" alt="multi-class confusion matrix" width="300px"/></center></p>
+
+Now, let's take a look at the classification metrics. 
 Up to this point, precision, recall, and F1 were defined for a **binary** problem with one positive class. Many real tasks have more than two classes: species, product categories, medical diagnoses. Decision trees handle multi-class problems natively, since leaves can predict any class, but evaluation needs to extend as well.
 
 The key idea is straightforward: for each class, treat it as the positive class and all other classes as negative. This gives you a precision, recall, and F1 **per class**. Scikit-learn's `classification_report` does exactly this:
@@ -78,7 +85,7 @@ Interpretability is the decision tree's defining strength. Follow any path from 
 
 Three signals to read from a trained tree:
 
-- **The root split** uses the feature with the highest information gain on the training data. It is often a strong global predictor.
+- **The root split**: The feature on which the split happens is often a strong global predictor.
 - **Leaf purity** shows how confident each prediction is. A leaf where 95% of training records belong to one class is a confident predictor. A 55/45 split is close to a coin flip.
 - **Depth trades interpretability for expressiveness.** Trees with depth roughly greater than three become harder to explain to an audience.
 
@@ -103,7 +110,11 @@ The standard recursive procedure is **Hunt's Algorithm** (Tan et al., 2020):
 2. Otherwise, choose the feature and threshold that best separates the records and split. Distribute records to the child nodes accordingly.
 3. Repeat recursively for each child.
 
-Here, "best" is defined by **impurity**. A pure node contains records from only one class. The most widely used measure is **Shannon entropy**:
+Here, "best" is defined by **impurity**. A pure node contains records from only one class. There are basically two measures that are commonly used: entropy and gini.
+
+### Information gain as impurity measure
+
+The most interpretable measure is **Shannon entropy**:
 
 $$H(v) = -\sum_{c} p_v(c) \log p_v(c),$$
 
@@ -132,6 +143,15 @@ $$\Delta = 1 - \left(\frac{5}{10} \cdot 0 + \frac{5}{10} \cdot 0\right) = 1.$$
 
 The split removed all uncertainty. Any less clean split yields a smaller $\Delta$, and the algorithm will prefer this one.
 
+### Gini as impurity measure
+
+**Gini impurity** measures the probability that a randomly chosen record from node $v$ is incorrectly classified when labelled at random from the node's class distribution. Like entropy, it equals zero for a pure node and is maximal when all classes are equally represented. Splits are chosen by maximizing the weighted reduction in Gini across children. This is the same greedy principle as information gain:
+
+$$G(v) = 1 - \sum_c p_v(c)^2$$
+
+Both entropy and gini select nearly identical splits in practice, so you can just use the default (Gini) from `DecisionTreeClassifier`.
+In practice, Gini is slightly faster (no logarithm), entropy produces a sharper penalty on mixed nodes. 
+
 ---
 
 ## References
@@ -145,4 +165,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Classification Evaluation](08-classification-evaluation.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Random Forests -->](10-random-forests.md)
 
-Script v1.2 (2026-05-26) · FGN
+Script v1.3 (2026-06-09) · FGN

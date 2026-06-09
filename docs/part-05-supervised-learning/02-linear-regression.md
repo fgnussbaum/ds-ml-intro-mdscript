@@ -10,6 +10,8 @@
 
 > In this nugget you will learn how to fit a linear regression model to one or more input variables. You will see how the model's parameters are found by minimizing a loss function, and you will learn the standard metrics for evaluating a regression result.
 
+> **Interactive demo note:** You can try everything explained here using the **Loss Functions** demo from my [✪ interactive data-science demos](https://github.com/fgnussbaum/ds-ml-interactive-demos) repository.
+
 ## Table of Contents
 
 - [Fitting a Line: The Simplest Model](#fitting-a-line-the-simplest-model)
@@ -62,13 +64,13 @@ Closed-form solutions don't always exist, which then requires algorithms like [�
 
 ---
 
-There are usually several options for loss functions. MSE that we discussed so far sensitive to outliers: a single very large residual, once squared, can dominate the total. An alternative is **least absolute deviations (LAD)**, which sums absolute residuals rather than squared ones:
+There are usually several options for loss functions. MSE that we discussed so far sensitive to outliers: a single very large residual, once squared, can dominate the total. An alternative is **mean average error (MAE)**, which sums absolute residuals rather than squared ones:
 
-$$\text{LAD}(\mathbf{w}) = \frac{1}{n} \sum_{j=1}^{n} \bigl|y_j - h_\mathbf{w}(\mathbf{x}_j)\bigr|.$$
+$$\text{MAE}(\mathbf{w}) = \frac{1}{n} \sum_{j=1}^{n} \bigl|y_j - h_\mathbf{w}(\mathbf{x}_j)\bigr|.$$
 
-LAD gives large errors the same linear weight as small ones, so outliers have less pull on the fitted line. You can try it in the **regression: loss functions** demo from [🔗 interactive data-science demos](https://github.com/fgnussbaum/ds-ml-interactive-demos). This demo allows you to add/move points and see what happens with the fitted regression lines.
+MAE gives large errors the same linear weight as small ones, so outliers have less pull on the fitted line. You can try it in the **regression: loss functions** demo from [✪ interactive data-science demos](https://github.com/fgnussbaum/ds-ml-interactive-demos). This demo allows you to add/move points and see what happens with the fitted regression lines.
 
-<p><center><img src="../media/demos-screenshots/LAD-vs-OLS.jpg" alt="Screenshot of interactive demo: LAD (orange) vs OLS (blue); outlier heavily influence OLS fit" width="500px"/></center></p>
+<p><center><img src="../media/demos-screenshots/LAD-vs-OLS.png" alt="Screenshot of interactive demo: LAD (orange) vs OLS (blue); outlier heavily influence OLS fit" width="500px"/></center></p>
 
 ---
 
@@ -82,9 +84,17 @@ $$\text{MSE} = \frac{1}{n_\text{test}} \sum_{j=1}^{n_\text{test}} (y_j - \hat{y}
 
 This is the same MSE used in the MSE loss function, now evaluated on the test set with the _learned_ weights.
 
-**Root Mean Squared Error (RMSE):** $\sqrt{\text{MSE}}$. This restores the original unit. An RMSE of $0.90 on the tips dataset means predictions are off by about 90 cents on average. RMSE is the standard metric for reporting regression results to stakeholders.
+**Root Mean Squared Error (RMSE):** $\sqrt{\text{MSE}}$. This restores the original unit. An RMSE of 0.90 on the tips dataset means predictions are off by about 90 cents on average. RMSE is the standard metric for reporting regression results to stakeholders.
 
 > **Discussion 1:** Your regression model for restaurant tips achieves RMSE = $0.90. Is that a useful result? What would you need to know before answering?
+
+**Coefficient of Determination (R²):** measures what fraction of the variance in the target is explained by the model:
+
+$$R^2 = 1 - \frac{\sum_{j=1}^{n_\text{test}} (y_j - \hat{y}_j)^2}{\sum_{j=1}^{n_\text{test}} (y_j - \bar{y})^2} = 1 - \frac{\text{MSE}}{\text{Var}(y)}.$$
+
+Here, the numerator represents the unexplained variance left in the residuals, and the denominator represents the total variance of the target.
+
+A perfect model yields $R^2 = 1$, and the baseline model that always predicts the mean yields $R^2 = 0$. Negative values are possible when the model is worse than the mean baseline (see also [🖝 Baselines and the Good-Enough Bar](../part-06-reflection/03-baselines.md)). R² is unit-free, which makes it easy to compare models across different targets and scales.
 
 > **Discussion 2:** Is trying to predict `tip` from `total_bill` really an interesting question? Or could there actually ba a far more interesting question? (Data science is about finding good questions: Here's one - can you spot it?)
 
@@ -110,6 +120,7 @@ Here, the matrix $\mathbf{X}^\top\mathbf{X} \in \mathcal{R}^{(k{+}1)\times(k{+}1
 
 ## Bonus: The Combinatorial Solution for LAD
 
+**Least absolute deviations (LAD)**
 If you tilt or shift a candidate line slightly, every residual $r_j = y_j - h_\mathbf{w}(\mathbf{x}_j)$ changes smoothly, so $\sum |r_j|$ also changes smoothly: It decreases or increases at a "constant" rate. The only disruption comes when the line crosses a data point: This causes its residual to flip sign, and thereby the LAD loss changes its rate of change (intuively, the sign change causes this residual to contribute in the "other" direction).
 
 The LAD loss is therefore **piecewise-linear**, with "kinks" only where the line passes through a data point, and the minimum always sits at one of those kinks. A line has two free parameters (slope and intercept), so the piecewise-linear loss surface has vertices where exactly two faces meet — two residuals are simultaneously zero — meaning **an optimal solution can always be found where the line passes through two data points**. You can find it in principle by checking all $\binom{n}{2}$ pairs and keeping the one with the smallest total absolute deviation.
@@ -135,4 +146,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Supervised Learning](01-supervised-learning.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Gradient Descent -->](03-gradient-descent.md)
 
-Script v1.2 (2026-05-26) · FGN
+Script v1.3 (2026-06-09) · FGN

@@ -84,4 +84,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Preparing Non-Tabular Data](02-beyond-tabular-prep.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Regression: Interpretation and Assumptions -->](04-regression-depth.md)
 
-Script v1.2 (2026-05-26) · FGN
+Script v1.3 (2026-06-09) · FGN

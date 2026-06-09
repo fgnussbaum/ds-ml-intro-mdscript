@@ -23,8 +23,9 @@
 
 You know what a single attribute is. Now, a **dataset** is a collection of objects, each described by the same set of attributes.
 Specifically, for tabular datasets,
-* the rows correspond to the objects (which are also called records, data objects, instances, or observations),
-* the columns correspond to the attributes.
+
+- the rows correspond to the objects (which are also called records, data objects, instances, or observations),
+- the columns correspond to the attributes.
 
 For tabular data, every cell holds the value of one attribute for one record.
 
@@ -58,7 +59,6 @@ df = pd.read_csv("ess_wellbeing.csv", sep=",", encoding="utf-8")
 ```
 
 - The `sep` parameter sets the column delimiter: `,`, `;`, and tab are common. Tab-separated files use `sep="\t"`.
-
 - The `encoding` parameter handles character encoding: `"utf-8"` is the default, European datasets sometimes use `"latin-1"`.
 
 `print(df)` gives a first overview of the loaded data, including row and column count.
@@ -77,7 +77,7 @@ Check whether values look sensible, headers are readable, and no obvious formatt
 
 `df.shape` can also be used to inspect dimension and yield (rows, columns) as result, here `(2420, 11)`.
 
-2,420 records and 12 attributes. One number tells you the dataset's size; the other its dimensionality.
+2,420 records and 11 attributes. One number tells you the dataset's size; the other its dimensionality.
 
 **Check for missing values.**
 
@@ -100,7 +100,7 @@ df.info()   # column names, non-null counts, dtypes
 df.dtypes   # dtype per column
 ```
 
-`Dtype` column shows inferred data type for each column. The inferred is not always correct or optimal: See for example the inferred dtype `float64` for `gender`.
+`Dtype` column shows inferred data type for each column. The inferred is not always correct or optimal: See for example the inferred dtype `int` for `gender`.
 
 > Always verify dtypes against your domain knowledge before computing statistics or feeding columns into a model.
 
@@ -142,4 +142,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Data Types and Measurement Scales](02-data-types.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [EDA: Descriptive Statistics -->](04-eda-descriptive-stats.md)
 
-Script v1.2 (2026-05-26) · FGN
+Script v1.3 (2026-06-09) · FGN

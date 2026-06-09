@@ -27,6 +27,8 @@ The most common split ratio is 80/20, though it depends on the amount of availab
 
 For a good split, both training and test sets represent the data distribution well. You can verify this by comparing distribution statistics. For example, for [🖝 Supervised Learning](../part-05-supervised-learning/01-supervised-learning.md) a simple sanity check could be to verify that the target variable's mean (for regression) or class distribution (for classification) is roughly the same for both sets.
 
+> Always fix random states (seeds) when splitting data. This is important for reproducibility.
+
 ---
 
 ## The Train/Validation/Test Split
@@ -97,4 +99,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Scaling and Imputation](03-scaling-imputation.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Data Preparation Checklist -->](05-prep-checklist.md)
 
-Script v1.2 (2026-05-26) · FGN
+Script v1.3 (2026-06-09) · FGN

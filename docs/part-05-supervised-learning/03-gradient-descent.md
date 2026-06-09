@@ -10,6 +10,8 @@
 
 > In this nugget you will learn gradient descent, the general algorithm for minimizing a loss function by iteratively stepping in the direction that reduces it. You will see how the learning rate controls each step, what happens when it is set too large or too small, and why this algorithm is an indispensable building block for machine learning and AI.
 
+> **Interactive demo note:** You can try everything explained here using the **Gradient descent** demo from my [✪ interactive data-science demos](https://github.com/fgnussbaum/ds-ml-interactive-demos) repository.
+
 ## Table of Contents
 
 - [Stepping Downhill: The Update Rule](#stepping-downhill-the-update-rule)
@@ -23,9 +25,10 @@ Let's begin with the simple example from the preceding [🖝 Linear Regression](
 
 At any point on the curve, the **gradient** is the derivative of the loss with respect to $w_1$: it points in the direction that increases the loss most steeply. The core idea is that stepping in the *opposite* direction decreases the loss. These opposite directions are marked by the orange arrows in the following figures: 
 
-<p><center><img src="../media/demos-screenshots/gd-small.jpg" alt="left: bigger gradient arrow because more steep" height="200px"/> <img src="../media/demos-screenshots/gd-tiny.jpg" alt="right: small gradient arrow because flat/close to minimum" height="200px"/></center></p>
+<p><center><img src="../media/demos-screenshots/gd-small.png" alt="left: bigger gradient arrow because more steep" height="200px"/> <img src="../media/demos-screenshots/gd-tiny.png" alt="right: small gradient arrow because flat/close to minimum" height="200px"/></center></p>
 
-These two screenshots are taken from the gradient descent demo from my [🔗 interactive data-science demos](https://github.com/fgnussbaum/ds-ml-interactive-demos), where you can interactively explore gradient descent for the simple regression scenario. The MSE loss function for just the slope parameter is a parabola (here $\theta=w_1$). The length of the orange arrows represents the gradient magnitude:
+These two screenshots are taken from the gradient descent demo from my [✪ interactive data-science demos](https://github.com/fgnussbaum/ds-ml-interactive-demos), where you can interactively explore gradient descent for the simple regression scenario. The MSE loss function for just the slope parameter is a parabola (here $\theta=w_1$). The length of the orange arrows represents the gradient magnitude:
+
 - Far from the minimum the curve is steep, so the gradient is large and the step is substantial.
 - Close to the minimum the curve flattens, the gradient shrinks, and the algorithm naturally takes smaller steps.
 
@@ -33,7 +36,8 @@ Here is the **general update rule** for gradient descent. After each pass over t
 
 $$w_i \leftarrow w_i - \alpha \frac{\partial}{\partial w_i} \text{MSE}(\mathbf{w})$$
 
-In this update rule, 
+In this update rule,
+
 - the parameter $\alpha$ is the **learning rate**: it sets how large each step is.
 - the gradient determines the direction: negative sign for "descent",
 - the magnitude $|\frac{\partial}{\partial w_i} \text{MSE}(\mathbf{w})|$ of the gradient (_partial derivative_) tells you how steep the curve is at the current point in direction of the "axis" spanned by the parameter $w_i$.
@@ -46,7 +50,7 @@ Choosing the learning rate $\alpha$ is one of the first practical decisions you 
 
 With two parameters, slope $w_1$ and intercept $w_0$, the loss is no longer a curve but a **surface** over the $(w_0, w_1)$ plane. Because MSE remains a sum of squared terms, the surface is _bowl_-shaped: smooth, convex, with a single global minimum.
 
-<p><center><img src="../media/demos-screenshots/gd-contour-plot.jpg" alt="Loss surface for a two-parameter linear model, showing a bowl-shaped surface with contour lines and an arrow tracing the gradient descent path to the minimum" width="500px"/></center></p>
+<p><center><img src="../media/demos-screenshots/gd-contour-plot.png" alt="Loss surface for a two-parameter linear model, showing a bowl-shaped surface with contour lines and an arrow tracing the gradient descent path to the minimum" width="500px"/></center></p>
 
 A **contour plot** shows this surface from above. Each ring marks a constant loss value, and rings closer to the center correspond to lower loss. Gradient descent traces a path on this surface, always stepping in the steepest downhill direction (which happens to be **perpendicular** to the contour lines). 
 
@@ -60,7 +64,7 @@ As we discussed in [🖝 Linear Regression](../part-05-supervised-learning/02-li
 
 However, closed-form solutions are rare. Already in [🖝 Regularized Regression](../part-05-supervised-learning/05-regularized-regression.md), we'll encounter our first loss functions where iterative optimization algorithms like gradient descent are required.
 
-For complex models like neural networks with millions of parameters, closed-form solutions are completely out of reach. Therefore, gradient descent and its variants like [🔗 stochastic gradient descent (Adam)](https://en.wikipedia.org/wiki/Stochastic_gradient_descent) will be responsible for training most models you will encounter later in this course and in practice.
+For complex models like neural networks with millions of parameters, closed-form solutions are completely out of reach. Therefore, gradient descent and its variants like [🔗 stochastic gradient descent](https://en.wikipedia.org/wiki/Stochastic_gradient_descent) will be responsible for training most models you will encounter later in this course and in practice.
 
 ---
 
@@ -78,4 +82,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Linear Regression](02-linear-regression.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Underfitting and Overfitting -->](04-under-overfitting.md)
 
-Script v1.2 (2026-05-26) · FGN
+Script v1.3 (2026-06-09) · FGN

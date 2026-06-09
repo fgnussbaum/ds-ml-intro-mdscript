@@ -80,4 +80,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Regression: Interpretation and Assumptions](04-regression-depth.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Support Vector Machines -->](06-support-vector-machines.md)
 
-Script v1.2 (2026-05-26) · FGN
+Script v1.3 (2026-06-09) · FGN

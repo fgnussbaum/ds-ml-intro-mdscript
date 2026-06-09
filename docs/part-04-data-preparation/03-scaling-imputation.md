@@ -58,6 +58,7 @@ Which strategy you choose follows from the missingness mechanism you identified 
 
 Many models are sensitive to the absolute numeric range of their inputs. A distance-based model such as k-nearest neighbors (TODO: nugget link) computes distances between observations.
 For example in the ESS dataset, we have
+
 - column `age` ranges 16 to 91,
 - column `happiness` ranges from 0 to 10,
 - column `health` ranges from 1 to 5.
@@ -130,4 +131,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Structural Cleaning and Encoding](02-cleaning-encoding.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Data Splits -->](04-data-splits.md)
 
-Script v1.2 (2026-05-26) · FGN
+Script v1.3 (2026-06-09) · FGN

@@ -42,7 +42,7 @@ These operations do not use statistics from data for transformation, so they can
 
 ## Phase 3: Feature engineering
 
-Feature construction is driven by what EDA revealed and by what you want to predict. The constructions below can be applied to the full dataset. Any construction that estimates statistics, such as group means, must be deferred to Phase 5.
+Feature construction is driven by what EDA revealed and by what you want to predict. The constructions below can be applied to the full dataset. Any construction that estimates statistics, such as group means, must be deferred to Phase 5. What you should do depends on the data. Typically you do things like:
 
 - **Recode and binarize where EDA motivates it.** Skewed distributions, meaningful thresholds, and scale-direction inconsistencies are all triggers.
 - **Build composite indexes for multi-item constructs.** If several columns measure the same underlying concept, average them into a single index. Verify that all source columns point in the same direction and use the same unit before averaging.
@@ -77,8 +77,8 @@ Apply twice if a validation set is also needed. Fixing `random_state` ensures re
 
 Apply the following three steps in sequence. Each step's output is the next step's input.
 
-- **Cap outliers if the model is sensitive to them.** Compute cap thresholds (e.g., 1st and 99th percentile) on the training set and apply to all splits. Capping must come before scaling: a single extreme value can otherwise compress all other values into a narrow band. Skip this step for tree-based models, which are not sensitive to extreme values. See [🖝 Scaling and Imputation](../part-04-data-preparation/03-scaling-imputation.md).
-- **Impute missing values, or delete incomplete rows.** Choose between listwise deletion (remove any row with a missing value) and imputation (substitute an estimate from the training set). Match the strategy to the missingness mechanism: choose mean or median for data missing completely at random (MCAR), and model-based imputation for data missing at random (MAR). Consider adding a binary indicator column that flags which rows were imputed. See [🖝 Scaling and Imputation](../part-04-data-preparation/03-scaling-imputation.md) and [🖝 EDA: Data Quality](../part-03-data-understanding/05-eda-data-quality.md).
+- **If necessary: Cap outliers if the model is sensitive to them.** Compute cap thresholds (e.g., 1st and 99th percentile) on the training set and apply to all splits. Capping must come before scaling: a single extreme value can otherwise compress all other values into a narrow band. Skip this step for tree-based models, which are not sensitive to extreme values. See [🖝 Scaling and Imputation](../part-04-data-preparation/03-scaling-imputation.md).
+- **If necessary: Impute missing values, or delete incomplete rows.** Choose between listwise deletion (remove any row with a missing value) and imputation (substitute an estimate from the training set). Match the strategy to the missingness mechanism: choose mean or median for data missing completely at random (MCAR), and model-based imputation for data missing at random (MAR). Consider adding a binary indicator column that flags which rows were imputed. See [🖝 Scaling and Imputation](../part-04-data-preparation/03-scaling-imputation.md) and [🖝 EDA: Data Quality](../part-03-data-understanding/05-eda-data-quality.md).
 - **Scale numeric features.** Distance-based models (k-NN), models like [🖝 Regularized Regression](../part-05-supervised-learning/05-regularized-regression.md), and neural networks are sensitive to feature scale; tree-based models are not. Z-score standardization is the safe default. Min-max scaling is appropriate only when bounded output is needed and outliers have already been handled. See [🖝 Scaling and Imputation](../part-04-data-preparation/03-scaling-imputation.md).
 
 ---
@@ -97,4 +97,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Data Splits](04-data-splits.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Data Preparation Best Practices -->](06-prep-principles.md)
 
-Script v1.2 (2026-05-26) · FGN
+Script v1.3 (2026-06-09) · FGN

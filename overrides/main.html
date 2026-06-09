@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block styles %}
+  {{ super() }}
+  <style>
+    :root {
+      --md-primary-fg-color: #00662c;
+      --md-primary-fg-color--light: #008c3a;
+      --md-primary-fg-color--dark: #004d21;
+      --md-accent-fg-color: #f9a607;
+    }
+    .md-header {
+      background-color: #49080e;
+    }
+    .md-content blockquote {
+      color: black;
+      background-color: #e8f5ec;
+    }
+    .md-typeset blockquote {
+      --md-default-fg-color--lighter: #00662c;
+    }
+  </style>
+{% endblock %}

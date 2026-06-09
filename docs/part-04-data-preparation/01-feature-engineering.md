@@ -4,7 +4,7 @@
 
 # Feature Engineering
 
-**Requires**: [Data Types and Measurement Scales](../part-03-data-understanding/02-data-types.md)
+**Requires**: [Data Types and Measurement Scales](../part-03-data-understanding/02-data-types.md) · [EDA: Correlations](../part-03-data-understanding/07-eda-correlations.md)
 
 **Motivation:** EDA usually leaves you with a "pot-pourri" of findings: a skewed distribution here, a cluster of correlated survey items there, a categorical column with dozens of rare values. Often it turns out that raw columns are not the best input for a model or analysis. How do you systematically convert your columns into better-structured columns that actually represent what you care about?
 
@@ -36,6 +36,7 @@ df["health_good"] = (df["health"] >= 4).astype(int)
 ```
 
 **Recoding** covers the broader case:
+
 - collapsing a continuous attribute into fewer categories,
 - reversing the direction of a scale.
 
@@ -49,6 +50,7 @@ df["health_good"] = (df["health"] >= 4).astype(int)
 
 This is common for [🔗 Likert-scale](https://en.wikipedia.org/wiki/Likert_scale) survey questions, which yield ordinal variables. Surveys often use several questions to  measure the same concept more reliably. A **composite index** then helps to quantify this concept.
 You usually obtain it by averaging. Before doing so, verify two things:
+
 1. all source columns point in the same direction (e.g., higher means "more"), and
 2. a unit increase must mean the same thing across columns.
 
@@ -60,16 +62,6 @@ df["val_transcendence"] = df[SELF_TRANSCENDENCE_COLS].mean(axis=1)
 ```
 
 <!--See the demo code for a complete scale-compatibility check before averaging.-->
-
----
-
-### Grouping High-Cardinality Columns
-
-**Trigger:** A categorical column contains many rare values.
-
-Rare categories produce sparse one-hot columns that add noise and inflate feature matrices. Collapsing infrequent country codes or job titles into an "other" bucket could reduce that noise.
-
-> Apply grouping before the kind of encoding operation that we discuss in the next nugget [🖝 Structural Cleaning and Encoding](../part-04-data-preparation/02-cleaning-encoding.md).
 
 ---
 
@@ -115,13 +107,15 @@ Summing up daily sales to weekly totals, or averaging individual-level survey re
 
 ---
 
-### Generalization of Specific Values
+### Grouping of Specific Values
 
 **Trigger:** Specific values are too granular for the model or for interpretation.
 
 Mapping street-level addresses to city names, or grouping exact ages into age brackets, replaces specific values with higher-level concepts. The result is a coarser representation that is sometimes more interpretable and more generalizable.
 
-Grouping high-cardinality columns that we discussed above can be seen as a special case of this with the goal of "collapsing" rare categories.
+Also, if a categorical column contains many rare values, you'll sometimes want to collapse some of them. This helps to avoid producing sparse one-hot columns that add noise and inflate feature matrices. Example: collapsing infrequent country codes or job titles into an "other" bucket.
+
+> Apply grouping before the kind of encoding operation that we discuss in the next nugget [🖝 Structural Cleaning and Encoding](../part-04-data-preparation/02-cleaning-encoding.md).
 
 ---
 
@@ -154,4 +148,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [Structural Cleaning and Encoding -->](02-cleaning-encoding.md)
 
-Script v1.2 (2026-05-26) · FGN
+Script v1.3 (2026-06-09) · FGN

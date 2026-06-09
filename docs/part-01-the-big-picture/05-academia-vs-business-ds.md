@@ -37,7 +37,7 @@ Unfortunately, the academic world has a strong incentive to report positive resu
 
 ## Toy Datasets vs. Real-World Data
 
-Many canonical teaching datasets in machine learning (like the _iris flowers_, the _Boston housing prices_, or the _MNIST_ handwritten digits) are clean, complete, well-labelled, and small enough to fit in memory. They are ideal for learning a new algorithm because the data is not the problem.
+Many canonical teaching datasets in machine learning (like the _iris flowers_ or the _MNIST_ handwritten digits) are clean, complete, well-labelled, and small enough to fit in memory. They are ideal for learning a new algorithm because the data is not the problem.
 
 Real-world data is different in almost every dimension. Here are some trends:
 
@@ -93,4 +93,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- CRISP-DM](04-crisp-dm.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part II: Data-Science Projects -->](../part-02-ds-projects/00-index.md)
 
-Script v1.2 (2026-05-26) · FGN
+Script v1.3 (2026-06-09) · FGN

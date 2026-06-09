@@ -81,4 +81,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- EDA: Correlations](07-eda-correlations.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part IV: Data Preparation -->](../part-04-data-preparation/00-index.md)
 
-Script v1.2 (2026-05-26) · FGN
+Script v1.3 (2026-06-09) · FGN

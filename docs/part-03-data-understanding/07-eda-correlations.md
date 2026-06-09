@@ -22,9 +22,9 @@
 
 The first tool is the **scatter plot**: each observation is drawn as a point, with one variable on the horizontal axis and the other on the vertical axis. This gives a cloud of points that reveals structure of the joint distribution.
 
-<center><img src="../media/plots-ess/ess_wellbeing_scatter_health_vs_happiness.png" alt="Happiness versus self-rated health scatter plot" width="400px"/></center>
+Here's an example for the seaborn Penguins dataset:
 
-The orange trend line is added - it's a simple linear fit between happiness and self-rated health that shows a positive trend.
+<center><img src="../media/plots-penguins/penguins_flipper_vs_bill.png" alt="scatter plot" width="400px"/></center>
 
 > A scatter plot is most useful for numeric/continuous data. In this example, we have discrete/ordinal data from our ESS data set. We can still use a scatter plot, but some values will be plotted on top of each other.
 
@@ -48,9 +48,9 @@ where $\bar{x}$ and $\bar{y}$ are the sample means. The numerator computes the c
 
 The coefficient ranges from $-1$ to $+1$. A value..
 
-* near $+1$ means the two variables increase together,
-* near $-1$ means one increases as the other decreases,
-* near $0$ means no linear relationship is detectable.
+- near $+1$ means the two variables increase together,
+- near $-1$ means one increases as the other decreases,
+- near $0$ means no linear relationship is detectable.
 
 For practical EDA work, values above $0.3$ or below $-0.3$ are often worth investigating further, though what counts as "strong" depends on the domain. For the happiness–health scatter plot above, $r \approx +0.34$.
 
@@ -67,7 +67,7 @@ Reading this heatmap for the ESS well-being data:
 - **Age and climate worry**: a negative association, suggesting older respondents report less concern about climate.
 - Most pairs cluster near zero, indicating limited linear dependence among the remaining variables.
 
-Again: Correlation is a hypothesis starter, not a conclusion. A high $r$ value says two variables move together. It says nothing about which causes the other, or whether both are driven by an unmeasured third variable. This all too often confused!
+Again: Correlation may suggest hypotheses, but that's it. A high $r$ value says two variables move together. It says nothing about which causes the other, or whether both are driven by an unmeasured third variable. This often confused!
 
 ---
 
@@ -76,9 +76,7 @@ Again: Correlation is a hypothesis starter, not a conclusion. A high $r$ value s
 Pearson correlation can sometimes be misleading:
 
 - **Non-linearity**: Pearson only measure linear relationship. The same value $r$ can be obtained by all kinds of non-linear relationships (see this [🔗 wonderful demo](https://www.research.autodesk.com/publications/same-stats-different-graphs/)). Scatter plots are better at revealing non-linear relationships.
-
 - **Outlier sensitivity**: Pearson is computed on raw values, so a single extreme point can strongly influence $r$.
-
 - **Ordinal variables**: Pearson assumes that the intervals between scale points are equal. For ordinal variables such as the ESS health rating (1 = very bad, 5 = very good), the assumption that the gap between 1 and 2 equals the gap between 4 and 5 is not guaranteed.
 
 ### Spearman rank correlation
@@ -121,4 +119,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- EDA: Distributions](06-eda-distributions.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Data Understanding: Best Practices -->](08-eda-best-practices.md)
 
-Script v1.2 (2026-05-26) · FGN
+Script v1.3 (2026-06-09) · FGN

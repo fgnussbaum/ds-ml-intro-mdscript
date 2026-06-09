@@ -10,6 +10,8 @@
 
 > In this nugget you'll learn how random forests reduce instability by training many trees on different data samples and different feature subsets. You will also get to know feature importance as a useful interpretability signal, and when to prefer a forest over a single tree.
 
+> **Interactive demo note:** You can explore random forests in the **Decision trees** demo from my [✪ interactive data-science demos](https://github.com/fgnussbaum/ds-ml-interactive-demos) repository.
+
 ## Table of Contents
 
 - [From One Tree to Many: The Ensemble Idea](#from-one-tree-to-many-the-ensemble-idea)
@@ -24,13 +26,26 @@ A single tree commits fully to the data it saw: small changes in the training se
 
 The remedy is diversification: train many trees, each on a slightly different sample of the data, and combine their predictions. Because the errors of individual trees are partly independent, they tend to cancel when averaged. This is the core idea of a **random forest**.
 
+Here's a visualization of a random forest from the interactive decision tree demo. Intuively, trees have different sizes and performance:
+
+<p><center><img src="../media/demos-screenshots/dt-forestgrid.png" alt="feature importances" width="500px"/></center></p>
+
+### How does the 'random' in random forests work?
+
 A random forest introduces two sources of randomness to make sure the trees are different enough from each other:
 
-1. Each tree is trained on a **bootstrap sample**, that is, $n$ records drawn from the training set uniformly *with* replacement, where $n$ is the size of the original set. Some records appear multiple times; others are left out. Each tree therefore sees a different slice of the data and learns a slightly different model.
+- Each tree is trained on a **bootstrap sample**, that is, $n$ records drawn from the training set uniformly *with* replacement, where $n$ is the size of the original set. Some records appear multiple times; others are left out. Each tree therefore sees a different slice of the data and learns a slightly different model.
 
-2. At each split, only a random subset of features is considered as candidates, typically $\sqrt{k}$ features for classification, where $k$ is the total number of features. This **feature subsampling** prevents one dominant feature from appearing at the root of every tree, forcing the ensemble to draw on different signals and further diversifying predictions.
+- At each split, only a random subset of features is considered as candidates, typically $\sqrt{k}$ features for classification, where $k$ is the total number of features. This **feature subsampling** prevents one dominant feature from appearing at the root of every tree, forcing the ensemble to draw on different signals and further diversifying predictions.
 
-Once all trees are trained, predictions are combined by **majority vote** across the ensemble.
+### How do random forests classify samples?
+
+For any given sample, a random forests classifies it by combining the predictions from all trees;
+
+1. First of all, for each individual tree, find the leaf where the sample lands.
+2. Then, take the class probability vector from this leaf, that is, the fraction of training sample per class that landed at this leaf node.
+3. average across all trees to obtain an ensemble "probability" estimate.
+4. finally, to obtain a global prediction, take the argmax from this ensemble probability estimate to determine the class.
 
 ---
 
@@ -103,4 +118,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Decision Trees](09-decision-trees.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part VI: Principles That Transfer (Reflection) -->](../part-06-reflection/00-index.md)
 
-Script v1.2 (2026-05-26) · FGN
+Script v1.3 (2026-06-09) · FGN

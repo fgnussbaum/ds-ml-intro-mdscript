@@ -14,10 +14,10 @@ This part orients you to the course, introduces artificial intelligence and data
 |---|--------|---------------|
 | 1 | [Course Orientation](01-course-orientation.md) | -- |
 | 2 | [What Is Artificial Intelligence?](02-intro-ai.md) | -- |
-| 3 | [AI Ethics — A Primer](03-ethics-and-responsibility.md) | [What Is Artificial Intelligence?](02-intro-ai.md) |
+| 3 | [AI Ethics: A Primer](03-ethics-and-responsibility.md) | [What Is Artificial Intelligence?](02-intro-ai.md) |
 | 4 | [CRISP-DM](04-crisp-dm.md) | -- |
 | 5 | [Academia vs. Business Data Science](05-academia-vs-business-ds.md) | [CRISP-DM](04-crisp-dm.md) |
 
 ---
 
-Script v1.2 (2026-05-26) · FGN
+Script v1.3 (2026-06-09) · FGN

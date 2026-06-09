@@ -56,18 +56,19 @@ With a validation strategy in place, hyperparameter tuning becomes a search prob
 
 ### Grid Search
 
-> You can try all of the following in the **Regularized Regression** demo from my [🔗 interactive data-science demos](https://github.com/fgnussbaum/ds-ml-interactive-demos) repository.
+> **Interactive demo note:** You can try all of the following in the **Regularized Regression** demo from my [✪ interactive data-science demos](https://github.com/fgnussbaum/ds-ml-interactive-demos) repository.
 
 **Grid search** defines an explicit set of candidate values and evaluates every one, using cross-validation to score each. To see it in action, consider predicting disease progression from certain clinical variables (age, sex, BMI, blood pressure, etc.) using the [🔗 sklearn diabetes dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_diabetes.html).
 
 For the systematic search for the best regularization parameters, we reformulate the loss as 
 
 $$(1-\alpha)\cdot\text{MSE}(\mathbf{w}) + \alpha\cdot\|\mathbf{w}\|,\quad \alpha\in[0,1).$$
+
 Here, $\alpha$ now acts as the _weight_ of the penalty term. Crucially, $\alpha$ is a bounded reparameterization of the $\lambda \in [0, \infty)$ that we used in [🖝 Regularized Regression](../part-05-supervised-learning/05-regularized-regression.md). This allows us to sweep the regularization strength $\alpha$ from 0 to 1 for both Ridge and Lasso. The trade-off is the same: $\alpha=0$ is unregularized, $\alpha=1$ would mean only regularization.
 
 Here are the RMSE error curves for train/val sets of the diabetes dataset. Only the range $\alpha\in[0, 0.1]$ is shown with a fine **grid step size** of $10^{-3}$:
 
-<p><center><img src="../media/demos-screenshots/diabetes-error-curves.jpg" alt="Error curves (train/val data) for alpha in [0,1] for Ridge/Lasso" width="500px"/></center></p>
+<p><center><img src="../media/demos-screenshots/diabetes-error-curves.png" alt="Error curves (train/val data) for alpha in [0,1] for Ridge/Lasso" width="500px"/></center></p>
 
 Observe that the training error (blue) increases as $\alpha$ increases. This is because more regularization give the model less opportunity to fit the training data closely. The validation error curve respectively shows a sweet spot where regularization improves generalization the most.
 
@@ -77,13 +78,14 @@ Grid search finds this sweet spot for $\alpha$ automatically. However, efficienc
 
 Next, the coefficient paths reveal what is happening inside the model as $\alpha$ varies.
 
-<p><center><img src="../media/demos-screenshots/diabetes-coefficient-pathsL1L2.jpg" alt="coefficient paths of L2 (left) and L1 (right) across alpha ranges" width="500px"/></center></p>
+<p><center><img src="../media/demos-screenshots/diabetes-coefficient-pathsL1L2.png" alt="coefficient paths of L2 (left) and L1 (right) across alpha ranges" width="500px"/></center></p>
 
 Ridge (L2, left) shrinks all coefficients gradually toward zero without eliminating any. Lasso (L1, right) drives several coefficients to exactly zero at higher $\alpha$ values, selecting a sparse subset of features. This matches the theoretical behavior that we discussed in [🖝 Regularized Regression](../part-05-supervised-learning/05-regularized-regression.md).
 
 ### Practical tips and alternatives
 
 When tuning hyperparameters, there is a danger to spend too much time trying candidates in a region where the effect is negligible. Two strategies can help for grid search:
+
 - **Coarse-to-fine**: starting with a coarse grid first, then iteratively refining to finer grids (smaller step size) in regions of interest
 - using a **logarithmic grid**.
 
@@ -101,7 +103,7 @@ print(search.best_params_)
 
 Grid search is exhaustive and predictable, but the number of evaluations grows exponentially in the number of hyperparameters. Instead you can also do **Random search**, which samples combinations randomly from a defined range instead of enumerating every point. This is often competitive with grid search at a fraction of the cost, because not all hyperparameters affect performance equally.
 
-"Smart" random sampling could even be used to avoid wasting evaluations in regions that matter little. It's possible to build sophisticated strategies based on this insight. If you are curious, check out our paper [🔗 Efficient Regularization Parameter Selection](https://www.ijcai.org/proceedings/2019/0330.pdf) (2019). However, my honest recommendation in practice is this: [🖝 Start Simple](../part-06-reflection/02-simplicity-first.md).
+"Smart" random sampling could even be used to avoid wasting evaluations in regions that matter little. It's possible to build sophisticated strategies based on this insight. If you are curious, check out our paper [🔗 Efficient Regularization Parameter Selection](https://www.ijcai.org/proceedings/2019/0330.pdf) (2019). However, my honest recommendation in practice is this: [🖝 Start Simple](../part-06-reflection/02-start-simple.md).
 
 ---
 
@@ -119,4 +121,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Regularized Regression](05-regularized-regression.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Classification Tasks -->](07-classification-tasks.md)
 
-Script v1.2 (2026-05-26) · FGN
+Script v1.3 (2026-06-09) · FGN

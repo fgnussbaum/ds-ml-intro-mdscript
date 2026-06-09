@@ -2,7 +2,7 @@
 
 ---
 
-# AI Ethics — A Primer
+# AI Ethics: A Primer
 
 **Requires**: [What Is Artificial Intelligence?](02-intro-ai.md)
 
@@ -54,7 +54,7 @@ The same dynamic is present today with large language models. Fluent, confident 
 
 For practitioners, this has a concrete implication: testing whether output "sounds right" is not the same as testing whether it *is* right. Users will over-trust outputs. Developers are not immune. 
 
-> Anthropomorphism is just one category of human biases. We have many more when interacting with AI systems. I listed some of them here: [🔗 Biases when working with chatbots](https://fgnussbaum.com/ai-digital/collaborating-with-chatbots/).
+> Anthropomorphism is just one category of human biases. We have many more when interacting with AI systems. I listed some of them here: [✪ Biases when working with chatbots](https://fgnussbaum.com/ai-digital/collaborating-with-chatbots/).
 
 Our human biases do not only affect our work with chatbots, large language models, or in fact any AI model. Some of these biases also translate into biases in AI models themselves.
 
@@ -110,4 +110,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- What Is Artificial Intelligence?](02-intro-ai.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [CRISP-DM -->](04-crisp-dm.md)
 
-Script v1.2 (2026-05-26) · FGN
+Script v1.3 (2026-06-09) · FGN

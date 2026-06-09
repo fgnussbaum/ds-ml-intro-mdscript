@@ -44,8 +44,6 @@ You can say one value is 5 units more than another, and that gap is meaningful a
 
 The scale also controls which encoding choices make sense when preparing data for a model: nominal attributes need one-hot or dummy encoding; ordinal attributes can sometimes be passed as ordered integers; interval and ratio attributes can be fed directly to numeric models, typically after scaling. You will apply these rules in [🖝 Structural Cleaning and Encoding](../part-04-data-preparation/02-cleaning-encoding.md).
 
-[Source: Tan et al. (2020), *Introduction to Data Mining*, Pearson]
-
 ---
 
 ## Discrete, Continuous, and Binary Attributes
@@ -88,4 +86,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Why Data Work Dominates](01-why-data-work.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Datasets -->](03-datasets.md)
 
-Script v1.2 (2026-05-26) · FGN
+Script v1.3 (2026-06-09) · FGN

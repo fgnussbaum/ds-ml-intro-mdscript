@@ -31,13 +31,9 @@ For two variables, age and religiosity, there's also a smooth curve overlayed. T
 Now let's take a look at what shapes we find in these plots:
 
 - **Normal (bell curve)**: symmetric, with mean, median, and mode at the center and equal-weight tails on both sides. Many physical measurements approximate this when errors are random and independent. None of the ESS variables here follow it closely — which is itself instructive.
-
 - **Left-skewed (negative skew)**: a long tail extends to the left, pulling the mean below the median. **Happiness** follows this pattern: most respondents rate themselves fairly happy (7–9), with few in the lower range. The skew reflects something real about the German population, but it also means the lower end of the scale is data-sparse.
-
 - **Right-skewed (positive skew)**: the opposite direction. Income and house prices are classic examples.
-
 - **Uniform**: values are roughly equally frequent across the range. **Age** is close to uniform across the adult range. This is unusual for a population sample. It might signal quota sampling rather than purely random selection for the ESS survey.
-
 - **Modality of distributions**: If distributions have more than one  distinct peak, it often signals that there are subpopulations pooled into one variable. For example, the histogram of **religiosity** contains two peaks, one at zero (secular), and a secondary mode around 5 (bimodal). This may be more of a meaningful divide rather than a skew. Distributions with three or more peaks (**multimodal**) prompt the same question: are there meaningful subpopulations present?
 
 Distribution shapes raise questions not just about the numbers, but about how the data was collected and what the underlying reality looks like. 
@@ -65,8 +61,9 @@ Two levels of outlier exist. A **data-object outlier** is an entire record that 
 An **attribute-value outlier** is a single value in one column that is extreme relative to the rest of that column. A weight of $-5$ kg is an impossible attribute-value outlier caused by a data-entry error. An income of €2,000,000 in a general-population survey may be a genuine extreme value.
 
 An outlier is not automatically an error. Two questions guide the assessment.
-* First, is the value **physically or logically possible**? Negative heights, ages above 150, and percentages above 100 are certainly errors.
-* Second, is the value a **legitimate extreme observation** or a **measurement artifact**? A religiosity score of 10 in a predominantly secular population is surprising but real. A happiness score recorded as 99 when the scale runs 0–10 is most likely a sentinel value or an encoding error.
+
+- First, is the value **physically or logically possible**? Negative heights, ages above 150, and percentages above 100 are certainly errors.
+- Second, is the value a **legitimate extreme observation** or a **measurement artifact**? A religiosity score of 10 in a predominantly secular population is surprising but real. A happiness score recorded as 99 when the scale runs 0–10 is most likely a sentinel value or an encoding error.
 
 When you identify an outlier, decide among three responses: **investigate** (check the source data or collection process), **transform** (apply a log transformation or winsorization to reduce the influence of extremes), or **retain** (document it and proceed, especially when the value is genuine and the model should see it).
 
@@ -98,4 +95,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- EDA: Data Quality](05-eda-data-quality.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [EDA: Correlations -->](07-eda-correlations.md)
 
-Script v1.2 (2026-05-26) · FGN
+Script v1.3 (2026-06-09) · FGN

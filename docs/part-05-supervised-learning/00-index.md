@@ -2,9 +2,9 @@
 
 ---
 
-# Part V: 1st Pass — Supervised Learning
+# Part V: 1st Pass - Supervised Learning
 
-**Supervised learning** is the family of ML methods where every training example comes with a known answer: a numeric value for regression tasks or a label for classification tasks. The model learns a mapping from inputs to outputs that generalizes beyond the training examples it saw. In this part you complete your first full inner-loop pass through the CRISP-DM Modeling and Evaluation phases — fitting real models to data, evaluating how well they generalize, and building the practical vocabulary every subsequent part assumes.
+**Supervised learning** is the family of ML methods where every training example comes with a known answer: a numeric value for regression tasks or a label for classification tasks. The model learns a mapping from inputs to outputs that generalizes beyond the training examples it saw. In this part you complete your first full inner-loop pass through the CRISP-DM Modeling and Evaluation phases - fitting real models to data, evaluating how well they generalize, and building the practical vocabulary every subsequent part assumes.
 
 ---
 
@@ -25,4 +25,4 @@
 
 ---
 
-Script v1.2 (2026-05-26) · FGN
+Script v1.3 (2026-06-09) · FGN

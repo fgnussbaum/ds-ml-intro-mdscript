@@ -1,4 +1,4 @@
-> **Navigation:** [<-- AI Ethics — A Primer](03-ethics-and-responsibility.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Academia vs. Business Data Science -->](05-academia-vs-business-ds.md)
+> **Navigation:** [<-- AI Ethics: A Primer](03-ethics-and-responsibility.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Academia vs. Business Data Science -->](05-academia-vs-business-ds.md)
 
 ---
 
@@ -97,7 +97,7 @@ The **inner loop** consists of Data Understanding, Data Preparation, and Modelin
 
 > Inner-loops insights and actions should never be disconnected from Problem/Business Understanding.
 
-Business Understanding and Deployment frame the inner loop from the outside. They are not where the repeated iteration happens, but they are what give the iteration its purpose. As we noted in [🖝 AI Ethics — A Primer](../part-01-the-big-picture/03-ethics-and-responsibility.md), keeping the work of building a model aligned with the actual objective is *always* a challenge. The outer cycle is the process-wise answer to that challenge.
+Business Understanding and Deployment frame the inner loop from the outside. They are not where the repeated iteration happens, but they are what give the iteration its purpose. As we noted in [🖝 AI Ethics: A Primer](../part-01-the-big-picture/03-ethics-and-responsibility.md), keeping the work of building a model aligned with the actual objective is *always* a challenge. The outer cycle is the process-wise answer to that challenge.
 
 ---
 
@@ -131,6 +131,6 @@ As always: Happy learning, happy life! 🫶
 
 ---
 
-> **Navigation:** [<-- AI Ethics — A Primer](03-ethics-and-responsibility.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Academia vs. Business Data Science -->](05-academia-vs-business-ds.md)
+> **Navigation:** [<-- AI Ethics: A Primer](03-ethics-and-responsibility.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Academia vs. Business Data Science -->](05-academia-vs-business-ds.md)
 
-Script v1.2 (2026-05-26) · FGN
+Script v1.3 (2026-06-09) · FGN
