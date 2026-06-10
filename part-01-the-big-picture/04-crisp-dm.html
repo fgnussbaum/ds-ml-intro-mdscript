@@ -2062,7 +2062,7 @@
   <span class="md-ellipsis">
     
   
-    Appendix
+    Part VII: 2nd Pass - Unsupervised Learning
   
 
     
@@ -2075,6 +2075,200 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part VII: 2nd Pass - Unsupervised Learning
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/00-index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/01-unsupervised-learning.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Framing Unsupervised Learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/02-k-means-clustering.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    k-Means Clustering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/03-anomaly-detection.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomaly Detection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/04-isolation-forests.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Isolation Forests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2501,7 +2695,7 @@
 </blockquote>
 <hr />
 <h1 id="crisp-dm">CRISP-DM</h1>
-<p><strong>Motivation</strong>: Knowing what machine learning is does not tell you how a real project unfolds from first question to deployed result. Most tutorials start at modeling. But modeling is only one step in a longer process, and skipping the steps before and after it is one of the most common reasons data-science projects fail. You <strong>don't</strong> want projects to fail because the <strong>process</strong> was not right. </p>
+<p><strong>Motivation</strong>: Knowing what machine learning is does not tell you how a real project unfolds from first question to deployed result. Most tutorials start at modeling. But modeling is only one step in a longer process, and skipping the steps before and after it is one of the most common reasons data-science projects fail. You <strong>don't</strong> want projects to fail because the <strong>process</strong> was not right.</p>
 <blockquote>
 <p>In this nugget you will get to know CRISP-DM (which stands for the handy <em>"Cross-Industry Standard Process for Data Mining"</em>). This process will be a good live orientation tool throughout your own project and data-science work. You'll learn the six standard CRISP-DM phases plus two useful extensions.</p>
 </blockquote>
@@ -2521,11 +2715,13 @@
 <blockquote>
 <p>See <a href="../part-02-ds-projects/00-index.html">🖝 Part II</a> in this course.</p>
 </blockquote>
-<p>Here you define what you actually want to achieve.
-- You identify the business or research objective,
-- you assess the situation (available resources, constraints, risks),
-- you translate the objective into a concrete data-mining goal
-So essentially, you are doing some planning work.</p>
+<p>Here you define what you actually want to achieve.</p>
+<ul>
+<li>You identify the business or research objective,</li>
+<li>you assess the situation (available resources, constraints, risks),</li>
+<li>you translate the objective into a concrete data-mining goal</li>
+</ul>
+<p>So essentially, you are doing some planning work.</p>
 <blockquote>
 <p>This phase answers the question: <em>What are we trying to do, and is it worth it?</em></p>
 </blockquote>
@@ -2559,9 +2755,11 @@ So essentially, you are doing some planning work.</p>
 <h3 id="bonus-interfaces-integration-monitoring">Bonus: Interfaces, Integration, Monitoring</h3>
 <p>The standard phases of CRISP-DM are already comprehensive. Nonetheless, I like to make to additional phases explicit because they are imporant to keep in mind when building systems.</p>
 <h4 id="interface-design-integration">Interface Design &amp; Integration</h4>
-<p>Models and systems rarely work in isolation.
-- When a deployed system directly interacts with  humans, it needs a user interface (UI). You want a good user experience: worth keeping in mind. Beyond the design itself it requires user testing and feedback mechanisms.
-- even if a model does not directly interact with humans, it likely has to be embedded in a larger system</p>
+<p>Models and systems rarely work in isolation.</p>
+<ul>
+<li>When a deployed system directly interacts with  humans, it needs a user interface (UI). You want a good user experience: worth keeping in mind. Beyond the design itself it requires user testing and feedback mechanisms.</li>
+<li>even if a model does not directly interact with humans, it likely has to be embedded in a larger system</li>
+</ul>
 <h4 id="operating-time-including-monitoring">Operating Time (including Monitoring)</h4>
 <p>This covers what happens after deployment: monitoring model performance over time, tracking data drift, updating maintenance procedures, collecting user feedback, and retraining the model when necessary. A model that is not monitored will eventually fail silently.</p>
 <hr />
@@ -2570,7 +2768,7 @@ So essentially, you are doing some planning work.</p>
 <blockquote>
 <p>The <strong>inner</strong> loop produces the model. The <strong>outer</strong> cycle determines whether it is the right model for the right reason.</p>
 </blockquote>
-<p>The <strong>inner loop</strong> consists of Data Understanding, Data Preparation, and Modeling/Evaluation. You iterate through this loop repeatedly within a single project: explore the data, prepare it, train a model, evaluate it, revise the preparation, retrain, re-evaluate. Each iteration produces either a better model or a clearer understanding of what the data can and cannot support. </p>
+<p>The <strong>inner loop</strong> consists of Data Understanding, Data Preparation, and Modeling/Evaluation. You iterate through this loop repeatedly within a single project: explore the data, prepare it, train a model, evaluate it, revise the preparation, retrain, re-evaluate. Each iteration produces either a better model or a clearer understanding of what the data can and cannot support.</p>
 <blockquote>
 <p>Inner-loops insights and actions should never be disconnected from Problem/Business Understanding.</p>
 </blockquote>
@@ -2602,7 +2800,7 @@ So essentially, you are doing some planning work.</p>
 <blockquote>
 <p><strong>Navigation:</strong> <a href="03-ethics-and-responsibility.html">&lt;-- AI Ethics: A Primer</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="05-academia-vs-business-ds.html">Academia vs. Business Data Science --&gt;</a></p>
 </blockquote>
-<p>Script v1.3 (2026-06-09) · FGN</p>
+<p>Script v1.4 (2026-06-10) · FGN</p>
 
 
 

@@ -1962,7 +1962,7 @@
   <span class="md-ellipsis">
     
   
-    Appendix
+    Part VII: 2nd Pass - Unsupervised Learning
   
 
     
@@ -1975,6 +1975,200 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part VII: 2nd Pass - Unsupervised Learning
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/00-index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/01-unsupervised-learning.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Framing Unsupervised Learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/02-k-means-clustering.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    k-Means Clustering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/03-anomaly-detection.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomaly Detection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/04-isolation-forests.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Isolation Forests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2328,7 +2522,7 @@
 <hr />
 <h2 id="underfitting-overfitting-and-the-sweet-spot">Underfitting, Overfitting, and the Sweet Spot</h2>
 <p>Consider a datasets is generated from a cubic relationship with noise added. The true pattern has degree 3, but you do not know that. You fit polynomial models of increasing degree and compare how each curve follows the data.</p>
-<p><center><img src="../media/demos-screenshots/of-under-best-overfit.png" alt="Plot with underfitting (degree 0/1), best fit (degree 7; though true model has degree three, curve fits smoothly nonetheless), overfitting (degree 20)" width="500px"/></center></p>
+<p><center><img src="../media/demos-screenshots/of-under-best-overfit.png" alt="Plot with underfitting (degree 0/1), best fit (degree 7; though true model has degree three, curve fits smoothly nonetheless), overfitting (degree 20)" width="740px"/></center></p>
 
 <p>Three regimes are visible:</p>
 <ul>
@@ -2337,7 +2531,7 @@
 <li><strong>Overfitting (high degree):</strong> The curve threads through nearly every training point, including the noise. Training error approaches zero. Validation error climbs sharply. The model has memorized the particular sample rather than learned the pattern.</li>
 </ul>
 <p>The RMSE plot below makes the story quantitative. It shows training and validation error across degrees 0 to 20 for a single training dataset.</p>
-<p><center><img src="../media/demos-screenshots/of-rsme-by-degree.png" alt="plot of train and validation RSMEs for degree 0...20." width="500px"/></center></p>
+<p><center><img src="../media/demos-screenshots/of-rsme-by-degree.png" alt="plot of train and validation RSMEs for degree 0...20." width="740px"/></center></p>
 
 <p>Training error falls continuously as degree increases: more flexibility always reduces error on data the model is training on. Validation error follows roughly a U-shape. It decreases as the model gains enough capacity to represent the true pattern, reaches a minimum, then rises as the model begins fitting noise. The target is the degree that minimizes validation error, not training error.</p>
 <p>Note that here the minimum sits in a plateau rather than a sharp point. Degrees 3 through roughly 5 perform similarly. The model does not need to match the exact true degree to generalize well.</p>
@@ -2349,7 +2543,7 @@
 <h2 id="bias-and-variance-two-failure-modes">Bias and Variance: Two Failure Modes</h2>
 <p>The plots above show results for one particular training dataset. A natural question follows: How stable are these results? Would a different sample of the same size, drawn from the same population, give a similar picture?</p>
 <p>The plot below from the <a href="https://github.com/fgnussbaum/ds-ml-interactive-demos">✪ Under-/Overfitting demo</a> repeats the experiment across 100 different samples from the true population <em>(which here means: different noisy observations from the "true" cubic data-generating function.)</em>. For each sample and each degree, the model is trained and evaluated. Individual error curves are shown faintly behind the average error curves:</p>
-<p><center><img src="../media/demos-screenshots/of-biasvariance.png" alt="bias-variance trade-off with polynomial fit degree 0 to 10" width="500px"/></center></p>
+<p><center><img src="../media/demos-screenshots/of-biasvariance.png" alt="bias-variance trade-off with polynomial fit degree 0 to 10" width="740px"/></center></p>
 
 <p>The plots provides a sense how much error rates varies across samples. Two distinct failure modes become visible:</p>
 <p><strong>High bias (low degree).</strong> Models of very low degree produce high error on both training and validation data, regardless of which sample they trained on. The error is consistently high because the model class itself cannot capture the pattern. This is <strong>underfitting</strong>. Its defining signature: both errors are high and close together, and adding more training data would not help.</p>
@@ -2370,7 +2564,7 @@
 <blockquote>
 <p><strong>Navigation:</strong> <a href="03-gradient-descent.html">&lt;-- Gradient Descent</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="05-regularized-regression.html">Regularized Regression --&gt;</a></p>
 </blockquote>
-<p>Script v1.3 (2026-06-09) · FGN</p>
+<p>Script v1.4 (2026-06-10) · FGN</p>
 
 
 

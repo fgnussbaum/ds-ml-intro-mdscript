@@ -1990,7 +1990,7 @@
   <span class="md-ellipsis">
     
   
-    Appendix
+    Part VII: 2nd Pass - Unsupervised Learning
   
 
     
@@ -2003,6 +2003,200 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part VII: 2nd Pass - Unsupervised Learning
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/00-index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/01-unsupervised-learning.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Framing Unsupervised Learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/02-k-means-clustering.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    k-Means Clustering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/03-anomaly-detection.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomaly Detection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/04-isolation-forests.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Isolation Forests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2395,7 +2589,7 @@
 <h3 id="anthropomorphism-projecting-human-characteristics-into-ai">Anthropomorphism (Projecting Human Characteristics into AI)</h3>
 <p>In 1966, Joseph Weizenbaum created ELIZA: a chatbot that reflected users' words back at them using simple pattern matching. Weizenbaum was disturbed by how quickly users formed emotional attachments to it and began treating its outputs as meaningful advice. ELIZA had no understanding of anything.</p>
 <p>The same dynamic is present today with large language models. Fluent, confident prose triggers a cognitive shortcut: we assume competence behind the language. But a language model has no model of truth and no stake in the outcome. It produces text that fits the statistical patterns of its training data. Sometimes that text is accurate. Sometimes it is not. The model cannot tell the difference.</p>
-<p>For practitioners, this has a concrete implication: testing whether output "sounds right" is not the same as testing whether it <em>is</em> right. Users will over-trust outputs. Developers are not immune. </p>
+<p>For practitioners, this has a concrete implication: testing whether output "sounds right" is not the same as testing whether it <em>is</em> right. Users will over-trust outputs. Developers are not immune.</p>
 <blockquote>
 <p>Anthropomorphism is just one category of human biases. We have many more when interacting with AI systems. I listed some of them here: <a href="https://fgnussbaum.com/ai-digital/collaborating-with-chatbots/">✪ Biases when working with chatbots</a>.</p>
 </blockquote>
@@ -2441,12 +2635,16 @@
 </tbody>
 </table>
 <p>The AI act is sometimes criticized, naturally for any kind of regulation. The AI act is certainly not perfect. But take a look at this list: It directly reflects and protects some of the liberal values that the EU is based on. That's worth a lot.</p>
-<p>For practitioners, the question is: <em>where does your system sit?</em>
-- A quality-control model on a production line may be minimal risk in one context and high risk in another depending on what it controls.
-- A hiring screening tool is high risk regardless of how accurate it is.</p>
-<p>Additionally, certain transparency obligations apply broadly across risk tiers:
-- any AI system interacting with a human must identify itself as AI, and
-- AI-generated content that could deceive ("deep fakes") must be labeled as such.</p>
+<p>For practitioners, the question is: <em>where does your system sit?</em></p>
+<ul>
+<li>A quality-control model on a production line may be minimal risk in one context and high risk in another depending on what it controls.</li>
+<li>A hiring screening tool is high risk regardless of how accurate it is.</li>
+</ul>
+<p>Additionally, certain transparency obligations apply broadly across risk tiers:</p>
+<ul>
+<li>any AI system interacting with a human must identify itself as AI, and</li>
+<li>AI-generated content that could deceive ("deep fakes") must be labeled as such.</li>
+</ul>
 <p>The EU AI Act is a living regulation with phased implementation timelines. What matters for now is the underlying logic: risk scales with consequence, and consequence creates obligation.</p>
 <p>We return to these questions in <a href="../part-09-projects-in-practice/08-ethics-accountability.md">🖝 Ethics and Accountability in Production</a> once you have the technical vocabulary to reason about failure modes and model documentation concretely.</p>
 <hr />
@@ -2463,7 +2661,7 @@
 <blockquote>
 <p><strong>Navigation:</strong> <a href="02-intro-ai.html">&lt;-- What Is Artificial Intelligence?</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="04-crisp-dm.html">CRISP-DM --&gt;</a></p>
 </blockquote>
-<p>Script v1.3 (2026-06-09) · FGN</p>
+<p>Script v1.4 (2026-06-10) · FGN</p>
 
 
 

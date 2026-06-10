@@ -1990,7 +1990,7 @@
   <span class="md-ellipsis">
     
   
-    Appendix
+    Part VII: 2nd Pass - Unsupervised Learning
   
 
     
@@ -2003,6 +2003,200 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part VII: 2nd Pass - Unsupervised Learning
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/00-index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/01-unsupervised-learning.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Framing Unsupervised Learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/02-k-means-clustering.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    k-Means Clustering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/03-anomaly-detection.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomaly Detection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/04-isolation-forests.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Isolation Forests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2413,7 +2607,7 @@
 <p>Many classifiers work in two steps: first they compute a continuous <strong>score</strong> for each example (a probability estimate, a distance, or a raw output), then they convert that score into a class label by comparing it to a <strong>threshold</strong> <span class="arithmatex">\(\tau\)</span>:</p>
 <div class="arithmatex">\[\hat{y} = \begin{cases} 1 &amp; \text{if score} \geq \tau \\ 0 &amp; \text{otherwise} \end{cases}\]</div>
 <p>The <strong>classification</strong> demo from the <a href="https://github.com/fgnussbaum/ds-ml-interactive-demos">✪ interactive data-science demos</a> repository illustrates the idea:</p>
-<p><center><img src="../media/demos-screenshots/cf-threshold-85.png" alt="" width="500px"/></center></p>
+<p><center><img src="../media/demos-screenshots/cf-threshold-85.png" alt="" width="740px"/></center></p>
 
 <p>In this chart, each point corresponds to a training example: circles are the negative class, squares are the positive class. The slider controls <span class="arithmatex">\(\tau\)</span>, and every point above it is predicted positive. Examples that are classified incorrect are crossed out.</p>
 <ul>
@@ -2421,7 +2615,7 @@
 <li>Moving it higher reduces false alarms but misses real cases.</li>
 </ul>
 <blockquote>
-<p><strong>Good to know</strong>: The threshold is usually chosen after training and before evaluation, so it is not a parameter the model learns. </p>
+<p><strong>Good to know</strong>: The threshold is usually chosen after training and before evaluation, so it is not a parameter the model learns.</p>
 </blockquote>
 <p>For the evaluation of classification, a natural first question is: How many predictions are correct? This is what <strong>Accuracy</strong> measures:</p>
 <div class="arithmatex">\[\text{Accuracy} = \frac{\text{correct predictions}}{\text{total predictions}}\]</div>
@@ -2430,7 +2624,7 @@
 <h2 id="challenges-and-costs-of-labeling">Challenges and Costs of Labeling</h2>
 <p>A classifier learns from labeled examples. That means someone, at some point, had to assign a class to every training instance. This is not free: Let's discuss!</p>
 <h3 id="annotation-cost">Annotation cost</h3>
-<p>Building a labeled dataset for a new task requires work: a radiologist reads thousands of scans, a legal team reviews contracts, annotators label images one by one. Even with partial automation, generating <strong>ground truth</strong> takes time and resources. This is one reason why labeled datasets are scarce compared to raw data. </p>
+<p>Building a labeled dataset for a new task requires work: a radiologist reads thousands of scans, a legal team reviews contracts, annotators label images one by one. Even with partial automation, generating <strong>ground truth</strong> takes time and resources. This is one reason why labeled datasets are scarce compared to raw data.</p>
 <blockquote>
 <p>A well-curated small dataset is sometimes more valuable than a large noisy one.</p>
 </blockquote>
@@ -2444,7 +2638,7 @@
 <p>A model trained on noisy labels will partially learn the noise. The effect is usually manageable but worth tracking. In cases of real ambiguity, it could even be interesting to carry this uncertainty on to predictions.</p>
 <p><em>Here's an example from our own work <a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/b1a77a501bf32f8c7348fe39da2cf8c6-Paper-Conference.pdf">🔭 Fine-Grained Sampling
 in Stochastic Segmentation Networks (NeurIPS 2022)</a>. The visual teaser below shows different uncertainty components for landcover classification (image segmentation).</em></p>
-<p><center><img src="../media/papers/ssn-landcover-factors.jpg" alt="Factors of SSN" width="300px"/></center></p>
+<p><center><img src="../media/papers/ssn-landcover-factors.jpg" alt="Factors of SSN" width="450px"/></center></p>
 
 <h3 id="class-imbalance">Class imbalance</h3>
 <p>In most detection tasks, the positive class is rare: fraud accounts for a small fraction of all transactions, diseases affect a minority of patients, defects occur in a small share of manufactured units.</p>
@@ -2468,7 +2662,7 @@ in Stochastic Segmentation Networks (NeurIPS 2022)</a>. The visual teaser below 
 <blockquote>
 <p><strong>Navigation:</strong> <a href="06-hyperparameters.html">&lt;-- Hyperparameter Optimization</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="08-classification-evaluation.html">Classification Evaluation --&gt;</a></p>
 </blockquote>
-<p>Script v1.3 (2026-06-09) · FGN</p>
+<p>Script v1.4 (2026-06-10) · FGN</p>
 
 
 

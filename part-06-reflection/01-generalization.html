@@ -1990,7 +1990,7 @@
   <span class="md-ellipsis">
     
   
-    Appendix
+    Part VII: 2nd Pass - Unsupervised Learning
   
 
     
@@ -2003,6 +2003,200 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part VII: 2nd Pass - Unsupervised Learning
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/00-index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/01-unsupervised-learning.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Framing Unsupervised Learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/02-k-means-clustering.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    k-Means Clustering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/03-anomaly-detection.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomaly Detection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/04-isolation-forests.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Isolation Forests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2379,11 +2573,11 @@ In the next section, we discuss a related validation strategy.</p>
 <h2 id="cross-validation">Cross-Validation</h2>
 <p><strong>Cross-validation (CV)</strong> is a way to estimate generalization performance using the training data itself, leaving the test set untouched.</p>
 <p>Specifically, in <strong>k-fold cross-validation</strong>, the training data is divided into <span class="arithmatex">\(k\)</span> equally sized folds. The model is trained <span class="arithmatex">\(k\)</span> times: each time, one fold serves as the validation set and the remaining <span class="arithmatex">\(k-1\)</span> folds are used for training. The <span class="arithmatex">\(k\)</span> scores are averaged into a single stable estimate for the generalization error.</p>
-<p><center><img src="../media/plots/cv_kfold_diagram.png" alt="k-fold cross-validation diagram (k=5). 5x5 matrix; training data split into 5 equal horizontal bands." width="500px"/></center></p>
+<p><center><img src="../media/plots/cv_kfold_diagram.png" alt="k-fold cross-validation diagram (k=5). 5x5 matrix; training data split into 5 equal horizontal bands." width="740px"/></center></p>
 
 <p>A typical choice is <span class="arithmatex">\(k = 5\)</span> or <span class="arithmatex">\(k = 10\)</span>. Larger <span class="arithmatex">\(k\)</span> gives a more stable estimate at the cost of having to fit more models.</p>
 <p>How much more stable can CV results be? The following figure for the <a href="https://www.kaggle.com/datasets/uciml/autompg-dataset">🔗 MPG dataset</a> gives a hint (task: predicting <code>mpg</code> - miles per gallon):</p>
-<p><center><img src="../media/plots-mpg/mpg_cv_stability.png" alt="cv stability" width="300px"/></center></p>
+<p><center><img src="../media/plots-mpg/mpg_cv_stability.png" alt="cv stability" width="450px"/></center></p>
 
 <p>To obtain this figure, for each of 30 random seeds,  respectively a model was trained using (a) a single random 80/20 split and (b) 5-fold cross cross validation (CV). So the box plot shows the distributions of generalization RMSE scores across these 30 trials, respectively. Both produce similar means. What differs is spread.</p>
 <p>Here, if a model was trained on single split (left box plot), it scored in a range that is an order of magnitude larger than for five-fold CV (right box plot). This shows that unlucky splits can distort results, especially for small datasets where small sample numbers can cause substantial deviation from the underlying true distribution of the population.</p>
@@ -2393,24 +2587,28 @@ In the next section, we discuss a related validation strategy.</p>
 <p>Even with an evaluation strategy in place, you still need diagnostic tools to understand <em>why</em> a model generalizes well or not. Here, we discuss two commonly used curve types for that purpose. The examples still use the MPG dataset, trying to predict <code>mpg</code> using regression <a href="../part-05-supervised-learning/09-decision-trees.html">🖝 Decision Trees</a>.</p>
 <h3 id="learning-curves">Learning Curves</h3>
 <p>A <strong>learning curve</strong> plots train vs. validation/CV error as the number of training examples increases for a fixed model.</p>
-<p><center><img src="../media/plots-mpg/mpg_learning_curves.png" alt="learning curves decision trees: left: high bias (max_depth=2); right: high variance (fully grown tree)" width="500px"/></center></p>
+<p><center><img src="../media/plots-mpg/mpg_learning_curves.png" alt="learning curves decision trees: left: high bias (max_depth=2); right: high variance (fully grown tree)" width="740px"/></center></p>
 
 <p>The left panel (max_depth=2) shows the high-bias signature:</p>
 <ul>
 <li>Both curves move toward a poor RMSE value. The model's limited capacity is the ceiling, not the training size. Adding more data barely helps generalization.</li>
 <li>The model is too simple. Try a more complex model or add features.</li>
 </ul>
-<p>The right panel (fully grown tree) shows the high-variance signature:
-- Train RMSE is exactly zero at every size, and CV RMSE stays high. The model memorizes whatever it receives, and more data helps only slowly.
-- The model is too complex. Reduce complexity, apply regularization, or collect more data.</p>
+<p>The right panel (fully grown tree) shows the high-variance signature:</p>
+<ul>
+<li>Train RMSE is exactly zero at every size, and CV RMSE stays high. The model memorizes whatever it receives, and more data helps only slowly.</li>
+<li>The model is too complex. Reduce complexity, apply regularization, or collect more data.</li>
+</ul>
 <h3 id="validation-curves">Validation Curves</h3>
-<p>A <strong>validation curve</strong> replaces training size with a complexity hyperparameter on the x-axis, making the bias-variance trade-off directly visible. We already saw that in <a href="../part-05-supervised-learning/04-under-overfitting.html">🖝 Underfitting and Overfitting</a>. Here's another example from the MPG dataset: </p>
-<p><center><img src="../media/plots-mpg/mpg_validation_curve.png" alt="train/val error curve" width="500px"/></center></p>
+<p>A <strong>validation curve</strong> replaces training size with a complexity hyperparameter on the x-axis, making the bias-variance trade-off directly visible. We already saw that in <a href="../part-05-supervised-learning/04-under-overfitting.html">🖝 Underfitting and Overfitting</a>. Here's another example from the MPG dataset:</p>
+<p><center><img src="../media/plots-mpg/mpg_validation_curve.png" alt="train/val error curve" width="740px"/></center></p>
 
-<p>The MPG curve for decision tree depth shows three zones.
-- <code>max_depth</code> 1–4: both train and CV error fall together, every additional split captures genuine signal.
-- <code>max_depth</code> 5–10: train error keeps falling while CV error flattens, the model is adding capacity that no longer generalizes.
-- <code>max_depth</code> 11+: train error is approaching toward zero while CV error starts drifting upward.</p>
+<p>The MPG curve for decision tree depth shows three zones.</p>
+<ul>
+<li><code>max_depth</code> 1–4: both train and CV error fall together, every additional split captures genuine signal.</li>
+<li><code>max_depth</code> 5–10: train error keeps falling while CV error flattens, the model is adding capacity that no longer generalizes.</li>
+<li><code>max_depth</code> 11+: train error is approaching toward zero while CV error starts drifting upward.</li>
+</ul>
 <p>Here, the CV minimum is a wide plateau spanning depths 4 to 10 roughly, not a sharp peak. The data itself shows no preference between models in that range.</p>
 <blockquote>
 <p><strong>Best Practice:</strong> Within plateaus, always prefer simpler models for interpretability and robustness (here shallower depth). See also <a href="02-start-simple.html">🖝 Start Simple</a>.</p>
@@ -2442,7 +2640,7 @@ The significant cost is that more hyperparameters need to be tuned.</p>
 <blockquote>
 <p><strong>Navigation:</strong> <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="02-start-simple.html">Start Simple --&gt;</a></p>
 </blockquote>
-<p>Script v1.3 (2026-06-09) · FGN</p>
+<p>Script v1.4 (2026-06-10) · FGN</p>
 
 
 

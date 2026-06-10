@@ -2001,7 +2001,7 @@
   <span class="md-ellipsis">
     
   
-    Appendix
+    Part VII: 2nd Pass - Unsupervised Learning
   
 
     
@@ -2014,6 +2014,200 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part VII: 2nd Pass - Unsupervised Learning
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/00-index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/01-unsupervised-learning.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Framing Unsupervised Learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/02-k-means-clustering.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    k-Means Clustering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/03-anomaly-detection.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomaly Detection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/04-isolation-forests.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Isolation Forests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2422,7 +2616,7 @@
 <li><strong>False Positive (FP):</strong> the model predicted positive but was wrong = a false alarm.</li>
 <li><strong>False Negative (FN):</strong> the model predicted negative but missed a real case = a miss.</li>
 </ul>
-<p>In the <strong>classification</strong> demo from <a href="https://github.com/fgnussbaum/ds-ml-interactive-demos">✪ interactive data-science demos</a> you can also explore the confusion matrix and what it change while you adjust the threshold slider: </p>
+<p>In the <strong>classification</strong> demo from <a href="https://github.com/fgnussbaum/ds-ml-interactive-demos">✪ interactive data-science demos</a> you can also explore the confusion matrix and what it change while you adjust the threshold slider:</p>
 <p><center><img src="../media/demos-screenshots/cf-confusionmatrix-85.png" alt="Confusion Matrix" width="220px"/></center></p>
 
 <blockquote>
@@ -2438,16 +2632,16 @@ For these formulas we also use <span class="arithmatex">\(\text{P}\)</span> and 
 <p><strong>Recall</strong> (also called sensitivity or true positive rate) answers: "Of all records that are actually positive, how many did I find?"</p>
 <div class="arithmatex">\[\text{Recall} =  \frac{\text{TP}}{\text{P}} = \frac{\text{TP}}{\text{TP} + \text{FN}}\]</div>
 <p>Here's an illustration of both metrics, using Venn diagrams:</p>
-<p><center><img src="../media/plots/classification_metrics_venn_precision_recall_balanced.png" alt="Precision and Recall" width="500px"/></center></p>
+<p><center><img src="../media/plots/classification_metrics_venn_precision_recall_balanced.png" alt="Precision and Recall" width="740px"/></center></p>
 
 <h3 id="precision-recall-trade-off">Precision-recall trade-off</h3>
-<p>Precision and recall together represent a trade-off: </p>
+<p>Precision and recall together represent a trade-off:</p>
 <ul>
 <li>You can always increase recall by predicting positive more aggressively, but then precision drops.</li>
-<li>You can increase precision by predicting positive only when very confident, but then recall drops. </li>
+<li>You can increase precision by predicting positive only when very confident, but then recall drops.</li>
 </ul>
 <p>The trade-off can be seen via precision-recall curves (their behavior is best explored with the interactive demo):</p>
-<p><center><img src="../media/demos-screenshots/cf-pr-tradeoff-curves.png" alt="PR trade-off" width="500px"/></center></p>
+<p><center><img src="../media/demos-screenshots/cf-pr-tradeoff-curves.png" alt="PR trade-off" width="740px"/></center></p>
 
 <h3 id="f1-as-a-compromise-between-precision-and-recall">F1 as a compromise between precision and recall</h3>
 <p>Next, <strong>F1</strong> is the harmonic mean of precision and recall. It penalizes extreme imbalance between the two:</p>
@@ -2458,7 +2652,7 @@ For these formulas we also use <span class="arithmatex">\(\text{P}\)</span> and 
 Therefore, the harmonic mean penalizes strong discrepancy between precision and recall more, which is often desired. For example, a model that almost never fires for positives is seldomly useful.</p>
 <h3 id="overview-of-all-quantities">Overview of all quantities</h3>
 <p>Finally, here's another view to build some intuition about the quantities that appear in the confusion matrix and the metric definitions. It shows how quantities <em>flow</em> into one another: from <span class="arithmatex">\(\text{Total}\)</span> (all examples) → <span class="arithmatex">\(\text{P}\)</span> and <span class="arithmatex">\(\text{N}\)</span> (the number of <em>actual</em> positive/negative examples) → <span class="arithmatex">\(\text{TP}\)</span>, <span class="arithmatex">\(\text{FN}\)</span>, <span class="arithmatex">\(\text{FP}\)</span>, <span class="arithmatex">\(\text{TN}\)</span> (the confusion matrix cells, red arrows indicate "error" paths) → <span class="arithmatex">\(\text{P'}\)</span> and <span class="arithmatex">\(\text{N'}\)</span> (the number of examples that where <em>predicted</em> as positve/negative) → <span class="arithmatex">\(\text{Total}\)</span> again (all predictions).</p>
-<p><center><img src="../media/demos-screenshots/cf-all-quantities.png" alt="All Quantities and how they flow into each other" width="500px"/></center></p>
+<p><center><img src="../media/demos-screenshots/cf-all-quantities.png" alt="All Quantities and how they flow into each other" width="740px"/></center></p>
 
 <p>The left side in this diagram coresponds to the ground truth (actual labels) and the right side to "what the model predicts".</p>
 <hr />
@@ -2492,7 +2686,7 @@ We cover this in detail in <a href="../part-06-reflection/04-aligning-metrics.ht
 <blockquote>
 <p><strong>Navigation:</strong> <a href="07-classification-tasks.html">&lt;-- Classification Tasks</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="09-decision-trees.html">Decision Trees --&gt;</a></p>
 </blockquote>
-<p>Script v1.3 (2026-06-09) · FGN</p>
+<p>Script v1.4 (2026-06-10) · FGN</p>
 
 
 

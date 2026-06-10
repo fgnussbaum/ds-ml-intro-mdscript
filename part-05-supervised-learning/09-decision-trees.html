@@ -2001,7 +2001,7 @@
   <span class="md-ellipsis">
     
   
-    Appendix
+    Part VII: 2nd Pass - Unsupervised Learning
   
 
     
@@ -2014,6 +2014,200 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part VII: 2nd Pass - Unsupervised Learning
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/00-index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/01-unsupervised-learning.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Framing Unsupervised Learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/02-k-means-clustering.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    k-Means Clustering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/03-anomaly-detection.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomaly Detection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/04-isolation-forests.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Isolation Forests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2397,7 +2591,7 @@
 <h2 id="decision-trees_1">Decision Trees</h2>
 <p>A <strong>decision tree</strong> is a flowchart. Each internal node tests one feature against a threshold. Each branch follows one outcome of that test. Each leaf assigns a class label via the leaf's majority class (so among the training examples that end in this leaf). To classify a new example, you walk from the root to a leaf, following the branches that match the example's feature values.</p>
 <p>Let's take a look at an example. The Palmer Penguins dataset has three species (Adelie: <em>blue</em>, Chinstrap: <em>orange</em>, Gentoo: <em>green</em>), four features, and 333 samples. Here's a decision tree of depth 2 trained on the dataset. Colors in each node show the class proportions among the training examples that reached that node:</p>
-<p><center><img src="../media/demos-screenshots/dt-depth2-penguins.png" alt="decision tree: colors indicate proportion of class at each node" width="400px"/></center></p>
+<p><center><img src="../media/demos-screenshots/dt-depth2-penguins.png" alt="decision tree: colors indicate proportion of class at each node" width="600px"/></center></p>
 
 <ul>
 <li>The root splits on <strong>flipper length ≤ 207.5 mm</strong>: examples above the threshold flow right, the examples that land here are almost exclusively Gentoo.</li>
@@ -2408,9 +2602,11 @@
 <blockquote>
 <p><strong>Overfitting pitfall:</strong> A fully grown tree memorizes the training set and generalizes poorly. So depth needs to be balanced.</p>
 </blockquote>
-<p>To balance depth, several <strong>pruning</strong> strategies are available:
-- either stop splitting early when the gain falls below a threshold, or
-- grow the full tree and then remove branches that hurt held-out performance (post-pruning).</p>
+<p>To balance depth, several <strong>pruning</strong> strategies are available:</p>
+<ul>
+<li>either stop splitting early when the gain falls below a threshold, or</li>
+<li>grow the full tree and then remove branches that hurt held-out performance (post-pruning).</li>
+</ul>
 <p>The simplest way to restrict maximum tree depth directly during fitting the tree.
 When using scikit-learn <code>DecisionTreeClassifier</code>, all these options can be controlled via hyperparameters: <code>max_depth</code>, <code>min_samples_leaf</code>, and <code>min_samples_split</code>.</p>
 <blockquote>
@@ -2420,9 +2616,9 @@ When using scikit-learn <code>DecisionTreeClassifier</code>, all these options c
 <hr />
 <h2 id="multi-class-evaluation">Multi-Class Evaluation</h2>
 <p>First of all, the concept of a confusion matrix from <a href="08-classification-evaluation.html">🖝 Classification Evaluation</a> generalizes straight-forward to a multi-class setting:</p>
-<p><center><img src="../media/demos-screenshots/dt-confusionmatrix.png" alt="multi-class confusion matrix" width="300px"/></center></p>
+<p><center><img src="../media/demos-screenshots/dt-confusionmatrix.png" alt="multi-class confusion matrix" width="450px"/></center></p>
 
-<p>Now, let's take a look at the classification metrics. 
+<p>Now, let's take a look at the classification metrics.
 Up to this point, precision, recall, and F1 were defined for a <strong>binary</strong> problem with one positive class. Many real tasks have more than two classes: species, product categories, medical diagnoses. Decision trees handle multi-class problems natively, since leaves can predict any class, but evaluation needs to extend as well.</p>
 <p>The key idea is straightforward: for each class, treat it as the positive class and all other classes as negative. This gives you a precision, recall, and F1 <strong>per class</strong>. Scikit-learn's <code>classification_report</code> does exactly this:</p>
 <p>The report for the depth-2 penguins tree above is this (computed for test data, where we do evaluation):</p>
@@ -2515,7 +2711,7 @@ The second term is a size-weighted average of child entropies. A good split prod
 <p><strong>Gini impurity</strong> measures the probability that a randomly chosen record from node <span class="arithmatex">\(v\)</span> is incorrectly classified when labelled at random from the node's class distribution. Like entropy, it equals zero for a pure node and is maximal when all classes are equally represented. Splits are chosen by maximizing the weighted reduction in Gini across children. This is the same greedy principle as information gain:</p>
 <div class="arithmatex">\[G(v) = 1 - \sum_c p_v(c)^2\]</div>
 <p>Both entropy and gini select nearly identical splits in practice, so you can just use the default (Gini) from <code>DecisionTreeClassifier</code>.
-In practice, Gini is slightly faster (no logarithm), entropy produces a sharper penalty on mixed nodes. </p>
+In practice, Gini is slightly faster (no logarithm), entropy produces a sharper penalty on mixed nodes.</p>
 <hr />
 <h2 id="references">References</h2>
 <p>Tan, P.-N., Steinbach, M., Karpatne, A., &amp; Kumar, V. (2020). <em>Introduction to Data Mining</em> (2nd ed.). Pearson.</p>
@@ -2524,7 +2720,7 @@ In practice, Gini is slightly faster (no logarithm), entropy produces a sharper 
 <blockquote>
 <p><strong>Navigation:</strong> <a href="08-classification-evaluation.html">&lt;-- Classification Evaluation</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="10-random-forests.html">Random Forests --&gt;</a></p>
 </blockquote>
-<p>Script v1.3 (2026-06-09) · FGN</p>
+<p>Script v1.4 (2026-06-10) · FGN</p>
 
 
 

@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-03-data-understanding/05-eda-data-quality.html">
+        <link rel="canonical" href="https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-07-unsupervised-learning/03-anomaly-detection.html">
       
       
-        <link rel="prev" href="04-eda-descriptive-stats.html">
+        <link rel="prev" href="02-k-means-clustering.html">
       
       
-        <link rel="next" href="06-eda-distributions.html">
+        <link rel="next" href="04-isolation-forests.html">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>EDA: Data Quality - Intro to Data Science & ML</title>
+        <title>Anomaly Detection - Intro to Data Science & ML</title>
       
     
     
@@ -86,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#eda-data-quality" class="md-skip">
+        <a href="#anomaly-detection" class="md-skip">
           Skip to content
         </a>
       
@@ -122,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              EDA: Data Quality
+              Anomaly Detection
             
           </span>
         </div>
@@ -686,20 +686,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -720,7 +718,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -738,7 +736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="00-index.html" class="md-nav__link">
+      <a href="../part-03-data-understanding/00-index.html" class="md-nav__link">
         
   
   
@@ -766,7 +764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="01-why-data-work.html" class="md-nav__link">
+      <a href="../part-03-data-understanding/01-why-data-work.html" class="md-nav__link">
         
   
   
@@ -794,7 +792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="02-data-types.html" class="md-nav__link">
+      <a href="../part-03-data-understanding/02-data-types.html" class="md-nav__link">
         
   
   
@@ -822,7 +820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="03-datasets.html" class="md-nav__link">
+      <a href="../part-03-data-understanding/03-datasets.html" class="md-nav__link">
         
   
   
@@ -850,7 +848,7 @@
   
   
     <li class="md-nav__item">
-      <a href="04-eda-descriptive-stats.html" class="md-nav__link">
+      <a href="../part-03-data-understanding/04-eda-descriptive-stats.html" class="md-nav__link">
         
   
   
@@ -875,37 +873,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    EDA: Data Quality
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="05-eda-data-quality.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../part-03-data-understanding/05-eda-data-quality.html" class="md-nav__link">
         
   
   
@@ -921,109 +892,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#table-of-contents" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Table of Contents
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#measurement-and-collection-errors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Measurement and Collection Errors
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Measurement and Collection Errors">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#measurement-errors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Measurement errors
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#data-collection-errors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Data collection errors
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#missing-values" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Missing Values
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#application-level-concerns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Application-Level Concerns
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Summary
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1036,7 +904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="06-eda-distributions.html" class="md-nav__link">
+      <a href="../part-03-data-understanding/06-eda-distributions.html" class="md-nav__link">
         
   
   
@@ -1064,7 +932,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-eda-correlations.html" class="md-nav__link">
+      <a href="../part-03-data-understanding/07-eda-correlations.html" class="md-nav__link">
         
   
   
@@ -1092,7 +960,7 @@
   
   
     <li class="md-nav__item">
-      <a href="08-eda-best-practices.html" class="md-nav__link">
+      <a href="../part-03-data-understanding/08-eda-best-practices.html" class="md-nav__link">
         
   
   
@@ -1958,18 +1826,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
         
           
           <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
@@ -1990,7 +1860,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2008,7 +1878,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-07-unsupervised-learning/00-index.html" class="md-nav__link">
+      <a href="00-index.html" class="md-nav__link">
         
   
   
@@ -2036,7 +1906,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-07-unsupervised-learning/01-unsupervised-learning.html" class="md-nav__link">
+      <a href="01-unsupervised-learning.html" class="md-nav__link">
         
   
   
@@ -2064,7 +1934,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-07-unsupervised-learning/02-k-means-clustering.html" class="md-nav__link">
+      <a href="02-k-means-clustering.html" class="md-nav__link">
         
   
   
@@ -2089,10 +1959,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../part-07-unsupervised-learning/03-anomaly-detection.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomaly Detection
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="03-anomaly-detection.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2108,6 +2005,137 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-counts-as-abnormal-the-framing-problem" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Counts as Abnormal: The Framing Problem
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What Counts as Abnormal: The Framing Problem">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pathways-depending-on-label-availability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pathways depending on label availability
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#anomalies-vs-outliers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Anomalies vs. outliers
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#baselines-statistical-anomaly-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Baselines: Statistical Anomaly Detection
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Baselines: Statistical Anomaly Detection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-z-score-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The z-score method
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-interquartile-range-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The interquartile range method
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statistical-process-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Statistical process control
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2120,7 +2148,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-07-unsupervised-learning/04-isolation-forests.html" class="md-nav__link">
+      <a href="04-isolation-forests.html" class="md-nav__link">
         
   
   
@@ -2436,22 +2464,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#measurement-and-collection-errors" class="md-nav__link">
+  <a href="#what-counts-as-abnormal-the-framing-problem" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Measurement and Collection Errors
+        What Counts as Abnormal: The Framing Problem
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Measurement and Collection Errors">
+    <nav class="md-nav" aria-label="What Counts as Abnormal: The Framing Problem">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#measurement-errors" class="md-nav__link">
+  <a href="#pathways-depending-on-label-availability" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Measurement errors
+        Pathways depending on label availability
       
     </span>
   </a>
@@ -2459,10 +2487,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#data-collection-errors" class="md-nav__link">
+  <a href="#anomalies-vs-outliers" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Data collection errors
+        Anomalies vs. outliers
       
     </span>
   </a>
@@ -2475,24 +2503,52 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#missing-values" class="md-nav__link">
+  <a href="#baselines-statistical-anomaly-detection" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Missing Values
+        Baselines: Statistical Anomaly Detection
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Baselines: Statistical Anomaly Detection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-z-score-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The z-score method
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#application-level-concerns" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#the-interquartile-range-method" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Application-Level Concerns
+        The interquartile range method
       
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#statistical-process-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Statistical process control
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -2525,88 +2581,89 @@
 
 
 <blockquote>
-<p><strong>Navigation:</strong> <a href="04-eda-descriptive-stats.html">&lt;-- EDA: Descriptive Statistics</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="06-eda-distributions.html">EDA: Distributions --&gt;</a></p>
+<p><strong>Navigation:</strong> <a href="02-k-means-clustering.html">&lt;-- k-Means Clustering</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="04-isolation-forests.html">Isolation Forests --&gt;</a></p>
 </blockquote>
 <hr />
-<h1 id="eda-data-quality">EDA: Data Quality</h1>
-<p><strong>Requires</strong>: <a href="04-eda-descriptive-stats.html">EDA: Descriptive Statistics</a></p>
-<p><strong>Motivation</strong>: Summary statistics and first inspection give you the shape of the data. But numbers that appear in a column are not necessarily correct numbers. This nugget asks: what can go wrong at the level of individual measurements, records, and the collection process itself — and how do you recognize it?</p>
+<h1 id="anomaly-detection">Anomaly Detection</h1>
+<p><strong>Requires</strong>: <a href="01-unsupervised-learning.html">Framing Unsupervised Learning</a></p>
+<p><strong>Motivation</strong>: You are monitoring a production machine and want to flag readings that look unusual before they become failures. The difficulty is that you have very few labeled examples of faults: most of the time the machine runs normally, and a fault is precisely what has not happened yet. Anomaly detection is the branch of unsupervised learning built for this situation. Its goal is to find observations that do not fit the pattern of the rest, without a labeled training set to learn from.</p>
 <blockquote>
-<p>You will learn to classify data quality problems by their source — measurement errors, collection errors, and application-level concerns — and understand the key distinction between random and systematic missingness, which determines what handling strategy is appropriate.</p>
+<p>In this nugget, you'll learn why framing what counts as an anomaly matters for anomaly detection, and you'll get to know the simplest statistical baselines that can be used for anomaly detection when you want interpretable, fast results on single features.</p>
+<p><strong>Interactive demo note:</strong> You can explore everything said here using the <strong>anomaly detection</strong> demo from my <a href="https://github.com/fgnussbaum/ds-ml-interactive-demos">✪ interactive data-science demos</a> repository.</p>
 </blockquote>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ul>
-<li><a href="#measurement-and-collection-errors">Measurement and Collection Errors</a></li>
-<li><a href="#missing-values">Missing Values</a></li>
-<li><a href="#application-level-concerns">Application-Level Concerns</a></li>
+<li><a href="#what-counts-as-abnormal-the-framing-problem">What Counts as Abnormal: The Framing Problem</a></li>
+<li><a href="#baselines-statistical-anomaly-detection">Baselines: Statistical Anomaly Detection</a></li>
 <li><a href="#summary">Summary</a></li>
 </ul>
-<h2 id="measurement-and-collection-errors">Measurement and Collection Errors</h2>
-<h3 id="measurement-errors">Measurement errors</h3>
-<p>Measurement error arise during the measurement process. For a continuous attribute, it is the numerical difference between the measured value and the true value. Two subtypes matter in practice:</p>
+<h2 id="what-counts-as-abnormal-the-framing-problem">What Counts as Abnormal: The Framing Problem</h2>
+<p><strong>Anomaly detection</strong> assigns each observation a score reflecting how unusual it is relative to the rest of the data. Typically, observations above a chosen threshold are flagged as anomalies.</p>
+<p>There is no universal definition of "abnormal". What counts as anomalous depends entirely on the domain.</p>
 <ul>
-<li><strong>Noise</strong>: This is the random component of measurement error. A temperature sensor that fluctuates around the true value by ±0.5°C produces noise. Noise in a single measurement can often not be avoided. Averaging repeated measurements can reduce it.</li>
-<li><strong>Artifacts</strong>: These are deterministic (non-random) deviations. A camera that always produces a bright streak at the same pixel position introduces a systematic distortion. Averaging won't help here.</li>
-</ul>
-<p>The following related concepts describe the costs of measurement errors:</p>
-<ul>
-<li><strong>Precision</strong>: the closeness of repeated measurements to one another. High noise means low precision.</li>
-<li><strong>Bias</strong>: systematic variation from the true value. A scale that reads 500 g too heavy every time is precise but biased.</li>
-<li><strong>Accuracy</strong>: the closeness of measurements to the true value. Requires both low noise and low bias.</li>
-</ul>
-<p>Here's a "dartboard" for illustration.</p>
-<p><img alt="Dartboard: Precision, bias accuracy" src="../media/plots/precision_bias_accuracy_2d.png" /></p>
-<h3 id="data-collection-errors">Data collection errors</h3>
-<p>Next, we have data collection errors. Unlike measurement errors, they arise from failures in the collection process: omitting records that should be present, or including records that should not be.</p>
-<blockquote>
-<p>Data collection errors are harder to detect because they often leave no direct trace in the data.</p>
-</blockquote>
-<p>Other types of quality problems that should be spotted include:</p>
-<ul>
-<li><strong>Inconsistencies</strong>: These can range from attribute values contradict another value (like a city name that does not match its zip code). Typos and mismatched units can also cause inconsistencies that need fixing.</li>
-<li><strong>Duplicate records</strong> are two or more records representing the same real-world entity. They inflate counts and bias statistics. When two records differ only in one or two fields, special attention may be needed: Were there data entry errors? Were datasets with different identifiers merged?</li>
+<li>A temperature reading of 80°C might be normal for one machine and catastrophic for another.</li>
+<li>A transaction of <span class="arithmatex">\(€50\,000\)</span> might be routine for a corporate account and suspicious for a student account.</li>
 </ul>
 <blockquote>
-<p><strong>Note:</strong> Some apparent duplicates are not duplicates at all. Two customers at the same address are not the same person. Verify the business logic before deleting any record. Same for editing data to fix an apparent inconsistency.</p>
+<p><strong>Important:</strong> The definition of normality must be derived from the data's domain context.</p>
 </blockquote>
+<p>Any anomaly detector you build encodes an implicit definition of normality. Making that definition explicit is part of the modeling work.</p>
+<h3 id="pathways-depending-on-label-availability">Pathways depending on label availability</h3>
+<p>There are three typical pathways in practice:</p>
+<ul>
+<li><strong>No labels at all.</strong> The data contains no record of which observations were genuine anomalies. You build a model of normality from all the data and flag deviations from it.</li>
+<li><strong>Partial labels.</strong> Some known anomalies have been flagged by engineers or analysts. They are not enough to train a supervised classifier, perhaps also because new types of anomalies are expected. However, the partial labels are useful to guide threshold setting or evaluating performance on a held-out sample.</li>
+<li><strong>Full labels.</strong> Enough labeled anomalies exist to train a supervised model. In that case, supervised classification is typically stronger than unsupervised anomaly detection.</li>
+</ul>
+<p>The partial-label setting is the most common in practice. For example, ground truth emerges gradually as engineers investigate flagged cases.</p>
+<h3 id="anomalies-vs-outliers">Anomalies vs. outliers</h3>
+<p>It is worth distinguishing <strong>anomaly</strong> from the related term <strong>outlier</strong>. In <a href="../part-03-data-understanding/06-eda-distributions.html">🖝 EDA: Distributions</a>, we discussed outliers and the IQR criterion for flagging statistical extremes for further investigation.</p>
+<p>An anomaly, by contrast, is a domain-meaningful deviation. A true anomaly usually warrants some kind of action. The two come apart in both directions.</p>
+<ul>
+<li>A billionaire's large transaction is a statistical outlier in a general-population dataset but not a fraud signal.</li>
+<li>Conversely, subtle sensor drift can stay well within the statistical norm while still being a known precursor to failure.</li>
+</ul>
+<p>Whether a statistical extreme is also an anomaly is a domain question, not a statistics question.</p>
 <hr />
-<h2 id="missing-values">Missing Values</h2>
-<p>Missing values are nearly universal in real datasets. The <code>count</code> row in <code>df.describe()</code> is your first check: it shows the number of non-null values per column (see <a href="04-eda-descriptive-stats.html">🖝 EDA: Descriptive Statistics</a>). Any column where count falls below the total row count contains missing values. But <code>df.describe()</code> does not always make this visible at a glance. A column can have an apparently normal mean and standard deviation and still carry 15% missing data you have not noticed.</p>
-<p>When there are many variables, a dedicated missing-value plot is an option. Here's one for a few variables from the ESS dataset. There are only few missing values for most columns (note the x-axis shows only a small range below 1%).</p>
-<p><img alt="Missing values bar chart for the ESS well-being dataset" src="../media/plots-ess/ess_wellbeing_missing_values.png" /></p>
-<p>Understanding <em>why</em> values are missing matters more than just knowing how many are missing. The main question is whether missing values are random or systematic:</p>
-<ul>
-<li><strong>Random</strong>: Missingness is unrelated to any variable. A sensor randomly dropping readings is random missing data. The remaining data is still representative. No bias.</li>
-<li><strong>Systematic</strong>: Missingness depends on other variables (e.g., older respondents skip income questions) or on the missing value itself (e.g., high earners skip income questions).</li>
-</ul>
+<h2 id="baselines-statistical-anomaly-detection">Baselines: Statistical Anomaly Detection</h2>
+<p>Before reaching for sophisticated models, it is always good to start with a statistical baselines (compare <a href="../part-06-reflection/02-start-simple.html">🖝 Start Simple</a> and <a href="../part-06-reflection/03-baselines.html">🖝 Baselines and the Good-Enough Bar</a>). Statistical baselines for anomoaly detection are fast, interpretable, and surprisingly effective when the data is reasonably well-behaved.</p>
+<h3 id="the-z-score-method">The z-score method</h3>
+<p>Z-score measures how many standard deviations an observation lies from the mean. As in  <a href="../part-04-data-preparation/03-scaling-imputation.html">🖝 Scaling and Imputation</a>, for a feature <span class="arithmatex">\(x\)</span> with mean <span class="arithmatex">\(\mu\)</span> and standard deviation <span class="arithmatex">\(\sigma\)</span>:</p>
+<div class="arithmatex">\[z = \frac{x - \mu}{\sigma}\]</div>
+<p>Observations above a certain threshold are flagged as anomalies, for example <span class="arithmatex">\(|z| &gt; 3\)</span>. This works well when the data is approximately normally distributed. For scientific measurements that follow a near-Gaussian distribution (voltages, temperatures in stable conditions, spectroscopic intensities) the z-score is often the right starting point.
+Here's an example from the interactive demo that marks a few anormal (server) response times using a z-score:</p>
+<p><center><img src="../media/demos-screenshots/ad_z_baseline.png" alt="SPC chart with z-score-limit" width="600px"/></center></p>
+
 <blockquote>
-<p>Systematic missingness biases your results, which requires careful consideration.</p>
+<p><strong>Warning:</strong> The z-score is sensitive to the very outliers it is trying to detect. A single extreme value inflates the mean and standard deviation, making the score less sensitive to moderately unusual points. Compute it on a clean reference period rather than on the full dataset when possible.</p>
 </blockquote>
-<p>Handling strategies for missing values, including deletion and various forms of imputation, are covered in <a href="../part-04-data-preparation/03-scaling-imputation.html">🖝 Scaling and Imputation</a>.</p>
+<h3 id="the-interquartile-range-method">The interquartile range method</h3>
+<p>The <strong>IQR method</strong> (interquartile range) is slightly more robust than the z-score method (see <a href="../part-03-data-understanding/04-eda-descriptive-stats.html">🖝 EDA: Descriptive Statistics</a> and <a href="../part-03-data-understanding/06-eda-distributions.html">🖝 EDA: Distributions</a> for background on IQR). It flags observations that fall more than <span class="arithmatex">\(1.5 \times \text{IQR}\)</span> below the first quartile or above the third quartile:</p>
+<div class="arithmatex">\[\text{lower} = Q_1 - 1.5 \cdot \text{IQR}, \qquad \text{upper} = Q_3 + 1.5 \cdot \text{IQR}\]</div>
+<p>Because it is based on order statistics rather than the mean and standard deviation, it is not pulled by extreme values. Use it when the data is skewed or when you have reason to expect a few extreme values that should not distort the threshold.</p>
+<h3 id="statistical-process-control">Statistical process control</h3>
+<p>Statistical process control (SPC) applies the ideas we discussed over time. Control charts (such as the <a href="https://en.wikipedia.org/wiki/Shewhart_individuals_control_chart">🔗 Shewhart chart</a>) track a signal over time and flag observations that fall outside control limits, typically set at <span class="arithmatex">\(\pm 3\sigma\)</span> from the process mean estimated from a stable reference period. SPC is the baseline for manufacturing and process monitoring.</p>
 <hr />
-<h2 id="application-level-concerns">Application-Level Concerns</h2>
-<p>Some data quality problems have nothing to do with everything discussed so far, but with whether the data fits the intended use.</p>
+<p>All three methods share the same logic: Flag distance from the center of the distribution. They are interpretable, require no model training, and produce immediately explainable results. Their limitations are</p>
 <ul>
-<li><strong>Timeliness</strong>: Data ages. Customer behavior recorded three years ago may no longer reflect current patterns. Check when the data was collected and whether the underlying phenomenon could have shifted since then.</li>
-<li><strong>Relevance</strong>: The data must contain the right attributes to answer the question. Predicting car accident rates without age or driving-experience information is unlikely to produce a useful model, regardless of how clean the data is.</li>
-<li><strong>Sampling bias</strong>: The sample may not represent the population you care about. A voluntary survey reaches people who choose to respond, which systematically underrepresents disengaged groups. This is not a measurement error in individual records. It is a structural problem in how the data was gathered (survey like ESS take greate care to avoid this kind of bias).</li>
+<li>they assume a simple distributional shape (near-normal or symmetric), and</li>
+<li>they operate on one feature at a time.</li>
 </ul>
-<p>Another concern is that well-maintained data is that of documentation.</p>
-<blockquote>
-<p>Good data should come with a <strong>data card</strong> (sometimes called a datasheet). This is a document that records <em>what</em> was collected, by <em>whom</em>, <em>when</em>, under <em>what</em> conditions, and for <em>what</em> original purpose. Before trusting a dataset, check whether documentation exists and whether the original collection context matches your intended use.</p>
-</blockquote>
+<p>When anomalies are defined by combinations of features (like a reading that is individually normal but unusual together with another reading), then statistical methods will miss them. That is where model-based methods come in.</p>
+<!-- Source: statistical process control and Shewhart charts — standard quality engineering references -->
+
+<p>In the next nugget, we discuss <a href="04-isolation-forests.html">🖝 Isolation Forests</a> as a first such model-based method that handles multivariate anomalies.</p>
 <hr />
 <h2 id="summary">Summary</h2>
 <ul>
-<li>Measurement errors include noise (random, can be averaged out) and artifacts (systematic, cannot). Precision, bias, and accuracy describe different ways measurement can fail.</li>
-<li>Data collection errors introduce omissions or inappropriate inclusions. Inconsistencies and duplicate records are structural quality problems that require domain knowledge to resolve.</li>
-<li>The <code>count</code> row in <code>df.describe()</code> is your first missing-value check. The randomness pattern determine which handling strategy makes sense. Strategies are covered in Part 4.</li>
-<li>Application-level concerns, including timeliness, relevance, sampling bias, and data documentation, determine whether data is fit for purpose regardless of its technical cleanliness.</li>
+<li>Anomaly detection has no universal definition of "abnormal". The definition of normality is domain-dependent and must be made explicit in the modeling choices.</li>
+<li>Three common data situations: (1) no labels (build a normality model from all data and flag deviations), (2) partial labels (build normality model on good data, use known anomalies to guide threshold setting and evaluation), (3) full labels (switch to supervised classification).</li>
+<li>Statistical baselines (z-score, IQR, and SPC control charts) flag distance from the center of the distribution. They are interpretable and effective for single features with approximately symmetric distributions, but miss anomalies defined by combinations of features.</li>
 </ul>
 <p>As always: Happy learning, happy life! 🫶</p>
 <hr />
 <blockquote>
-<p><strong>Navigation:</strong> <a href="04-eda-descriptive-stats.html">&lt;-- EDA: Descriptive Statistics</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="06-eda-distributions.html">EDA: Distributions --&gt;</a></p>
+<p><strong>Navigation:</strong> <a href="02-k-means-clustering.html">&lt;-- k-Means Clustering</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="04-isolation-forests.html">Isolation Forests --&gt;</a></p>
 </blockquote>
 <p>Script v1.4 (2026-06-10) · FGN</p>
 

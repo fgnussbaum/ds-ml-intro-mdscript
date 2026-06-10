@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-03-data-understanding/05-eda-data-quality.html">
+        <link rel="canonical" href="https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-07-unsupervised-learning/01-unsupervised-learning.html">
       
       
-        <link rel="prev" href="04-eda-descriptive-stats.html">
+        <link rel="prev" href="00-index.html">
       
       
-        <link rel="next" href="06-eda-distributions.html">
+        <link rel="next" href="02-k-means-clustering.html">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>EDA: Data Quality - Intro to Data Science & ML</title>
+        <title>Framing Unsupervised Learning - Intro to Data Science & ML</title>
       
     
     
@@ -86,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#eda-data-quality" class="md-skip">
+        <a href="#framing-unsupervised-learning" class="md-skip">
           Skip to content
         </a>
       
@@ -122,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              EDA: Data Quality
+              Framing Unsupervised Learning
             
           </span>
         </div>
@@ -686,20 +686,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -720,7 +718,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -738,7 +736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="00-index.html" class="md-nav__link">
+      <a href="../part-03-data-understanding/00-index.html" class="md-nav__link">
         
   
   
@@ -766,7 +764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="01-why-data-work.html" class="md-nav__link">
+      <a href="../part-03-data-understanding/01-why-data-work.html" class="md-nav__link">
         
   
   
@@ -794,7 +792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="02-data-types.html" class="md-nav__link">
+      <a href="../part-03-data-understanding/02-data-types.html" class="md-nav__link">
         
   
   
@@ -822,7 +820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="03-datasets.html" class="md-nav__link">
+      <a href="../part-03-data-understanding/03-datasets.html" class="md-nav__link">
         
   
   
@@ -850,7 +848,7 @@
   
   
     <li class="md-nav__item">
-      <a href="04-eda-descriptive-stats.html" class="md-nav__link">
+      <a href="../part-03-data-understanding/04-eda-descriptive-stats.html" class="md-nav__link">
         
   
   
@@ -875,37 +873,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    EDA: Data Quality
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="05-eda-data-quality.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../part-03-data-understanding/05-eda-data-quality.html" class="md-nav__link">
         
   
   
@@ -921,109 +892,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#table-of-contents" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Table of Contents
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#measurement-and-collection-errors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Measurement and Collection Errors
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Measurement and Collection Errors">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#measurement-errors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Measurement errors
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#data-collection-errors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Data collection errors
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#missing-values" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Missing Values
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#application-level-concerns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Application-Level Concerns
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Summary
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1036,7 +904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="06-eda-distributions.html" class="md-nav__link">
+      <a href="../part-03-data-understanding/06-eda-distributions.html" class="md-nav__link">
         
   
   
@@ -1064,7 +932,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-eda-correlations.html" class="md-nav__link">
+      <a href="../part-03-data-understanding/07-eda-correlations.html" class="md-nav__link">
         
   
   
@@ -1092,7 +960,7 @@
   
   
     <li class="md-nav__item">
-      <a href="08-eda-best-practices.html" class="md-nav__link">
+      <a href="../part-03-data-understanding/08-eda-best-practices.html" class="md-nav__link">
         
   
   
@@ -1958,18 +1826,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
         
           
           <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
@@ -1990,7 +1860,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2008,7 +1878,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-07-unsupervised-learning/00-index.html" class="md-nav__link">
+      <a href="00-index.html" class="md-nav__link">
         
   
   
@@ -2033,10 +1903,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../part-07-unsupervised-learning/01-unsupervised-learning.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Framing Unsupervised Learning
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="01-unsupervised-learning.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2052,6 +1949,92 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-there-are-no-labels-the-unsupervised-shift" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When There Are No Labels: The Unsupervised Shift
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#two-families-grouping-and-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Two Families: Grouping and Detection
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supervised-or-unsupervised-choosing-the-right-frame" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supervised or Unsupervised? Choosing the Right Frame
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evaluation-for-unsupervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evaluation for Unsupervised Learning
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2064,7 +2047,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-07-unsupervised-learning/02-k-means-clustering.html" class="md-nav__link">
+      <a href="02-k-means-clustering.html" class="md-nav__link">
         
   
   
@@ -2092,7 +2075,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-07-unsupervised-learning/03-anomaly-detection.html" class="md-nav__link">
+      <a href="03-anomaly-detection.html" class="md-nav__link">
         
   
   
@@ -2120,7 +2103,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-07-unsupervised-learning/04-isolation-forests.html" class="md-nav__link">
+      <a href="04-isolation-forests.html" class="md-nav__link">
         
   
   
@@ -2436,49 +2419,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#measurement-and-collection-errors" class="md-nav__link">
+  <a href="#when-there-are-no-labels-the-unsupervised-shift" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Measurement and Collection Errors
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Measurement and Collection Errors">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#measurement-errors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Measurement errors
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#data-collection-errors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Data collection errors
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#missing-values" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Missing Values
+        When There Are No Labels: The Unsupervised Shift
       
     </span>
   </a>
@@ -2486,10 +2430,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#application-level-concerns" class="md-nav__link">
+  <a href="#two-families-grouping-and-detection" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Application-Level Concerns
+        Two Families: Grouping and Detection
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supervised-or-unsupervised-choosing-the-right-frame" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supervised or Unsupervised? Choosing the Right Frame
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evaluation-for-unsupervised-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evaluation for Unsupervised Learning
       
     </span>
   </a>
@@ -2525,88 +2491,101 @@
 
 
 <blockquote>
-<p><strong>Navigation:</strong> <a href="04-eda-descriptive-stats.html">&lt;-- EDA: Descriptive Statistics</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="06-eda-distributions.html">EDA: Distributions --&gt;</a></p>
+<p><strong>Navigation:</strong> <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="02-k-means-clustering.html">k-Means Clustering --&gt;</a></p>
 </blockquote>
 <hr />
-<h1 id="eda-data-quality">EDA: Data Quality</h1>
-<p><strong>Requires</strong>: <a href="04-eda-descriptive-stats.html">EDA: Descriptive Statistics</a></p>
-<p><strong>Motivation</strong>: Summary statistics and first inspection give you the shape of the data. But numbers that appear in a column are not necessarily correct numbers. This nugget asks: what can go wrong at the level of individual measurements, records, and the collection process itself — and how do you recognize it?</p>
+<h1 id="framing-unsupervised-learning">Framing Unsupervised Learning</h1>
+<p><strong>Requires</strong>: <a href="../part-05-supervised-learning/01-supervised-learning.html">Supervised Learning</a> · <a href="../part-01-the-big-picture/04-crisp-dm.html">CRISP-DM</a></p>
+<p><strong>Motivation</strong>: Throughout Part V we considered models with a target column at hand: like the happiness score in the ESS survey data.
+Real data is often not like that. A new production line produces thousands of readings per hour before anyone has decided which patterns to call "good", and a customer database may contain transactions without any segment labels. Can you still find structure in data when no one has told you what to look for?</p>
 <blockquote>
-<p>You will learn to classify data quality problems by their source — measurement errors, collection errors, and application-level concerns — and understand the key distinction between random and systematic missingness, which determines what handling strategy is appropriate.</p>
+<p>You'll see what changes when the target column disappears, learn the two main families of unsupervised tasks (grouping and detection), and revisit the CRISP-DM loop to understand what evaluation looks like when there are no ground-truth labels to check against.</p>
 </blockquote>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ul>
-<li><a href="#measurement-and-collection-errors">Measurement and Collection Errors</a></li>
-<li><a href="#missing-values">Missing Values</a></li>
-<li><a href="#application-level-concerns">Application-Level Concerns</a></li>
+<li><a href="#when-there-are-no-labels-the-unsupervised-shift">When There Are No Labels: The Unsupervised Shift</a></li>
+<li><a href="#two-families-grouping-and-detection">Two Families: Grouping and Detection</a></li>
+<li><a href="#supervised-or-unsupervised-choosing-the-right-frame">Supervised or Unsupervised? Choosing the Right Frame</a></li>
+<li><a href="#evaluation-for-unsupervised-learning">Evaluation for Unsupervised Learning</a></li>
 <li><a href="#summary">Summary</a></li>
 </ul>
-<h2 id="measurement-and-collection-errors">Measurement and Collection Errors</h2>
-<h3 id="measurement-errors">Measurement errors</h3>
-<p>Measurement error arise during the measurement process. For a continuous attribute, it is the numerical difference between the measured value and the true value. Two subtypes matter in practice:</p>
+<h2 id="when-there-are-no-labels-the-unsupervised-shift">When There Are No Labels: The Unsupervised Shift</h2>
+<p>In <a href="../part-05-supervised-learning/01-supervised-learning.html">🖝 Supervised Learning</a>, every training example had a known "answer": a numeric target for regression or a class label for classification. The model's job was to find the mapping from inputs to that answer (= target, output).</p>
+<p><strong>Unsupervised learning</strong> removes the target column entirely. You have a dataset of observations, and you want to discover structure in it: natural groups, unusual instances, or compact representations. The task is to find structure without being specifically told what to look for.</p>
+<p><center><img src="../media/plots/supervised_vs_unsupervised.png" alt="" width="500px"/></center></p>
+
+<p>In many real situations, labels simply do not exist yet.</p>
 <ul>
-<li><strong>Noise</strong>: This is the random component of measurement error. A temperature sensor that fluctuates around the true value by ±0.5°C produces noise. Noise in a single measurement can often not be avoided. Averaging repeated measurements can reduce it.</li>
-<li><strong>Artifacts</strong>: These are deterministic (non-random) deviations. A camera that always produces a bright streak at the same pixel position introduces a systematic distortion. Averaging won't help here.</li>
+<li>A new vibration sensor on a machine produces readings before anyone has characterized what a fault looks like.</li>
+<li>Customer transactions accumulate before analysts have agreed on what segments are meaningful.</li>
 </ul>
-<p>The following related concepts describe the costs of measurement errors:</p>
+<p>Unsupervised methods are the right tool for these situations.</p>
+<hr />
+<h2 id="two-families-grouping-and-detection">Two Families: Grouping and Detection</h2>
+<p>There are two main task families in unsupervised learning.</p>
+<p><strong>Clustering</strong> (grouping) partitions the data into groups called <strong>clusters</strong>. The idea is that observations within a group are similar to each other and dissimilar to observations in other groups. The groups are not defined in advance. Examples:</p>
 <ul>
-<li><strong>Precision</strong>: the closeness of repeated measurements to one another. High noise means low precision.</li>
-<li><strong>Bias</strong>: systematic variation from the true value. A scale that reads 500 g too heavy every time is precise but biased.</li>
-<li><strong>Accuracy</strong>: the closeness of measurements to the true value. Requires both low noise and low bias.</li>
+<li>You might cluster survey respondents into segments with similar wellbeing profiles,</li>
+<li>or cluster machine measurements to find common operating pattern.</li>
 </ul>
-<p>Here's a "dartboard" for illustration.</p>
-<p><img alt="Dartboard: Precision, bias accuracy" src="../media/plots/precision_bias_accuracy_2d.png" /></p>
-<h3 id="data-collection-errors">Data collection errors</h3>
-<p>Next, we have data collection errors. Unlike measurement errors, they arise from failures in the collection process: omitting records that should be present, or including records that should not be.</p>
 <blockquote>
-<p>Data collection errors are harder to detect because they often leave no direct trace in the data.</p>
+<p>In this part, we'll cover <a href="02-k-means-clustering.html">🖝 k-Means Clustering</a>, which is arguably the most widely used clustering method.</p>
 </blockquote>
-<p>Other types of quality problems that should be spotted include:</p>
+<p><strong>Anomaly detection</strong> assigns each observation a score reflecting how unusual it is relative to the rest of the data. High-scoring observations are flagged as anomalies. Examples:</p>
 <ul>
-<li><strong>Inconsistencies</strong>: These can range from attribute values contradict another value (like a city name that does not match its zip code). Typos and mismatched units can also cause inconsistencies that need fixing.</li>
-<li><strong>Duplicate records</strong> are two or more records representing the same real-world entity. They inflate counts and bias statistics. When two records differ only in one or two fields, special attention may be needed: Were there data entry errors? Were datasets with different identifiers merged?</li>
+<li>detect sensor readings that deviate sharply from the typical pattern,</li>
+<li>flag financial transactions that looks nothing like the others.</li>
 </ul>
 <blockquote>
-<p><strong>Note:</strong> Some apparent duplicates are not duplicates at all. Two customers at the same address are not the same person. Verify the business logic before deleting any record. Same for editing data to fix an apparent inconsistency.</p>
+<p>In this part, we'll cover basic statistical methods in <a href="03-anomaly-detection.html">🖝 Anomaly Detection</a> and an ensemble method that builds on the random forests idea: <a href="04-isolation-forests.html">🖝 Isolation Forests</a>.</p>
+</blockquote>
+<p>Both clustering and anomaly detection ask different questions.
+Clustering is about structure in the "main body" of the data.
+Anomaly detection is about what falls outside that body.</p>
+<blockquote>
+<p><strong>Discussion:</strong> Think of a dataset you have access to without labels and a research question. Might the task more naturally be framed as a clustering problem or as an anomaly detection problem? What would "structure" mean in that context?</p>
 </blockquote>
 <hr />
-<h2 id="missing-values">Missing Values</h2>
-<p>Missing values are nearly universal in real datasets. The <code>count</code> row in <code>df.describe()</code> is your first check: it shows the number of non-null values per column (see <a href="04-eda-descriptive-stats.html">🖝 EDA: Descriptive Statistics</a>). Any column where count falls below the total row count contains missing values. But <code>df.describe()</code> does not always make this visible at a glance. A column can have an apparently normal mean and standard deviation and still carry 15% missing data you have not noticed.</p>
-<p>When there are many variables, a dedicated missing-value plot is an option. Here's one for a few variables from the ESS dataset. There are only few missing values for most columns (note the x-axis shows only a small range below 1%).</p>
-<p><img alt="Missing values bar chart for the ESS well-being dataset" src="../media/plots-ess/ess_wellbeing_missing_values.png" /></p>
-<p>Understanding <em>why</em> values are missing matters more than just knowing how many are missing. The main question is whether missing values are random or systematic:</p>
+<h2 id="supervised-or-unsupervised-choosing-the-right-frame">Supervised or Unsupervised? Choosing the Right Frame</h2>
+<p>The primary question when choosing between supervised and unsupervised learning is: Do labels exist, and if not, can you get them?</p>
+<p>If labels are available and if they capture what you care about, supervised learning is usually the stronger choice. A labeled dataset lets you optimize directly for the task, measure error on a held-out set, and make calibrated predictions.</p>
+<p>In contrast, choose unsupervised methods when:</p>
 <ul>
-<li><strong>Random</strong>: Missingness is unrelated to any variable. A sensor randomly dropping readings is random missing data. The remaining data is still representative. No bias.</li>
-<li><strong>Systematic</strong>: Missingness depends on other variables (e.g., older respondents skip income questions) or on the missing value itself (e.g., high earners skip income questions).</li>
+<li>labels do not exist and collecting them is expensive or impractical,</li>
+<li>the goal is to discover patterns rather than to confirm a prediction.</li>
 </ul>
-<blockquote>
-<p>Systematic missingness biases your results, which requires careful consideration.</p>
-</blockquote>
-<p>Handling strategies for missing values, including deletion and various forms of imputation, are covered in <a href="../part-04-data-preparation/03-scaling-imputation.html">🖝 Scaling and Imputation</a>.</p>
+<p>A common practical sequence is unsupervised first, then supervised: For exampl, you might run clustering to identify potential groups, then have a domain expert label a sample from each group, and then train a classifier.</p>
+<p>This brings us to <strong>semi-supervised learning</strong>. Here, an  unsupervised step generates initial labels. There are many variations of how to do it. For example, a small labeled set can be used alongside a large unlabeled one to perform pseudo-labeling: train on the labeled data, use that model to assign tentative labels to the unlabeled data, then retrain on both. Possibly repeat.</p>
 <hr />
-<h2 id="application-level-concerns">Application-Level Concerns</h2>
-<p>Some data quality problems have nothing to do with everything discussed so far, but with whether the data fits the intended use.</p>
+<h2 id="evaluation-for-unsupervised-learning">Evaluation for Unsupervised Learning</h2>
+<p>The <a href="../part-01-the-big-picture/04-crisp-dm.html">🖝 CRISP-DM</a> process applies also for unsupervised learning, especially the inner loop between modeling and evaluation. However, the meaning and difficulty of evaluation changes:</p>
 <ul>
-<li><strong>Timeliness</strong>: Data ages. Customer behavior recorded three years ago may no longer reflect current patterns. Check when the data was collected and whether the underlying phenomenon could have shifted since then.</li>
-<li><strong>Relevance</strong>: The data must contain the right attributes to answer the question. Predicting car accident rates without age or driving-experience information is unlikely to produce a useful model, regardless of how clean the data is.</li>
-<li><strong>Sampling bias</strong>: The sample may not represent the population you care about. A voluntary survey reaches people who choose to respond, which systematically underrepresents disengaged groups. This is not a measurement error in individual records. It is a structural problem in how the data was gathered (survey like ESS take greate care to avoid this kind of bias).</li>
+<li>In supervised learning, you minimize a loss function and measure performance on a held-out test set.</li>
+<li>In unsupervised learning, both are less straightforward.</li>
 </ul>
-<p>Another concern is that well-maintained data is that of documentation.</p>
-<blockquote>
-<p>Good data should come with a <strong>data card</strong> (sometimes called a datasheet). This is a document that records <em>what</em> was collected, by <em>whom</em>, <em>when</em>, under <em>what</em> conditions, and for <em>what</em> original purpose. Before trusting a dataset, check whether documentation exists and whether the original collection context matches your intended use.</p>
-</blockquote>
+<p>When no labels exist at all, a held-out set cannot verify correctness, but it can verify transferability: apply the learned structure (centroids, density model, anomaly scoring model) to held-out data and check whether the same patterns persist.
+This comes with nuances depending on the considered unsupervised family.</p>
+<!--A general evaluation technique is stability analysis, which runs the algorithm on bootstrap subsamples and check whether results agree. High variance across subsets signals that the algorithm is fitting sample noise rather than real structure.-->
+
+<p>The ultimate check in the unsupervised setting, however, is <strong>domain validation</strong>:</p>
+<ul>
+<li>Do the results make sense to a practitioner?</li>
+<li>Do the clusters correspond to groups a domain expert recognizes?</li>
+<li>Do the flagged anomalies correspond to problems the engineer would investigate?</li>
+</ul>
+<p>These are the real criterion.</p>
 <hr />
 <h2 id="summary">Summary</h2>
 <ul>
-<li>Measurement errors include noise (random, can be averaged out) and artifacts (systematic, cannot). Precision, bias, and accuracy describe different ways measurement can fail.</li>
-<li>Data collection errors introduce omissions or inappropriate inclusions. Inconsistencies and duplicate records are structural quality problems that require domain knowledge to resolve.</li>
-<li>The <code>count</code> row in <code>df.describe()</code> is your first missing-value check. The randomness pattern determine which handling strategy makes sense. Strategies are covered in Part 4.</li>
-<li>Application-level concerns, including timeliness, relevance, sampling bias, and data documentation, determine whether data is fit for purpose regardless of its technical cleanliness.</li>
+<li>Unsupervised learning operates without a target column. The task is to find structure (groups or anomalies) in the data itself.</li>
+<li>Two main families: (1) clustering for discovering natural groups, and (2) anomaly detection for flagging unusual observations that do not fit the pattern of the rest.</li>
+<li>Supervised learning is preferrable when labels are available and meaningful. Unsupervised methods are the right choice when labels do not exist, when the task is exploratory, or when you want to generate labels for a future supervised step.</li>
+<li>The CRISP-DM loop applies as before. Evaluation is the hard part: without ground-truth labels, the ultimate check is domain validation.</li>
 </ul>
 <p>As always: Happy learning, happy life! 🫶</p>
 <hr />
 <blockquote>
-<p><strong>Navigation:</strong> <a href="04-eda-descriptive-stats.html">&lt;-- EDA: Descriptive Statistics</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="06-eda-distributions.html">EDA: Distributions --&gt;</a></p>
+<p><strong>Navigation:</strong> <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="02-k-means-clustering.html">k-Means Clustering --&gt;</a></p>
 </blockquote>
 <p>Script v1.4 (2026-06-10) · FGN</p>
 

@@ -1968,7 +1968,7 @@
   <span class="md-ellipsis">
     
   
-    Appendix
+    Part VII: 2nd Pass - Unsupervised Learning
   
 
     
@@ -1981,6 +1981,200 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part VII: 2nd Pass - Unsupervised Learning
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/00-index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/01-unsupervised-learning.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Framing Unsupervised Learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/02-k-means-clustering.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    k-Means Clustering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/03-anomaly-detection.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomaly Detection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/04-isolation-forests.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Isolation Forests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2328,7 +2522,7 @@
 <h2 id="histograms-and-distribution-shapes">Histograms and Distribution Shapes</h2>
 <p>The first question to answer about any column is: what values does it actually contain, and how are they distributed? Summary statistics from <code>df.describe()</code> give you a starting point, but a single mean and standard deviation can describe two completely different distributions. We can use <em>histograms</em> to make the actual shapes <em>visible</em>.</p>
 <p>A <strong>histogram</strong> groups values into equally spaced intervals called bins and shows how many observations fall in each. <strong>Bin width</strong> is the main choice: too few bins hide structure; too many amplify noise.</p>
-<p>Plotting many variables at once gives a rapid overview of them, here for some variables of the ESS well-being data: </p>
+<p>Plotting many variables at once gives a rapid overview of them, here for some variables of the ESS well-being data:</p>
 <p><img alt="Histogram grid for ESS, age with KDE" src="../media/plots-ess/ess_distributions_grid.png" /></p>
 <p>For two variables, age and religiosity, there's also a smooth curve overlayed. This is a so-called kernel density estimate (KDE), which can be used if the right bin width is unclear (it makes less sense for data that has few values anyway).
 Now let's take a look at what shapes we find in these plots:</p>
@@ -2339,7 +2533,7 @@ Now let's take a look at what shapes we find in these plots:</p>
 <li><strong>Uniform</strong>: values are roughly equally frequent across the range. <strong>Age</strong> is close to uniform across the adult range. This is unusual for a population sample. It might signal quota sampling rather than purely random selection for the ESS survey.</li>
 <li><strong>Modality of distributions</strong>: If distributions have more than one  distinct peak, it often signals that there are subpopulations pooled into one variable. For example, the histogram of <strong>religiosity</strong> contains two peaks, one at zero (secular), and a secondary mode around 5 (bimodal). This may be more of a meaningful divide rather than a skew. Distributions with three or more peaks (<strong>multimodal</strong>) prompt the same question: are there meaningful subpopulations present?</li>
 </ul>
-<p>Distribution shapes raise questions not just about the numbers, but about how the data was collected and what the underlying reality looks like. </p>
+<p>Distribution shapes raise questions not just about the numbers, but about how the data was collected and what the underlying reality looks like.</p>
 <blockquote>
 <p><strong>Discussion:</strong> What would an unexpected distribution shape in a variable tell you about how the data was collected, or about what the underlying reality looks like?</p>
 </blockquote>
@@ -2378,7 +2572,7 @@ Now let's take a look at what shapes we find in these plots:</p>
 <blockquote>
 <p><strong>Navigation:</strong> <a href="05-eda-data-quality.html">&lt;-- EDA: Data Quality</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="07-eda-correlations.html">EDA: Correlations --&gt;</a></p>
 </blockquote>
-<p>Script v1.3 (2026-06-09) · FGN</p>
+<p>Script v1.4 (2026-06-10) · FGN</p>
 
 
 

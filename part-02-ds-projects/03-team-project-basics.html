@@ -1951,7 +1951,7 @@
   <span class="md-ellipsis">
     
   
-    Appendix
+    Part VII: 2nd Pass - Unsupervised Learning
   
 
     
@@ -1964,6 +1964,200 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part VII: 2nd Pass - Unsupervised Learning
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/00-index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/01-unsupervised-learning.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Framing Unsupervised Learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/02-k-means-clustering.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    k-Means Clustering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/03-anomaly-detection.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomaly Detection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/04-isolation-forests.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Isolation Forests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2303,28 +2497,36 @@
 <hr />
 <h2 id="dividing-work-across-the-crisp-dm-phases">Dividing Work Across the CRISP-DM Phases</h2>
 <p>Not every phase produces the same amount of work, and some phases parallelize more naturally than others.</p>
-<p><strong>Work together on:</strong>
-- Business understanding: the problem definition is a group decision. <strong>Everyone needs to understand and agree on what you are trying to do</strong>.
-- Modeling: early modeling is best done together so that everyone understands the baseline before branches diverge.
-- Evaluation: every team member should be able to explain the results and their limits.</p>
-<p><strong>Phases that can be split:</strong>
-- Data understanding: different people can explore different columns or run different analyses, then reconvene and share findings.
-- Data preparation: cleaning and feature engineering tasks are often separable once the overall strategy is agreed.
-- Reporting: the communicator drafts, the others review.</p>
+<p><strong>Work together on:</strong></p>
+<ul>
+<li>Business understanding: the problem definition is a group decision. <strong>Everyone needs to understand and agree on what you are trying to do</strong>.</li>
+<li>Modeling: early modeling is best done together so that everyone understands the baseline before branches diverge.</li>
+<li>Evaluation: every team member should be able to explain the results and their limits.</li>
+</ul>
+<p><strong>Phases that can be split:</strong></p>
+<ul>
+<li>Data understanding: different people can explore different columns or run different analyses, then reconvene and share findings.</li>
+<li>Data preparation: cleaning and feature engineering tasks are often separable once the overall strategy is agreed.</li>
+<li>Reporting: the communicator drafts, the others review.</li>
+</ul>
 <blockquote>
 <p><strong>Warning:</strong> Splitting data work too early before there is a <strong>shared understanding of the dataset</strong> leads to cleaning decisions that contradict each other. Spend at least one discussion session exploring the data together before dividing the work further.</p>
 </blockquote>
 <hr />
 <h2 id="keeping-the-project-moving">Keeping the Project Moving</h2>
-<p>Group projects stall for predictable reasons:
-- no one owns the next concrete step,
-- sessions end without actionable decisions,
-- blockers sit unaddressed because everyone assumes someone else will handle them.</p>
+<p>Group projects stall for predictable reasons:</p>
+<ul>
+<li>no one owns the next concrete step,</li>
+<li>sessions end without actionable decisions,</li>
+<li>blockers sit unaddressed because everyone assumes someone else will handle them.</li>
+</ul>
 <p>Here are some habits that help to prevent such failure modes:</p>
 <hr />
-<p><strong>Name actions, responsibilities.</strong> At the end of every working session, name specific tasks along with the person who owns each of them.
-- Bad: <em>"We will do the cleaning next time"</em>. This is not an action.
-- Better: <em>"Anna checks for missing values in the temperature columns before Thursday"</em>.</p>
+<p><strong>Name actions, responsibilities.</strong> At the end of every working session, name specific tasks along with the person who owns each of them.</p>
+<ul>
+<li>Bad: <em>"We will do the cleaning next time"</em>. This is not an action.</li>
+<li>Better: <em>"Anna checks for missing values in the temperature columns before Thursday"</em>.</li>
+</ul>
 <p>WHO does WHAT by WHEN.</p>
 <hr />
 <p><strong>Keep a shared decision log.</strong> A simple document that records what you tried, what worked, and what you decided to stop doing. <strong>This is not overhead</strong>: it prevents relitigating decisions and repeating dead ends. It is also a direct input to your final documentation.</p>
@@ -2345,7 +2547,7 @@
 <blockquote>
 <p><strong>Navigation:</strong> <a href="02-finding-your-idea.html">&lt;-- Finding Your Idea</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="04-reality-checking-your-idea.html">Reality-Checking Your Idea --&gt;</a></p>
 </blockquote>
-<p>Script v1.3 (2026-06-09) · FGN</p>
+<p>Script v1.4 (2026-06-10) · FGN</p>
 
 
 

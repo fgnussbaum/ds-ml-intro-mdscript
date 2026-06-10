@@ -1979,7 +1979,7 @@
   <span class="md-ellipsis">
     
   
-    Appendix
+    Part VII: 2nd Pass - Unsupervised Learning
   
 
     
@@ -1992,6 +1992,200 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part VII: 2nd Pass - Unsupervised Learning
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/00-index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/01-unsupervised-learning.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Framing Unsupervised Learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/02-k-means-clustering.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    k-Means Clustering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/03-anomaly-detection.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomaly Detection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/04-isolation-forests.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Isolation Forests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2363,10 +2557,12 @@
 <p><strong>Callback:</strong> In <a href="04-under-overfitting.html">🖝 Underfitting and Overfitting</a>, you read the held-out error curve to select a polynomial degree. That held-out set was playing a <em>validation</em> role: you consulted it to make a modeling decision, so its error can no longer serve as a clean estimate of final performance on truly unseen data. The discussion question at the end of that nugget pointed at exactly this tension.</p>
 <p><strong>A pitfall</strong>: If you evaluated many candidate values of <span class="arithmatex">\(\lambda\)</span> on the test set and kept the best, you would effectively select the value that happened to look good on those specific examples. The test score would <em>no</em> longer be a fair estimate of generalization.</p>
 </blockquote>
-<p>To see the role each partition plays in this context:
-- <strong>Training/Train set</strong>: to fit model weights,
-- <strong>Validation/Val set</strong>: to compare hyperparameter candidates,
-- <strong>Test set</strong>: touched only once, after the final model is chosen, to produce the number you report.</p>
+<p>To see the role each partition plays in this context:</p>
+<ul>
+<li><strong>Training/Train set</strong>: to fit model weights,</li>
+<li><strong>Validation/Val set</strong>: to compare hyperparameter candidates,</li>
+<li><strong>Test set</strong>: touched only once, after the final model is chosen, to produce the number you report.</li>
+</ul>
 <p>For small datasets, holding out a fixed validation slice wastes data. <strong>Cross-validation</strong> is the standard remedy: It splits training data into <span class="arithmatex">\(k\)</span> folds, each fold taking a turn as the validation set. This gives a more stable estimate at the cost of fitting the model <span class="arithmatex">\(k\)</span> times. You'll revisit cross-validation in <a href="../part-06-reflection/01-generalization.html">🖝 Generalization</a>.</p>
 <hr />
 <h2 id="grid-search-and-beyond">Grid Search and Beyond</h2>
@@ -2376,11 +2572,11 @@
 <p><strong>Interactive demo note:</strong> You can try all of the following in the <strong>Regularized Regression</strong> demo from my <a href="https://github.com/fgnussbaum/ds-ml-interactive-demos">✪ interactive data-science demos</a> repository.</p>
 </blockquote>
 <p><strong>Grid search</strong> defines an explicit set of candidate values and evaluates every one, using cross-validation to score each. To see it in action, consider predicting disease progression from certain clinical variables (age, sex, BMI, blood pressure, etc.) using the <a href="https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_diabetes.html">🔗 sklearn diabetes dataset</a>.</p>
-<p>For the systematic search for the best regularization parameters, we reformulate the loss as </p>
+<p>For the systematic search for the best regularization parameters, we reformulate the loss as</p>
 <div class="arithmatex">\[(1-\alpha)\cdot\text{MSE}(\mathbf{w}) + \alpha\cdot\|\mathbf{w}\|,\quad \alpha\in[0,1).\]</div>
 <p>Here, <span class="arithmatex">\(\alpha\)</span> now acts as the <em>weight</em> of the penalty term. Crucially, <span class="arithmatex">\(\alpha\)</span> is a bounded reparameterization of the <span class="arithmatex">\(\lambda \in [0, \infty)\)</span> that we used in <a href="05-regularized-regression.html">🖝 Regularized Regression</a>. This allows us to sweep the regularization strength <span class="arithmatex">\(\alpha\)</span> from 0 to 1 for both Ridge and Lasso. The trade-off is the same: <span class="arithmatex">\(\alpha=0\)</span> is unregularized, <span class="arithmatex">\(\alpha=1\)</span> would mean only regularization.</p>
 <p>Here are the RMSE error curves for train/val sets of the diabetes dataset. Only the range <span class="arithmatex">\(\alpha\in[0, 0.1]\)</span> is shown with a fine <strong>grid step size</strong> of <span class="arithmatex">\(10^{-3}\)</span>:</p>
-<p><center><img src="../media/demos-screenshots/diabetes-error-curves.png" alt="Error curves (train/val data) for alpha in [0,1] for Ridge/Lasso" width="500px"/></center></p>
+<p><center><img src="../media/demos-screenshots/diabetes-error-curves.png" alt="Error curves (train/val data) for alpha in [0,1] for Ridge/Lasso" width="740px"/></center></p>
 
 <p>Observe that the training error (blue) increases as <span class="arithmatex">\(\alpha\)</span> increases. This is because more regularization give the model less opportunity to fit the training data closely. The validation error curve respectively shows a sweet spot where regularization improves generalization the most.</p>
 <blockquote>
@@ -2388,7 +2584,7 @@
 </blockquote>
 <p>Grid search finds this sweet spot for <span class="arithmatex">\(\alpha\)</span> automatically. However, efficiency greatly depends on finding the right step size and sometimes the right sub-interval of <span class="arithmatex">\(\alpha\)</span>-values where to look more closely.</p>
 <p>Next, the coefficient paths reveal what is happening inside the model as <span class="arithmatex">\(\alpha\)</span> varies.</p>
-<p><center><img src="../media/demos-screenshots/diabetes-coefficient-pathsL1L2.png" alt="coefficient paths of L2 (left) and L1 (right) across alpha ranges" width="500px"/></center></p>
+<p><center><img src="../media/demos-screenshots/diabetes-coefficient-pathsL1L2.png" alt="coefficient paths of L2 (left) and L1 (right) across alpha ranges" width="740px"/></center></p>
 
 <p>Ridge (L2, left) shrinks all coefficients gradually toward zero without eliminating any. Lasso (L1, right) drives several coefficients to exactly zero at higher <span class="arithmatex">\(\alpha\)</span> values, selecting a sparse subset of features. This matches the theoretical behavior that we discussed in <a href="05-regularized-regression.html">🖝 Regularized Regression</a>.</p>
 <h3 id="practical-tips-and-alternatives">Practical tips and alternatives</h3>
@@ -2421,7 +2617,7 @@ print(search.best_params_)
 <blockquote>
 <p><strong>Navigation:</strong> <a href="05-regularized-regression.html">&lt;-- Regularized Regression</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="07-classification-tasks.html">Classification Tasks --&gt;</a></p>
 </blockquote>
-<p>Script v1.3 (2026-06-09) · FGN</p>
+<p>Script v1.4 (2026-06-10) · FGN</p>
 
 
 

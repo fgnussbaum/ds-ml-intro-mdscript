@@ -1990,7 +1990,7 @@
   <span class="md-ellipsis">
     
   
-    Appendix
+    Part VII: 2nd Pass - Unsupervised Learning
   
 
     
@@ -2003,6 +2003,200 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part VII: 2nd Pass - Unsupervised Learning
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/00-index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/01-unsupervised-learning.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Framing Unsupervised Learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/02-k-means-clustering.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    k-Means Clustering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/03-anomaly-detection.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomaly Detection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/04-isolation-forests.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Isolation Forests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2372,21 +2566,25 @@
 <li><a href="#summary">Summary</a></li>
 </ul>
 <h2 id="from-one-tree-to-many-the-ensemble-idea">From One Tree to Many: The Ensemble Idea</h2>
-<p>A single tree commits fully to the data it saw: small changes in the training set can shift the top splits, producing a very different tree. In statistical terms, the model has high <strong>variance</strong>.</p>
+<p>A single tree commits fully to the data it saw: Small changes in the training set can shift the top splits, producing a very different tree. In statistical terms, the model has <strong>high variance</strong>.</p>
 <p>The remedy is diversification: train many trees, each on a slightly different sample of the data, and combine their predictions. Because the errors of individual trees are partly independent, they tend to cancel when averaged. This is the core idea of a <strong>random forest</strong>.</p>
-<p>Here's a visualization of a random forest from the interactive decision tree demo. Intuively, trees have different sizes and performance:</p>
-<p><center><img src="../media/demos-screenshots/dt-forestgrid.png" alt="feature importances" width="500px"/></center></p>
+<p>Here's a visualization of a random forest from the <a href="https://github.com/fgnussbaum/ds-ml-interactive-demos">✪ interactive decision tree demo</a>. You can see that trees have different sizes and performances:</p>
+<p><center><img src="../media/demos-screenshots/dt-forestgrid.png" alt="feature importances" width="740px"/></center></p>
 
 <h3 id="how-does-the-random-in-random-forests-work">How does the 'random' in random forests work?</h3>
 <p>A random forest introduces two sources of randomness to make sure the trees are different enough from each other:</p>
 <ul>
 <li>
-<p>Each tree is trained on a <strong>bootstrap sample</strong>, that is, <span class="arithmatex">\(n\)</span> records drawn from the training set uniformly <em>with</em> replacement, where <span class="arithmatex">\(n\)</span> is the size of the original set. Some records appear multiple times; others are left out. Each tree therefore sees a different slice of the data and learns a slightly different model.</p>
+<p>Each tree is trained on a <strong>bootstrap sample</strong>, that is, <span class="arithmatex">\(n\)</span> records drawn from the training set uniformly with replacement, where <span class="arithmatex">\(n\)</span> is the size of the original set. Some records appear multiple times, others are left out. Each tree therefore sees a different slice of the data and learns a slightly different model.</p>
 </li>
 <li>
 <p>At each split, only a random subset of features is considered as candidates, typically <span class="arithmatex">\(\sqrt{k}\)</span> features for classification, where <span class="arithmatex">\(k\)</span> is the total number of features. This <strong>feature subsampling</strong> prevents one dominant feature from appearing at the root of every tree, forcing the ensemble to draw on different signals and further diversifying predictions.</p>
 </li>
 </ul>
+<p>Random forests have a built-in evaluation metric: the <strong>out-of-Bag (OOB) score</strong>. It estimates how well the model generalizes to unseen data without needing a training/validation split. Intuitively, each tree is only evaluated on the samples that where left out during its training.</p>
+<blockquote>
+<p><strong>Background</strong>: The term bootstrapping originates from the idiom "to pull oneself up by one's bootstraps". This was used to describe an impossible physical feat, but evolved to mean self-sufficiency. In statistics, this concept is applied by allowing an algorithm to generate "new" datasets entirely from its own existing pool of data.</p>
+</blockquote>
 <h3 id="how-do-random-forests-classify-samples">How do random forests classify samples?</h3>
 <p>For any given sample, a random forests classifies it by combining the predictions from all trees;</p>
 <ol>
@@ -2398,7 +2596,7 @@
 <hr />
 <h2 id="feature-importance">Feature Importance</h2>
 <p>A decision tree is interpretable precisely because it is compact: one flowchart, one root split that identifies the feature with the highest information gain (see <a href="09-decision-trees.html">🖝 Decision Trees</a>). A forest is not. With hundreds of trees there is no single flowchart to read and no single root to point to. How do you recover a global view of which features matter?</p>
-<p><center><img src="../media/demos-screenshots/dt-rf-feature-importance.jpg" alt="feature importances" width="500px"/></center></p>
+<p><center><img src="../media/demos-screenshots/dt-rf-feature-importance.jpg" alt="feature importances" width="740px"/></center></p>
 
 <p><strong>Feature importance</strong> provides an answer. Continuing our example from <a href="09-decision-trees.html">🖝 Decision Trees</a>, the plot above shows feature importances for a random forest (100 trees) trained on the Penguins dataset. We get an indication that <code>bill length</code> may be the most important feature on the training data for performing the classification task.</p>
 <p>How does it work? For each feature, the importance score sums the information gain contributed by every split on that feature, weighted by the fraction of training records that reached that node, and averages the result across all trees. Intuitively, a feature that drives large purity gains, high up in many trees, accumulates a high score.</p>
@@ -2409,15 +2607,19 @@
 <hr />
 <h2 id="when-to-prefer-a-forest-over-a-single-tree">When to Prefer a Forest Over a Single Tree</h2>
 <p>The core trade-off is accuracy versus interpretability.</p>
-<p><strong>Prefer a random forest when:</strong>
-- Prediction accuracy is the primary goal and a non-interpretable result is acceptable.
-- The dataset has at least a few hundred examples so the ensemble has diversity to draw on.
-- You want a reliable feature importance ranking as a quick guide to which variables matter.
-- You are establishing a strong baseline before exploring more complex models.</p>
-<p><strong>Prefer a single decision tree when:</strong>
-- Every decision must be explainable in human-readable rules, e.g., for regulatory compliance, audit, or stakeholder sign-off.
-- The dataset is very small and a forest may have too little diversity to outperform a single tree.
-- Training or inference speed is a hard constraint.</p>
+<p><strong>Prefer a random forest when:</strong></p>
+<ul>
+<li>Prediction accuracy is the primary goal and a non-interpretable result is acceptable.</li>
+<li>The dataset has at least a few hundred examples so the ensemble has diversity to draw on.</li>
+<li>You want a reliable feature importance ranking as a quick guide to which variables matter.</li>
+<li>You are establishing a strong baseline before exploring more complex models.</li>
+</ul>
+<p><strong>Prefer a single decision tree when:</strong></p>
+<ul>
+<li>Every decision must be explainable in human-readable rules, e.g., for regulatory compliance, audit, or stakeholder sign-off.</li>
+<li>The dataset is very small and a forest may have too little diversity to outperform a single tree.</li>
+<li>Training or inference speed is a hard constraint.</li>
+</ul>
 <p><strong>Random forests are among the most reliable default algorithms for tabular data</strong>. Before investing in hyperparameter tuning or more exotic methods, a random forest with default settings often provides a strong baseline.</p>
 <blockquote>
 <p><strong>Discussion:</strong> A colleague argues that single decision trees are always preferable because "you can see exactly what the model is doing." When would this argument hold up, and when would you push back? What is lost when you accept a less interpretable model in exchange for better accuracy?</p>
@@ -2432,7 +2634,7 @@
 </ul>
 <p>Everything else carries over unchanged: Hunt's algorithm, greedy search over feature/threshold pairs, depth limits, pruning.</p>
 <p>The random forest extension follows directly: train many regression trees on bootstrap samples with feature subsampling, then <strong>average</strong> their predictions (instead of the majority vote from classification random forests). The same ensemble logic applies: individual trees overfit, averaging reduces variance.</p>
-<p>We have come to the end of this part, where we discussed <a href="01-supervised-learning.html">🖝 Supervised Learning</a>, specifically the fundamental regression and classification tasks. The decision tree family (single trees and random forests) handle both tasks with the same core procedure. 
+<p>We have come to the end of this part, where we discussed <a href="01-supervised-learning.html">🖝 Supervised Learning</a>, specifically the fundamental regression and classification tasks. The decision tree family (single trees and random forests) handle both tasks with the same core procedure.
 As we have now completed a first pass over the inner loop of <a href="../part-01-the-big-picture/04-crisp-dm.html">🖝 CRISP-DM</a>, in the next part we'll step back and asks what generalizes across all of it.</p>
 <hr />
 <h2 id="summary">Summary</h2>
@@ -2447,7 +2649,7 @@ As we have now completed a first pass over the inner loop of <a href="../part-01
 <blockquote>
 <p><strong>Navigation:</strong> <a href="09-decision-trees.html">&lt;-- Decision Trees</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="../part-06-reflection/00-index.html">Part VI: Principles That Transfer (Reflection) --&gt;</a></p>
 </blockquote>
-<p>Script v1.3 (2026-06-09) · FGN</p>
+<p>Script v1.4 (2026-06-10) · FGN</p>
 
 
 

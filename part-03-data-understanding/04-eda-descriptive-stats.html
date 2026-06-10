@@ -2018,7 +2018,7 @@
   <span class="md-ellipsis">
     
   
-    Appendix
+    Part VII: 2nd Pass - Unsupervised Learning
   
 
     
@@ -2031,6 +2031,200 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part VII: 2nd Pass - Unsupervised Learning
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/00-index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/01-unsupervised-learning.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Framing Unsupervised Learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/02-k-means-clustering.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    k-Means Clustering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/03-anomaly-detection.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomaly Detection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/04-isolation-forests.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Isolation Forests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2446,10 +2640,12 @@ max           10.00     5.00     1.0
 <li><strong>25%, 50%, 75%</strong>: the quartiles. For happiness, Q1 = 7, median = 8, Q3 = 9. Half of all respondents rated themselves 8 or above.</li>
 </ul>
 <p>All quantities are defined in detail below.</p>
-<p>What <code>df.describe()</code> does <em>not</em> tell you:
-- distribution shape
-- the number of distinct values (use <code>df.unique()</code> on a column for this)
-- whether missing values are random or systematic</p>
+<p>What <code>df.describe()</code> does <em>not</em> tell you:</p>
+<ul>
+<li>distribution shape</li>
+<li>the number of distinct values (use <code>df.unique()</code> on a column for this)</li>
+<li>whether missing values are random or systematic</li>
+</ul>
 <p>We'll revisit these questions in <a href="06-eda-distributions.html">🖝 EDA: Distributions</a>.
 <code>df.describe()</code> also does not tell you whether the computed statistics actually make sense for the attribute and its measurement scale: For example, what's your impression of the <code>gender</code> column above? It is considered a numeric column due to its coding, though it conceptually is a categorical one.</p>
 <blockquote>
@@ -2470,7 +2666,7 @@ max           10.00     5.00     1.0
 <!-- distributions knoweledge prerequisite-->
 <p><strong>When to use which</strong> depends largely on the distribution at hand (see <a href="06-eda-distributions.html">🖝 EDA: Distributions</a>):</p>
 <ul>
-<li>Symmetric, unimodal distributions with no strong outliers: the mean is efficient and commonly reported </li>
+<li>Symmetric, unimodal distributions with no strong outliers: the mean is efficient and commonly reported</li>
 <li>Skewed distributions or heavy tails: prefer the median.</li>
 <li>Ordinal attributes (survey scales, ratings): the median is technically appropriate. Reporting a mean is common but assumes equal intervals between ranks.</li>
 </ul>
@@ -2505,7 +2701,7 @@ max           10.00     5.00     1.0
 <blockquote>
 <p><strong>Navigation:</strong> <a href="03-datasets.html">&lt;-- Datasets</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="05-eda-data-quality.html">EDA: Data Quality --&gt;</a></p>
 </blockquote>
-<p>Script v1.3 (2026-06-09) · FGN</p>
+<p>Script v1.4 (2026-06-10) · FGN</p>
 
 
 

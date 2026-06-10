@@ -14,7 +14,7 @@
         <link rel="prev" href="04-aligning-metrics.html">
       
       
-        <link rel="next" href="../part-zz-appendix/00-index.html">
+        <link rel="next" href="../part-07-unsupervised-learning/00-index.html">
       
       
         
@@ -2007,7 +2007,7 @@
   <span class="md-ellipsis">
     
   
-    Appendix
+    Part VII: 2nd Pass - Unsupervised Learning
   
 
     
@@ -2020,6 +2020,200 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part VII: 2nd Pass - Unsupervised Learning
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/00-index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/01-unsupervised-learning.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Framing Unsupervised Learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/02-k-means-clustering.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    k-Means Clustering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/03-anomaly-detection.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomaly Detection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/04-isolation-forests.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Isolation Forests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2387,7 +2581,7 @@
 
 
 <blockquote>
-<p><strong>Navigation:</strong> <a href="04-aligning-metrics.html">&lt;-- Choosing and Aligning Metrics</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="../part-07-unsupervised-learning/00-index.md">Part VII: 2nd Pass - Unsupervised Learning --&gt;</a></p>
+<p><strong>Navigation:</strong> <a href="04-aligning-metrics.html">&lt;-- Choosing and Aligning Metrics</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="../part-07-unsupervised-learning/00-index.html">Part VII: 2nd Pass - Unsupervised Learning --&gt;</a></p>
 </blockquote>
 <hr />
 <h1 id="explainability">Explainability</h1>
@@ -2442,14 +2636,14 @@ We covered this in <a href="../part-05-supervised-learning/10-random-forests.htm
 </blockquote>
 <p>When a less interpretable model genuinely outperforms simpler alternatives and must still be explained, post-hoc explanation methods assign explanations to individual predictions from any model. <strong>SHAP (SHapley Additive exPlanations)</strong> is one of the most principled and widely used of such methods (Lundberg &amp; Lee, 2017). Grounded in cooperative game theory, it answers a simple question for any single prediction: How much did each feature push it up or down from the model's average output?</p>
 <p>In the interactive demo, we have a random forest trained on the <a href="https://www.kaggle.com/datasets/camnugent/california-housing-prices">🔗 California housing dataset</a> to predict median house value (in thousands of dollars) from <code>MediumIncome</code>/<code>MedInc</code>, <code>HouseAge</code>, <code>AverageRooms</code>/<code>AveRooms</code>, and <code>Latitude</code>. Across the training data, its average prediction, the <strong>base value</strong>, is 144K. For one district, nicknamed "Rural NorCal", it predicts only 104K, a gap of 40K below the base value. Let's explore the feature SHAP values:</p>
-<p><center><img src="../media/plots-california-housing/shapley_waterfall.png" alt="" width="500px"/></center></p>
+<p><center><img src="../media/plots-california-housing/shapley_waterfall.png" alt="" width="740px"/></center></p>
 
 <p>This waterfall plot gives an indication where that gap comes from: <code>Latitude</code> pulls the prediction down by 52K and <code>MedInc</code> by 47K, while <code>AveRooms</code> adds back 33K and <code>HouseAge</code> adds 26K. Add these four contributions to the base value and you land exactly on 104K. Intuitively, nothing is left unexplained.</p>
 <p>That additive property is what the SHAP formula captures. For a prediction <span class="arithmatex">\(\hat{y}\)</span> on a specific instance:</p>
 <div class="arithmatex">\[\hat{y} = \text{base value} + \sum_j \phi_j\]</div>
 <p>where <span class="arithmatex">\(\phi_j\)</span> is the SHAP value of feature <span class="arithmatex">\(j\)</span>, precisely the bars in the waterfall plot above. Each <span class="arithmatex">\(\phi_j\)</span> can be positive (pushing the prediction up) or negative (pushing it down).</p>
 <p>A single waterfall plot explains one data point (here: district). To see whether it is typical, we can compute SHAP feature importances for the predictions on many samples and then average them to obtain global feature importances.</p>
-<p><center><img src="../media/plots-california-housing/shapley_summary.png" alt="" width="500px"/></center></p>
+<p><center><img src="../media/plots-california-housing/shapley_summary.png" alt="" width="740px"/></center></p>
 
 <p>Across 200 test districts, the ranking shifts slightly from what "Rural NorCal" suggested: <code>MedInc</code> now has the largest average effect (+63.1K), <code>HouseAge</code> the smallest (+14.9K). Coloring each point by the district's actual feature value adds what a ranking cannot: direction. Low income (blue) reliably drags predictions down and high income (red) lifts them, while <code>AveRooms</code> does not show such clean pattern: similar feature values land on both sides of zero.</p>
 <p>To compute SHAP values, the <code>shap</code> Python library is available.</p>
@@ -2463,9 +2657,9 @@ We covered this in <a href="../part-05-supervised-learning/10-random-forests.htm
 <p>As always: Happy learning, happy life! 🫶</p>
 <hr />
 <blockquote>
-<p><strong>Navigation:</strong> <a href="04-aligning-metrics.html">&lt;-- Choosing and Aligning Metrics</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="../part-07-unsupervised-learning/00-index.md">Part VII: 2nd Pass - Unsupervised Learning --&gt;</a></p>
+<p><strong>Navigation:</strong> <a href="04-aligning-metrics.html">&lt;-- Choosing and Aligning Metrics</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="../part-07-unsupervised-learning/00-index.html">Part VII: 2nd Pass - Unsupervised Learning --&gt;</a></p>
 </blockquote>
-<p>Script v1.3 (2026-06-09) · FGN</p>
+<p>Script v1.4 (2026-06-10) · FGN</p>
 
 
 

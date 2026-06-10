@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-03-data-understanding/05-eda-data-quality.html">
+        <link rel="canonical" href="https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-07-unsupervised-learning/04-isolation-forests.html">
       
       
-        <link rel="prev" href="04-eda-descriptive-stats.html">
+        <link rel="prev" href="03-anomaly-detection.html">
       
       
-        <link rel="next" href="06-eda-distributions.html">
+        <link rel="next" href="../part-zz-appendix/00-index.html">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>EDA: Data Quality - Intro to Data Science & ML</title>
+        <title>Isolation Forests - Intro to Data Science & ML</title>
       
     
     
@@ -86,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#eda-data-quality" class="md-skip">
+        <a href="#isolation-forests" class="md-skip">
           Skip to content
         </a>
       
@@ -122,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              EDA: Data Quality
+              Isolation Forests
             
           </span>
         </div>
@@ -686,20 +686,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -720,7 +718,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -738,7 +736,7 @@
   
   
     <li class="md-nav__item">
-      <a href="00-index.html" class="md-nav__link">
+      <a href="../part-03-data-understanding/00-index.html" class="md-nav__link">
         
   
   
@@ -766,7 +764,7 @@
   
   
     <li class="md-nav__item">
-      <a href="01-why-data-work.html" class="md-nav__link">
+      <a href="../part-03-data-understanding/01-why-data-work.html" class="md-nav__link">
         
   
   
@@ -794,7 +792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="02-data-types.html" class="md-nav__link">
+      <a href="../part-03-data-understanding/02-data-types.html" class="md-nav__link">
         
   
   
@@ -822,7 +820,7 @@
   
   
     <li class="md-nav__item">
-      <a href="03-datasets.html" class="md-nav__link">
+      <a href="../part-03-data-understanding/03-datasets.html" class="md-nav__link">
         
   
   
@@ -850,7 +848,7 @@
   
   
     <li class="md-nav__item">
-      <a href="04-eda-descriptive-stats.html" class="md-nav__link">
+      <a href="../part-03-data-understanding/04-eda-descriptive-stats.html" class="md-nav__link">
         
   
   
@@ -875,37 +873,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    EDA: Data Quality
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="05-eda-data-quality.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../part-03-data-understanding/05-eda-data-quality.html" class="md-nav__link">
         
   
   
@@ -921,109 +892,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#table-of-contents" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Table of Contents
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#measurement-and-collection-errors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Measurement and Collection Errors
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Measurement and Collection Errors">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#measurement-errors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Measurement errors
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#data-collection-errors" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Data collection errors
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#missing-values" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Missing Values
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#application-level-concerns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Application-Level Concerns
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Summary
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1036,7 +904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="06-eda-distributions.html" class="md-nav__link">
+      <a href="../part-03-data-understanding/06-eda-distributions.html" class="md-nav__link">
         
   
   
@@ -1064,7 +932,7 @@
   
   
     <li class="md-nav__item">
-      <a href="07-eda-correlations.html" class="md-nav__link">
+      <a href="../part-03-data-understanding/07-eda-correlations.html" class="md-nav__link">
         
   
   
@@ -1092,7 +960,7 @@
   
   
     <li class="md-nav__item">
-      <a href="08-eda-best-practices.html" class="md-nav__link">
+      <a href="../part-03-data-understanding/08-eda-best-practices.html" class="md-nav__link">
         
   
   
@@ -1958,18 +1826,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
         
           
           <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
@@ -1990,7 +1860,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2008,7 +1878,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-07-unsupervised-learning/00-index.html" class="md-nav__link">
+      <a href="00-index.html" class="md-nav__link">
         
   
   
@@ -2036,7 +1906,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-07-unsupervised-learning/01-unsupervised-learning.html" class="md-nav__link">
+      <a href="01-unsupervised-learning.html" class="md-nav__link">
         
   
   
@@ -2064,7 +1934,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-07-unsupervised-learning/02-k-means-clustering.html" class="md-nav__link">
+      <a href="02-k-means-clustering.html" class="md-nav__link">
         
   
   
@@ -2092,7 +1962,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-07-unsupervised-learning/03-anomaly-detection.html" class="md-nav__link">
+      <a href="03-anomaly-detection.html" class="md-nav__link">
         
   
   
@@ -2117,10 +1987,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../part-07-unsupervised-learning/04-isolation-forests.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Isolation Forests
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="04-isolation-forests.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2136,6 +2033,109 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-isolation-idea" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Isolation Idea
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-use-isolation-forests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When to Use Isolation Forests
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evaluating-anomaly-detectors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evaluating Anomaly Detectors
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Evaluating Anomaly Detectors">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#when-partial-ground-truth-is-available" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When partial ground truth is available
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#when-no-labels-exist-at-all" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When no labels exist at all
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2436,22 +2436,44 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#measurement-and-collection-errors" class="md-nav__link">
+  <a href="#the-isolation-idea" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Measurement and Collection Errors
+        The Isolation Idea
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Measurement and Collection Errors">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-use-isolation-forests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When to Use Isolation Forests
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evaluating-anomaly-detectors" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evaluating Anomaly Detectors
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Evaluating Anomaly Detectors">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#measurement-errors" class="md-nav__link">
+  <a href="#when-partial-ground-truth-is-available" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Measurement errors
+        When partial ground truth is available
       
     </span>
   </a>
@@ -2459,10 +2481,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#data-collection-errors" class="md-nav__link">
+  <a href="#when-no-labels-exist-at-all" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Data collection errors
+        When no labels exist at all
       
     </span>
   </a>
@@ -2471,28 +2493,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#missing-values" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Missing Values
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#application-level-concerns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Application-Level Concerns
-      
-    </span>
-  </a>
   
 </li>
       
@@ -2525,88 +2525,88 @@
 
 
 <blockquote>
-<p><strong>Navigation:</strong> <a href="04-eda-descriptive-stats.html">&lt;-- EDA: Descriptive Statistics</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="06-eda-distributions.html">EDA: Distributions --&gt;</a></p>
+<p><strong>Navigation:</strong> <a href="03-anomaly-detection.html">&lt;-- Anomaly Detection</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="../part-08-deep-learning/00-index.md">Part VIII: 3rd Pass — Deep Learning --&gt;</a></p>
 </blockquote>
 <hr />
-<h1 id="eda-data-quality">EDA: Data Quality</h1>
-<p><strong>Requires</strong>: <a href="04-eda-descriptive-stats.html">EDA: Descriptive Statistics</a></p>
-<p><strong>Motivation</strong>: Summary statistics and first inspection give you the shape of the data. But numbers that appear in a column are not necessarily correct numbers. This nugget asks: what can go wrong at the level of individual measurements, records, and the collection process itself — and how do you recognize it?</p>
+<h1 id="isolation-forests">Isolation Forests</h1>
+<p><strong>Requires</strong>: <a href="03-anomaly-detection.html">Anomaly Detection</a> · <a href="../part-05-supervised-learning/10-random-forests.html">Random Forests</a></p>
+<p><strong>Motivation</strong>: Statistical baselines work well when anomalies deviate from a single feature's distribution.
+However, real anomalies are often multivariate: Individual feature values may be plausible, but collectively they might not be. You need a method that captures this joint structure without assuming any particular distribution and without labeled examples to train on. Isolation forests do exactly that, and they generalize across problem types in a way that makes them a reliable first model-based choice.</p>
 <blockquote>
-<p>You will learn to classify data quality problems by their source — measurement errors, collection errors, and application-level concerns — and understand the key distinction between random and systematic missingness, which determines what handling strategy is appropriate.</p>
+<p>You will understand the core isolation idea: Why anomalies are structurally easier to isolate than normal points. You'll also learn how to evaluate an anomaly detector when labeled data is scarce or absent.</p>
 </blockquote>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ul>
-<li><a href="#measurement-and-collection-errors">Measurement and Collection Errors</a></li>
-<li><a href="#missing-values">Missing Values</a></li>
-<li><a href="#application-level-concerns">Application-Level Concerns</a></li>
+<li><a href="#the-isolation-idea">The Isolation Idea</a></li>
+<li><a href="#when-to-use-isolation-forests">When to Use Isolation Forests</a></li>
+<li><a href="#evaluating-anomaly-detectors">Evaluating Anomaly Detectors</a></li>
 <li><a href="#summary">Summary</a></li>
 </ul>
-<h2 id="measurement-and-collection-errors">Measurement and Collection Errors</h2>
-<h3 id="measurement-errors">Measurement errors</h3>
-<p>Measurement error arise during the measurement process. For a continuous attribute, it is the numerical difference between the measured value and the true value. Two subtypes matter in practice:</p>
+<h2 id="the-isolation-idea">The Isolation Idea</h2>
+<p><strong>Isolation forests</strong> are built on the same ensemble structure as random forests from <a href="../part-05-supervised-learning/10-random-forests.html">🖝 Random Forests</a>, just for a different purpose. Instead of growing trees to predict a target, they grow trees to measure how easy each observation is to isolate.</p>
+<p>A single isolation tree is computed as follows: Pick a feature at random, then pick a split value at random within that feature's range. Repeat recursively until all individual observations end up isolated in leaves. What happens intuitively is:</p>
 <ul>
-<li><strong>Noise</strong>: This is the random component of measurement error. A temperature sensor that fluctuates around the true value by ±0.5°C produces noise. Noise in a single measurement can often not be avoided. Averaging repeated measurements can reduce it.</li>
-<li><strong>Artifacts</strong>: These are deterministic (non-random) deviations. A camera that always produces a bright streak at the same pixel position introduces a systematic distortion. Averaging won't help here.</li>
+<li>Anomalies are isolated quickly with just a few splits because they sit in sparse regions of the feature space.</li>
+<li>Normal observations are surrounded by neighbors and require many splits to separate them.</li>
 </ul>
-<p>The following related concepts describe the costs of measurement errors:</p>
-<ul>
-<li><strong>Precision</strong>: the closeness of repeated measurements to one another. High noise means low precision.</li>
-<li><strong>Bias</strong>: systematic variation from the true value. A scale that reads 500 g too heavy every time is precise but biased.</li>
-<li><strong>Accuracy</strong>: the closeness of measurements to the true value. Requires both low noise and low bias.</li>
-</ul>
-<p>Here's a "dartboard" for illustration.</p>
-<p><img alt="Dartboard: Precision, bias accuracy" src="../media/plots/precision_bias_accuracy_2d.png" /></p>
-<h3 id="data-collection-errors">Data collection errors</h3>
-<p>Next, we have data collection errors. Unlike measurement errors, they arise from failures in the collection process: omitting records that should be present, or including records that should not be.</p>
-<blockquote>
-<p>Data collection errors are harder to detect because they often leave no direct trace in the data.</p>
-</blockquote>
-<p>Other types of quality problems that should be spotted include:</p>
-<ul>
-<li><strong>Inconsistencies</strong>: These can range from attribute values contradict another value (like a city name that does not match its zip code). Typos and mismatched units can also cause inconsistencies that need fixing.</li>
-<li><strong>Duplicate records</strong> are two or more records representing the same real-world entity. They inflate counts and bias statistics. When two records differ only in one or two fields, special attention may be needed: Were there data entry errors? Were datasets with different identifiers merged?</li>
-</ul>
-<blockquote>
-<p><strong>Note:</strong> Some apparent duplicates are not duplicates at all. Two customers at the same address are not the same person. Verify the business logic before deleting any record. Same for editing data to fix an apparent inconsistency.</p>
-</blockquote>
+<p>Formally, the number of splits required for an observation is its <strong>isolation depth</strong>. Averaging the isolation depth across many trees gives an average isolation depth.
+The followig plot shows isolation depth for in a 2D feature space for a single isolation tree (left) and an isolation forest (right).</p>
+<p><center><img src="../media/plots-kddcup/if_explainer_BC_count--same-srv-rate.png" alt="" width="740px"/></center></p>
+
+<p>The <code>kddcup99</code> dataset contains labeled network connection records from a simulated Air Force LAN, tagged as normal or one of several attack types (DoS, probe, R2L, U2R). The two plotted features are <code>count</code> (connections to the same host in a 2-second window) and <code>same_srv_rate</code> (fraction of those hitting the same port), which together separate major attack families from normal traffic.</p>
+<p>The average isolation depth across the forest becomes a continuous <strong>anomaly score</strong> by normalizing against the depth a typical point would reach: short relative depth scores near 1 (anomalous), long relative depth scores near 0 (normal). This normalization keeps the score comparable regardless of dataset size.</p>
+<p>In <code>sklearn</code>, the <code>contamination</code> parameter sets the expected fraction of anomalies and determines where the threshold falls:</p>
+<pre><code class="language-python">from sklearn.ensemble import IsolationForest
+iso = IsolationForest(contamination=0.05).fit(X_train)
+labels = iso.predict(X_test)
+</code></pre>
+<p>Set <code>contamination</code> based on domain knowledge, or tune it against a labeled holdout if one is available.</p>
 <hr />
-<h2 id="missing-values">Missing Values</h2>
-<p>Missing values are nearly universal in real datasets. The <code>count</code> row in <code>df.describe()</code> is your first check: it shows the number of non-null values per column (see <a href="04-eda-descriptive-stats.html">🖝 EDA: Descriptive Statistics</a>). Any column where count falls below the total row count contains missing values. But <code>df.describe()</code> does not always make this visible at a glance. A column can have an apparently normal mean and standard deviation and still carry 15% missing data you have not noticed.</p>
-<p>When there are many variables, a dedicated missing-value plot is an option. Here's one for a few variables from the ESS dataset. There are only few missing values for most columns (note the x-axis shows only a small range below 1%).</p>
-<p><img alt="Missing values bar chart for the ESS well-being dataset" src="../media/plots-ess/ess_wellbeing_missing_values.png" /></p>
-<p>Understanding <em>why</em> values are missing matters more than just knowing how many are missing. The main question is whether missing values are random or systematic:</p>
+<h2 id="when-to-use-isolation-forests">When to Use Isolation Forests</h2>
+<p>Two properties make isolation forests a reliable default for model-based anomaly detection.</p>
 <ul>
-<li><strong>Random</strong>: Missingness is unrelated to any variable. A sensor randomly dropping readings is random missing data. The remaining data is still representative. No bias.</li>
-<li><strong>Systematic</strong>: Missingness depends on other variables (e.g., older respondents skip income questions) or on the missing value itself (e.g., high earners skip income questions).</li>
+<li>First, they make no distributional assumption: no assumed mean, spread, or shape. Therefore, they work directly on any given data.</li>
+<li>Second, they operate across all features simultaneously, so they catch anomalies that are unusual only in combination: a sensor reading that looks fine in isolation but is suspicious given what other sensors report at the same time.</li>
 </ul>
-<blockquote>
-<p>Systematic missingness biases your results, which requires careful consideration.</p>
-</blockquote>
-<p>Handling strategies for missing values, including deletion and various forms of imputation, are covered in <a href="../part-04-data-preparation/03-scaling-imputation.html">🖝 Scaling and Imputation</a>.</p>
+<p>This makes isolation forests a strong first choice when you have no labels (or very few), no strong prior on the distribution, and a moderately sized tabular dataset. When the normal pattern is highly complex or structured and isolation forests don't produce meaningful results, you may consider an autoencoder-based approach instead, see <a href="../part-08-deep-learning/06-autoencoder.md">🖝 Autoencoder-Based Detection</a>.</p>
 <hr />
-<h2 id="application-level-concerns">Application-Level Concerns</h2>
-<p>Some data quality problems have nothing to do with everything discussed so far, but with whether the data fits the intended use.</p>
-<ul>
-<li><strong>Timeliness</strong>: Data ages. Customer behavior recorded three years ago may no longer reflect current patterns. Check when the data was collected and whether the underlying phenomenon could have shifted since then.</li>
-<li><strong>Relevance</strong>: The data must contain the right attributes to answer the question. Predicting car accident rates without age or driving-experience information is unlikely to produce a useful model, regardless of how clean the data is.</li>
-<li><strong>Sampling bias</strong>: The sample may not represent the population you care about. A voluntary survey reaches people who choose to respond, which systematically underrepresents disengaged groups. This is not a measurement error in individual records. It is a structural problem in how the data was gathered (survey like ESS take greate care to avoid this kind of bias).</li>
-</ul>
-<p>Another concern is that well-maintained data is that of documentation.</p>
+<h2 id="evaluating-anomaly-detectors">Evaluating Anomaly Detectors</h2>
+<p>Evaluation is the hardest part of anomaly detection, because the data characteristics that make the problem interesting (rare events, few or no labels) also make standard metrics unreliable.</p>
+<h3 id="when-partial-ground-truth-is-available">When partial ground truth is available</h3>
+<p>If you have labeled anomalies, those labels should be held out before fitting the model (compare <a href="../part-04-data-preparation/04-data-splits.html">🖝 Data Splits</a>). Beyond the general split philosophy to obtain fair evaluation results, the reasons is this:</p>
 <blockquote>
-<p>Good data should come with a <strong>data card</strong> (sometimes called a datasheet). This is a document that records <em>what</em> was collected, by <em>whom</em>, <em>when</em>, under <em>what</em> conditions, and for <em>what</em> original purpose. Before trusting a dataset, check whether documentation exists and whether the original collection context matches your intended use.</p>
+<p>Anomaly detection models usually <strong>only train on "good observations"</strong>, allowing the model to discover new types of anomalies later, not just the ones for which already labels exist.</p>
 </blockquote>
+<p>Anomalies are rare by definition. In a dataset where 1% of observations are anomalies, predicting "normal" for every single observation achieves 99% accuracy while detecting zero anomalies. Therefore, accuracy is useless under extreme class imbalance.</p>
+<p>With a held-out labeled set, you can compute precision and recall across thresholds and choose the operating point that matches your use case (compare <a href="../part-05-supervised-learning/08-classification-evaluation.html">🖝 Classification Evaluation</a>). 
+The plot below shows an example for tuning the contamination parameter for the isolation forest on the <code>kddcup99</code> dataset:</p>
+<p><center><img src="../media/plots-kddcup/kddcup99_contamination_sensitivity.png" alt="PR F1 curve" width="740px"/></center></p>
+
+<p>The metrics precision and recall in the anomaly detection context read as:</p>
+<ul>
+<li><strong>Precision</strong> is the fraction of flagged observations that are genuine anomalies. Low precision means many false alarms.</li>
+<li><strong>Recall</strong> is the fraction of genuine anomalies that were flagged. Low recall may mean dangerous misses.</li>
+</ul>
+<p>Which matters more depends on the cost of each error type. In predictive maintenance, a missed fault may mean an unplanned shutdown; a false alarm means an unnecessary inspection. In fraud detection, a missed fraud means financial loss; a false alarm means inconveniencing a legitimate customer.</p>
+<h3 id="when-no-labels-exist-at-all">When no labels exist at all</h3>
+<p>In this scenario, standard classification metrics cannot be computed. The evaluation strategy becomes pure <strong>domain validation</strong>: show the flagged observations to a domain expert and ask whether they correspond to known problem patterns, edge cases, or genuinely surprising events.</p>
+<p>Domain validation is the correct check for any anomaly detector operating in a new environment. Only a practitioner can tell you whether it is catching the right things.</p>
+<blockquote>
+<p><strong>Discussion:</strong> You deploy an isolation forest on a manufacturing line and a domain expert reviews the first 50 flagged observations: 35 look like genuine anomalies, 15 look like normal production variance. How would you adjust your approach (e.g., the <code>contamination</code> parameter, the threshold, or the feature set)? And in what order?</p>
+</blockquote>
+<p><em>See also: <a href="../part-08-deep-learning/06-autoencoder.md">🖝 Autoencoder-Based Detection</a> for when the normal pattern is highly complex and a deep learning approach to reconstruction error is warranted.</em></p>
 <hr />
 <h2 id="summary">Summary</h2>
 <ul>
-<li>Measurement errors include noise (random, can be averaged out) and artifacts (systematic, cannot). Precision, bias, and accuracy describe different ways measurement can fail.</li>
-<li>Data collection errors introduce omissions or inappropriate inclusions. Inconsistencies and duplicate records are structural quality problems that require domain knowledge to resolve.</li>
-<li>The <code>count</code> row in <code>df.describe()</code> is your first missing-value check. The randomness pattern determine which handling strategy makes sense. Strategies are covered in Part 4.</li>
-<li>Application-level concerns, including timeliness, relevance, sampling bias, and data documentation, determine whether data is fit for purpose regardless of its technical cleanliness.</li>
+<li>Isolation forests isolate each observation by randomly splitting features. Anomalies, which sit in sparse regions, tend to be isolated in fewer splits than normal observations. The average isolation depth across many trees becomes the anomaly score.</li>
+<li>The method makes no distributional assumptions and operates in the full feature space, catching anomalies defined by combinations of features that no single-feature statistical baseline would detect.</li>
+<li>Accuracy is useless for anomaly detection under class imbalance. Use precision and recall with a labeled held-out set when labels exist.</li>
+<li>When no labels exist, domain validation (reviewing flagged cases with a domain expert) is the correct evaluation strategy.</li>
 </ul>
 <p>As always: Happy learning, happy life! 🫶</p>
 <hr />
 <blockquote>
-<p><strong>Navigation:</strong> <a href="04-eda-descriptive-stats.html">&lt;-- EDA: Descriptive Statistics</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="06-eda-distributions.html">EDA: Distributions --&gt;</a></p>
+<p><strong>Navigation:</strong> <a href="03-anomaly-detection.html">&lt;-- Anomaly Detection</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="../part-08-deep-learning/00-index.md">Part VIII: 3rd Pass — Deep Learning --&gt;</a></p>
 </blockquote>
 <p>Script v1.4 (2026-06-10) · FGN</p>
 

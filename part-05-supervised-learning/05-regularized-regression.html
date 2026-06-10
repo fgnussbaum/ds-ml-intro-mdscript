@@ -1951,7 +1951,7 @@
   <span class="md-ellipsis">
     
   
-    Appendix
+    Part VII: 2nd Pass - Unsupervised Learning
   
 
     
@@ -1964,6 +1964,200 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part VII: 2nd Pass - Unsupervised Learning
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/00-index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/01-unsupervised-learning.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Framing Unsupervised Learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/02-k-means-clustering.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    k-Means Clustering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/03-anomaly-detection.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomaly Detection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/04-isolation-forests.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Isolation Forests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2313,10 +2507,12 @@ model.fit(X_train, y_train)
 <h2 id="l1-regularization-lasso-sparsity">L1 Regularization (Lasso): Sparsity</h2>
 <p>L1 regularization penalizes the sum of <strong>absolute</strong> weight values:</p>
 <div class="arithmatex">\[\text{Loss}_{L1}(\mathbf{w}) = \text{MSE}(\mathbf{w}) + \lambda \sum_{j=1}^{k} |w_j|= \text{MSE}(\mathbf{w}) + \lambda \| \mathbf{w}\|_1\]</div>
-<p>In contrast to L2 regularization, L1 regularization tends to zero out some weights entirely. Let's take a look at geometry to build some intuition why this is the case:
-- The L2 penalty has a smooth shape: a down-hill optimizer like <a href="03-gradient-descent.html">🖝 Gradient Descent</a> can usually improve a weight slightly without hitting a corner.
-- The L1 penalty has a diamond shape: its corners sit exactly at coordinates where some weights are zero. Because of their sharpness, corners are often the optimum for the full loss function, too.</p>
-<p><center><img src="../media/plots/l1-vs-l2-norms.png" alt="left: L2 norm ball (circle), right: L1 norm ball (diamond)" width="500px"/></center></p>
+<p>In contrast to L2 regularization, L1 regularization tends to zero out some weights entirely. Let's take a look at geometry to build some intuition why this is the case:</p>
+<ul>
+<li>The L2 penalty has a smooth shape: a down-hill optimizer like <a href="03-gradient-descent.html">🖝 Gradient Descent</a> can usually improve a weight slightly without hitting a corner.</li>
+<li>The L1 penalty has a diamond shape: its corners sit exactly at coordinates where some weights are zero. Because of their sharpness, corners are often the optimum for the full loss function, too.</li>
+</ul>
+<p><center><img src="../media/plots/l1-vs-l2-norms.png" alt="left: L2 norm ball (circle), right: L1 norm ball (diamond)" width="740px"/></center></p>
 
 <p>L1 therefore performs <strong>implicit feature selection</strong>: predictors whose weights reach exactly zero are dropped from the model, and the solution is <strong>sparse</strong>. Unlike Ridge, which shrinks all coefficients proportionally, Lasso tends to zero one correlated predictor while retaining another. This makes it well-suited when you suspect only a few features are genuinely informative.</p>
 <p>In scikit-learn, L1-penalized linear regression is called <strong>Lasso</strong>:</p>
@@ -2343,7 +2539,7 @@ model.fit(X_train, y_train)
 <blockquote>
 <p><strong>Navigation:</strong> <a href="04-under-overfitting.html">&lt;-- Underfitting and Overfitting</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="06-hyperparameters.html">Hyperparameter Optimization --&gt;</a></p>
 </blockquote>
-<p>Script v1.3 (2026-06-09) · FGN</p>
+<p>Script v1.4 (2026-06-10) · FGN</p>
 
 
 

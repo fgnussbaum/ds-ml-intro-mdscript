@@ -1951,7 +1951,7 @@
   <span class="md-ellipsis">
     
   
-    Appendix
+    Part VII: 2nd Pass - Unsupervised Learning
   
 
     
@@ -1964,6 +1964,200 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part VII: 2nd Pass - Unsupervised Learning
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/00-index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/01-unsupervised-learning.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Framing Unsupervised Learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/02-k-means-clustering.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    k-Means Clustering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/03-anomaly-detection.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Anomaly Detection
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-07-unsupervised-learning/04-isolation-forests.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Isolation Forests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Appendix
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -2294,8 +2488,8 @@
 </ul>
 <h2 id="stepping-downhill-the-update-rule">Stepping Downhill: The Update Rule</h2>
 <p>Let's begin with the simple example from the preceding <a href="02-linear-regression.html">🖝 Linear Regression</a> nugget: Optimizing MSE as a function of just a single weight parameter: the slope <span class="arithmatex">\(w_1\)</span>. Because MSE is a sum of squared terms, that function is a parabola with a single minimum at the best value of <span class="arithmatex">\(w_1\)</span>.</p>
-<p>At any point on the curve, the <strong>gradient</strong> is the derivative of the loss with respect to <span class="arithmatex">\(w_1\)</span>: it points in the direction that increases the loss most steeply. The core idea is that stepping in the <em>opposite</em> direction decreases the loss. These opposite directions are marked by the orange arrows in the following figures: </p>
-<p><center><img src="../media/demos-screenshots/gd-small.png" alt="left: bigger gradient arrow because more steep" height="200px"/> <img src="../media/demos-screenshots/gd-tiny.png" alt="right: small gradient arrow because flat/close to minimum" height="200px"/></center></p>
+<p>At any point on the curve, the <strong>gradient</strong> is the derivative of the loss with respect to <span class="arithmatex">\(w_1\)</span>: it points in the direction that increases the loss most steeply. The core idea is that stepping in the <em>opposite</em> direction decreases the loss. These opposite directions are marked by the orange arrows in the following figures:</p>
+<p><center><img src="../media/demos-screenshots/gd-small.png" alt="left: bigger gradient arrow because more steep" height="370px"/> <img src="../media/demos-screenshots/gd-tiny.png" alt="right: small gradient arrow because flat/close to minimum" height="370px"/></center></p>
 
 <p>These two screenshots are taken from the gradient descent demo from my <a href="https://github.com/fgnussbaum/ds-ml-interactive-demos">✪ interactive data-science demos</a>, where you can interactively explore gradient descent for the simple regression scenario. The MSE loss function for just the slope parameter is a parabola (here <span class="arithmatex">\(\theta=w_1\)</span>). The length of the orange arrows represents the gradient magnitude:</p>
 <ul>
@@ -2314,9 +2508,9 @@
 <hr />
 <h2 id="the-loss-surface">The Loss Surface</h2>
 <p>With two parameters, slope <span class="arithmatex">\(w_1\)</span> and intercept <span class="arithmatex">\(w_0\)</span>, the loss is no longer a curve but a <strong>surface</strong> over the <span class="arithmatex">\((w_0, w_1)\)</span> plane. Because MSE remains a sum of squared terms, the surface is <em>bowl</em>-shaped: smooth, convex, with a single global minimum.</p>
-<p><center><img src="../media/demos-screenshots/gd-contour-plot.png" alt="Loss surface for a two-parameter linear model, showing a bowl-shaped surface with contour lines and an arrow tracing the gradient descent path to the minimum" width="500px"/></center></p>
+<p><center><img src="../media/demos-screenshots/gd-contour-plot.png" alt="Loss surface for a two-parameter linear model, showing a bowl-shaped surface with contour lines and an arrow tracing the gradient descent path to the minimum" width="740px"/></center></p>
 
-<p>A <strong>contour plot</strong> shows this surface from above. Each ring marks a constant loss value, and rings closer to the center correspond to lower loss. Gradient descent traces a path on this surface, always stepping in the steepest downhill direction (which happens to be <strong>perpendicular</strong> to the contour lines). </p>
+<p>A <strong>contour plot</strong> shows this surface from above. Each ring marks a constant loss value, and rings closer to the center correspond to lower loss. Gradient descent traces a path on this surface, always stepping in the steepest downhill direction (which happens to be <strong>perpendicular</strong> to the contour lines).</p>
 <p>The gradient step in this example forms a straight line, but for less regular surfaces / bowl shapes it won't always be. Different scales of the parameters could for example make the bowl appear elongated. As a result, gradient descent may zigzag slowly toward the minimum. This is one concrete reason why the feature scaling from <a href="../part-04-data-preparation/03-scaling-imputation.html">🖝 Scaling and Imputation</a> helps: It makes the bowl more "round" such that gradient steps point more directly toward the minimum.</p>
 <hr />
 <h2 id="when-to-use-gradient-descent">When to Use Gradient Descent</h2>
@@ -2336,7 +2530,7 @@
 <blockquote>
 <p><strong>Navigation:</strong> <a href="02-linear-regression.html">&lt;-- Linear Regression</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="04-under-overfitting.html">Underfitting and Overfitting --&gt;</a></p>
 </blockquote>
-<p>Script v1.3 (2026-06-09) · FGN</p>
+<p>Script v1.4 (2026-06-10) · FGN</p>
 
 
 
