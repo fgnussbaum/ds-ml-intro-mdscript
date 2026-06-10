@@ -4,7 +4,7 @@
 
 # CRISP-DM
 
-**Motivation**: Knowing what machine learning is does not tell you how a real project unfolds from first question to deployed result. Most tutorials start at modeling. But modeling is only one step in a longer process, and skipping the steps before and after it is one of the most common reasons data-science projects fail. You **don't** want projects to fail because the **process** was not right. 
+**Motivation**: Knowing what machine learning is does not tell you how a real project unfolds from first question to deployed result. Most tutorials start at modeling. But modeling is only one step in a longer process, and skipping the steps before and after it is one of the most common reasons data-science projects fail. You **don't** want projects to fail because the **process** was not right.
 
 > In this nugget you will get to know CRISP-DM (which stands for the handy _"Cross-Industry Standard Process for Data Mining"_). This process will be a good live orientation tool throughout your own project and data-science work. You'll learn the six standard CRISP-DM phases plus two useful extensions.
 
@@ -30,9 +30,11 @@ The phases do not run strictly in sequence. Most real projects loop back, someti
 > See [🖝 Part II](../part-02-ds-projects/00-index.md) in this course.
 
 Here you define what you actually want to achieve.
+
 - You identify the business or research objective,
 - you assess the situation (available resources, constraints, risks),
 - you translate the objective into a concrete data-mining goal
+
 So essentially, you are doing some planning work.
 
 > This phase answers the question: *What are we trying to do, and is it worth it?*
@@ -78,6 +80,7 @@ The standard phases of CRISP-DM are already comprehensive. Nonetheless, I like t
 #### Interface Design & Integration
 
 Models and systems rarely work in isolation.
+
 - When a deployed system directly interacts with  humans, it needs a user interface (UI). You want a good user experience: worth keeping in mind. Beyond the design itself it requires user testing and feedback mechanisms.
 - even if a model does not directly interact with humans, it likely has to be embedded in a larger system
 
@@ -93,7 +96,7 @@ Traditionally, most day-to-day iteration in a data-science project happens insid
 
 > The **inner** loop produces the model. The **outer** cycle determines whether it is the right model for the right reason.
 
-The **inner loop** consists of Data Understanding, Data Preparation, and Modeling/Evaluation. You iterate through this loop repeatedly within a single project: explore the data, prepare it, train a model, evaluate it, revise the preparation, retrain, re-evaluate. Each iteration produces either a better model or a clearer understanding of what the data can and cannot support. 
+The **inner loop** consists of Data Understanding, Data Preparation, and Modeling/Evaluation. You iterate through this loop repeatedly within a single project: explore the data, prepare it, train a model, evaluate it, revise the preparation, retrain, re-evaluate. Each iteration produces either a better model or a clearer understanding of what the data can and cannot support.
 
 > Inner-loops insights and actions should never be disconnected from Problem/Business Understanding.
 
@@ -133,4 +136,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- AI Ethics: A Primer](03-ethics-and-responsibility.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Academia vs. Business Data Science -->](05-academia-vs-business-ds.md)
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN

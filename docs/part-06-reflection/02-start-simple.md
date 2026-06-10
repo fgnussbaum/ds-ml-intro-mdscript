@@ -25,11 +25,11 @@ In the 14th century, the philosopher William of Ockham articulated what became k
 
 This is a universal principle. It applies to machine learning in particular. The reason is that adding model complexity also adds costs:
 
-<p><center><img src="../media/infographics/complexity_cost.png" alt="" width="500px"/></center></p>
+<p><center><img src="../media/infographics/complexity_cost.png" alt="" width="740px"/></center></p>
 
 Simpler models:
 
-- **Are easier to explain to stakeholders**: A shallow decision tree can be shown as a flowchart in a presentation. The internals of a [🖝 Random Forests](../part-05-supervised-learning/10-random-forests.md) ensemble cannot. 
+- **Are easier to explain to stakeholders**: A shallow decision tree can be shown as a flowchart in a presentation. The internals of a [🖝 Random Forests](../part-05-supervised-learning/10-random-forests.md) ensemble cannot.
 - **Require less data**: Since simpler models usually have less parameters, they are less likely to overfit. This means they often work better when data is limited.
 - **Are easier to train**: Not only is training faster, failures are also easier to debug. When a [🖝 Linear Regression](../part-05-supervised-learning/02-linear-regression.md) gives a poor result, the reasons are often visible in the residuals or the coefficient values. When a blackbox deep learning model fails, diagnosis is much harder.
 - **Deploy faster and cost less**: A [🖝 Logistic Regression](../part-zz-appendix/03-logistic-regression.md) runs in microseconds on any hardware. A large neural network requires a GPU and careful infrastructure.
@@ -82,7 +82,7 @@ A log like that costs little to maintain, but you'll keep a better overview of y
 
 The following practical hierarchy of model complexity applies to most supervised learning problems with tabular data. Start with a baseline, see the next nugget [🖝 Baselines and the Good-Enough Bar](../part-06-reflection/03-baselines.md). Then and only step up only when evidence demands it.
 
-<p><center><img src="../media/infographics/simplicity_ladder.png" alt="" width="500px"/></center></p>
+<p><center><img src="../media/infographics/simplicity_ladder.png" alt="" width="740px"/></center></p>
 
 The evidence to step up typically is **persistent underfitting**: Both training and validation/CV errors are high, the gap between them is small, and adding more data does not help. In contrast, if the problem is **overfitting** (large training-validation gap), adding complexity will make it worse.
 
@@ -105,4 +105,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Generalization](01-generalization.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Baselines and the Good-Enough Bar -->](03-baselines.md)
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN

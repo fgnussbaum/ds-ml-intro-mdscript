@@ -29,7 +29,7 @@ There are two main strategies:
 
 > **Warning:** The cap thresholds for winsorizing must be computed on the training set only and applied to all splits. We formally discuss why in the next nugget [🖝 Data Splits](../part-04-data-preparation/04-data-splits.md).
 
-> **Tip:** Outlier capping should be applied before the scaling operations that we'll discuss in the next section. This is to prevent that extreme values "compress" ranges. 
+> **Tip:** Outlier capping should be applied before the scaling operations that we'll discuss in the next section. This is to prevent that extreme values "compress" ranges.
 
 ---
 
@@ -79,7 +79,7 @@ Z-score standarization, also called zero-mean normalization, scales features to 
 
 To do so, Z-score standarization centers the data at zero by subtracting the mean, and it scales by the standard deviation:
 
-$$x' = \frac{x - \bar{x}}{\sigma_x}$$
+$$z = \frac{x - \bar{x}}{\sigma_x}$$
 
 where $\bar{x}$ is the column mean for feature $x$ and $\sigma_x$ is the standard deviation. After standardization, the column **always** has mean $0$ and standard deviation $1$.
 
@@ -121,7 +121,7 @@ Because of these limitations, z-score standardization is the more robust standar
 
 - Genuine extreme values can be capped to limit their influence on scaling and model fitting, or kept as-is when the model is not sensitive to extremes.
 - Imputation fills missing values using statistics: mean for symmetric distributions, median for skewed or ordinal data, mode for categoricals. Alternatively, listwise deletion removes incomplete rows at the cost of data.
-- Scaling brings numeric features to a comparable range. Z-score standardization centers and scales by standard deviation and is a safe default. Min-max scaling maps values to a fixed interval but is sensitive to outliers. 
+- Scaling brings numeric features to a comparable range. Z-score standardization centers and scales by standard deviation and is a safe default. Min-max scaling maps values to a fixed interval but is sensitive to outliers.
 - All three families estimate statistics from data and must be fitted on the training set only, then applied identically to all splits, see [🖝 Data Splits](../part-04-data-preparation/04-data-splits.md).
 
 As always: Happy learning, happy life! 🫶
@@ -131,4 +131,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Structural Cleaning and Encoding](02-cleaning-encoding.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Data Splits -->](04-data-splits.md)
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN

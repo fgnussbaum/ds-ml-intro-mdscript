@@ -21,6 +21,7 @@
 A finished project is not a perfect result. It is a documented one.
 
 Most completed projects at this level have four things in common:
+
 - a question specific enough to know whether you made **progress**
 - a dataset that is real (not necessarily large or clean)
 - an analysis that applies at least one method correctly, and
@@ -71,4 +72,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Reality-Checking Your Idea](04-reality-checking-your-idea.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part III: Data Understanding -->](../part-03-data-understanding/00-index.md)
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN

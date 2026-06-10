@@ -65,6 +65,7 @@ This course is positioned on the business and engineering side of the spectrum, 
 > You are more likely to spend your career solving a specific problem with real data rather than winning a benchmark competition.
 
 The skills that transfer are:
+
 - scoping a question that is actually answerable,
 - understanding what your data can and cannot support,
 - building a model that is honest about its performance, and
@@ -93,4 +94,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- CRISP-DM](04-crisp-dm.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part II: Data-Science Projects -->](../part-02-ds-projects/00-index.md)
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN

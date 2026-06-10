@@ -21,6 +21,7 @@
 When was the last time you learned something well enough to use it on your own? Chances are you were solving a problem you cared about.
 
 Skill learning transfers when you care about the skills.
+
 - When you encounter the same technique in a new situation, you already know it can do something useful.
 - Motivation matters too: when the problem is yours, you push through the challenging parts.
 
@@ -70,4 +71,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [Finding Your Idea -->](02-finding-your-idea.md)
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN

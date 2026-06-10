@@ -22,21 +22,25 @@
 
 ## From One Tree to Many: The Ensemble Idea
 
-A single tree commits fully to the data it saw: small changes in the training set can shift the top splits, producing a very different tree. In statistical terms, the model has high **variance**.
+A single tree commits fully to the data it saw: Small changes in the training set can shift the top splits, producing a very different tree. In statistical terms, the model has **high variance**.
 
 The remedy is diversification: train many trees, each on a slightly different sample of the data, and combine their predictions. Because the errors of individual trees are partly independent, they tend to cancel when averaged. This is the core idea of a **random forest**.
 
-Here's a visualization of a random forest from the interactive decision tree demo. Intuively, trees have different sizes and performance:
+Here's a visualization of a random forest from the [✪ interactive decision tree demo](https://github.com/fgnussbaum/ds-ml-interactive-demos). You can see that trees have different sizes and performances:
 
-<p><center><img src="../media/demos-screenshots/dt-forestgrid.png" alt="feature importances" width="500px"/></center></p>
+<p><center><img src="../media/demos-screenshots/dt-forestgrid.png" alt="feature importances" width="740px"/></center></p>
 
 ### How does the 'random' in random forests work?
 
 A random forest introduces two sources of randomness to make sure the trees are different enough from each other:
 
-- Each tree is trained on a **bootstrap sample**, that is, $n$ records drawn from the training set uniformly *with* replacement, where $n$ is the size of the original set. Some records appear multiple times; others are left out. Each tree therefore sees a different slice of the data and learns a slightly different model.
+- Each tree is trained on a **bootstrap sample**, that is, $n$ records drawn from the training set uniformly with replacement, where $n$ is the size of the original set. Some records appear multiple times, others are left out. Each tree therefore sees a different slice of the data and learns a slightly different model.
 
 - At each split, only a random subset of features is considered as candidates, typically $\sqrt{k}$ features for classification, where $k$ is the total number of features. This **feature subsampling** prevents one dominant feature from appearing at the root of every tree, forcing the ensemble to draw on different signals and further diversifying predictions.
+
+Random forests have a built-in evaluation metric: the **out-of-Bag (OOB) score**. It estimates how well the model generalizes to unseen data without needing a training/validation split. Intuitively, each tree is only evaluated on the samples that where left out during its training.
+
+> **Background**: The term bootstrapping originates from the idiom "to pull oneself up by one's bootstraps". This was used to describe an impossible physical feat, but evolved to mean self-sufficiency. In statistics, this concept is applied by allowing an algorithm to generate "new" datasets entirely from its own existing pool of data.
 
 ### How do random forests classify samples?
 
@@ -53,7 +57,7 @@ For any given sample, a random forests classifies it by combining the prediction
 
 A decision tree is interpretable precisely because it is compact: one flowchart, one root split that identifies the feature with the highest information gain (see [🖝 Decision Trees](../part-05-supervised-learning/09-decision-trees.md)). A forest is not. With hundreds of trees there is no single flowchart to read and no single root to point to. How do you recover a global view of which features matter?
 
-<p><center><img src="../media/demos-screenshots/dt-rf-feature-importance.jpg" alt="feature importances" width="500px"/></center></p>
+<p><center><img src="../media/demos-screenshots/dt-rf-feature-importance.jpg" alt="feature importances" width="740px"/></center></p>
 
 **Feature importance** provides an answer. Continuing our example from [🖝 Decision Trees](../part-05-supervised-learning/09-decision-trees.md), the plot above shows feature importances for a random forest (100 trees) trained on the Penguins dataset. We get an indication that `bill length` may be the most important feature on the training data for performing the classification task.
 
@@ -70,12 +74,14 @@ How does it work? For each feature, the importance score sums the information ga
 The core trade-off is accuracy versus interpretability.
 
 **Prefer a random forest when:**
+
 - Prediction accuracy is the primary goal and a non-interpretable result is acceptable.
 - The dataset has at least a few hundred examples so the ensemble has diversity to draw on.
 - You want a reliable feature importance ranking as a quick guide to which variables matter.
 - You are establishing a strong baseline before exploring more complex models.
 
 **Prefer a single decision tree when:**
+
 - Every decision must be explainable in human-readable rules, e.g., for regulatory compliance, audit, or stakeholder sign-off.
 - The dataset is very small and a forest may have too little diversity to outperform a single tree.
 - Training or inference speed is a hard constraint.
@@ -99,7 +105,7 @@ Everything else carries over unchanged: Hunt's algorithm, greedy search over fea
 
 The random forest extension follows directly: train many regression trees on bootstrap samples with feature subsampling, then **average** their predictions (instead of the majority vote from classification random forests). The same ensemble logic applies: individual trees overfit, averaging reduces variance.
 
-We have come to the end of this part, where we discussed [🖝 Supervised Learning](../part-05-supervised-learning/01-supervised-learning.md), specifically the fundamental regression and classification tasks. The decision tree family (single trees and random forests) handle both tasks with the same core procedure. 
+We have come to the end of this part, where we discussed [🖝 Supervised Learning](../part-05-supervised-learning/01-supervised-learning.md), specifically the fundamental regression and classification tasks. The decision tree family (single trees and random forests) handle both tasks with the same core procedure.
 As we have now completed a first pass over the inner loop of [🖝 CRISP-DM](../part-01-the-big-picture/04-crisp-dm.md), in the next part we'll step back and asks what generalizes across all of it.
 
 ---
@@ -118,4 +124,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Decision Trees](09-decision-trees.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part VI: Principles That Transfer (Reflection) -->](../part-06-reflection/00-index.md)
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN

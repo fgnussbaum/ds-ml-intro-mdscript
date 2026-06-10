@@ -21,6 +21,7 @@
 
 Every technique in this course so far has assumed a specific shape for your data: a two-dimensional table where each row is one record and each column is one attribute with a fixed type and no particular ordering among rows. This structure is called **tabular data**, and it is by far the most common format in business and scientific datasets.
 Nevertheless, a large share of real-world data is not tabular.
+
 - An image is not one row in a table.
 - A time series is not just a column of numbers: the ordering of those numbers carries information, and ignoring it loses most of the signal.
 - A text document has no fixed schema at all.
@@ -120,4 +121,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [Preparing Non-Tabular Data -->](02-beyond-tabular-prep.md)
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN

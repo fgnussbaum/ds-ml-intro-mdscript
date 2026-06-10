@@ -27,7 +27,7 @@ A **decision tree** is a flowchart. Each internal node tests one feature against
 
 Let's take a look at an example. The Palmer Penguins dataset has three species (Adelie: _blue_, Chinstrap: _orange_, Gentoo: _green_), four features, and 333 samples. Here's a decision tree of depth 2 trained on the dataset. Colors in each node show the class proportions among the training examples that reached that node:
 
-<p><center><img src="../media/demos-screenshots/dt-depth2-penguins.png" alt="decision tree: colors indicate proportion of class at each node" width="400px"/></center></p>
+<p><center><img src="../media/demos-screenshots/dt-depth2-penguins.png" alt="decision tree: colors indicate proportion of class at each node" width="600px"/></center></p>
 
 - The root splits on **flipper length ≤ 207.5 mm**: examples above the threshold flow right, the examples that land here are almost exclusively Gentoo.
 - The right branch splits on **bill depth ≤ 17.6** next, which perfectly separates the Gentoo class on the training data.
@@ -38,6 +38,7 @@ We could train deeper trees to get even better results on the training data. How
 > **Overfitting pitfall:** A fully grown tree memorizes the training set and generalizes poorly. So depth needs to be balanced.
 
 To balance depth, several **pruning** strategies are available:
+
 - either stop splitting early when the gain falls below a threshold, or
 - grow the full tree and then remove branches that hurt held-out performance (post-pruning).
 
@@ -54,9 +55,9 @@ _See also: [🖝 Generalization](../part-06-reflection/01-generalization.md)._
 
 First of all, the concept of a confusion matrix from [🖝 Classification Evaluation](../part-05-supervised-learning/08-classification-evaluation.md) generalizes straight-forward to a multi-class setting:
 
-<p><center><img src="../media/demos-screenshots/dt-confusionmatrix.png" alt="multi-class confusion matrix" width="300px"/></center></p>
+<p><center><img src="../media/demos-screenshots/dt-confusionmatrix.png" alt="multi-class confusion matrix" width="450px"/></center></p>
 
-Now, let's take a look at the classification metrics. 
+Now, let's take a look at the classification metrics.
 Up to this point, precision, recall, and F1 were defined for a **binary** problem with one positive class. Many real tasks have more than two classes: species, product categories, medical diagnoses. Decision trees handle multi-class problems natively, since leaves can predict any class, but evaluation needs to extend as well.
 
 The key idea is straightforward: for each class, treat it as the positive class and all other classes as negative. This gives you a precision, recall, and F1 **per class**. Scikit-learn's `classification_report` does exactly this:
@@ -150,7 +151,7 @@ The split removed all uncertainty. Any less clean split yields a smaller $\Delta
 $$G(v) = 1 - \sum_c p_v(c)^2$$
 
 Both entropy and gini select nearly identical splits in practice, so you can just use the default (Gini) from `DecisionTreeClassifier`.
-In practice, Gini is slightly faster (no logarithm), entropy produces a sharper penalty on mixed nodes. 
+In practice, Gini is slightly faster (no logarithm), entropy produces a sharper penalty on mixed nodes.
 
 ---
 
@@ -165,4 +166,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Classification Evaluation](08-classification-evaluation.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Random Forests -->](10-random-forests.md)
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN

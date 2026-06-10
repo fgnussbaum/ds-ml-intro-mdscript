@@ -24,7 +24,7 @@ The first tool is the **scatter plot**: each observation is drawn as a point, wi
 
 Here's an example for the seaborn Penguins dataset:
 
-<center><img src="../media/plots-penguins/penguins_flipper_vs_bill.png" alt="scatter plot" width="400px"/></center>
+<center><img src="../media/plots-penguins/penguins_flipper_vs_bill.png" alt="scatter plot" width="600px"/></center>
 
 > A scatter plot is most useful for numeric/continuous data. In this example, we have discrete/ordinal data from our ESS data set. We can still use a scatter plot, but some values will be plotted on top of each other.
 
@@ -119,4 +119,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- EDA: Distributions](06-eda-distributions.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Data Understanding: Best Practices -->](08-eda-best-practices.md)
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN

@@ -25,7 +25,7 @@
 
 Start with one input variable. In [🖝 EDA: Correlations](../part-03-data-understanding/07-eda-correlations.md) we considered pairwise correlations between features. Linear regression formalizes that relationship as a straight line:
 
-<p><center><img src="../media/plots-tips/linreg_tips_fit.png" alt="Scatter plot of total bill($) vs. tip ($) with the fitted regression line" width="400px"/></center></p>
+<p><center><img src="../media/plots-tips/linreg_tips_fit.png" alt="Scatter plot of total bill($) vs. tip ($) with the fitted regression line" width="600px"/></center></p>
 
 With just one feature variable, the slope of the regression line is directly related to the Pearson correlation coefficient of feature and target variable. If both are standardized, they are the same.
 
@@ -70,7 +70,7 @@ $$\text{MAE}(\mathbf{w}) = \frac{1}{n} \sum_{j=1}^{n} \bigl|y_j - h_\mathbf{w}(\
 
 MAE gives large errors the same linear weight as small ones, so outliers have less pull on the fitted line. You can try it in the **regression: loss functions** demo from [✪ interactive data-science demos](https://github.com/fgnussbaum/ds-ml-interactive-demos). This demo allows you to add/move points and see what happens with the fitted regression lines.
 
-<p><center><img src="../media/demos-screenshots/LAD-vs-OLS.png" alt="Screenshot of interactive demo: LAD (orange) vs OLS (blue); outlier heavily influence OLS fit" width="500px"/></center></p>
+<p><center><img src="../media/demos-screenshots/LAD-vs-OLS.png" alt="Screenshot of interactive demo: LAD (orange) vs OLS (blue); outlier heavily influence OLS fit" width="740px"/></center></p>
 
 ---
 
@@ -146,4 +146,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Supervised Learning](01-supervised-learning.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Gradient Descent -->](03-gradient-descent.md)
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN

@@ -42,6 +42,7 @@ Degree $d$ from [🖝 Underfitting and Overfitting](../part-05-supervised-learni
 > **A pitfall**: If you evaluated many candidate values of $\lambda$ on the test set and kept the best, you would effectively select the value that happened to look good on those specific examples. The test score would _no_ longer be a fair estimate of generalization.
 
 To see the role each partition plays in this context:
+
 - **Training/Train set**: to fit model weights,
 - **Validation/Val set**: to compare hyperparameter candidates,
 - **Test set**: touched only once, after the final model is chosen, to produce the number you report.
@@ -60,7 +61,7 @@ With a validation strategy in place, hyperparameter tuning becomes a search prob
 
 **Grid search** defines an explicit set of candidate values and evaluates every one, using cross-validation to score each. To see it in action, consider predicting disease progression from certain clinical variables (age, sex, BMI, blood pressure, etc.) using the [🔗 sklearn diabetes dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_diabetes.html).
 
-For the systematic search for the best regularization parameters, we reformulate the loss as 
+For the systematic search for the best regularization parameters, we reformulate the loss as
 
 $$(1-\alpha)\cdot\text{MSE}(\mathbf{w}) + \alpha\cdot\|\mathbf{w}\|,\quad \alpha\in[0,1).$$
 
@@ -68,7 +69,7 @@ Here, $\alpha$ now acts as the _weight_ of the penalty term. Crucially, $\alpha$
 
 Here are the RMSE error curves for train/val sets of the diabetes dataset. Only the range $\alpha\in[0, 0.1]$ is shown with a fine **grid step size** of $10^{-3}$:
 
-<p><center><img src="../media/demos-screenshots/diabetes-error-curves.png" alt="Error curves (train/val data) for alpha in [0,1] for Ridge/Lasso" width="500px"/></center></p>
+<p><center><img src="../media/demos-screenshots/diabetes-error-curves.png" alt="Error curves (train/val data) for alpha in [0,1] for Ridge/Lasso" width="740px"/></center></p>
 
 Observe that the training error (blue) increases as $\alpha$ increases. This is because more regularization give the model less opportunity to fit the training data closely. The validation error curve respectively shows a sweet spot where regularization improves generalization the most.
 
@@ -78,7 +79,7 @@ Grid search finds this sweet spot for $\alpha$ automatically. However, efficienc
 
 Next, the coefficient paths reveal what is happening inside the model as $\alpha$ varies.
 
-<p><center><img src="../media/demos-screenshots/diabetes-coefficient-pathsL1L2.png" alt="coefficient paths of L2 (left) and L1 (right) across alpha ranges" width="500px"/></center></p>
+<p><center><img src="../media/demos-screenshots/diabetes-coefficient-pathsL1L2.png" alt="coefficient paths of L2 (left) and L1 (right) across alpha ranges" width="740px"/></center></p>
 
 Ridge (L2, left) shrinks all coefficients gradually toward zero without eliminating any. Lasso (L1, right) drives several coefficients to exactly zero at higher $\alpha$ values, selecting a sparse subset of features. This matches the theoretical behavior that we discussed in [🖝 Regularized Regression](../part-05-supervised-learning/05-regularized-regression.md).
 
@@ -121,4 +122,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Regularized Regression](05-regularized-regression.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Classification Tasks -->](07-classification-tasks.md)
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN

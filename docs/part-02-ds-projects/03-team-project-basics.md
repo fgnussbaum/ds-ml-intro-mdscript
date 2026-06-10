@@ -38,11 +38,13 @@ In a group of three or four, one person typically covers two of these. The impor
 Not every phase produces the same amount of work, and some phases parallelize more naturally than others.
 
 **Work together on:**
+
 - Business understanding: the problem definition is a group decision. **Everyone needs to understand and agree on what you are trying to do**.
 - Modeling: early modeling is best done together so that everyone understands the baseline before branches diverge.
 - Evaluation: every team member should be able to explain the results and their limits.
 
 **Phases that can be split:**
+
 - Data understanding: different people can explore different columns or run different analyses, then reconvene and share findings.
 - Data preparation: cleaning and feature engineering tasks are often separable once the overall strategy is agreed.
 - Reporting: the communicator drafts, the others review.
@@ -54,6 +56,7 @@ Not every phase produces the same amount of work, and some phases parallelize mo
 ## Keeping the Project Moving
 
 Group projects stall for predictable reasons:
+
 - no one owns the next concrete step,
 - sessions end without actionable decisions,
 - blockers sit unaddressed because everyone assumes someone else will handle them.
@@ -63,6 +66,7 @@ Here are some habits that help to prevent such failure modes:
 ---
 
 **Name actions, responsibilities.** At the end of every working session, name specific tasks along with the person who owns each of them.
+
 - Bad: *"We will do the cleaning next time"*. This is not an action.
 - Better: *"Anna checks for missing values in the temperature columns before Thursday"*.
 
@@ -92,4 +96,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Finding Your Idea](02-finding-your-idea.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Reality-Checking Your Idea -->](04-reality-checking-your-idea.md)
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN

@@ -45,6 +45,7 @@ What each row tells you:
 All quantities are defined in detail below.
 
 What `df.describe()` does *not* tell you:
+
 - distribution shape
 - the number of distinct values (use `df.unique()` on a column for this)
 - whether missing values are random or systematic
@@ -81,7 +82,7 @@ The median is not affected by extreme values, which makes it the better choice w
 <!-- distributions knoweledge prerequisite-->
 **When to use which** depends largely on the distribution at hand (see [🖝 EDA: Distributions](../part-03-data-understanding/06-eda-distributions.md)):
 
-- Symmetric, unimodal distributions with no strong outliers: the mean is efficient and commonly reported 
+- Symmetric, unimodal distributions with no strong outliers: the mean is efficient and commonly reported
 - Skewed distributions or heavy tails: prefer the median.
 - Ordinal attributes (survey scales, ratings): the median is technically appropriate. Reporting a mean is common but assumes equal intervals between ranks.
 
@@ -137,4 +138,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Datasets](03-datasets.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [EDA: Data Quality -->](05-eda-data-quality.md)
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN

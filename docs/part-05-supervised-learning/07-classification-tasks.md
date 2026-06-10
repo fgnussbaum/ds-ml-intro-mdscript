@@ -46,14 +46,14 @@ $$\hat{y} = \begin{cases} 1 & \text{if score} \geq \tau \\ 0 & \text{otherwise} 
 
 The **classification** demo from the [✪ interactive data-science demos](https://github.com/fgnussbaum/ds-ml-interactive-demos) repository illustrates the idea:
 
-<p><center><img src="../media/demos-screenshots/cf-threshold-85.png" alt="" width="500px"/></center></p>
+<p><center><img src="../media/demos-screenshots/cf-threshold-85.png" alt="" width="740px"/></center></p>
 
 In this chart, each point corresponds to a training example: circles are the negative class, squares are the positive class. The slider controls $\tau$, and every point above it is predicted positive. Examples that are classified incorrect are crossed out.
 
 - Moving $\tau$ lower catches more positive examples but also misclassifies more negatives.
 - Moving it higher reduces false alarms but misses real cases.
 
-> **Good to know**: The threshold is usually chosen after training and before evaluation, so it is not a parameter the model learns. 
+> **Good to know**: The threshold is usually chosen after training and before evaluation, so it is not a parameter the model learns.
 
 For the evaluation of classification, a natural first question is: How many predictions are correct? This is what **Accuracy** measures:
 
@@ -69,7 +69,7 @@ A classifier learns from labeled examples. That means someone, at some point, ha
 
 ### Annotation cost
 
-Building a labeled dataset for a new task requires work: a radiologist reads thousands of scans, a legal team reviews contracts, annotators label images one by one. Even with partial automation, generating **ground truth** takes time and resources. This is one reason why labeled datasets are scarce compared to raw data. 
+Building a labeled dataset for a new task requires work: a radiologist reads thousands of scans, a legal team reviews contracts, annotators label images one by one. Even with partial automation, generating **ground truth** takes time and resources. This is one reason why labeled datasets are scarce compared to raw data.
 
 > A well-curated small dataset is sometimes more valuable than a large noisy one.
 
@@ -88,7 +88,7 @@ A model trained on noisy labels will partially learn the noise. The effect is us
 _Here's an example from our own work [🔭 Fine-Grained Sampling
 in Stochastic Segmentation Networks (NeurIPS 2022)](https://proceedings.neurips.cc/paper_files/paper/2022/file/b1a77a501bf32f8c7348fe39da2cf8c6-Paper-Conference.pdf). The visual teaser below shows different uncertainty components for landcover classification (image segmentation)._
 
-<p><center><img src="../media/papers/ssn-landcover-factors.jpg" alt="Factors of SSN" width="300px"/></center></p>
+<p><center><img src="../media/papers/ssn-landcover-factors.jpg" alt="Factors of SSN" width="450px"/></center></p>
 
 ### Class imbalance
 
@@ -120,4 +120,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Hyperparameter Optimization](06-hyperparameters.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Classification Evaluation -->](08-classification-evaluation.md)
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN

@@ -17,7 +17,7 @@
 
 ## Key Concepts at a Glance
 
-In a nutshell, an AI system takes inputs, performs mathematical computations (more or less black box), and produces outputs. 
+In a nutshell, an AI system takes inputs, performs mathematical computations (more or less black box), and produces outputs.
 
 ![AI system: inputs → model → outputs](../media/selfmade/ai-input-blackbox-output.jpg)
 
@@ -62,7 +62,7 @@ ML models span a wide range of complexity: from simple decision trees to deep le
 
 ### Data Science as a full discipline
 
-A model alone rarely solves a real problem. You need the right data, a way to collect and clean it, a way to evaluate whether the model actually works, and a way to act on its outputs. **Data science** comprises the full pipeline. 
+A model alone rarely solves a real problem. You need the right data, a way to collect and clean it, a way to evaluate whether the model actually works, and a way to act on its outputs. **Data science** comprises the full pipeline.
 
 > The model is one component. The work around it is most of the job.
 
@@ -110,4 +110,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Course Orientation](01-course-orientation.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [AI Ethics: A Primer -->](03-ethics-and-responsibility.md)
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN

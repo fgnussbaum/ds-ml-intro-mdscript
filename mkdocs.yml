@@ -65,6 +65,12 @@ nav:
     - Baselines and the Good-Enough Bar: part-06-reflection/03-baselines.md
     - Choosing and Aligning Metrics: part-06-reflection/04-aligning-metrics.md
     - Explainability: part-06-reflection/05-explainability.md
+  - "Part VII: 2nd Pass - Unsupervised Learning":
+    - Overview: part-07-unsupervised-learning/00-index.md
+    - Framing Unsupervised Learning: part-07-unsupervised-learning/01-unsupervised-learning.md
+    - k-Means Clustering: part-07-unsupervised-learning/02-k-means-clustering.md
+    - Anomaly Detection: part-07-unsupervised-learning/03-anomaly-detection.md
+    - Isolation Forests: part-07-unsupervised-learning/04-isolation-forests.md
   - Appendix:
     - Overview: part-zz-appendix/00-index.md
     - Beyond Tabular Data: part-zz-appendix/01-beyond-tabular-eda.md

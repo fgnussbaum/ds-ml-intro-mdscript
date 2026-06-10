@@ -60,10 +60,11 @@ L1 regularization penalizes the sum of **absolute** weight values:
 $$\text{Loss}_{L1}(\mathbf{w}) = \text{MSE}(\mathbf{w}) + \lambda \sum_{j=1}^{k} |w_j|= \text{MSE}(\mathbf{w}) + \lambda \| \mathbf{w}\|_1$$
 
 In contrast to L2 regularization, L1 regularization tends to zero out some weights entirely. Let's take a look at geometry to build some intuition why this is the case:
+
 - The L2 penalty has a smooth shape: a down-hill optimizer like [🖝 Gradient Descent](../part-05-supervised-learning/03-gradient-descent.md) can usually improve a weight slightly without hitting a corner.
 - The L1 penalty has a diamond shape: its corners sit exactly at coordinates where some weights are zero. Because of their sharpness, corners are often the optimum for the full loss function, too.
 
-<p><center><img src="../media/plots/l1-vs-l2-norms.png" alt="left: L2 norm ball (circle), right: L1 norm ball (diamond)" width="500px"/></center></p>
+<p><center><img src="../media/plots/l1-vs-l2-norms.png" alt="left: L2 norm ball (circle), right: L1 norm ball (diamond)" width="740px"/></center></p>
 
 L1 therefore performs **implicit feature selection**: predictors whose weights reach exactly zero are dropped from the model, and the solution is **sparse**. Unlike Ridge, which shrinks all coefficients proportionally, Lasso tends to zero one correlated predictor while retaining another. This makes it well-suited when you suspect only a few features are genuinely informative.
 
@@ -99,4 +100,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Underfitting and Overfitting](04-under-overfitting.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Hyperparameter Optimization -->](06-hyperparameters.md)
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN

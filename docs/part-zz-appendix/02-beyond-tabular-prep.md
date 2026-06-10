@@ -166,4 +166,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Beyond Tabular Data](01-beyond-tabular-eda.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Logistic Regression -->](03-logistic-regression.md)
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN

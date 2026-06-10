@@ -18,7 +18,7 @@
 
 ## Feature Construction
 
-Every EDA finding is a potential feature idea. In the following, we discuss several construction operations along with typical "trigger points". 
+Every EDA finding is a potential feature idea. In the following, we discuss several construction operations along with typical "trigger points".
 
 As you saw in [🖝 Data Types and Measurement Scales](../part-03-data-understanding/02-data-types.md), the permissable construction operations also depend on the measurement scales of source attributes: arithmetic on nominal data is meaningless, and ratios require a ratio scale.
 
@@ -148,4 +148,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [Structural Cleaning and Encoding -->](02-cleaning-encoding.md)
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN

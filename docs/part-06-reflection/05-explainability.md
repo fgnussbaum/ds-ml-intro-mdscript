@@ -42,6 +42,7 @@ There are contexts where interpretability is not optional:
 ### Linear and logistic regression: coefficients
 
 In [🖝 Linear Regression](../part-05-supervised-learning/02-linear-regression.md), you already saw this plot with coefficients from a regression model for the tips dataset:
+
 <p><center><img src="../media/plots-tips/linreg_tips_coefficients.png" alt="Coefficients"/></center></p>
 
 The coefficient $w_j$ in a linear model represents the predicted change in the target for a one-unit increase in feature $j$, provided all other features are held constant.
@@ -77,7 +78,7 @@ When a less interpretable model genuinely outperforms simpler alternatives and m
 
 In the interactive demo, we have a random forest trained on the [🔗 California housing dataset](https://www.kaggle.com/datasets/camnugent/california-housing-prices) to predict median house value (in thousands of dollars) from `MediumIncome`/`MedInc`, `HouseAge`, `AverageRooms`/`AveRooms`, and `Latitude`. Across the training data, its average prediction, the **base value**, is 144K. For one district, nicknamed "Rural NorCal", it predicts only 104K, a gap of 40K below the base value. Let's explore the feature SHAP values:
 
-<p><center><img src="../media/plots-california-housing/shapley_waterfall.png" alt="" width="500px"/></center></p>
+<p><center><img src="../media/plots-california-housing/shapley_waterfall.png" alt="" width="740px"/></center></p>
 
 This waterfall plot gives an indication where that gap comes from: `Latitude` pulls the prediction down by 52K and `MedInc` by 47K, while `AveRooms` adds back 33K and `HouseAge` adds 26K. Add these four contributions to the base value and you land exactly on 104K. Intuitively, nothing is left unexplained.
 
@@ -89,7 +90,7 @@ where $\phi_j$ is the SHAP value of feature $j$, precisely the bars in the water
 
 A single waterfall plot explains one data point (here: district). To see whether it is typical, we can compute SHAP feature importances for the predictions on many samples and then average them to obtain global feature importances.
 
-<p><center><img src="../media/plots-california-housing/shapley_summary.png" alt="" width="500px"/></center></p>
+<p><center><img src="../media/plots-california-housing/shapley_summary.png" alt="" width="740px"/></center></p>
 
 Across 200 test districts, the ranking shifts slightly from what "Rural NorCal" suggested: `MedInc` now has the largest average effect (+63.1K), `HouseAge` the smallest (+14.9K). Coloring each point by the district's actual feature value adds what a ranking cannot: direction. Low income (blue) reliably drags predictions down and high income (red) lifts them, while `AveRooms` does not show such clean pattern: similar feature values land on both sides of zero.
 
@@ -110,4 +111,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Choosing and Aligning Metrics](04-aligning-metrics.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part VII: 2nd Pass - Unsupervised Learning -->](../part-07-unsupervised-learning/00-index.md)
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN

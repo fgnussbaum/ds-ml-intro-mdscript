@@ -54,7 +54,7 @@ Data work is slow and sometimes difficult.
 This should be clarifying, not discouraging:
 Data scientists who are good at this work are valuable precisely because it is hard and most people underestimate it.
 
-The skills you will build give you a foundation for every modelling task that follows: understanding attribute types, running exploratory data analysis (EDA), cleaning, encoding, and splitting data. 
+The skills you will build give you a foundation for every modelling task that follows: understanding attribute types, running exploratory data analysis (EDA), cleaning, encoding, and splitting data.
 
 > A model trained on well-understood data is more likely to produce results you can trust and defend. A model trained on poorly understood data easily becomes a liability.
 
@@ -79,4 +79,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [Data Types and Measurement Scales -->](02-data-types.md)
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN

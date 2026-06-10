@@ -33,7 +33,7 @@ For a good split, both training and test sets represent the data distribution we
 
 ## The Train/Validation/Test Split
 
-During modeling, you'll typically also need to make decisions like selecting the best set of features or tuning some model [🖝 Hyperparameter Optimization](../part-05-supervised-learning/06-hyperparameters.md). You'll want to make these decisions by comparing options in terms of their error on some kind of held-out data. However, this held-out data cannot be the test set: 
+During modeling, you'll typically also need to make decisions like selecting the best set of features or tuning some model [🖝 Hyperparameter Optimization](../part-05-supervised-learning/06-hyperparameters.md). You'll want to make these decisions by comparing options in terms of their error on some kind of held-out data. However, this held-out data cannot be the test set:
 
 > The test set should **always** be consulted exactly once: after all modeling decisions are final.
 
@@ -99,4 +99,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Scaling and Imputation](03-scaling-imputation.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Data Preparation Checklist -->](05-prep-checklist.md)
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN

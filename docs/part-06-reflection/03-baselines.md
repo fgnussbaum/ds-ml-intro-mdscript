@@ -20,7 +20,7 @@
 
 A **dummy baseline** is the performance achievable by a model that uses no learned relationships between features and target. For classification and regression the standard choices are majority class and mean, respectively:
 
-<p><center><img src="../media/plots/baselines.png" alt="" width="500px"/></center></p>
+<p><center><img src="../media/plots/baselines.png" alt="" width="740px"/></center></p>
 
 - The **dummy classifier** predicts the majority class for every input. Its accuracy equals the proportion of the most frequent class in the training set.
 - The **dummy regressor** predicts the mean of the training targets for every input. Its mean squared error (=MSE) equals the variance of the training target.
@@ -55,7 +55,7 @@ In addition to the "floor" baseline, a model often also needs to achieve a minim
 
 At best, domain requirements appear as explicit thresholds: "catch at least 80% of fraud cases" or "stay within ±5% of demand." If you are given such requirements, you should translate them into a minimum acceptable value on a specific metric. For example, a minimum recall value of 0.8 for the fraud domain requirement.
 
-> **Practical note:** In many cases, domain requirements might not yet be explicit. In these cases, they must be negotiated with stakeholders as part of business understanding. When would a model be good enough to do real work? 
+> **Practical note:** In many cases, domain requirements might not yet be explicit. In these cases, they must be negotiated with stakeholders as part of business understanding. When would a model be good enough to do real work?
 
 Domain requirements inform which metrics to use. Metrics must be chosen before training, not after: If the domain requirement is recall-based, optimizing for accuracy may yield a model that clears the baseline but fails the requirement.
 
@@ -78,4 +78,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Start Simple](02-start-simple.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Choosing and Aligning Metrics -->](04-aligning-metrics.md)
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN

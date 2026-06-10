@@ -34,6 +34,7 @@ Now, let's discuss some of the most important structural properties that dataset
 **Dimensionality** refers to the number of attributes, that is, the number of columns. A dataset with many columns is called high-dimensional.
 
 > **Curse of dimensionality (outlook):** High dimensionality causes the so-called curse of dimensionality, where distances between data points lose meaning and algorithms require much more data to generalize.
+
 <!--You'll revisit this in feature selection and model evaluation (TODO: links).-->
 
 **Sparsity** describes datasets or attributes in which most values are zero or absent. Survey datasets and text data are typically sparse: a respondent may have answered only a subset of questions, and documents contain only a tiny fraction of all possible words.
@@ -142,4 +143,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Data Types and Measurement Scales](02-data-types.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [EDA: Descriptive Statistics -->](04-eda-descriptive-stats.md)
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN

@@ -77,4 +77,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Data Preparation Checklist](05-prep-checklist.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part V: 1st Pass - Supervised Learning -->](../part-05-supervised-learning/00-index.md)
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN

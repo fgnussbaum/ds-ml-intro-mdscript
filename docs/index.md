@@ -30,7 +30,7 @@ TBD
 
 When learning something new and challenging, consistency is key.
 
-<p><center><img src="media/selfmade/skill_learning_journey.jpg" alt="Skill Learning Journey" width="300px"/></center></p>
+<p><center><img src="media/selfmade/skill_learning_journey.jpg" alt="Skill Learning Journey" width="450px"/></center></p>
 
 There's no _magic_ abbreviation to learning skills.
 

@@ -23,7 +23,7 @@ The first question to answer about any column is: what values does it actually c
 
 A **histogram** groups values into equally spaced intervals called bins and shows how many observations fall in each. **Bin width** is the main choice: too few bins hide structure; too many amplify noise.
 
-Plotting many variables at once gives a rapid overview of them, here for some variables of the ESS well-being data: 
+Plotting many variables at once gives a rapid overview of them, here for some variables of the ESS well-being data:
 
 ![Histogram grid for ESS, age with KDE](../media/plots-ess/ess_distributions_grid.png)
 
@@ -36,7 +36,7 @@ Now let's take a look at what shapes we find in these plots:
 - **Uniform**: values are roughly equally frequent across the range. **Age** is close to uniform across the adult range. This is unusual for a population sample. It might signal quota sampling rather than purely random selection for the ESS survey.
 - **Modality of distributions**: If distributions have more than one  distinct peak, it often signals that there are subpopulations pooled into one variable. For example, the histogram of **religiosity** contains two peaks, one at zero (secular), and a secondary mode around 5 (bimodal). This may be more of a meaningful divide rather than a skew. Distributions with three or more peaks (**multimodal**) prompt the same question: are there meaningful subpopulations present?
 
-Distribution shapes raise questions not just about the numbers, but about how the data was collected and what the underlying reality looks like. 
+Distribution shapes raise questions not just about the numbers, but about how the data was collected and what the underlying reality looks like.
 
 > **Discussion:** What would an unexpected distribution shape in a variable tell you about how the data was collected, or about what the underlying reality looks like?
 
@@ -95,4 +95,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- EDA: Data Quality](05-eda-data-quality.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [EDA: Correlations -->](07-eda-correlations.md)
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN

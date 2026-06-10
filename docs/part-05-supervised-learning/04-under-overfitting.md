@@ -46,7 +46,7 @@ The degree $d$ is not a weight the optimizer adjusts. You set it before training
 
 Consider a datasets is generated from a cubic relationship with noise added. The true pattern has degree 3, but you do not know that. You fit polynomial models of increasing degree and compare how each curve follows the data.
 
-<p><center><img src="../media/demos-screenshots/of-under-best-overfit.png" alt="Plot with underfitting (degree 0/1), best fit (degree 7; though true model has degree three, curve fits smoothly nonetheless), overfitting (degree 20)" width="500px"/></center></p>
+<p><center><img src="../media/demos-screenshots/of-under-best-overfit.png" alt="Plot with underfitting (degree 0/1), best fit (degree 7; though true model has degree three, curve fits smoothly nonetheless), overfitting (degree 20)" width="740px"/></center></p>
 
 Three regimes are visible:
 
@@ -56,7 +56,7 @@ Three regimes are visible:
 
 The RMSE plot below makes the story quantitative. It shows training and validation error across degrees 0 to 20 for a single training dataset.
 
-<p><center><img src="../media/demos-screenshots/of-rsme-by-degree.png" alt="plot of train and validation RSMEs for degree 0...20." width="500px"/></center></p>
+<p><center><img src="../media/demos-screenshots/of-rsme-by-degree.png" alt="plot of train and validation RSMEs for degree 0...20." width="740px"/></center></p>
 
 Training error falls continuously as degree increases: more flexibility always reduces error on data the model is training on. Validation error follows roughly a U-shape. It decreases as the model gains enough capacity to represent the true pattern, reaches a minimum, then rises as the model begins fitting noise. The target is the degree that minimizes validation error, not training error.
 
@@ -74,7 +74,7 @@ The plots above show results for one particular training dataset. A natural ques
 
 The plot below from the [✪ Under-/Overfitting demo](https://github.com/fgnussbaum/ds-ml-interactive-demos) repeats the experiment across 100 different samples from the true population *(which here means: different noisy observations from the "true" cubic data-generating function.)*. For each sample and each degree, the model is trained and evaluated. Individual error curves are shown faintly behind the average error curves:
 
-<p><center><img src="../media/demos-screenshots/of-biasvariance.png" alt="bias-variance trade-off with polynomial fit degree 0 to 10" width="500px"/></center></p>
+<p><center><img src="../media/demos-screenshots/of-biasvariance.png" alt="bias-variance trade-off with polynomial fit degree 0 to 10" width="740px"/></center></p>
 
 The plots provides a sense how much error rates varies across samples. Two distinct failure modes become visible:
 
@@ -103,4 +103,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Gradient Descent](03-gradient-descent.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Regularized Regression -->](05-regularized-regression.md)
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN

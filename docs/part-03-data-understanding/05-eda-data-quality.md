@@ -53,7 +53,7 @@ Other types of quality problems that should be spotted include:
 
 ## Missing Values
 
-Missing values are nearly universal in real datasets. The `count` row in `df.describe()` is your first check: it shows the number of non-null values per column (see [🖝 EDA: Descriptive Statistics](../part-03-data-understanding/04-eda-descriptive-stats.md)). Any column where count falls below the total row count contains missing values. But `df.describe()` does not always make this visible at a glance. A column can have an apparently normal mean and standard deviation and still carry 15% missing data you have not noticed. 
+Missing values are nearly universal in real datasets. The `count` row in `df.describe()` is your first check: it shows the number of non-null values per column (see [🖝 EDA: Descriptive Statistics](../part-03-data-understanding/04-eda-descriptive-stats.md)). Any column where count falls below the total row count contains missing values. But `df.describe()` does not always make this visible at a glance. A column can have an apparently normal mean and standard deviation and still carry 15% missing data you have not noticed.
 
 When there are many variables, a dedicated missing-value plot is an option. Here's one for a few variables from the ESS dataset. There are only few missing values for most columns (note the x-axis shows only a small range below 1%).
 
@@ -62,9 +62,9 @@ When there are many variables, a dedicated missing-value plot is an option. Here
 Understanding *why* values are missing matters more than just knowing how many are missing. The main question is whether missing values are random or systematic:
 
 - **Random**: Missingness is unrelated to any variable. A sensor randomly dropping readings is random missing data. The remaining data is still representative. No bias.
-- **Systematic**: Missingness depends on other variables (e.g., older respondents skip income questions) or on the missing value itself (e.g., high earners skip income questions). 
+- **Systematic**: Missingness depends on other variables (e.g., older respondents skip income questions) or on the missing value itself (e.g., high earners skip income questions).
 
-> Systematic missingness biases your results, which requires careful consideration. 
+> Systematic missingness biases your results, which requires careful consideration.
 
 Handling strategies for missing values, including deletion and various forms of imputation, are covered in [🖝 Scaling and Imputation](../part-04-data-preparation/03-scaling-imputation.md).
 
@@ -98,4 +98,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- EDA: Descriptive Statistics](04-eda-descriptive-stats.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [EDA: Distributions -->](06-eda-distributions.md)
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN

@@ -34,13 +34,13 @@ In the next section, we discuss a related validation strategy.
 
 Specifically, in **k-fold cross-validation**, the training data is divided into $k$ equally sized folds. The model is trained $k$ times: each time, one fold serves as the validation set and the remaining $k-1$ folds are used for training. The $k$ scores are averaged into a single stable estimate for the generalization error.
 
-<p><center><img src="../media/plots/cv_kfold_diagram.png" alt="k-fold cross-validation diagram (k=5). 5x5 matrix; training data split into 5 equal horizontal bands." width="500px"/></center></p>
+<p><center><img src="../media/plots/cv_kfold_diagram.png" alt="k-fold cross-validation diagram (k=5). 5x5 matrix; training data split into 5 equal horizontal bands." width="740px"/></center></p>
 
 A typical choice is $k = 5$ or $k = 10$. Larger $k$ gives a more stable estimate at the cost of having to fit more models.
 
 How much more stable can CV results be? The following figure for the [🔗 MPG dataset](https://www.kaggle.com/datasets/uciml/autompg-dataset) gives a hint (task: predicting `mpg` - miles per gallon):
 
-<p><center><img src="../media/plots-mpg/mpg_cv_stability.png" alt="cv stability" width="300px"/></center></p>
+<p><center><img src="../media/plots-mpg/mpg_cv_stability.png" alt="cv stability" width="450px"/></center></p>
 
 To obtain this figure, for each of 30 random seeds,  respectively a model was trained using (a) a single random 80/20 split and (b) 5-fold cross cross validation (CV). So the box plot shows the distributions of generalization RMSE scores across these 30 trials, respectively. Both produce similar means. What differs is spread.
 
@@ -58,7 +58,7 @@ Even with an evaluation strategy in place, you still need diagnostic tools to un
 
 A **learning curve** plots train vs. validation/CV error as the number of training examples increases for a fixed model.
 
-<p><center><img src="../media/plots-mpg/mpg_learning_curves.png" alt="learning curves decision trees: left: high bias (max_depth=2); right: high variance (fully grown tree)" width="500px"/></center></p>
+<p><center><img src="../media/plots-mpg/mpg_learning_curves.png" alt="learning curves decision trees: left: high bias (max_depth=2); right: high variance (fully grown tree)" width="740px"/></center></p>
 
 The left panel (max_depth=2) shows the high-bias signature:
 
@@ -66,16 +66,18 @@ The left panel (max_depth=2) shows the high-bias signature:
 - The model is too simple. Try a more complex model or add features.
 
 The right panel (fully grown tree) shows the high-variance signature:
+
 - Train RMSE is exactly zero at every size, and CV RMSE stays high. The model memorizes whatever it receives, and more data helps only slowly.
 - The model is too complex. Reduce complexity, apply regularization, or collect more data.
 
 ### Validation Curves
 
-A **validation curve** replaces training size with a complexity hyperparameter on the x-axis, making the bias-variance trade-off directly visible. We already saw that in [🖝 Underfitting and Overfitting](../part-05-supervised-learning/04-under-overfitting.md). Here's another example from the MPG dataset: 
+A **validation curve** replaces training size with a complexity hyperparameter on the x-axis, making the bias-variance trade-off directly visible. We already saw that in [🖝 Underfitting and Overfitting](../part-05-supervised-learning/04-under-overfitting.md). Here's another example from the MPG dataset:
 
-<p><center><img src="../media/plots-mpg/mpg_validation_curve.png" alt="train/val error curve" width="500px"/></center></p>
+<p><center><img src="../media/plots-mpg/mpg_validation_curve.png" alt="train/val error curve" width="740px"/></center></p>
 
 The MPG curve for decision tree depth shows three zones.
+
 - `max_depth` 1–4: both train and CV error fall together, every additional split captures genuine signal.
 - `max_depth` 5–10: train error keeps falling while CV error flattens, the model is adding capacity that no longer generalizes.
 - `max_depth` 11+: train error is approaching toward zero while CV error starts drifting upward.
@@ -120,4 +122,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [Start Simple -->](02-start-simple.md)
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN

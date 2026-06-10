@@ -20,4 +20,4 @@ This part is a light touch of CRISP-DM's Business Understanding phase. It makes 
 
 ---
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN

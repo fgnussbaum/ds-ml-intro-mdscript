@@ -28,6 +28,7 @@ Here are three entry points. For each one, ask yourself the accompanying questio
 > Write down 2-3 problem candidates before moving on. Do not evaluate them yet.
 
 ### Solve a problem for yourself
+
 - What do you do repeatedly in your work that is slow, error-prone, or relies on judgment you cannot easily articulate?
 - Is there a quantity you estimate by hand? A decision you make from experience, but would struggle to write down as rules?
 
@@ -134,4 +135,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Why a Project?](01-why-a-project.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Working as a Team on a DS Project -->](03-team-project-basics.md)
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN

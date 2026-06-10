@@ -52,7 +52,7 @@ In 1966, Joseph Weizenbaum created ELIZA: a chatbot that reflected users' words 
 
 The same dynamic is present today with large language models. Fluent, confident prose triggers a cognitive shortcut: we assume competence behind the language. But a language model has no model of truth and no stake in the outcome. It produces text that fits the statistical patterns of its training data. Sometimes that text is accurate. Sometimes it is not. The model cannot tell the difference.
 
-For practitioners, this has a concrete implication: testing whether output "sounds right" is not the same as testing whether it *is* right. Users will over-trust outputs. Developers are not immune. 
+For practitioners, this has a concrete implication: testing whether output "sounds right" is not the same as testing whether it *is* right. Users will over-trust outputs. Developers are not immune.
 
 > Anthropomorphism is just one category of human biases. We have many more when interacting with AI systems. I listed some of them here: [✪ Biases when working with chatbots](https://fgnussbaum.com/ai-digital/collaborating-with-chatbots/).
 
@@ -82,10 +82,12 @@ The [🔗 **EU AI Act**](https://artificialintelligenceact.eu/) (entered into fo
 The AI act is sometimes criticized, naturally for any kind of regulation. The AI act is certainly not perfect. But take a look at this list: It directly reflects and protects some of the liberal values that the EU is based on. That's worth a lot.
 
 For practitioners, the question is: *where does your system sit?*
+
 - A quality-control model on a production line may be minimal risk in one context and high risk in another depending on what it controls.
 - A hiring screening tool is high risk regardless of how accurate it is.
 
 Additionally, certain transparency obligations apply broadly across risk tiers:
+
 - any AI system interacting with a human must identify itself as AI, and
 - AI-generated content that could deceive ("deep fakes") must be labeled as such.
 
@@ -110,4 +112,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- What Is Artificial Intelligence?](02-intro-ai.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [CRISP-DM -->](04-crisp-dm.md)
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN

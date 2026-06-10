@@ -64,7 +64,7 @@ The line between regression and classification can sometimes blur. Ordinal ratin
 
 From [🖝 CRISP-DM](../part-01-the-big-picture/04-crisp-dm.md), you'll recall that the Data, Modeling and Evaluation phases form a tight inner loop: prepare data, fit a model, measure its performance, adjust, and repeat. Within this part of the course, we "complete" that inner loop for the first time.
 
-<center><img src="../media/selfmade/crisp_dm_inner.jpg" alt="CRISP-DM inner" width="200px"/></center>
+<center><img src="../media/selfmade/crisp_dm_inner.jpg" alt="CRISP-DM inner" width="370px"/></center>
 
 You enter the inner loop after Data Preparation and exit it, for now, with models that have been evaluated and compared on held-out data.
 
@@ -89,4 +89,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [Linear Regression -->](02-linear-regression.md)
 
-Script v1.3 (2026-06-09) · FGN
+Script v1.4 (2026-06-10) · FGN
