@@ -912,18 +912,7 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#running-examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Running Examples
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Running Examples">
+    <nav class="md-nav" aria-label="Loading and First Inspection">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -931,6 +920,17 @@
     <span class="md-ellipsis">
       
         ESS 11 Well-Being Dataset (Germany)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#first-steps-with-a-new-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        First steps with a new dataset
       
     </span>
   </a>
@@ -1384,7 +1384,7 @@
   <span class="md-ellipsis">
     
   
-    Part V: 1st Pass - Supervised Learning
+    Part V: Supervised Learning
   
 
     
@@ -1400,7 +1400,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part V: 1st Pass - Supervised Learning
+    Part V: Supervised Learning
   
 
           </label>
@@ -1714,6 +1714,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-05-supervised-learning/11-logistic-regression.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logistic Regression
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1968,7 +1996,7 @@
   <span class="md-ellipsis">
     
   
-    Part VII: 2nd Pass - Unsupervised Learning
+    Part VII: Unsupervised Learning
   
 
     
@@ -1984,7 +2012,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part VII: 2nd Pass - Unsupervised Learning
+    Part VII: Unsupervised Learning
   
 
           </label>
@@ -2032,7 +2060,7 @@
   <span class="md-ellipsis">
     
   
-    Framing Unsupervised Learning
+    Unsupervised Learning
   
 
     
@@ -2275,35 +2303,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-zz-appendix/03-logistic-regression.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Logistic Regression
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../part-zz-appendix/04-regression-depth.html" class="md-nav__link">
+      <a href="../part-zz-appendix/03-regression-depth.html" class="md-nav__link">
         
   
   
@@ -2331,7 +2331,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-zz-appendix/05-statistical-significance.html" class="md-nav__link">
+      <a href="../part-zz-appendix/04-statistical-significance.html" class="md-nav__link">
         
   
   
@@ -2359,7 +2359,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-zz-appendix/06-support-vector-machines.html" class="md-nav__link">
+      <a href="../part-zz-appendix/05-support-vector-machines.html" class="md-nav__link">
         
   
   
@@ -2444,18 +2444,7 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#running-examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Running Examples
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Running Examples">
+    <nav class="md-nav" aria-label="Loading and First Inspection">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2463,6 +2452,17 @@
     <span class="md-ellipsis">
       
         ESS 11 Well-Being Dataset (Germany)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#first-steps-with-a-new-dataset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        First steps with a new dataset
       
     </span>
   </a>
@@ -2508,20 +2508,19 @@
 <hr />
 <h1 id="datasets">Datasets</h1>
 <p><strong>Requires</strong>: <a href="02-data-types.html">Data Types and Measurement Scales</a></p>
-<p><strong>Motivation</strong>: You know that data arrives as collections of typed attributes. But before you can profile, clean, or model a dataset, you need to understand its overall shape: how many records, how many columns, and whether the structure itself creates challenges. This nugget answers: what does first contact with a new dataset look like in practice?</p>
+<p><strong>Motivation</strong>: In <a href="02-data-types.html">🖝 Data Types and Measurement Scales</a>, we covered "typed" attributes. Zooming out now, a <strong>dataset</strong> may contain many attributes. Before anything else, you need to understand the overall characteristics of a dataset: how many records, how many columns, and whether the structure itself creates challenges. This nugget answers: what does first contact with a new dataset look like in practice?</p>
 <blockquote>
-<p>You will learn the structural properties of tabular datasets — dimensionality, sparsity, and resolution — and practice the first-inspection workflow in pandas using <code>df.head()</code>, <code>df.info()</code>, and <code>df.shape</code> on the ESS Well-Being dataset that will serve as the running example throughout this part.</p>
+<p>Here, you'll learn the structural properties of tabular datasets: dimensionality, sparsity, and resolution. You'll see first-inspection workflows in Python pandas using <code>df.head()</code>, <code>df.info()</code>, and <code>df.shape</code> on the ESS Well-Being dataset.</p>
 <p><strong>Note:</strong> This nugget covers tabular data, the dominant format in this course. For non-tabular formats (images, text, time series, and spatial data), see <a href="../part-zz-appendix/01-beyond-tabular-eda.html">🖝 Beyond Tabular Data</a>.</p>
 </blockquote>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ul>
 <li><a href="#from-attributes-to-a-dataset">From Attributes to a Dataset</a></li>
 <li><a href="#loading-and-first-inspection">Loading and First Inspection</a></li>
-<li><a href="#running-examples">Running Examples</a></li>
 <li><a href="#summary">Summary</a></li>
 </ul>
 <h2 id="from-attributes-to-a-dataset">From Attributes to a Dataset</h2>
-<p>You know what a single attribute is. Now, a <strong>dataset</strong> is a collection of objects, each described by the same set of attributes.
+<p>A <strong>dataset</strong> is a collection of objects, each described by the same set of attributes. 
 Specifically, for tabular datasets,</p>
 <ul>
 <li>the rows correspond to the objects (which are also called records, data objects, instances, or observations),</li>
@@ -2545,46 +2544,9 @@ Specifically, for tabular datasets,</p>
 </blockquote>
 <hr />
 <h2 id="loading-and-first-inspection">Loading and First Inspection</h2>
-<p>The first thing you do with any new dataset is load it and examine its structure.
-Here's a walkthrough for the <strong>ESS 11 Well-Being (Germany)</strong> dataset.</p>
-<p><strong>Load the data.</strong></p>
-<pre><code class="language-python">import pandas as pd
-df = pd.read_csv(&quot;ess_wellbeing.csv&quot;, sep=&quot;,&quot;, encoding=&quot;utf-8&quot;)
-</code></pre>
-<ul>
-<li>The <code>sep</code> parameter sets the column delimiter: <code>,</code>, <code>;</code>, and tab are common. Tab-separated files use <code>sep="\t"</code>.</li>
-<li>The <code>encoding</code> parameter handles character encoding: <code>"utf-8"</code> is the default, European datasets sometimes use <code>"latin-1"</code>.</li>
-</ul>
-<p><code>print(df)</code> gives a first overview of the loaded data, including row and column count.</p>
-<p>It is also possible to take a look at just a few rows with these commands:</p>
-<pre><code class="language-python">df.head()   # first 5 rows
-df.head(3)   # first 3 rows
-df.tail()   # last 5 rows
-</code></pre>
-<p>Check whether values look sensible, headers are readable, and no obvious formatting issues stand out.</p>
-<p><strong>Check the dimensions.</strong></p>
-<p><code>df.shape</code> can also be used to inspect dimension and yield (rows, columns) as result, here <code>(2420, 11)</code>.</p>
-<p>2,420 records and 11 attributes. One number tells you the dataset's size; the other its dimensionality.</p>
-<p><strong>Check for missing values.</strong></p>
-<pre><code class="language-python">df.info()   # column names, non-null counts, dtypes
-</code></pre>
-<p><code>df.info()</code> adds non-null counts to the dtype information. A column with fewer non-null entries than rows has missing values — something <code>df.head()</code> alone would not reveal:</p>
-<pre><code> #   Column     Non-Null Count  Dtype
- 0   happiness  2417 non-null   float64
- 1   health     2417 non-null   float64
- 3   gender     2420 non-null   int
-</code></pre>
-<p><code>happiness</code> and <code>health</code> each have three missing values; <code>gender</code> is complete. You will investigate missing values further in the <a href="05-eda-data-quality.html">🖝 EDA: Data Quality</a> nugget.</p>
-<pre><code class="language-python">df.dtypes   # dtype per column
-</code></pre>
-<p><code>Dtype</code> column shows inferred data type for each column. The inferred is not always correct or optimal: See for example the inferred dtype <code>int</code> for <code>gender</code>.</p>
-<blockquote>
-<p>Always verify dtypes against your domain knowledge before computing statistics or feeding columns into a model.</p>
-</blockquote>
-<hr />
-<h2 id="running-examples">Running Examples</h2>
+<p>Before we dive in, Let's introduce a dataset that we use throughout.</p>
+<p><em>TODO: Source link.</em></p>
 <h3 id="ess-11-well-being-dataset-germany">ESS 11 Well-Being Dataset (Germany)</h3>
-<p>We'll actually use the ESS dataset from above as a running example in this script. Time to introduce it a little more:</p>
 <p>The <strong>European Social Survey (ESS)</strong> is a large cross-national survey conducted every two years. The dataset used here is the German subset of Round 11, with approximately 2,400 respondents.</p>
 <p>We don't use all attributes of the dataset. Also, for presentation in this script, some attributes have been renamed for improved readability and some of their scales recoded. Here are the most important attributes that we'll use:</p>
 <table>
@@ -2638,6 +2600,43 @@ df.tail()   # last 5 rows
 </tr>
 </tbody>
 </table>
+<h3 id="first-steps-with-a-new-dataset">First steps with a new dataset</h3>
+<p>The first thing you do with any new dataset is load it and examine its structure.
+Here's a walkthrough for the <strong>ESS 11 Well-Being (Germany)</strong> dataset.</p>
+<p><strong>Load the data.</strong></p>
+<pre><code class="language-python">import pandas as pd
+df = pd.read_csv(&quot;ess_wellbeing.csv&quot;, sep=&quot;,&quot;, encoding=&quot;utf-8&quot;)
+</code></pre>
+<ul>
+<li>The <code>sep</code> parameter sets the column delimiter: <code>,</code>, <code>;</code>, and tab are common. Tab-separated files use <code>sep="\t"</code>.</li>
+<li>The <code>encoding</code> parameter handles character encoding: <code>"utf-8"</code> is the default, European datasets sometimes use <code>"latin-1"</code>.</li>
+</ul>
+<p><code>print(df)</code> gives a first overview of the loaded data, including row and column count.</p>
+<p>It is also possible to take a look at just a few rows with these commands:</p>
+<pre><code class="language-python">df.head()   # first 5 rows
+df.head(3)   # first 3 rows
+df.tail()   # last 5 rows
+</code></pre>
+<p>Check whether values look sensible, headers are readable, and no obvious formatting issues stand out.</p>
+<p><strong>Check the dimensions.</strong></p>
+<p><code>df.shape</code> can also be used to inspect dimension and yield (rows, columns) as result, here <code>(2420, 11)</code>.</p>
+<p>2,420 records and 11 attributes. One number tells you the dataset's size; the other its dimensionality.</p>
+<p><strong>Check for missing values.</strong></p>
+<pre><code class="language-python">df.info()   # column names, non-null counts, dtypes
+</code></pre>
+<p><code>df.info()</code> adds non-null counts to the dtype information. A column with fewer non-null entries than rows has missing values — something <code>df.head()</code> alone would not reveal:</p>
+<pre><code> #   Column     Non-Null Count  Dtype
+ 0   happiness  2417 non-null   float64
+ 1   health     2417 non-null   float64
+ 3   gender     2420 non-null   int
+</code></pre>
+<p><code>happiness</code> and <code>health</code> each have three missing values; <code>gender</code> is complete. You will investigate missing values further in the <a href="05-eda-data-quality.html">🖝 EDA: Data Quality</a> nugget.</p>
+<pre><code class="language-python">df.dtypes   # dtype per column
+</code></pre>
+<p><code>Dtype</code> column shows inferred data type for each column. The inferred is not always correct or optimal: See for example the inferred dtype <code>int</code> for <code>gender</code>.</p>
+<blockquote>
+<p>Always verify dtypes against your domain knowledge before computing statistics or feeding columns into a model.</p>
+</blockquote>
 <hr />
 <h2 id="summary">Summary</h2>
 <ul>
@@ -2651,7 +2650,7 @@ df.tail()   # last 5 rows
 <blockquote>
 <p><strong>Navigation:</strong> <a href="02-data-types.html">&lt;-- Data Types and Measurement Scales</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="04-eda-descriptive-stats.html">EDA: Descriptive Statistics --&gt;</a></p>
 </blockquote>
-<p>Script v1.4 (2026-06-10) · FGN</p>
+<p>Script v1.4.1 (2026-06-23) · FGN</p>
 
 
 

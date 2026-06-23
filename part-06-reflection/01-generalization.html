@@ -1263,7 +1263,7 @@
   <span class="md-ellipsis">
     
   
-    Part V: 1st Pass - Supervised Learning
+    Part V: Supervised Learning
   
 
     
@@ -1279,7 +1279,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part V: 1st Pass - Supervised Learning
+    Part V: Supervised Learning
   
 
           </label>
@@ -1580,6 +1580,34 @@
     
   
     Random Forests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-05-supervised-learning/11-logistic-regression.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logistic Regression
   
 
     
@@ -1990,7 +2018,7 @@
   <span class="md-ellipsis">
     
   
-    Part VII: 2nd Pass - Unsupervised Learning
+    Part VII: Unsupervised Learning
   
 
     
@@ -2006,7 +2034,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part VII: 2nd Pass - Unsupervised Learning
+    Part VII: Unsupervised Learning
   
 
           </label>
@@ -2054,7 +2082,7 @@
   <span class="md-ellipsis">
     
   
-    Framing Unsupervised Learning
+    Unsupervised Learning
   
 
     
@@ -2297,35 +2325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-zz-appendix/03-logistic-regression.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Logistic Regression
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../part-zz-appendix/04-regression-depth.html" class="md-nav__link">
+      <a href="../part-zz-appendix/03-regression-depth.html" class="md-nav__link">
         
   
   
@@ -2353,7 +2353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-zz-appendix/05-statistical-significance.html" class="md-nav__link">
+      <a href="../part-zz-appendix/04-statistical-significance.html" class="md-nav__link">
         
   
   
@@ -2381,7 +2381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-zz-appendix/06-support-vector-machines.html" class="md-nav__link">
+      <a href="../part-zz-appendix/05-support-vector-machines.html" class="md-nav__link">
         
   
   
@@ -2618,12 +2618,12 @@ In the next section, we discuss a related validation strategy.</p>
 <p>The <strong>regularization principle</strong> replaces pure loss minimization with a combined objective:</p>
 <div class="arithmatex">\[\text{Cost}(h) = \text{EmpiricalLoss}(h) + \lambda \cdot \text{Complexity}(h)\]</div>
 <p>The empirical loss rewards fit to training data. The complexity term penalizes hypotheses <span class="arithmatex">\(h\)</span> that are too elaborate. <span class="arithmatex">\(\lambda\)</span> controls how heavily the model is penalized for using that extra capacity. A large <span class="arithmatex">\(\lambda\)</span> produces a simpler model that may underfit. A small <span class="arithmatex">\(\lambda\)</span> gives the model room to overfit. There is no universal right value, so it must be tuned via cross-validation techniques.</p>
-<p>In <a href="../part-05-supervised-learning/05-regularized-regression.html">🖝 Regularized Regression</a>, we saw how Ridge and Lasso instantiate the formula above using the L1 and L2 norms on the weights.
-$<span class="arithmatex">\(\text{MSE}(\mathbf{w}) + \lambda \|\mathbf{w}\|_1,\quad\text{and}\quad\text{MSE}(\mathbf{w}) + \lambda \|\mathbf{w}\|_2^2\)</span>$
-The same penalty idea extends beyond linear models: neural networks routinely apply L2 weight decay across all layers, an equivalent of Ridge regularization regardless of network depth.
-It is even possible to combine different regularization terms. For example, Elastic Net combines L1 and L2 terms for the "best of two world" - sparsity and stability:
-$<span class="arithmatex">\(\text{MSE}(\mathbf{w}) + \lambda_1 \|\mathbf{w}\|_1 + \lambda_2 \|\mathbf{w}\|_2^2.\)</span>$
-The significant cost is that more hyperparameters need to be tuned.</p>
+<p>In <a href="../part-05-supervised-learning/05-regularized-regression.html">🖝 Regularized Regression</a>, we saw how Ridge and Lasso instantiate the formula above using the L1 and L2 norms on the weights.</p>
+<div class="arithmatex">\[\text{MSE}(\mathbf{w}) + \lambda \|\mathbf{w}\|_1,\quad\text{and}\quad\text{MSE}(\mathbf{w}) + \lambda \|\mathbf{w}\|_2^2\]</div>
+<p>The same penalty idea extends beyond linear models: neural networks routinely apply L2 weight decay across all layers, an equivalent of Ridge regularization regardless of network depth.
+It is even possible to combine different regularization terms. For example, Elastic Net combines L1 and L2 terms for the "best of two world" - sparsity and stability:</p>
+<div class="arithmatex">\[\text{MSE}(\mathbf{w}) + \lambda_1 \|\mathbf{w}\|_1 + \lambda_2 \|\mathbf{w}\|_2^2.\]</div>
+<p>The significant cost is that more hyperparameters need to be tuned.</p>
 <p>For tree-based models, hyperparameters like <code>max_depth</code> and <code>min_samples_leaf</code> are <strong>capacity constraints</strong>: they restrict the hypothesis space itself. Technically, they still fit the framework with a penalty that is "infinity" where the capacity constraints is violated, and zero otherwise.</p>
 <blockquote>
 <p><strong>Key insight:</strong> Penalty-based regularization and capacity constraints all trade training fit for generalization. In both cases, the controlling parameter must be tuned via cross-validation, never on the test set.</p>
@@ -2640,7 +2640,7 @@ The significant cost is that more hyperparameters need to be tuned.</p>
 <blockquote>
 <p><strong>Navigation:</strong> <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="02-start-simple.html">Start Simple --&gt;</a></p>
 </blockquote>
-<p>Script v1.4 (2026-06-10) · FGN</p>
+<p>Script v1.4.1 (2026-06-23) · FGN</p>
 
 
 

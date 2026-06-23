@@ -1384,7 +1384,7 @@
   <span class="md-ellipsis">
     
   
-    Part V: 1st Pass - Supervised Learning
+    Part V: Supervised Learning
   
 
     
@@ -1400,7 +1400,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part V: 1st Pass - Supervised Learning
+    Part V: Supervised Learning
   
 
           </label>
@@ -1714,6 +1714,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-05-supervised-learning/11-logistic-regression.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logistic Regression
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1968,7 +1996,7 @@
   <span class="md-ellipsis">
     
   
-    Part VII: 2nd Pass - Unsupervised Learning
+    Part VII: Unsupervised Learning
   
 
     
@@ -1984,7 +2012,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part VII: 2nd Pass - Unsupervised Learning
+    Part VII: Unsupervised Learning
   
 
           </label>
@@ -2032,7 +2060,7 @@
   <span class="md-ellipsis">
     
   
-    Framing Unsupervised Learning
+    Unsupervised Learning
   
 
     
@@ -2275,35 +2303,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-zz-appendix/03-logistic-regression.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Logistic Regression
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../part-zz-appendix/04-regression-depth.html" class="md-nav__link">
+      <a href="../part-zz-appendix/03-regression-depth.html" class="md-nav__link">
         
   
   
@@ -2331,7 +2331,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-zz-appendix/05-statistical-significance.html" class="md-nav__link">
+      <a href="../part-zz-appendix/04-statistical-significance.html" class="md-nav__link">
         
   
   
@@ -2359,7 +2359,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-zz-appendix/06-support-vector-machines.html" class="md-nav__link">
+      <a href="../part-zz-appendix/05-support-vector-machines.html" class="md-nav__link">
         
   
   
@@ -2508,9 +2508,9 @@
 <hr />
 <h1 id="eda-distributions">EDA: Distributions</h1>
 <p><strong>Requires</strong>: <a href="04-eda-descriptive-stats.html">EDA: Descriptive Statistics</a></p>
-<p><strong>Motivation</strong>: Summary statistics compress a whole column into a handful of numbers. Two columns with the same mean and standard deviation can look completely different when plotted. This nugget asks: what does the actual shape of your data look like, and what does that shape tell you about the data and how it was collected?</p>
+<p><strong>Motivation</strong>: Summary statistics as from <a href="04-eda-descriptive-stats.html">🖝 EDA: Descriptive Statistics</a> compress a whole column into a handful of numbers. Now, two columns with the same mean and standard deviation can look completely different when plotted. So what does the actual shape of your data look like? Moreover, what might that shape tell you about the data and how it was collected?</p>
 <blockquote>
-<p>You will learn to visualize distributions with histograms and boxplots, characterize their shapes (symmetric, skewed, bimodal), and distinguish genuine extreme observations from data artifacts — giving you the tools to decide whether an outlier warrants investigation, transformation, or retention.</p>
+<p>In this nugget, you'll learn to visualize distributions with histograms and boxplots, characterize their shapes (symmetric, skewed, bimodal), and distinguish genuine extreme observations from data artifacts. This gives you tools to decide whether an outlier warrants investigation, transformation, or retention.</p>
 </blockquote>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ul>
@@ -2527,7 +2527,7 @@
 <p>For two variables, age and religiosity, there's also a smooth curve overlayed. This is a so-called kernel density estimate (KDE), which can be used if the right bin width is unclear (it makes less sense for data that has few values anyway).
 Now let's take a look at what shapes we find in these plots:</p>
 <ul>
-<li><strong>Normal (bell curve)</strong>: symmetric, with mean, median, and mode at the center and equal-weight tails on both sides. Many physical measurements approximate this when errors are random and independent. None of the ESS variables here follow it closely — which is itself instructive.</li>
+<li><strong>Normal (bell curve)</strong>: symmetric, with mean, median, and mode at the center and equal-weight tails on both sides. Many physical measurements approximate this when errors are random and independent. None of the ESS variables here follow it closely: this also tells us something.</li>
 <li><strong>Left-skewed (negative skew)</strong>: a long tail extends to the left, pulling the mean below the median. <strong>Happiness</strong> follows this pattern: most respondents rate themselves fairly happy (7–9), with few in the lower range. The skew reflects something real about the German population, but it also means the lower end of the scale is data-sparse.</li>
 <li><strong>Right-skewed (positive skew)</strong>: the opposite direction. Income and house prices are classic examples.</li>
 <li><strong>Uniform</strong>: values are roughly equally frequent across the range. <strong>Age</strong> is close to uniform across the adult range. This is unusual for a population sample. It might signal quota sampling rather than purely random selection for the ESS survey.</li>
@@ -2572,7 +2572,7 @@ Now let's take a look at what shapes we find in these plots:</p>
 <blockquote>
 <p><strong>Navigation:</strong> <a href="05-eda-data-quality.html">&lt;-- EDA: Data Quality</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="07-eda-correlations.html">EDA: Correlations --&gt;</a></p>
 </blockquote>
-<p>Script v1.4 (2026-06-10) · FGN</p>
+<p>Script v1.4.1 (2026-06-23) · FGN</p>
 
 
 

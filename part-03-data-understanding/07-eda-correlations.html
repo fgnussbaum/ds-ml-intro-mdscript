@@ -1395,7 +1395,7 @@
   <span class="md-ellipsis">
     
   
-    Part V: 1st Pass - Supervised Learning
+    Part V: Supervised Learning
   
 
     
@@ -1411,7 +1411,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part V: 1st Pass - Supervised Learning
+    Part V: Supervised Learning
   
 
           </label>
@@ -1725,6 +1725,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-05-supervised-learning/11-logistic-regression.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logistic Regression
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1979,7 +2007,7 @@
   <span class="md-ellipsis">
     
   
-    Part VII: 2nd Pass - Unsupervised Learning
+    Part VII: Unsupervised Learning
   
 
     
@@ -1995,7 +2023,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part VII: 2nd Pass - Unsupervised Learning
+    Part VII: Unsupervised Learning
   
 
           </label>
@@ -2043,7 +2071,7 @@
   <span class="md-ellipsis">
     
   
-    Framing Unsupervised Learning
+    Unsupervised Learning
   
 
     
@@ -2286,35 +2314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-zz-appendix/03-logistic-regression.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Logistic Regression
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../part-zz-appendix/04-regression-depth.html" class="md-nav__link">
+      <a href="../part-zz-appendix/03-regression-depth.html" class="md-nav__link">
         
   
   
@@ -2342,7 +2342,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-zz-appendix/05-statistical-significance.html" class="md-nav__link">
+      <a href="../part-zz-appendix/04-statistical-significance.html" class="md-nav__link">
         
   
   
@@ -2370,7 +2370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-zz-appendix/06-support-vector-machines.html" class="md-nav__link">
+      <a href="../part-zz-appendix/05-support-vector-machines.html" class="md-nav__link">
         
   
   
@@ -2530,9 +2530,9 @@
 <hr />
 <h1 id="eda-correlations">EDA: Correlations</h1>
 <p><strong>Requires</strong>: <a href="06-eda-distributions.html">EDA: Distributions</a></p>
-<p><strong>Motivation</strong>: Histograms and boxplots describe each variable in isolation. But the interesting questions in data science are often relational: do people who rate their health higher also tend to report more happiness? Does age relate to climate worry? Does social contact matter for well-being? Answering these questions requires tools for examining <strong>interactions</strong> of variables.</p>
+<p><strong>Motivation</strong>: Histograms and boxplots from <a href="06-eda-distributions.html">🖝 EDA: Distributions</a> describe variables in isolation. But the interesting questions in data science are often relational: Do people who rate their health higher also tend to report more happiness? Does age relate to climate worry? Does social contact matter for well-being? Answering these questions requires tools for examining <strong>interactions</strong> of variables.</p>
 <blockquote>
-<p>In this nugget you will learn to read and construct scatter plots and pair plots for exploring pairwise relationships, quantify those relationships with Pearson correlation, and know when Spearman is the better choice.</p>
+<p>In this nugget you'll learn to read and construct scatter plots and pair plots for exploring pairwise relationships, quantify those relationships with Pearson correlation, and know when Spearman is the better choice.</p>
 </blockquote>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ul>
@@ -2551,7 +2551,13 @@
 <p>A scatter plot is most useful for numeric/continuous data. In this example, we have discrete/ordinal data from our ESS data set. We can still use a scatter plot, but some values will be plotted on top of each other.</p>
 </blockquote>
 <p>In Python you can use <code>plt.scatter(x_var, y_var, ...)</code> from <code>matplotlib</code> to draw a scatter plot.</p>
-<p>Reading a scatter plot: look for direction (do points slope up or down?), clusters (are there distinct subgroups that diverge from the overall trend?), outliers (isolated points far from the main cloud), and shape (linear, curved, or absent). TODO: continuous data example</p>
+<p><strong>Reading a scatter plot:</strong> look for</p>
+<ul>
+<li>direction (do points slope up or down?),</li>
+<li>clusters (are there distinct subgroups that diverge from the overall trend?),</li>
+<li>outliers (isolated points far from the main cloud), and</li>
+<li>shape (linear, curved, or absent).</li>
+</ul>
 <!-- The relationship is: slope = r × (std_health / std_age). The Pearson r is the slope you'd get if both variables were z-scored first. The sign and direction of the trend line are fully determined by r, just rescaled to the raw units of the axes.-->
 
 <hr />
@@ -2640,7 +2646,7 @@
 <blockquote>
 <p><strong>Navigation:</strong> <a href="06-eda-distributions.html">&lt;-- EDA: Distributions</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="08-eda-best-practices.html">Data Understanding: Best Practices --&gt;</a></p>
 </blockquote>
-<p>Script v1.4 (2026-06-10) · FGN</p>
+<p>Script v1.4.1 (2026-06-23) · FGN</p>
 
 
 

@@ -1265,7 +1265,7 @@
   <span class="md-ellipsis">
     
   
-    Part V: 1st Pass - Supervised Learning
+    Part V: Supervised Learning
   
 
     
@@ -1281,7 +1281,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part V: 1st Pass - Supervised Learning
+    Part V: Supervised Learning
   
 
           </label>
@@ -1747,6 +1747,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="11-logistic-regression.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logistic Regression
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2001,7 +2029,7 @@
   <span class="md-ellipsis">
     
   
-    Part VII: 2nd Pass - Unsupervised Learning
+    Part VII: Unsupervised Learning
   
 
     
@@ -2017,7 +2045,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part VII: 2nd Pass - Unsupervised Learning
+    Part VII: Unsupervised Learning
   
 
           </label>
@@ -2065,7 +2093,7 @@
   <span class="md-ellipsis">
     
   
-    Framing Unsupervised Learning
+    Unsupervised Learning
   
 
     
@@ -2308,35 +2336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-zz-appendix/03-logistic-regression.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Logistic Regression
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../part-zz-appendix/04-regression-depth.html" class="md-nav__link">
+      <a href="../part-zz-appendix/03-regression-depth.html" class="md-nav__link">
         
   
   
@@ -2364,7 +2364,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-zz-appendix/05-statistical-significance.html" class="md-nav__link">
+      <a href="../part-zz-appendix/04-statistical-significance.html" class="md-nav__link">
         
   
   
@@ -2392,7 +2392,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-zz-appendix/06-support-vector-machines.html" class="md-nav__link">
+      <a href="../part-zz-appendix/05-support-vector-machines.html" class="md-nav__link">
         
   
   
@@ -2698,6 +2698,7 @@ Up to this point, precision, recall, and F1 were defined for a <strong>binary</s
 <p>The <strong>information gain</strong> of a split <span class="arithmatex">\(s\)</span> measures how much it reduces uncertainty.
 Intuitively, it is entropy <em>before</em> the split minus the entropy <em>remaining after</em> the split:</p>
 <!-- https://en.wikipedia.org/wiki/Information_gain_(decision_tree) -->
+
 <div class="arithmatex">\[\Delta(s) = H(v) - \sum_{j} \frac{N(v_j)}{N} \, H(v_j)\]</div>
 <p>Here, the sum runs over the child nodes <span class="arithmatex">\(v_j=v_j(s)\)</span> produced by <span class="arithmatex">\(s\)</span> from parent node <span class="arithmatex">\(v\)</span>, weighted by their fraction <span class="arithmatex">\(N(v_j)/N\)</span> of the parent's data points.
 The second term is a size-weighted average of child entropies. A good split produces purer children, so that average is low and <span class="arithmatex">\(\Delta\)</span> is large. A split that does not separate the classes leaves each child as mixed as the parent, and <span class="arithmatex">\(\Delta \approx 0\)</span>.</p>
@@ -2720,7 +2721,7 @@ In practice, Gini is slightly faster (no logarithm), entropy produces a sharper 
 <blockquote>
 <p><strong>Navigation:</strong> <a href="08-classification-evaluation.html">&lt;-- Classification Evaluation</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="10-random-forests.html">Random Forests --&gt;</a></p>
 </blockquote>
-<p>Script v1.4 (2026-06-10) · FGN</p>
+<p>Script v1.4.1 (2026-06-23) · FGN</p>
 
 
 

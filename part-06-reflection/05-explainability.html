@@ -1263,7 +1263,7 @@
   <span class="md-ellipsis">
     
   
-    Part V: 1st Pass - Supervised Learning
+    Part V: Supervised Learning
   
 
     
@@ -1279,7 +1279,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part V: 1st Pass - Supervised Learning
+    Part V: Supervised Learning
   
 
           </label>
@@ -1580,6 +1580,34 @@
     
   
     Random Forests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-05-supervised-learning/11-logistic-regression.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logistic Regression
   
 
     
@@ -2007,7 +2035,7 @@
   <span class="md-ellipsis">
     
   
-    Part VII: 2nd Pass - Unsupervised Learning
+    Part VII: Unsupervised Learning
   
 
     
@@ -2023,7 +2051,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part VII: 2nd Pass - Unsupervised Learning
+    Part VII: Unsupervised Learning
   
 
           </label>
@@ -2071,7 +2099,7 @@
   <span class="md-ellipsis">
     
   
-    Framing Unsupervised Learning
+    Unsupervised Learning
   
 
     
@@ -2314,35 +2342,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-zz-appendix/03-logistic-regression.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Logistic Regression
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../part-zz-appendix/04-regression-depth.html" class="md-nav__link">
+      <a href="../part-zz-appendix/03-regression-depth.html" class="md-nav__link">
         
   
   
@@ -2370,7 +2370,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-zz-appendix/05-statistical-significance.html" class="md-nav__link">
+      <a href="../part-zz-appendix/04-statistical-significance.html" class="md-nav__link">
         
   
   
@@ -2398,7 +2398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-zz-appendix/06-support-vector-machines.html" class="md-nav__link">
+      <a href="../part-zz-appendix/05-support-vector-machines.html" class="md-nav__link">
         
   
   
@@ -2581,11 +2581,11 @@
 
 
 <blockquote>
-<p><strong>Navigation:</strong> <a href="04-aligning-metrics.html">&lt;-- Choosing and Aligning Metrics</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="../part-07-unsupervised-learning/00-index.html">Part VII: 2nd Pass - Unsupervised Learning --&gt;</a></p>
+<p><strong>Navigation:</strong> <a href="04-aligning-metrics.html">&lt;-- Choosing and Aligning Metrics</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="../part-07-unsupervised-learning/00-index.html">Part VII: Unsupervised Learning --&gt;</a></p>
 </blockquote>
 <hr />
 <h1 id="explainability">Explainability</h1>
-<p><strong>Requires</strong>: <a href="../part-05-supervised-learning/10-random-forests.html">Random Forests</a></p>
+<p><strong>Requires</strong>: <a href="02-start-simple.html">Start Simple</a> · <a href="../part-05-supervised-learning/10-random-forests.html">Random Forests</a></p>
 <p><strong>Motivation</strong>: Your model predicts something, but can a human understand why? Models that are <strong>explainable/interpretable</strong> help both the people who act on their decisions and those affected by them, like a patient receiving an AI-assisted diagnosis. As a rule of thumb, more complex models are less interpretable: this is yet another reason to <a href="02-start-simple.html">🖝 Start Simple</a>, since something like a <a href="../part-05-supervised-learning/10-random-forests.html">🖝 Random Forests</a>, with its thousands of branches, already resists explanation almost as much as a black-box neural network. Beyond debugging and calibrating trust, explainability is increasingly becoming a legal requirement.</p>
 <blockquote>
 <p>Here you'll learn what interpretability means as a design paradigm, how to read the explanations that certain model types provide intrinsically. You'll also get to know SHAP values as a first post-hoc method to attribute explanations to predictions from models that do not explain themselves.</p>
@@ -2620,7 +2620,7 @@
 <blockquote>
 <p><strong>Note:</strong> Correlated features complicate coefficient interpretation. If two features are highly correlated, the coefficient of each reflects their shared contribution in a way that can be misleading individually. This is a limitation of linear model coefficients as explanations.</p>
 </blockquote>
-<p>For <a href="../part-zz-appendix/03-logistic-regression.html">🖝 Logistic Regression</a>, coefficients describe the log-odds of the positive class. The direction (positive/negative) is directly interpretable, but the magnitude requires care.</p>
+<p>For <a href="../part-05-supervised-learning/11-logistic-regression.html">🖝 Logistic Regression</a>, coefficients describe the log-odds of the positive class. The direction (positive/negative) is directly interpretable, but the magnitude requires care.</p>
 <h3 id="decision-trees-the-decision-path">Decision trees: the decision path</h3>
 <p>For any prediction made by a decision tree, you can trace the exact path from root to leaf, for example, "If Age &gt; 35, and then trust in institutions ≤ 4 -&gt; predict: high satisfaction". This is a human-readable and verifiable explanation of a single prediction.</p>
 <p>We noted this strength in <a href="../part-05-supervised-learning/09-decision-trees.html">🖝 Decision Trees</a>: The flowchart structure is the primary reason to prefer decision trees when individual predictions must be explained.</p>
@@ -2657,9 +2657,9 @@ We covered this in <a href="../part-05-supervised-learning/10-random-forests.htm
 <p>As always: Happy learning, happy life! 🫶</p>
 <hr />
 <blockquote>
-<p><strong>Navigation:</strong> <a href="04-aligning-metrics.html">&lt;-- Choosing and Aligning Metrics</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="../part-07-unsupervised-learning/00-index.html">Part VII: 2nd Pass - Unsupervised Learning --&gt;</a></p>
+<p><strong>Navigation:</strong> <a href="04-aligning-metrics.html">&lt;-- Choosing and Aligning Metrics</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="../part-07-unsupervised-learning/00-index.html">Part VII: Unsupervised Learning --&gt;</a></p>
 </blockquote>
-<p>Script v1.4 (2026-06-10) · FGN</p>
+<p>Script v1.4.1 (2026-06-23) · FGN</p>
 
 
 

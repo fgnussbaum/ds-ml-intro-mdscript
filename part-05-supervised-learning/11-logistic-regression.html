@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-04-data-preparation/01-feature-engineering.html">
+        <link rel="canonical" href="https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-05-supervised-learning/11-logistic-regression.html">
       
       
-        <link rel="prev" href="00-index.html">
+        <link rel="prev" href="10-random-forests.html">
       
       
-        <link rel="next" href="02-cleaning-encoding.html">
+        <link rel="next" href="../part-06-reflection/00-index.html">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Feature Engineering - Intro to Data Science & ML</title>
+        <title>Logistic Regression - Intro to Data Science & ML</title>
       
     
     
@@ -86,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#feature-engineering" class="md-skip">
+        <a href="#logistic-regression" class="md-skip">
           Skip to content
         </a>
       
@@ -122,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Feature Engineering
+              Logistic Regression
             
           </span>
         </div>
@@ -992,20 +992,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -1026,12 +1024,264 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
   
     Part IV: Data Preparation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-04-data-preparation/00-index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-04-data-preparation/01-feature-engineering.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Feature Engineering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-04-data-preparation/02-cleaning-encoding.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Structural Cleaning and Encoding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-04-data-preparation/03-scaling-imputation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Scaling and Imputation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-04-data-preparation/04-data-splits.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Splits
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-04-data-preparation/05-prep-checklist.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Preparation Checklist
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-04-data-preparation/06-prep-principles.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Data Preparation Best Practices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Part V: Supervised Learning
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Part V: Supervised Learning
   
 
           </label>
@@ -1069,6 +1319,286 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="01-supervised-learning.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Supervised Learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="02-linear-regression.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Linear Regression
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="03-gradient-descent.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gradient Descent
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="04-under-overfitting.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Underfitting and Overfitting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="05-regularized-regression.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Regularized Regression
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="06-hyperparameters.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hyperparameter Optimization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="07-classification-tasks.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Classification Tasks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="08-classification-evaluation.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Classification Evaluation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="09-decision-trees.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Decision Trees
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="10-random-forests.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Random Forests
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -1088,7 +1618,7 @@
   <span class="md-ellipsis">
     
   
-    Feature Engineering
+    Logistic Regression
   
 
     
@@ -1099,14 +1629,14 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="01-feature-engineering.html" class="md-nav__link md-nav__link--active">
+      <a href="11-logistic-regression.html" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    Feature Engineering
+    Logistic Regression
   
 
     
@@ -1143,113 +1673,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#feature-construction" class="md-nav__link">
+  <a href="#from-linear-regression-to-logistic-regression" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Feature Construction
+        From Linear Regression to Logistic Regression
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Feature Construction">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#binarization-and-recoding" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Binarization and Recoding
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#composite-indexesindices" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Composite Indexes/Indices
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#derived-combinations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Derived Combinations
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#general-purpose-transformations" class="md-nav__link">
+  <a href="#cross-entropy-loss" class="md-nav__link">
     <span class="md-ellipsis">
       
-        General-Purpose Transformations
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="General-Purpose Transformations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#smoothing" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Smoothing
+        Cross-Entropy Loss
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#aggregation" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#bridge-to-neural-networks" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Aggregation
+        Bridge to Neural Networks
       
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#grouping-of-specific-values" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Grouping of Specific Values
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#binning" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Binning
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1268,536 +1720,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="02-cleaning-encoding.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Structural Cleaning and Encoding
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="03-scaling-imputation.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Scaling and Imputation
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="04-data-splits.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Data Splits
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="05-prep-checklist.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Data Preparation Checklist
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="06-prep-principles.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Data Preparation Best Practices
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Part V: Supervised Learning
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Part V: Supervised Learning
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../part-05-supervised-learning/00-index.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Overview
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../part-05-supervised-learning/01-supervised-learning.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Supervised Learning
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../part-05-supervised-learning/02-linear-regression.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Linear Regression
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../part-05-supervised-learning/03-gradient-descent.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Gradient Descent
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../part-05-supervised-learning/04-under-overfitting.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Underfitting and Overfitting
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../part-05-supervised-learning/05-regularized-regression.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Regularized Regression
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../part-05-supervised-learning/06-hyperparameters.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Hyperparameter Optimization
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../part-05-supervised-learning/07-classification-tasks.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Classification Tasks
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../part-05-supervised-learning/08-classification-evaluation.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Classification Evaluation
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../part-05-supervised-learning/09-decision-trees.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Decision Trees
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../part-05-supervised-learning/10-random-forests.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Random Forests
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../part-05-supervised-learning/11-logistic-regression.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Logistic Regression
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -2486,113 +2408,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#feature-construction" class="md-nav__link">
+  <a href="#from-linear-regression-to-logistic-regression" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Feature Construction
+        From Linear Regression to Logistic Regression
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Feature Construction">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#binarization-and-recoding" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Binarization and Recoding
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#composite-indexesindices" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Composite Indexes/Indices
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#derived-combinations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Derived Combinations
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#general-purpose-transformations" class="md-nav__link">
+  <a href="#cross-entropy-loss" class="md-nav__link">
     <span class="md-ellipsis">
       
-        General-Purpose Transformations
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="General-Purpose Transformations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#smoothing" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Smoothing
+        Cross-Entropy Loss
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#aggregation" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#bridge-to-neural-networks" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Aggregation
+        Bridge to Neural Networks
       
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#grouping-of-specific-values" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Grouping of Specific Values
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#binning" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Binning
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2625,110 +2469,82 @@
 
 
 <blockquote>
-<p><strong>Navigation:</strong> <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="02-cleaning-encoding.html">Structural Cleaning and Encoding --&gt;</a></p>
+<p><strong>Navigation:</strong> <a href="10-random-forests.html">&lt;-- Random Forests</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="../part-06-reflection/00-index.html">Part VI: Principles That Transfer (Reflection) --&gt;</a></p>
 </blockquote>
 <hr />
-<h1 id="feature-engineering">Feature Engineering</h1>
-<p><strong>Requires</strong>: <a href="../part-03-data-understanding/02-data-types.html">Data Types and Measurement Scales</a> · <a href="../part-03-data-understanding/07-eda-correlations.html">EDA: Correlations</a></p>
-<p><strong>Motivation:</strong> EDA usually leaves you with a "pot-pourri" of findings: a skewed distribution here, a cluster of correlated survey items there, a categorical column with dozens of rare values. Often it turns out that raw columns are not the best input for a model or analysis. How do you systematically convert your columns into better-structured columns that actually represent what you care about?</p>
+<h1 id="logistic-regression">Logistic Regression</h1>
+<p><strong>Requires</strong>: <a href="02-linear-regression.html">Linear Regression</a> · <a href="07-classification-tasks.html">Classification Tasks</a></p>
+<p><strong>Motivation</strong>: The supervised learning toolkit now covers regression and a range of classification methods. Our starting point was <a href="02-linear-regression.html">🖝 Linear Regression</a>, which can also be connected to classification. Let's do this, to wrap both regression and classification up. The obvious idea is to apply regression as is and somehow "round" the result. This turns out to need one key fix, and that fix reveals a direct path to neural networks.</p>
 <blockquote>
-<p>In this nugget, you'll learn specific construction operations for new features: from collapsing thresholds into binary indicators and averaging item sets into composite indexes, to combining columns through ratios or products and grouping rare categories. You'll also see a set of structural transformations, such as binning and aggregation, that reshape data for modeling.</p>
+<p>In this nugget you'll see why applying linear regression directly to a binary target requires modification, and how the sigmoid function bridges the gap. You'll get to know the cross-entropy loss for binary classification. Finally, we point at how logistic regression is a conceptual building block for neural networks.</p>
+<p><strong>Interactive demo note:</strong> You can expore the sigmoid function and cross-entropy loss function presented here in the <strong>Logistic Regression</strong> demo from my <a href="https://github.com/fgnussbaum/ds-ml-interactive-demos">✪ interactive data-science demos</a> repository.</p>
 </blockquote>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ul>
-<li><a href="#feature-construction">Feature Construction</a></li>
-<li><a href="#general-purpose-transformations">General-Purpose Transformations</a></li>
+<li><a href="#from-linear-regression-to-logistic-regression">From Linear Regression to Logistic Regression</a></li>
+<li><a href="#cross-entropy-loss">Cross-Entropy Loss</a></li>
+<li><a href="#bridge-to-neural-networks">Bridge to Neural Networks</a></li>
 <li><a href="#summary">Summary</a></li>
 </ul>
-<h2 id="feature-construction">Feature Construction</h2>
-<p>Every EDA finding is a potential feature idea. In the following, we discuss several construction operations along with typical "trigger points".</p>
-<p>As you saw in <a href="../part-03-data-understanding/02-data-types.html">🖝 Data Types and Measurement Scales</a>, the permissable construction operations also depend on the measurement scales of source attributes: arithmetic on nominal data is meaningless, and ratios require a ratio scale.</p>
-<hr />
-<h3 id="binarization-and-recoding">Binarization and Recoding</h3>
-<p><strong>Trigger:</strong> A skewed distribution, a meaningful threshold, or a scale-direction inconsistency.</p>
-<p><strong>Binarization</strong> converts a continuous or ordinal attribute into a 0/1 indicator. In the ESS data, health is recorded on a 1–5 scale. Converting it to a binary health-good-or-not indicator could be reasonable for easier interpretation (however, also some detail is lost):</p>
-<pre><code class="language-python"># Binary health indicator: 1 = Good or Very Good (health &gt;= 4 on the 1–5 scale)
-df[&quot;health_good&quot;] = (df[&quot;health&quot;] &gt;= 4).astype(int)
-</code></pre>
-<p><strong>Recoding</strong> covers the broader case:</p>
-<ul>
-<li>collapsing a continuous attribute into fewer categories,</li>
-<li>reversing the direction of a scale.</li>
-</ul>
-<p><em>Note: For the ESS data, I did the latter for a few columns so that higher values <em>consistently</em> mean "more" of the construct. The intention was to make understanding the data easier.</em></p>
-<hr />
-<h3 id="composite-indexesindices">Composite Indexes/Indices</h3>
-<p><strong>Trigger:</strong> Several items in the dataset measure the same underlying construct.</p>
-<p>This is common for <a href="https://en.wikipedia.org/wiki/Likert_scale">🔗 Likert-scale</a> survey questions, which yield ordinal variables. Surveys often use several questions to  measure the same concept more reliably. A <strong>composite index</strong> then helps to quantify this concept.
-You usually obtain it by averaging. Before doing so, verify two things:</p>
-<ol>
-<li>all source columns point in the same direction (e.g., higher means "more"), and</li>
-<li>a unit increase must mean the same thing across columns.</li>
-</ol>
-<p>If those conditions hold, a simple mean is a valid summary. In the ESS, the <a href="https://en.wikipedia.org/wiki/Theory_of_basic_human_values">🔗 Schwartz-style value</a> columns all run from 1 ("Not like me at all") to 6 ("Very much like me"), so both conditions are satisfied. Here's some example code for building the corresponding average composite:</p>
-<pre><code class="language-python">SELF_TRANSCENDENCE_COLS = [&quot;val_equality&quot;, &quot;val_understand_others&quot;, &quot;val_helping_others&quot;, &quot;val_environment&quot;]
-df[&quot;val_transcendence&quot;] = df[SELF_TRANSCENDENCE_COLS].mean(axis=1)
-</code></pre>
-<!--See the demo code for a complete scale-compatibility check before averaging.-->
+<h2 id="from-linear-regression-to-logistic-regression">From Linear Regression to Logistic Regression</h2>
+<p><a href="02-linear-regression.html">🖝 Linear Regression</a> predicts a continuous value using a weighted sum of inputs:</p>
+<div class="arithmatex">\[h_{\mathbf{w}}(\mathbf{x}) = z = w_0 + w_1 x_1 + \cdots + w_n x_n\]</div>
+<p>This cannot be applied directly to a binary classification problem because the output is unbounded from <span class="arithmatex">\(-\infty\)</span> to <span class="arithmatex">\(+\infty\)</span>. Some transformation is needed.</p>
+<p>For a binary target, what you want is a class label. The simplest way would just be to threshold on <span class="arithmatex">\(z\geq0\)</span>. This amounts to passing the linear output through a <strong>step function</strong>.</p>
+<p>However, the <strong>step function is not differentiable.</strong> The gradient of a step function is zero almost everywhere. <a href="03-gradient-descent.html">🖝 Gradient Descent</a> requires a gradient to update the weights. Where the gradient is zero, nothing moves.</p>
+<p>In addition to differentiability, it would also be desirable to get probability scores for each sample to indicate how likely it belongs to the positive class. We don't get that from a simple threshold on the unbounded raw scores <span class="arithmatex">\(z\)</span> of the linear model above.</p>
+<p>All requirements are simultaneously obtained when we switch to the <strong>sigmoid function</strong> (also called logistic function):</p>
+<div class="arithmatex">\[\sigma(z) = \frac{1}{1 + e^{-z}}\]</div>
+<p>where <span class="arithmatex">\(z = h_{\mathbf{w}}(\mathbf{x})\)</span> is the linear combination of features and weights. The sigmoid function maps any real number to the interval <span class="arithmatex">\((0, 1)\)</span>. This produces valid probability values, and it is differentiable everywhere, making <a href="03-gradient-descent.html">🖝 Gradient Descent</a> applicable.</p>
+<p>Here's a visual comparison of both step function vs. our solution, the sigmoid function:</p>
+<p><center><img src="../media/plots/step_vs_sigmoid.png" alt="step vs. sigmoid function" width="740px"/></center></p>
 
-<hr />
-<h3 id="derived-combinations">Derived Combinations</h3>
-<p><strong>Trigger:</strong> Domain knowledge or an EDA finding suggests that combining two ore more columns yields something more informative than either alone.</p>
-<p>Products, ratios, and differences are the most common operations, but any functional combination is conceivable as long as the result captures a new relationship.</p>
+<p>The properties of the sigmoid funciton <span class="arithmatex">\(\sigma(z)\)</span> are:</p>
 <ul>
-<li><em>Domain-driven:</em> <code>income</code> <em>per</em> household member is more informative than raw income for predicting poverty risk. Correlation alone indeed cannot generate this idea: you need to know what the numbers represent.</li>
-<li>product columns like <code>income × education</code> may capture joint effects that neither column encodes alone.</li>
+<li>it is close to 1 for large positive <span class="arithmatex">\(z\)</span> (the model is confident about class 1),</li>
+<li>it is close to 0 for large negative <span class="arithmatex">\(z\)</span> (the model is confident about class 0),</li>
+<li>at <span class="arithmatex">\(z = 0\)</span> the output is exactly 0.5: maximum uncertainty.</li>
 </ul>
-<p>These combinations are only meaningful for numeric attributes (at least interval scale).</p>
+<p>To, sum up:</p>
 <blockquote>
-<p><strong>Discussion:</strong> You notice during EDA that a feature correlates strongly with a <em>target</em> variable that you want to predict. You engineer a ratio that incorporates both that feature and the target variable. What would be the consequence of using this ratio as an input feature for a machine learning model that predicts the target variable?</p>
+<p><strong>Dinstinction linear/logistic regression:</strong> <a href="02-linear-regression.html">🖝 Linear Regression</a> outputs <span class="arithmatex">\(h_{\mathbf{w}}(\mathbf{x})\)</span> directly: an unbounded number interpreted as a continuous target value. In contrast, <strong>logistic regression</strong> feeds the same linear combination <span class="arithmatex">\(z\)</span> through <span class="arithmatex">\(\sigma\)</span>, outputting a probability score in <span class="arithmatex">\((0, 1)\)</span> for the "positive" class.</p>
 </blockquote>
-<!-- example: predict tip given total_bill, engineer feature tip_rate=tip/total_bill -->
-
-<p><em>See also <a href="05-prep-checklist.html">🖝 Data Preparation Checklist</a>: the target leakage principle. A constructed feature is only valid if its value does not depend on the outcome/target variable.</em></p>
-<!-- TODO overfitting, data leakage nugget link-->
+<p>You can also follow this distinction in the full compute flow for a single prediction using logistic regression, as shown here:</p>
+<p><center><img src="../media/plots/logistic_neuron.png" alt="Full Logistic Regression Compute flow (b=w_0)" width="740px"/></center></p>
 
 <hr />
-<h2 id="general-purpose-transformations">General-Purpose Transformations</h2>
-<p>Beyond EDA-driven construction, several transformations reshape data structurally without being motivated by a specific finding. They appear regularly in preprocessing pipelines and can be applied before the <a href="04-data-splits.html">🖝 Data Splits</a>.</p>
-<hr />
-<h3 id="smoothing">Smoothing</h3>
-<p><strong>Trigger:</strong> Sensor readings or time-series data with high-frequency noise.</p>
-<p>Smoothing replaces each value with a local estimate, for example the mean of its neighboring values. The goal is to reduce noise rather than to extract a new construct.</p>
-<hr />
-<h3 id="aggregation">Aggregation</h3>
-<p><strong>Trigger:</strong> Data needs to be summarized at a coarser granularity for modeling.</p>
-<p>Summing up daily sales to weekly totals, or averaging individual-level survey responses to country-level means, are both forms of aggregation. Aggregation reduces data volume and can also reduce noise.</p>
-<hr />
-<h3 id="grouping-of-specific-values">Grouping of Specific Values</h3>
-<p><strong>Trigger:</strong> Specific values are too granular for the model or for interpretation.</p>
-<p>Mapping street-level addresses to city names, or grouping exact ages into age brackets, replaces specific values with higher-level concepts. The result is a coarser representation that is sometimes more interpretable and more generalizable.</p>
-<p>Also, if a categorical column contains many rare values, you'll sometimes want to collapse some of them. This helps to avoid producing sparse one-hot columns that add noise and inflate feature matrices. Example: collapsing infrequent country codes or job titles into an "other" bucket.</p>
-<blockquote>
-<p>Apply grouping before the kind of encoding operation that we discuss in the next nugget <a href="02-cleaning-encoding.html">🖝 Structural Cleaning and Encoding</a>.</p>
-</blockquote>
-<hr />
-<h3 id="binning">Binning</h3>
-<p><strong>Trigger:</strong> A model benefits from ordinal inputs, or you want to reduce sensitivity to outliers.</p>
-<p><strong>Binning</strong> (also called discretization) converts a continuous attribute into an ordinal one by grouping values into bins. This is related to the construction of histograms in <a href="../part-03-data-understanding/06-eda-distributions.html">🖝 EDA: Distributions</a>.</p>
-<p>Two common strategies are:</p>
+<h2 id="cross-entropy-loss">Cross-Entropy Loss</h2>
+<p>With a probabilistic output you need a loss function that measures how wrong a probability estimate is. The typical choice is the <strong>cross-entropy loss</strong> (also called log loss):</p>
+<div class="arithmatex">\[L = -\bigl[y \log(\hat{p}) + (1 - y) \log(1 - \hat{p})\bigr]\]</div>
+<p>where <span class="arithmatex">\(y \in \{0, 1\}\)</span> is the true label and <span class="arithmatex">\(\hat{p} = \sigma(z)\)</span> is the predicted probability.</p>
 <ul>
-<li><strong>Equal-width binning:</strong> divide the value range (min to max) into <span class="arithmatex">\(k\)</span> intervals of equal width.</li>
-<li><strong>Equal-frequency binning:</strong> divide the data so that each bin contains the same number of observations.</li>
+<li>When <span class="arithmatex">\(y = 1\)</span>: the loss is <span class="arithmatex">\(-\log(\hat{p})\)</span>. A predicted probability of 0.99 gives near-zero loss. A predicted probability of 0.01 gives a large loss: the model was confidently wrong.</li>
+<li>When <span class="arithmatex">\(y = 0\)</span>: the loss is <span class="arithmatex">\(-\log(1 - \hat{p})\)</span>. The same logic applies in reverse.</li>
 </ul>
-<p>Equal-width bins are easier to interpret. Equal-frequency bins produce more balanced categories when the distribution is skewed.</p>
+<p>This behavior is visualized here:</p>
+<p><center><img src="../media/plots/cross_entropy_loss.png" alt="CE loss. Left for y=0/y=1, Right: contrasting with MSE" width="740px"/></center></p>
+
+<p>The second panel in this plot shows why MSE (mean squared error), the loss function from <a href="02-linear-regression.html">🖝 Linear Regression</a>, is poorly suited for classification: It does not penalize "confident" but wrong predictions enough because it is bounded.</p>
+<p>The cross-entropy loss is differentiable with respect to the weights, so <a href="03-gradient-descent.html">🖝 Gradient Descent</a> can minimize it. The gradient has a clean closed form that makes weight updates efficient to compute.</p>
+<hr />
+<h2 id="bridge-to-neural-networks">Bridge to Neural Networks</h2>
+<p>Logistic regression computes a linear combination of inputs and passes it through a sigmoid. This is exactly the computation of a single artificial neuron.</p>
+<blockquote>
+<p><strong>Insight:</strong> Logistic regression is a neural network with no hidden layers.</p>
+</blockquote>
+<p>Logistic regression represents an input layer connected directly to one output neuron with a sigmoid activation. Stacking such units produces a deep network, where the outputs of one layer become the inputs of the next. Later, in <a href="../part-08-deep-learning/02-deep-networks.md">🖝 Building Blocks of Deep Networks</a>, we'll do a more comprehensive treatment.</p>
+<p>This closes Part V on supervised learning. In the next part, we step back from individual algorithms and review the principles that cut across all of them, before moving on to deep learning.</p>
 <hr />
 <h2 id="summary">Summary</h2>
 <ul>
-<li>Feature engineering sits at the boundary between data <em>understanding</em> and <em>preparation</em>: EDA reveals patterns, and feature construction acts on them. The two phases are intertwined, not cleanly sequential.</li>
-<li>Each EDA finding type suggests a specific construction: correlations (or domain knowledge) suggest derived combinations, thresholds suggest binarization, item sets suggest composite indexes, and rare categories suggest grouping.</li>
-<li>The measurement scale of the source columns constrains which operations are valid. Check scale direction and unit compatibility before averaging or multiplying.</li>
-<li>Smoothing, aggregation, generalization, and binning are structural transformations often applied for pipeline or modeling reasons rather than in response to a specific EDA finding.</li>
+<li>The sigmoid function wraps the linear combination in a smooth, differentiable nonlinearity, converting an unbounded output into a probability. This is the key difference between linear and logistic regression.</li>
+<li>Cross-entropy loss is the appropriate loss function for probabilistic classification. It penalizes confident wrong predictions heavily and is differentiable everywhere, making gradient descent applicable.</li>
+<li>Logistic regression is a single neuron with a sigmoid activation. Stacking such units produces a neural network, as covered in Part VIII.</li>
 </ul>
 <p>As always: Happy learning, happy life! 🫶</p>
 <hr />
 <blockquote>
-<p><strong>Navigation:</strong> <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="02-cleaning-encoding.html">Structural Cleaning and Encoding --&gt;</a></p>
+<p><strong>Navigation:</strong> <a href="10-random-forests.html">&lt;-- Random Forests</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="../part-06-reflection/00-index.html">Part VI: Principles That Transfer (Reflection) --&gt;</a></p>
 </blockquote>
 <p>Script v1.4.1 (2026-06-23) · FGN</p>
 

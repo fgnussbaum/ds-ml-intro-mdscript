@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-04-data-preparation/01-feature-engineering.html">
+        <link rel="canonical" href="https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-zz-appendix/03-regression-depth.html">
       
       
-        <link rel="prev" href="00-index.html">
+        <link rel="prev" href="02-beyond-tabular-prep.html">
       
       
-        <link rel="next" href="02-cleaning-encoding.html">
+        <link rel="next" href="04-statistical-significance.html">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Feature Engineering - Intro to Data Science & ML</title>
+        <title>Regression: Interpretation and Assumptions - Intro to Data Science & ML</title>
       
     
     
@@ -86,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#feature-engineering" class="md-skip">
+        <a href="#regression-interpretation-and-assumptions" class="md-skip">
           Skip to content
         </a>
       
@@ -122,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Feature Engineering
+              Regression: Interpretation and Assumptions
             
           </span>
         </div>
@@ -992,20 +992,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -1026,7 +1024,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1044,7 +1042,7 @@
   
   
     <li class="md-nav__item">
-      <a href="00-index.html" class="md-nav__link">
+      <a href="../part-04-data-preparation/00-index.html" class="md-nav__link">
         
   
   
@@ -1069,37 +1067,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Feature Engineering
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="01-feature-engineering.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../part-04-data-preparation/01-feature-engineering.html" class="md-nav__link">
         
   
   
@@ -1115,159 +1086,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#table-of-contents" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Table of Contents
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#feature-construction" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Feature Construction
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Feature Construction">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#binarization-and-recoding" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Binarization and Recoding
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#composite-indexesindices" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Composite Indexes/Indices
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#derived-combinations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Derived Combinations
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#general-purpose-transformations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        General-Purpose Transformations
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="General-Purpose Transformations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#smoothing" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Smoothing
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#aggregation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Aggregation
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#grouping-of-specific-values" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Grouping of Specific Values
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#binning" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Binning
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Summary
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1280,7 +1098,7 @@
   
   
     <li class="md-nav__item">
-      <a href="02-cleaning-encoding.html" class="md-nav__link">
+      <a href="../part-04-data-preparation/02-cleaning-encoding.html" class="md-nav__link">
         
   
   
@@ -1308,7 +1126,7 @@
   
   
     <li class="md-nav__item">
-      <a href="03-scaling-imputation.html" class="md-nav__link">
+      <a href="../part-04-data-preparation/03-scaling-imputation.html" class="md-nav__link">
         
   
   
@@ -1336,7 +1154,7 @@
   
   
     <li class="md-nav__item">
-      <a href="04-data-splits.html" class="md-nav__link">
+      <a href="../part-04-data-preparation/04-data-splits.html" class="md-nav__link">
         
   
   
@@ -1364,7 +1182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="05-prep-checklist.html" class="md-nav__link">
+      <a href="../part-04-data-preparation/05-prep-checklist.html" class="md-nav__link">
         
   
   
@@ -1392,7 +1210,7 @@
   
   
     <li class="md-nav__item">
-      <a href="06-prep-principles.html" class="md-nav__link">
+      <a href="../part-04-data-preparation/06-prep-principles.html" class="md-nav__link">
         
   
   
@@ -2230,18 +2048,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
         
           
           <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
@@ -2262,7 +2082,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2280,7 +2100,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-zz-appendix/00-index.html" class="md-nav__link">
+      <a href="00-index.html" class="md-nav__link">
         
   
   
@@ -2308,7 +2128,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-zz-appendix/01-beyond-tabular-eda.html" class="md-nav__link">
+      <a href="01-beyond-tabular-eda.html" class="md-nav__link">
         
   
   
@@ -2336,7 +2156,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-zz-appendix/02-beyond-tabular-prep.html" class="md-nav__link">
+      <a href="02-beyond-tabular-prep.html" class="md-nav__link">
         
   
   
@@ -2361,10 +2181,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../part-zz-appendix/03-regression-depth.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Regression: Interpretation and Assumptions
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="03-regression-depth.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2380,6 +2227,187 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#r2-what-the-number-really-means" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        R²: What the Number Really Means
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="R²: What the Number Really Means">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#three-ways-r2-can-mislead" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Three ways R² can mislead
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reading-regression-coefficients" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reading Regression Coefficients
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Reading Regression Coefficients">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#direction-magnitude-and-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Direction, magnitude, and scale
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multicollinearity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multicollinearity
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assumptions-of-linear-regression" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assumptions of Linear Regression
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#residual-diagnostics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Residual Diagnostics
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Residual Diagnostics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#residual-vs-fitted-plot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Residual vs. fitted plot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scale-location-plot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scale-location plot
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q-q-plot-of-residuals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Q-Q plot of residuals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-to-do-about-violations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What to do about violations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2392,7 +2420,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-zz-appendix/04-statistical-significance.html" class="md-nav__link">
+      <a href="04-statistical-significance.html" class="md-nav__link">
         
   
   
@@ -2420,7 +2448,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-zz-appendix/05-support-vector-machines.html" class="md-nav__link">
+      <a href="05-support-vector-machines.html" class="md-nav__link">
         
   
   
@@ -2486,44 +2514,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#feature-construction" class="md-nav__link">
+  <a href="#r2-what-the-number-really-means" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Feature Construction
+        R²: What the Number Really Means
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Feature Construction">
+    <nav class="md-nav" aria-label="R²: What the Number Really Means">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#binarization-and-recoding" class="md-nav__link">
+  <a href="#three-ways-r2-can-mislead" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Binarization and Recoding
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#composite-indexesindices" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Composite Indexes/Indices
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#derived-combinations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Derived Combinations
+        Three ways R² can mislead
       
     </span>
   </a>
@@ -2536,22 +2542,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#general-purpose-transformations" class="md-nav__link">
+  <a href="#reading-regression-coefficients" class="md-nav__link">
     <span class="md-ellipsis">
       
-        General-Purpose Transformations
+        Reading Regression Coefficients
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="General-Purpose Transformations">
+    <nav class="md-nav" aria-label="Reading Regression Coefficients">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#smoothing" class="md-nav__link">
+  <a href="#direction-magnitude-and-scale" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Smoothing
+        Direction, magnitude, and scale
       
     </span>
   </a>
@@ -2559,10 +2565,49 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#aggregation" class="md-nav__link">
+  <a href="#multicollinearity" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Aggregation
+        Multicollinearity
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assumptions-of-linear-regression" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Assumptions of Linear Regression
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#residual-diagnostics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Residual Diagnostics
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Residual Diagnostics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#residual-vs-fitted-plot" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Residual vs. fitted plot
       
     </span>
   </a>
@@ -2570,10 +2615,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#grouping-of-specific-values" class="md-nav__link">
+  <a href="#scale-location-plot" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Grouping of Specific Values
+        Scale-location plot
       
     </span>
   </a>
@@ -2581,10 +2626,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#binning" class="md-nav__link">
+  <a href="#q-q-plot-of-residuals" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Binning
+        Q-Q plot of residuals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-to-do-about-violations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What to do about violations
       
     </span>
   </a>
@@ -2625,110 +2681,80 @@
 
 
 <blockquote>
-<p><strong>Navigation:</strong> <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="02-cleaning-encoding.html">Structural Cleaning and Encoding --&gt;</a></p>
+<p><strong>Navigation:</strong> <a href="02-beyond-tabular-prep.html">&lt;-- Preparing Non-Tabular Data</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="04-statistical-significance.html">Statistical Significance --&gt;</a></p>
 </blockquote>
 <hr />
-<h1 id="feature-engineering">Feature Engineering</h1>
-<p><strong>Requires</strong>: <a href="../part-03-data-understanding/02-data-types.html">Data Types and Measurement Scales</a> · <a href="../part-03-data-understanding/07-eda-correlations.html">EDA: Correlations</a></p>
-<p><strong>Motivation:</strong> EDA usually leaves you with a "pot-pourri" of findings: a skewed distribution here, a cluster of correlated survey items there, a categorical column with dozens of rare values. Often it turns out that raw columns are not the best input for a model or analysis. How do you systematically convert your columns into better-structured columns that actually represent what you care about?</p>
+<h1 id="regression-interpretation-and-assumptions">Regression: Interpretation and Assumptions</h1>
+<p><strong>Requires</strong>: <a href="../part-05-supervised-learning/02-linear-regression.html">Linear Regression</a></p>
+<p><strong>Motivation</strong>: Your regression model on the ESS dataset gives <span class="arithmatex">\(R^2 = 0.18\)</span>. You know that number measures something, but what exactly? A statsmodels summary also reports heteroscedasticity flags and coefficient p-values that are easy to skip. These are not footnotes. <span class="arithmatex">\(R^2\)</span> can overstate fit when predictors are added carelessly, violated assumptions can silently bias coefficient estimates, and unread residual plots hide systematic errors that RMSE alone will not catch.</p>
 <blockquote>
-<p>In this nugget, you'll learn specific construction operations for new features: from collapsing thresholds into binary indicators and averaging item sets into composite indexes, to combining columns through ratios or products and grouping rare categories. You'll also see a set of structural transformations, such as binning and aggregation, that reshape data for modeling.</p>
+<p>In this optional nugget you will learn what <span class="arithmatex">\(R^2\)</span> truly measures and when it misleads, how to interpret regression coefficients in multi-variable models, the classical assumptions that linear regression relies on, and how to diagnose violations with residual plots.</p>
+<p><strong>Context:</strong> This nugget extends <a href="../part-05-supervised-learning/02-linear-regression.html">🖝 Linear Regression</a>. You should be comfortable with fitting a multi-variable model and reading MSE and RMSE before working through this material.</p>
 </blockquote>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ul>
-<li><a href="#feature-construction">Feature Construction</a></li>
-<li><a href="#general-purpose-transformations">General-Purpose Transformations</a></li>
+<li><a href="#r²-what-the-number-really-means">R²: What the Number Really Means</a></li>
+<li><a href="#reading-regression-coefficients">Reading Regression Coefficients</a></li>
+<li><a href="#assumptions-of-linear-regression">Assumptions of Linear Regression</a></li>
+<li><a href="#residual-diagnostics">Residual Diagnostics</a></li>
 <li><a href="#summary">Summary</a></li>
 </ul>
-<h2 id="feature-construction">Feature Construction</h2>
-<p>Every EDA finding is a potential feature idea. In the following, we discuss several construction operations along with typical "trigger points".</p>
-<p>As you saw in <a href="../part-03-data-understanding/02-data-types.html">🖝 Data Types and Measurement Scales</a>, the permissable construction operations also depend on the measurement scales of source attributes: arithmetic on nominal data is meaningless, and ratios require a ratio scale.</p>
+<h2 id="r2-what-the-number-really-means">R²: What the Number Really Means</h2>
+<p><span class="arithmatex">\(R^2\)</span> is defined as:</p>
+<div class="arithmatex">\[R^2 = 1 - \frac{\text{SS}_\text{res}}{\text{SS}_\text{tot}}\]</div>
+<p>where <span class="arithmatex">\(\text{SS}_\text{res} = \sum(y_i - \hat{y}_i)^2\)</span> is the residual sum of squares — the variance the model could not explain — and <span class="arithmatex">\(\text{SS}_\text{tot} = \sum(y_i - \bar{y})^2\)</span> is the total variance in the target relative to the training mean.</p>
+<p>When <span class="arithmatex">\(R^2 = 0.18\)</span> on the ESS happiness model: the model explains 18% of the variance in happiness. The remaining 82% is unexplained. That is not the same as saying the model is useless — happiness is genuinely noisy, and partial explanation can still be valuable — but it requires comparing against baselines and domain expectations before drawing conclusions.</p>
+<h3 id="three-ways-r2-can-mislead">Three ways R² can mislead</h3>
+<p><strong>Adding predictors always increases R² on the training set.</strong> Every new variable, even a random one, explains a small slice of training-set noise. Training-set <span class="arithmatex">\(R^2\)</span> therefore overstates quality when comparing models with different numbers of features.</p>
+<p><strong>Adjusted R²</strong> corrects for this:</p>
+<div class="arithmatex">\[\bar{R}^2 = 1 - (1 - R^2)\frac{n-1}{n-k-1}\]</div>
+<p>where <span class="arithmatex">\(n\)</span> is the number of training samples and <span class="arithmatex">\(k\)</span> is the number of predictors. Adjusted <span class="arithmatex">\(R^2\)</span> penalizes for complexity and can decrease when a new predictor contributes less signal than it costs. Use adjusted <span class="arithmatex">\(R^2\)</span> when comparing models that differ in the number of features.</p>
+<p><strong>Test-set R² can be negative.</strong> <span class="arithmatex">\(R^2\)</span> is defined relative to the training-set mean <span class="arithmatex">\(\bar{y}\)</span>. If the model's predictions on the test set are worse than simply predicting <span class="arithmatex">\(\bar{y}\)</span>, test-set <span class="arithmatex">\(R^2\)</span> goes below zero. This is a clear signal of overfitting or a distribution shift between train and test.</p>
+<p><strong>R² says nothing about whether residuals are well-behaved.</strong> Two datasets can have identical <span class="arithmatex">\(R^2\)</span> values while one has systematic patterns in its residuals that the model has entirely missed — Anscombe's quartet is the canonical demonstration (Anscombe, 1973). <span class="arithmatex">\(R^2\)</span> is always read alongside residual diagnostics, not in isolation.</p>
 <hr />
-<h3 id="binarization-and-recoding">Binarization and Recoding</h3>
-<p><strong>Trigger:</strong> A skewed distribution, a meaningful threshold, or a scale-direction inconsistency.</p>
-<p><strong>Binarization</strong> converts a continuous or ordinal attribute into a 0/1 indicator. In the ESS data, health is recorded on a 1–5 scale. Converting it to a binary health-good-or-not indicator could be reasonable for easier interpretation (however, also some detail is lost):</p>
-<pre><code class="language-python"># Binary health indicator: 1 = Good or Very Good (health &gt;= 4 on the 1–5 scale)
-df[&quot;health_good&quot;] = (df[&quot;health&quot;] &gt;= 4).astype(int)
-</code></pre>
-<p><strong>Recoding</strong> covers the broader case:</p>
-<ul>
-<li>collapsing a continuous attribute into fewer categories,</li>
-<li>reversing the direction of a scale.</li>
-</ul>
-<p><em>Note: For the ESS data, I did the latter for a few columns so that higher values <em>consistently</em> mean "more" of the construct. The intention was to make understanding the data easier.</em></p>
+<h2 id="reading-regression-coefficients">Reading Regression Coefficients</h2>
+<p>In a multi-variable model:</p>
+<div class="arithmatex">\[h_w(\mathbf{x}) = w_0 + w_1 x_1 + w_2 x_2 + \cdots + w_n x_n\]</div>
+<p>each coefficient <span class="arithmatex">\(w_j\)</span> means: holding all other predictors constant, a one-unit increase in <span class="arithmatex">\(x_j\)</span> is associated with a <span class="arithmatex">\(w_j\)</span> change in the predicted target. The phrase "holding all other predictors constant" is the critical qualifier — it distinguishes a regression coefficient from a simple correlation.</p>
+<p>In the ESS model, if health (<span class="arithmatex">\(x_1\)</span>) has coefficient 0.4 and social contact frequency (<span class="arithmatex">\(x_2\)</span>) has coefficient 0.1, it means: among people with the same social contact frequency, a one-unit difference in health corresponds to 0.4 more predicted happiness points.</p>
+<h3 id="direction-magnitude-and-scale">Direction, magnitude, and scale</h3>
+<p>A positive coefficient means the predictor moves with the target; a negative coefficient means it moves against it. Coefficient magnitudes are on the scale of the input feature, so raw magnitudes are not comparable across features unless inputs are standardized first. After standardization, the magnitude of each coefficient becomes the number of standard deviations by which the prediction changes per standard deviation of the predictor.</p>
+<h3 id="multicollinearity">Multicollinearity</h3>
+<p>If two predictors are strongly correlated with each other, the model can distribute their joint effect across both coefficients in many equivalent ways. The individual coefficients become unstable: small changes in the data can flip their signs or inflate their magnitudes. This is <strong>multicollinearity</strong>. The model's overall predictions can remain accurate, but individual coefficient interpretation becomes unreliable.</p>
+<p>A practical signal: adding or removing one correlated predictor causes large swings in another predictor's coefficient. Variance Inflation Factor (VIF) formalizes this — a VIF above 5–10 for a predictor signals problematic collinearity. Ridge regression (L2 regularization) shrinks unstable coefficients and is a practical remedy; this is one of the core motivations for <a href="../part-05-supervised-learning/05-regularized-regression.html">🖝 Regularized Regression</a>.</p>
 <hr />
-<h3 id="composite-indexesindices">Composite Indexes/Indices</h3>
-<p><strong>Trigger:</strong> Several items in the dataset measure the same underlying construct.</p>
-<p>This is common for <a href="https://en.wikipedia.org/wiki/Likert_scale">🔗 Likert-scale</a> survey questions, which yield ordinal variables. Surveys often use several questions to  measure the same concept more reliably. A <strong>composite index</strong> then helps to quantify this concept.
-You usually obtain it by averaging. Before doing so, verify two things:</p>
-<ol>
-<li>all source columns point in the same direction (e.g., higher means "more"), and</li>
-<li>a unit increase must mean the same thing across columns.</li>
-</ol>
-<p>If those conditions hold, a simple mean is a valid summary. In the ESS, the <a href="https://en.wikipedia.org/wiki/Theory_of_basic_human_values">🔗 Schwartz-style value</a> columns all run from 1 ("Not like me at all") to 6 ("Very much like me"), so both conditions are satisfied. Here's some example code for building the corresponding average composite:</p>
-<pre><code class="language-python">SELF_TRANSCENDENCE_COLS = [&quot;val_equality&quot;, &quot;val_understand_others&quot;, &quot;val_helping_others&quot;, &quot;val_environment&quot;]
-df[&quot;val_transcendence&quot;] = df[SELF_TRANSCENDENCE_COLS].mean(axis=1)
-</code></pre>
-<!--See the demo code for a complete scale-compatibility check before averaging.-->
-
+<h2 id="assumptions-of-linear-regression">Assumptions of Linear Regression</h2>
+<p>The ordinary least-squares estimator is optimal under five classical assumptions. Violations do not necessarily make the model unusable, but they affect what you can reliably claim about the coefficients and significance tests.</p>
+<p><strong>1. Linearity.</strong> The relationship between each feature and the target is linear. If the true relationship is curved, the model will systematically underpredict in some ranges and overpredict in others. Check with scatter plots of each predictor against the target and with the residual vs. fitted plot.</p>
+<p><strong>2. Independence of errors.</strong> The residual for one observation does not depend on the residual for another. This is violated by time series (consecutive observations are correlated) and by clustered data (e.g., students within the same school share unmeasured influences). When errors are correlated, standard errors underestimate variability and significance tests become anti-conservative.</p>
+<p><strong>3. Homoscedasticity.</strong> The variance of residuals is constant across all levels of the fitted value. The opposite, <strong>heteroscedasticity</strong>, means residuals fan out or compress as the fitted value changes. A model predicting income might have small, tight errors for low earners and large, scattered errors for high earners. Heteroscedasticity does not bias coefficient estimates, but it inflates or deflates standard errors, making significance tests unreliable.</p>
+<p><strong>4. Normality of residuals.</strong> Residuals are approximately normally distributed around zero. This matters for confidence intervals and p-values. With large samples, the central limit theorem provides robustness. With small samples, strong non-normality distorts significance tests.</p>
+<p><strong>5. No perfect multicollinearity.</strong> No predictor can be expressed as an exact linear combination of others. Perfect collinearity makes the least-squares system unsolvable. Near-perfect collinearity is the practical concern, addressed in the previous section.</p>
 <hr />
-<h3 id="derived-combinations">Derived Combinations</h3>
-<p><strong>Trigger:</strong> Domain knowledge or an EDA finding suggests that combining two ore more columns yields something more informative than either alone.</p>
-<p>Products, ratios, and differences are the most common operations, but any functional combination is conceivable as long as the result captures a new relationship.</p>
-<ul>
-<li><em>Domain-driven:</em> <code>income</code> <em>per</em> household member is more informative than raw income for predicting poverty risk. Correlation alone indeed cannot generate this idea: you need to know what the numbers represent.</li>
-<li>product columns like <code>income × education</code> may capture joint effects that neither column encodes alone.</li>
-</ul>
-<p>These combinations are only meaningful for numeric attributes (at least interval scale).</p>
-<blockquote>
-<p><strong>Discussion:</strong> You notice during EDA that a feature correlates strongly with a <em>target</em> variable that you want to predict. You engineer a ratio that incorporates both that feature and the target variable. What would be the consequence of using this ratio as an input feature for a machine learning model that predicts the target variable?</p>
-</blockquote>
-<!-- example: predict tip given total_bill, engineer feature tip_rate=tip/total_bill -->
-
-<p><em>See also <a href="05-prep-checklist.html">🖝 Data Preparation Checklist</a>: the target leakage principle. A constructed feature is only valid if its value does not depend on the outcome/target variable.</em></p>
-<!-- TODO overfitting, data leakage nugget link-->
-
-<hr />
-<h2 id="general-purpose-transformations">General-Purpose Transformations</h2>
-<p>Beyond EDA-driven construction, several transformations reshape data structurally without being motivated by a specific finding. They appear regularly in preprocessing pipelines and can be applied before the <a href="04-data-splits.html">🖝 Data Splits</a>.</p>
-<hr />
-<h3 id="smoothing">Smoothing</h3>
-<p><strong>Trigger:</strong> Sensor readings or time-series data with high-frequency noise.</p>
-<p>Smoothing replaces each value with a local estimate, for example the mean of its neighboring values. The goal is to reduce noise rather than to extract a new construct.</p>
-<hr />
-<h3 id="aggregation">Aggregation</h3>
-<p><strong>Trigger:</strong> Data needs to be summarized at a coarser granularity for modeling.</p>
-<p>Summing up daily sales to weekly totals, or averaging individual-level survey responses to country-level means, are both forms of aggregation. Aggregation reduces data volume and can also reduce noise.</p>
-<hr />
-<h3 id="grouping-of-specific-values">Grouping of Specific Values</h3>
-<p><strong>Trigger:</strong> Specific values are too granular for the model or for interpretation.</p>
-<p>Mapping street-level addresses to city names, or grouping exact ages into age brackets, replaces specific values with higher-level concepts. The result is a coarser representation that is sometimes more interpretable and more generalizable.</p>
-<p>Also, if a categorical column contains many rare values, you'll sometimes want to collapse some of them. This helps to avoid producing sparse one-hot columns that add noise and inflate feature matrices. Example: collapsing infrequent country codes or job titles into an "other" bucket.</p>
-<blockquote>
-<p>Apply grouping before the kind of encoding operation that we discuss in the next nugget <a href="02-cleaning-encoding.html">🖝 Structural Cleaning and Encoding</a>.</p>
-</blockquote>
-<hr />
-<h3 id="binning">Binning</h3>
-<p><strong>Trigger:</strong> A model benefits from ordinal inputs, or you want to reduce sensitivity to outliers.</p>
-<p><strong>Binning</strong> (also called discretization) converts a continuous attribute into an ordinal one by grouping values into bins. This is related to the construction of histograms in <a href="../part-03-data-understanding/06-eda-distributions.html">🖝 EDA: Distributions</a>.</p>
-<p>Two common strategies are:</p>
-<ul>
-<li><strong>Equal-width binning:</strong> divide the value range (min to max) into <span class="arithmatex">\(k\)</span> intervals of equal width.</li>
-<li><strong>Equal-frequency binning:</strong> divide the data so that each bin contains the same number of observations.</li>
-</ul>
-<p>Equal-width bins are easier to interpret. Equal-frequency bins produce more balanced categories when the distribution is skewed.</p>
+<h2 id="residual-diagnostics">Residual Diagnostics</h2>
+<p>Residual plots are the standard tool for checking whether assumptions hold. Scikit-learn does not produce them; use <code>statsmodels</code> or construct them manually from the residuals array (<code>y_test - model.predict(X_test)</code>).</p>
+<h3 id="residual-vs-fitted-plot">Residual vs. fitted plot</h3>
+<p>Plot residuals <span class="arithmatex">\(y_i - \hat{y}_i\)</span> on the y-axis against fitted values <span class="arithmatex">\(\hat{y}_i\)</span> on the x-axis. Under correct assumptions, residuals should scatter randomly around zero with constant spread and no pattern. A curved band indicates non-linearity. A funnel shape — residuals spreading wider as the fitted value increases — indicates heteroscedasticity.</p>
+<p>[Figure: Two side-by-side residual vs. fitted plots. Left: random scatter around zero with constant spread — assumptions satisfied. Right: fan-shaped spread increasing with fitted value — heteroscedasticity present.]</p>
+<h3 id="scale-location-plot">Scale-location plot</h3>
+<p>Plot the square root of the absolute standardized residuals against fitted values. A roughly flat loess line confirms homoscedasticity. An upward slope confirms heteroscedasticity.</p>
+<h3 id="q-q-plot-of-residuals">Q-Q plot of residuals</h3>
+<p>Plot the quantiles of the standardized residuals against the quantiles of a standard normal distribution. Points falling on the diagonal confirm approximate normality. Heavy tails — points curving away from the diagonal at both ends — signal a distribution heavier than normal.</p>
+<h3 id="what-to-do-about-violations">What to do about violations</h3>
+<p>Heteroscedasticity can often be reduced by transforming the target (e.g., log-transforming income, which has a right-skewed distribution). Non-linearity may call for polynomial features or a tree-based model. Correlated errors in time-series data require specialized methods outside the scope of this course.</p>
 <hr />
 <h2 id="summary">Summary</h2>
 <ul>
-<li>Feature engineering sits at the boundary between data <em>understanding</em> and <em>preparation</em>: EDA reveals patterns, and feature construction acts on them. The two phases are intertwined, not cleanly sequential.</li>
-<li>Each EDA finding type suggests a specific construction: correlations (or domain knowledge) suggest derived combinations, thresholds suggest binarization, item sets suggest composite indexes, and rare categories suggest grouping.</li>
-<li>The measurement scale of the source columns constrains which operations are valid. Check scale direction and unit compatibility before averaging or multiplying.</li>
-<li>Smoothing, aggregation, generalization, and binning are structural transformations often applied for pipeline or modeling reasons rather than in response to a specific EDA finding.</li>
+<li><span class="arithmatex">\(R^2\)</span> measures the fraction of target variance explained. It always increases with more predictors on the training set; use adjusted <span class="arithmatex">\(R^2\)</span> when comparing models of different sizes.</li>
+<li>Test-set <span class="arithmatex">\(R^2\)</span> can be negative when a model is worse than predicting the training mean — a reliable sign of overfitting or distribution shift.</li>
+<li>Regression coefficients carry a "holding all else constant" interpretation. Multicollinearity destabilizes individual coefficients even when overall predictions remain accurate.</li>
+<li>Linear regression rests on five assumptions: linearity, independence of errors, homoscedasticity, normality of residuals, and no perfect multicollinearity.</li>
+<li>Residual vs. fitted, scale-location, and Q-Q plots are the standard diagnostic tools. Always inspect them before reporting model results.</li>
 </ul>
 <p>As always: Happy learning, happy life! 🫶</p>
 <hr />
 <blockquote>
-<p><strong>Navigation:</strong> <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="02-cleaning-encoding.html">Structural Cleaning and Encoding --&gt;</a></p>
+<p><strong>Navigation:</strong> <a href="02-beyond-tabular-prep.html">&lt;-- Preparing Non-Tabular Data</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="04-statistical-significance.html">Statistical Significance --&gt;</a></p>
 </blockquote>
 <p>Script v1.4.1 (2026-06-23) · FGN</p>
 

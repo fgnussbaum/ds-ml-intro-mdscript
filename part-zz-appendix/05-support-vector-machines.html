@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-04-data-preparation/01-feature-engineering.html">
+        <link rel="canonical" href="https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-zz-appendix/05-support-vector-machines.html">
       
       
-        <link rel="prev" href="00-index.html">
+        <link rel="prev" href="04-statistical-significance.html">
       
-      
-        <link rel="next" href="02-cleaning-encoding.html">
       
       
         
@@ -25,7 +23,7 @@
     
     
       
-        <title>Feature Engineering - Intro to Data Science & ML</title>
+        <title>Support Vector Machines - Intro to Data Science & ML</title>
       
     
     
@@ -86,7 +84,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#feature-engineering" class="md-skip">
+        <a href="#support-vector-machines" class="md-skip">
           Skip to content
         </a>
       
@@ -122,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Feature Engineering
+              Support Vector Machines
             
           </span>
         </div>
@@ -992,20 +990,18 @@
       
   
   
-    
   
   
-  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -1026,7 +1022,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1044,7 +1040,7 @@
   
   
     <li class="md-nav__item">
-      <a href="00-index.html" class="md-nav__link">
+      <a href="../part-04-data-preparation/00-index.html" class="md-nav__link">
         
   
   
@@ -1069,37 +1065,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Feature Engineering
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="01-feature-engineering.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../part-04-data-preparation/01-feature-engineering.html" class="md-nav__link">
         
   
   
@@ -1115,159 +1084,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#table-of-contents" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Table of Contents
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#feature-construction" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Feature Construction
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Feature Construction">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#binarization-and-recoding" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Binarization and Recoding
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#composite-indexesindices" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Composite Indexes/Indices
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#derived-combinations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Derived Combinations
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#general-purpose-transformations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        General-Purpose Transformations
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="General-Purpose Transformations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#smoothing" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Smoothing
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#aggregation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Aggregation
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#grouping-of-specific-values" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Grouping of Specific Values
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#binning" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Binning
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Summary
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1280,7 +1096,7 @@
   
   
     <li class="md-nav__item">
-      <a href="02-cleaning-encoding.html" class="md-nav__link">
+      <a href="../part-04-data-preparation/02-cleaning-encoding.html" class="md-nav__link">
         
   
   
@@ -1308,7 +1124,7 @@
   
   
     <li class="md-nav__item">
-      <a href="03-scaling-imputation.html" class="md-nav__link">
+      <a href="../part-04-data-preparation/03-scaling-imputation.html" class="md-nav__link">
         
   
   
@@ -1336,7 +1152,7 @@
   
   
     <li class="md-nav__item">
-      <a href="04-data-splits.html" class="md-nav__link">
+      <a href="../part-04-data-preparation/04-data-splits.html" class="md-nav__link">
         
   
   
@@ -1364,7 +1180,7 @@
   
   
     <li class="md-nav__item">
-      <a href="05-prep-checklist.html" class="md-nav__link">
+      <a href="../part-04-data-preparation/05-prep-checklist.html" class="md-nav__link">
         
   
   
@@ -1392,7 +1208,7 @@
   
   
     <li class="md-nav__item">
-      <a href="06-prep-principles.html" class="md-nav__link">
+      <a href="../part-04-data-preparation/06-prep-principles.html" class="md-nav__link">
         
   
   
@@ -2230,18 +2046,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
         
           
           <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
@@ -2262,7 +2080,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2280,7 +2098,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-zz-appendix/00-index.html" class="md-nav__link">
+      <a href="00-index.html" class="md-nav__link">
         
   
   
@@ -2308,7 +2126,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-zz-appendix/01-beyond-tabular-eda.html" class="md-nav__link">
+      <a href="01-beyond-tabular-eda.html" class="md-nav__link">
         
   
   
@@ -2336,7 +2154,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-zz-appendix/02-beyond-tabular-prep.html" class="md-nav__link">
+      <a href="02-beyond-tabular-prep.html" class="md-nav__link">
         
   
   
@@ -2364,7 +2182,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-zz-appendix/03-regression-depth.html" class="md-nav__link">
+      <a href="03-regression-depth.html" class="md-nav__link">
         
   
   
@@ -2392,7 +2210,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-zz-appendix/04-statistical-significance.html" class="md-nav__link">
+      <a href="04-statistical-significance.html" class="md-nav__link">
         
   
   
@@ -2417,10 +2235,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../part-zz-appendix/05-support-vector-machines.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Support Vector Machines
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="05-support-vector-machines.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2436,6 +2281,81 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-maximum-margin-classifier-the-intuition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Maximum-Margin Classifier: The Intuition
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kernels-handling-non-linear-boundaries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Kernels: Handling Non-Linear Boundaries
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-consider-svms" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        When to Consider SVMs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2486,113 +2406,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#feature-construction" class="md-nav__link">
+  <a href="#the-maximum-margin-classifier-the-intuition" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Feature Construction
+        The Maximum-Margin Classifier: The Intuition
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Feature Construction">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#binarization-and-recoding" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Binarization and Recoding
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#composite-indexesindices" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Composite Indexes/Indices
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#derived-combinations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Derived Combinations
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#general-purpose-transformations" class="md-nav__link">
+  <a href="#kernels-handling-non-linear-boundaries" class="md-nav__link">
     <span class="md-ellipsis">
       
-        General-Purpose Transformations
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="General-Purpose Transformations">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#smoothing" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Smoothing
+        Kernels: Handling Non-Linear Boundaries
       
     </span>
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#aggregation" class="md-nav__link">
+      
+        <li class="md-nav__item">
+  <a href="#when-to-consider-svms" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Aggregation
+        When to Consider SVMs
       
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#grouping-of-specific-values" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Grouping of Specific Values
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#binning" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Binning
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2625,110 +2467,91 @@
 
 
 <blockquote>
-<p><strong>Navigation:</strong> <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="02-cleaning-encoding.html">Structural Cleaning and Encoding --&gt;</a></p>
+<p><strong>Navigation:</strong> <a href="04-statistical-significance.html">&lt;-- Statistical Significance</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a></p>
 </blockquote>
 <hr />
-<h1 id="feature-engineering">Feature Engineering</h1>
-<p><strong>Requires</strong>: <a href="../part-03-data-understanding/02-data-types.html">Data Types and Measurement Scales</a> · <a href="../part-03-data-understanding/07-eda-correlations.html">EDA: Correlations</a></p>
-<p><strong>Motivation:</strong> EDA usually leaves you with a "pot-pourri" of findings: a skewed distribution here, a cluster of correlated survey items there, a categorical column with dozens of rare values. Often it turns out that raw columns are not the best input for a model or analysis. How do you systematically convert your columns into better-structured columns that actually represent what you care about?</p>
+<h1 id="support-vector-machines">Support Vector Machines</h1>
+<p><strong>Requires</strong>: <a href="../part-05-supervised-learning/01-supervised-learning.html">Supervised Learning</a></p>
+<p><strong>Motivation</strong>: A decision tree and a logistic regression both classify by drawing a boundary between classes — but they make different choices about where to place it. Support Vector Machines ask a different question: of all the boundaries that separate the classes correctly, which one is farthest from both? That geometric intuition leads to a classifier with strong theoretical backing and surprising performance on high-dimensional data.</p>
 <blockquote>
-<p>In this nugget, you'll learn specific construction operations for new features: from collapsing thresholds into binary indicators and averaging item sets into composite indexes, to combining columns through ratios or products and grouping rare categories. You'll also see a set of structural transformations, such as binning and aggregation, that reshape data for modeling.</p>
+<p>In this optional nugget you will learn how SVMs find the maximum-margin decision boundary, how kernels extend this idea to data that is not linearly separable, and when SVMs are worth considering over simpler alternatives.</p>
+<p><strong>Context:</strong> This nugget covers <strong>classification</strong>. SVMs can also be applied to regression (support vector regression), but the classification case is the canonical use and the focus here.</p>
 </blockquote>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ul>
-<li><a href="#feature-construction">Feature Construction</a></li>
-<li><a href="#general-purpose-transformations">General-Purpose Transformations</a></li>
+<li><a href="#the-maximum-margin-classifier-the-intuition">The Maximum-Margin Classifier: The Intuition</a></li>
+<li><a href="#kernels-handling-non-linear-boundaries">Kernels: Handling Non-Linear Boundaries</a></li>
+<li><a href="#when-to-consider-svms">When to Consider SVMs</a></li>
 <li><a href="#summary">Summary</a></li>
 </ul>
-<h2 id="feature-construction">Feature Construction</h2>
-<p>Every EDA finding is a potential feature idea. In the following, we discuss several construction operations along with typical "trigger points".</p>
-<p>As you saw in <a href="../part-03-data-understanding/02-data-types.html">🖝 Data Types and Measurement Scales</a>, the permissable construction operations also depend on the measurement scales of source attributes: arithmetic on nominal data is meaningless, and ratios require a ratio scale.</p>
+<h2 id="the-maximum-margin-classifier-the-intuition">The Maximum-Margin Classifier: The Intuition</h2>
+<p>Imagine two classes of points that are linearly separable — you can draw a straight line between them. Many straight-line boundaries separate them correctly. Which one should you pick?</p>
+<p>The SVM answer: pick the boundary that maximizes the <strong>margin</strong> — the distance from the boundary to the nearest training points on each side. Those nearest points are called <strong>support vectors</strong> because they define and "support" the boundary. All other training points do not affect where the boundary is placed.</p>
+<p>[Figure: 2D scatter plot with two linearly separable classes. Three candidate decision boundaries shown. The SVM boundary in the middle, with the margin zone shaded and support vectors highlighted. The other two boundaries are shown closer to one class, with visibly smaller margins. Makes the geometric intuition immediate.]</p>
+<p>Why maximum margin? Intuitively, a large-margin boundary generalizes better: a new point must be farther from the training data before it crosses the boundary. A boundary pressed close to one class is likely to misclassify new points from that class that land slightly differently from the training examples.</p>
+<p>The constraint can be softened with a hyperparameter <strong>C</strong>: a larger C penalizes misclassifications more (tighter fit to training data, smaller margin). A smaller C allows some misclassifications in exchange for a wider margin. Tuning C is the primary hyperparameter task for linear SVMs.</p>
 <hr />
-<h3 id="binarization-and-recoding">Binarization and Recoding</h3>
-<p><strong>Trigger:</strong> A skewed distribution, a meaningful threshold, or a scale-direction inconsistency.</p>
-<p><strong>Binarization</strong> converts a continuous or ordinal attribute into a 0/1 indicator. In the ESS data, health is recorded on a 1–5 scale. Converting it to a binary health-good-or-not indicator could be reasonable for easier interpretation (however, also some detail is lost):</p>
-<pre><code class="language-python"># Binary health indicator: 1 = Good or Very Good (health &gt;= 4 on the 1–5 scale)
-df[&quot;health_good&quot;] = (df[&quot;health&quot;] &gt;= 4).astype(int)
-</code></pre>
-<p><strong>Recoding</strong> covers the broader case:</p>
-<ul>
-<li>collapsing a continuous attribute into fewer categories,</li>
-<li>reversing the direction of a scale.</li>
-</ul>
-<p><em>Note: For the ESS data, I did the latter for a few columns so that higher values <em>consistently</em> mean "more" of the construct. The intention was to make understanding the data easier.</em></p>
-<hr />
-<h3 id="composite-indexesindices">Composite Indexes/Indices</h3>
-<p><strong>Trigger:</strong> Several items in the dataset measure the same underlying construct.</p>
-<p>This is common for <a href="https://en.wikipedia.org/wiki/Likert_scale">🔗 Likert-scale</a> survey questions, which yield ordinal variables. Surveys often use several questions to  measure the same concept more reliably. A <strong>composite index</strong> then helps to quantify this concept.
-You usually obtain it by averaging. Before doing so, verify two things:</p>
-<ol>
-<li>all source columns point in the same direction (e.g., higher means "more"), and</li>
-<li>a unit increase must mean the same thing across columns.</li>
-</ol>
-<p>If those conditions hold, a simple mean is a valid summary. In the ESS, the <a href="https://en.wikipedia.org/wiki/Theory_of_basic_human_values">🔗 Schwartz-style value</a> columns all run from 1 ("Not like me at all") to 6 ("Very much like me"), so both conditions are satisfied. Here's some example code for building the corresponding average composite:</p>
-<pre><code class="language-python">SELF_TRANSCENDENCE_COLS = [&quot;val_equality&quot;, &quot;val_understand_others&quot;, &quot;val_helping_others&quot;, &quot;val_environment&quot;]
-df[&quot;val_transcendence&quot;] = df[SELF_TRANSCENDENCE_COLS].mean(axis=1)
-</code></pre>
-<!--See the demo code for a complete scale-compatibility check before averaging.-->
-
-<hr />
-<h3 id="derived-combinations">Derived Combinations</h3>
-<p><strong>Trigger:</strong> Domain knowledge or an EDA finding suggests that combining two ore more columns yields something more informative than either alone.</p>
-<p>Products, ratios, and differences are the most common operations, but any functional combination is conceivable as long as the result captures a new relationship.</p>
-<ul>
-<li><em>Domain-driven:</em> <code>income</code> <em>per</em> household member is more informative than raw income for predicting poverty risk. Correlation alone indeed cannot generate this idea: you need to know what the numbers represent.</li>
-<li>product columns like <code>income × education</code> may capture joint effects that neither column encodes alone.</li>
-</ul>
-<p>These combinations are only meaningful for numeric attributes (at least interval scale).</p>
+<h2 id="kernels-handling-non-linear-boundaries">Kernels: Handling Non-Linear Boundaries</h2>
+<p>Many real datasets are not linearly separable. Mapping the data into a higher-dimensional feature space can sometimes separate the classes linearly there. The <strong>kernel trick</strong> computes the distances the SVM needs in that higher-dimensional space without explicitly constructing the expanded features — making it computationally feasible even when the expanded space has thousands or millions of dimensions.</p>
+<p>The most common kernel is the <strong>Radial Basis Function (RBF)</strong> kernel, which measures similarity based on distance between points:</p>
+<div class="arithmatex">\[K(\mathbf{x}_i, \mathbf{x}_j) = \exp\!\left(-\gamma \|\mathbf{x}_i - \mathbf{x}_j\|^2\right)\]</div>
+<p>The hyperparameter <span class="arithmatex">\(\gamma\)</span> controls the influence radius of each support vector. A small <span class="arithmatex">\(\gamma\)</span> makes each support vector's influence wide (smoother, more linear-looking boundary). A large <span class="arithmatex">\(\gamma\)</span> makes each support vector's influence narrow (complex locally fitted boundary, risk of overfitting).</p>
+<p>[Figure: SVM with RBF kernel on a non-linearly separable dataset (two concentric circles). Contrasts a linear SVM that fails to separate with an RBF kernel SVM that finds a clean circular boundary. Side panels show the effect of too-small <span class="arithmatex">\(\gamma\)</span> (underfits) and too-large <span class="arithmatex">\(\gamma\)</span> (overfits).]</p>
 <blockquote>
-<p><strong>Discussion:</strong> You notice during EDA that a feature correlates strongly with a <em>target</em> variable that you want to predict. You engineer a ratio that incorporates both that feature and the target variable. What would be the consequence of using this ratio as an input feature for a machine learning model that predicts the target variable?</p>
-</blockquote>
-<!-- example: predict tip given total_bill, engineer feature tip_rate=tip/total_bill -->
-
-<p><em>See also <a href="05-prep-checklist.html">🖝 Data Preparation Checklist</a>: the target leakage principle. A constructed feature is only valid if its value does not depend on the outcome/target variable.</em></p>
-<!-- TODO overfitting, data leakage nugget link-->
-
-<hr />
-<h2 id="general-purpose-transformations">General-Purpose Transformations</h2>
-<p>Beyond EDA-driven construction, several transformations reshape data structurally without being motivated by a specific finding. They appear regularly in preprocessing pipelines and can be applied before the <a href="04-data-splits.html">🖝 Data Splits</a>.</p>
-<hr />
-<h3 id="smoothing">Smoothing</h3>
-<p><strong>Trigger:</strong> Sensor readings or time-series data with high-frequency noise.</p>
-<p>Smoothing replaces each value with a local estimate, for example the mean of its neighboring values. The goal is to reduce noise rather than to extract a new construct.</p>
-<hr />
-<h3 id="aggregation">Aggregation</h3>
-<p><strong>Trigger:</strong> Data needs to be summarized at a coarser granularity for modeling.</p>
-<p>Summing up daily sales to weekly totals, or averaging individual-level survey responses to country-level means, are both forms of aggregation. Aggregation reduces data volume and can also reduce noise.</p>
-<hr />
-<h3 id="grouping-of-specific-values">Grouping of Specific Values</h3>
-<p><strong>Trigger:</strong> Specific values are too granular for the model or for interpretation.</p>
-<p>Mapping street-level addresses to city names, or grouping exact ages into age brackets, replaces specific values with higher-level concepts. The result is a coarser representation that is sometimes more interpretable and more generalizable.</p>
-<p>Also, if a categorical column contains many rare values, you'll sometimes want to collapse some of them. This helps to avoid producing sparse one-hot columns that add noise and inflate feature matrices. Example: collapsing infrequent country codes or job titles into an "other" bucket.</p>
-<blockquote>
-<p>Apply grouping before the kind of encoding operation that we discuss in the next nugget <a href="02-cleaning-encoding.html">🖝 Structural Cleaning and Encoding</a>.</p>
+<p><strong>Tip:</strong> With an RBF kernel, the two key hyperparameters are C (margin trade-off) and <span class="arithmatex">\(\gamma\)</span> (influence radius). Tune them together using cross-validation — they interact, and optimizing one while holding the other fixed can mislead you.</p>
 </blockquote>
 <hr />
-<h3 id="binning">Binning</h3>
-<p><strong>Trigger:</strong> A model benefits from ordinal inputs, or you want to reduce sensitivity to outliers.</p>
-<p><strong>Binning</strong> (also called discretization) converts a continuous attribute into an ordinal one by grouping values into bins. This is related to the construction of histograms in <a href="../part-03-data-understanding/06-eda-distributions.html">🖝 EDA: Distributions</a>.</p>
-<p>Two common strategies are:</p>
-<ul>
-<li><strong>Equal-width binning:</strong> divide the value range (min to max) into <span class="arithmatex">\(k\)</span> intervals of equal width.</li>
-<li><strong>Equal-frequency binning:</strong> divide the data so that each bin contains the same number of observations.</li>
-</ul>
-<p>Equal-width bins are easier to interpret. Equal-frequency bins produce more balanced categories when the distribution is skewed.</p>
+<h2 id="when-to-consider-svms">When to Consider SVMs</h2>
+<table>
+<thead>
+<tr>
+<th>Situation</th>
+<th>SVMs are a good fit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>High-dimensional data (many more features than samples)</td>
+<td>Yes — text classification, genomics</td>
+</tr>
+<tr>
+<td>Clear margin of separation expected</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Small to medium datasets</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Large datasets (hundreds of thousands of rows)</td>
+<td>No — training SVMs is slow at scale</td>
+</tr>
+<tr>
+<td>Need for interpretable rules</td>
+<td>No — SVMs are defined by support vectors, not readable rules</td>
+</tr>
+<tr>
+<td>Tabular data with moderate dimensionality</td>
+<td>Random forests are often simpler and comparable in accuracy</td>
+</tr>
+</tbody>
+</table>
+<p>SVMs were dominant in the early 2000s for tasks like text classification and bioinformatics. They remain competitive in low-to-medium-data settings with high-dimensional features. For most tabular data science tasks, gradient boosted trees or random forests have displaced them as the practical default.</p>
+<blockquote>
+<p><strong>Discussion:</strong> You are classifying text documents into categories — technical reports vs. news articles — and have 10,000 documents with 50,000 TF-IDF features each. Would you reach for a random forest, an SVM, or another method first? What properties of the data inform your choice?</p>
+</blockquote>
 <hr />
 <h2 id="summary">Summary</h2>
 <ul>
-<li>Feature engineering sits at the boundary between data <em>understanding</em> and <em>preparation</em>: EDA reveals patterns, and feature construction acts on them. The two phases are intertwined, not cleanly sequential.</li>
-<li>Each EDA finding type suggests a specific construction: correlations (or domain knowledge) suggest derived combinations, thresholds suggest binarization, item sets suggest composite indexes, and rare categories suggest grouping.</li>
-<li>The measurement scale of the source columns constrains which operations are valid. Check scale direction and unit compatibility before averaging or multiplying.</li>
-<li>Smoothing, aggregation, generalization, and binning are structural transformations often applied for pipeline or modeling reasons rather than in response to a specific EDA finding.</li>
+<li>SVMs find the decision boundary that maximizes the margin between classes. Only the support vectors (nearest points to the boundary) determine the model.</li>
+<li>Hyperparameter C controls the margin-vs.-training-accuracy trade-off. The RBF kernel allows non-linear boundaries; <span class="arithmatex">\(\gamma\)</span> controls the influence radius of each support vector.</li>
+<li>SVMs work well in high-dimensional, small-to-medium-data settings. They are slow on large datasets and not interpretable as rule sets.</li>
+<li>For typical tabular data at scale, random forests are a simpler and often comparable alternative.</li>
 </ul>
 <p>As always: Happy learning, happy life! 🫶</p>
 <hr />
 <blockquote>
-<p><strong>Navigation:</strong> <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="02-cleaning-encoding.html">Structural Cleaning and Encoding --&gt;</a></p>
+<p><strong>Navigation:</strong> <a href="04-statistical-significance.html">&lt;-- Statistical Significance</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a></p>
 </blockquote>
 <p>Script v1.4.1 (2026-06-23) · FGN</p>
 

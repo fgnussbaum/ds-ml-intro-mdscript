@@ -1356,7 +1356,7 @@
   <span class="md-ellipsis">
     
   
-    Part V: 1st Pass - Supervised Learning
+    Part V: Supervised Learning
   
 
     
@@ -1372,7 +1372,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part V: 1st Pass - Supervised Learning
+    Part V: Supervised Learning
   
 
           </label>
@@ -1686,6 +1686,34 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../part-05-supervised-learning/11-logistic-regression.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Logistic Regression
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1940,7 +1968,7 @@
   <span class="md-ellipsis">
     
   
-    Part VII: 2nd Pass - Unsupervised Learning
+    Part VII: Unsupervised Learning
   
 
     
@@ -1956,7 +1984,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Part VII: 2nd Pass - Unsupervised Learning
+    Part VII: Unsupervised Learning
   
 
           </label>
@@ -2004,7 +2032,7 @@
   <span class="md-ellipsis">
     
   
-    Framing Unsupervised Learning
+    Unsupervised Learning
   
 
     
@@ -2247,35 +2275,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-zz-appendix/03-logistic-regression.html" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Logistic Regression
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../part-zz-appendix/04-regression-depth.html" class="md-nav__link">
+      <a href="../part-zz-appendix/03-regression-depth.html" class="md-nav__link">
         
   
   
@@ -2303,7 +2303,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-zz-appendix/05-statistical-significance.html" class="md-nav__link">
+      <a href="../part-zz-appendix/04-statistical-significance.html" class="md-nav__link">
         
   
   
@@ -2331,7 +2331,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-zz-appendix/06-support-vector-machines.html" class="md-nav__link">
+      <a href="../part-zz-appendix/05-support-vector-machines.html" class="md-nav__link">
         
   
   
@@ -2452,9 +2452,9 @@
 <hr />
 <h1 id="data-types-and-measurement-scales">Data Types and Measurement Scales</h1>
 <p><strong>Requires</strong>: <a href="01-why-data-work.html">Why Data Work Dominates</a></p>
-<p><strong>Motivation</strong>: Before you can summarize, visualize, or model any column in your dataset, you need to know what kind of value it holds. The same column might look like a number and yet be meaningless to average. This nugget asks: what distinguishes a valid arithmetic operation on data from a meaningless one?</p>
+<p><strong>Motivation</strong>: Before you can summarize, visualize, or model any column in your dataset, you need to know what kind of value it holds. The same column might look like a number and yet be meaningless to average. What distinguishes a valid arithmetic operation on data from a meaningless one?</p>
 <blockquote>
-<p>You will learn to classify any attribute by its measurement scale (nominal, ordinal, interval, ratio) and by whether it is discrete, continuous, or binary — knowledge that determines which statistics and encodings are valid for each column.</p>
+<p>In this nugget, you'll learn to classify attributes by their measurement scales (nominal, ordinal, interval, ratio). You'll also learn to distinguish discrete, continuous, or binary attributes. By being able to make these distinctions, you'll know which statistics and operations are valid for each column.</p>
 </blockquote>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ul>
@@ -2514,7 +2514,7 @@ Survey scales ("rate your agreement 1 to 5") are ordinal. The number 4 is higher
 You can say one value is 5 units more than another, and that gap is meaningful and consistent. However, the zero point is arbitrary: it is just a reference point, not "nothing." Multiplying interval values produces nonsense: the year 1000 CE is not "twice as old" as 500 CE, because the year zero is a human choice, not true zero.</p>
 <p><strong>Ratio scale</strong> adds a true zero, making multiplication and division meaningful. Most physical measurement quantities are ratio-scale: length, mass, voltage, time duration, angular displacement.</p>
 <blockquote>
-<p><strong>Common errors</strong>: Applying an operation the scale does not support produces numbers that look real but mean nothing. The most common errors: computing the mean of nominal codes (the codes are just labels), treating ordinal gaps as equal intervals (e.g., averaging a 1–5 survey scale — technically wrong, but widely done and often acceptable for exploratory work), and computing ratios on interval data (e.g., claiming 20°C is "twice as warm" as 10°C).</p>
+<p><strong>Common errors</strong>: Applying an operation the scale does not support produces numbers that look real but mean nothing. The most common errors: computing the mean of nominal codes (the codes are just labels), treating ordinal gaps as equal intervals (e.g., averaging a 1–5 survey scale: technically wrong, but widely done and often acceptable for exploratory work), and computing ratios on interval data (e.g., claiming 20°C is "twice as warm" as 10°C).</p>
 </blockquote>
 <p>The scale also controls which encoding choices make sense when preparing data for a model: nominal attributes need one-hot or dummy encoding; ordinal attributes can sometimes be passed as ordered integers; interval and ratio attributes can be fed directly to numeric models, typically after scaling. You will apply these rules in <a href="../part-04-data-preparation/02-cleaning-encoding.html">🖝 Structural Cleaning and Encoding</a>.</p>
 <hr />
@@ -2557,11 +2557,11 @@ You can say one value is 5 units more than another, and that gap is meaningful a
 <hr />
 <h2 id="summary">Summary</h2>
 <ul>
-<li>Every column in a dataset is an attribute. Its measurement scale — nominal, ordinal, interval, or ratio — determines what operations and statistics are valid.</li>
+<li>Every column in a dataset is an attribute. Its measurement scale (nominal, ordinal, interval, or ratio) determines what operations and statistics are valid.</li>
 <li>The four scales form a hierarchy: each level adds one capability, from distinctness only (nominal) to full arithmetic (ratio).</li>
 <li>Common errors: averaging nominal codes, treating ordinal gaps as equal, or computing ratios on interval data.</li>
 <li>Encoding choices for models follow from the scale: nominal needs one-hot encoding, ordinal can sometimes use ordered integers, numeric attributes need scaling.</li>
-<li>Separately, attributes are discrete, continuous, or binary — describing how many values they can take, not what operations apply.</li>
+<li>Attributes can be discrete, continuous, or binary. These categories describe how many value the attribute can take, not what operations apply.</li>
 <li>Identifying attribute types is one of the first steps in any EDA workflow.</li>
 </ul>
 <p>As always: Happy learning, happy life! 🫶</p>
@@ -2569,7 +2569,7 @@ You can say one value is 5 units more than another, and that gap is meaningful a
 <blockquote>
 <p><strong>Navigation:</strong> <a href="01-why-data-work.html">&lt;-- Why Data Work Dominates</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="03-datasets.html">Datasets --&gt;</a></p>
 </blockquote>
-<p>Script v1.4 (2026-06-10) · FGN</p>
+<p>Script v1.4.1 (2026-06-23) · FGN</p>
 
 
 
