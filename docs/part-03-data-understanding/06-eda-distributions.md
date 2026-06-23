@@ -6,9 +6,9 @@
 
 **Requires**: [EDA: Descriptive Statistics](04-eda-descriptive-stats.md)
 
-**Motivation**: Summary statistics compress a whole column into a handful of numbers. Two columns with the same mean and standard deviation can look completely different when plotted. This nugget asks: what does the actual shape of your data look like, and what does that shape tell you about the data and how it was collected?
+**Motivation**: Summary statistics as from [🖝 EDA: Descriptive Statistics](../part-03-data-understanding/04-eda-descriptive-stats.md) compress a whole column into a handful of numbers. Now, two columns with the same mean and standard deviation can look completely different when plotted. So what does the actual shape of your data look like? Moreover, what might that shape tell you about the data and how it was collected?
 
-> You will learn to visualize distributions with histograms and boxplots, characterize their shapes (symmetric, skewed, bimodal), and distinguish genuine extreme observations from data artifacts — giving you the tools to decide whether an outlier warrants investigation, transformation, or retention.
+> In this nugget, you'll learn to visualize distributions with histograms and boxplots, characterize their shapes (symmetric, skewed, bimodal), and distinguish genuine extreme observations from data artifacts. This gives you tools to decide whether an outlier warrants investigation, transformation, or retention.
 
 ## Table of Contents
 
@@ -30,7 +30,7 @@ Plotting many variables at once gives a rapid overview of them, here for some va
 For two variables, age and religiosity, there's also a smooth curve overlayed. This is a so-called kernel density estimate (KDE), which can be used if the right bin width is unclear (it makes less sense for data that has few values anyway).
 Now let's take a look at what shapes we find in these plots:
 
-- **Normal (bell curve)**: symmetric, with mean, median, and mode at the center and equal-weight tails on both sides. Many physical measurements approximate this when errors are random and independent. None of the ESS variables here follow it closely — which is itself instructive.
+- **Normal (bell curve)**: symmetric, with mean, median, and mode at the center and equal-weight tails on both sides. Many physical measurements approximate this when errors are random and independent. None of the ESS variables here follow it closely: this also tells us something.
 - **Left-skewed (negative skew)**: a long tail extends to the left, pulling the mean below the median. **Happiness** follows this pattern: most respondents rate themselves fairly happy (7–9), with few in the lower range. The skew reflects something real about the German population, but it also means the lower end of the scale is data-sparse.
 - **Right-skewed (positive skew)**: the opposite direction. Income and house prices are classic examples.
 - **Uniform**: values are roughly equally frequent across the range. **Age** is close to uniform across the adult range. This is unusual for a population sample. It might signal quota sampling rather than purely random selection for the ESS survey.
@@ -95,4 +95,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- EDA: Data Quality](05-eda-data-quality.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [EDA: Correlations -->](07-eda-correlations.md)
 
-Script v1.4 (2026-06-10) · FGN
+Script v1.4.1 (2026-06-23) · FGN

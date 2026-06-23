@@ -4,9 +4,9 @@
 
 # Data Understanding: Best Practices
 
-**Motivation**: You have now built the full EDA toolkit: loading data, checking structure, computing statistics, visualizing distributions, assessing quality, and examining correlations. Each skill was introduced in its own nugget. This one pulls them together into a single reference so you can apply them systematically whenever you face a new dataset — without having to retrace the whole part.
+**Motivation**: You have now built a quite complete EDA toolkit: loading data, checking structure, computing statistics, visualizing distributions, assessing quality, and examining correlations. Let's wrap everything up.
 
-> You will find a concise EDA checklist consolidating the best practices from this part, a visualization reference table mapping analytical questions to the right plot type, and a set of pitfalls that cause charts to mislead — giving you both a practical workflow guide and a critical eye for data work.
+> Here, you'll find an EDA checklist consolidating the best practices from this part, a visualization reference table mapping analytical questions to the right plot type, and a set of pitfalls that cause charts to mislead. This gives you a practical workflow guide and steps to train your "critical eye" for data work.
 
 ## Table of Contents
 
@@ -81,4 +81,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- EDA: Correlations](07-eda-correlations.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part IV: Data Preparation -->](../part-04-data-preparation/00-index.md)
 
-Script v1.4 (2026-06-10) · FGN
+Script v1.4.1 (2026-06-23) · FGN

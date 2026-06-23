@@ -127,6 +127,7 @@ The **information gain** of a split $s$ measures how much it reduces uncertainty
 Intuitively, it is entropy _before_ the split minus the entropy _remaining after_ the split:
 
 <!-- https://en.wikipedia.org/wiki/Information_gain_(decision_tree) -->
+
 $$\Delta(s) = H(v) - \sum_{j} \frac{N(v_j)}{N} \, H(v_j)$$
 
 Here, the sum runs over the child nodes $v_j=v_j(s)$ produced by $s$ from parent node $v$, weighted by their fraction $N(v_j)/N$ of the parent's data points.
@@ -166,4 +167,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Classification Evaluation](08-classification-evaluation.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Random Forests -->](10-random-forests.md)
 
-Script v1.4 (2026-06-10) · FGN
+Script v1.4.1 (2026-06-23) · FGN

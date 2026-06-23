@@ -97,10 +97,14 @@ $$\text{Cost}(h) = \text{EmpiricalLoss}(h) + \lambda \cdot \text{Complexity}(h)$
 The empirical loss rewards fit to training data. The complexity term penalizes hypotheses $h$ that are too elaborate. $\lambda$ controls how heavily the model is penalized for using that extra capacity. A large $\lambda$ produces a simpler model that may underfit. A small $\lambda$ gives the model room to overfit. There is no universal right value, so it must be tuned via cross-validation techniques.
 
 In [🖝 Regularized Regression](../part-05-supervised-learning/05-regularized-regression.md), we saw how Ridge and Lasso instantiate the formula above using the L1 and L2 norms on the weights.
+
 $$\text{MSE}(\mathbf{w}) + \lambda \|\mathbf{w}\|_1,\quad\text{and}\quad\text{MSE}(\mathbf{w}) + \lambda \|\mathbf{w}\|_2^2$$
+
 The same penalty idea extends beyond linear models: neural networks routinely apply L2 weight decay across all layers, an equivalent of Ridge regularization regardless of network depth.
 It is even possible to combine different regularization terms. For example, Elastic Net combines L1 and L2 terms for the "best of two world" - sparsity and stability:
+
 $$\text{MSE}(\mathbf{w}) + \lambda_1 \|\mathbf{w}\|_1 + \lambda_2 \|\mathbf{w}\|_2^2.$$
+
 The significant cost is that more hyperparameters need to be tuned.
 
 For tree-based models, hyperparameters like `max_depth` and `min_samples_leaf` are **capacity constraints**: they restrict the hypothesis space itself. Technically, they still fit the framework with a penalty that is "infinity" where the capacity constraints is violated, and zero otherwise.
@@ -122,4 +126,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [Start Simple -->](02-start-simple.md)
 
-Script v1.4 (2026-06-10) · FGN
+Script v1.4.1 (2026-06-23) · FGN

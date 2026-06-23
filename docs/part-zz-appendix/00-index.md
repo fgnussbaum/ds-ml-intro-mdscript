@@ -14,11 +14,10 @@
 |---|--------|---------------|
 | 1 | [Beyond Tabular Data](01-beyond-tabular-eda.md) | -- |
 | 2 | [Preparing Non-Tabular Data](02-beyond-tabular-prep.md) | [Beyond Tabular Data](01-beyond-tabular-eda.md) |
-| 3 | [Logistic Regression](03-logistic-regression.md) | [Linear Regression](../part-05-supervised-learning/02-linear-regression.md) |
-| 4 | [Regression: Interpretation and Assumptions](04-regression-depth.md) | [Linear Regression](../part-05-supervised-learning/02-linear-regression.md) |
-| 5 | [Statistical Significance](05-statistical-significance.md) | [Linear Regression](../part-05-supervised-learning/02-linear-regression.md) |
-| 6 | [Support Vector Machines](06-support-vector-machines.md) | [Supervised Learning](../part-05-supervised-learning/01-supervised-learning.md) |
+| 3 | [Regression: Interpretation and Assumptions](03-regression-depth.md) | [Linear Regression](../part-05-supervised-learning/02-linear-regression.md) |
+| 4 | [Statistical Significance](04-statistical-significance.md) | [Linear Regression](../part-05-supervised-learning/02-linear-regression.md) |
+| 5 | [Support Vector Machines](05-support-vector-machines.md) | [Supervised Learning](../part-05-supervised-learning/01-supervised-learning.md) |
 
 ---
 
-Script v1.4 (2026-06-10) · FGN
+Script v1.4.1 (2026-06-23) · FGN

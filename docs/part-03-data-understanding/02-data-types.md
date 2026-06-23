@@ -6,9 +6,9 @@
 
 **Requires**: [Why Data Work Dominates](01-why-data-work.md)
 
-**Motivation**: Before you can summarize, visualize, or model any column in your dataset, you need to know what kind of value it holds. The same column might look like a number and yet be meaningless to average. This nugget asks: what distinguishes a valid arithmetic operation on data from a meaningless one?
+**Motivation**: Before you can summarize, visualize, or model any column in your dataset, you need to know what kind of value it holds. The same column might look like a number and yet be meaningless to average. What distinguishes a valid arithmetic operation on data from a meaningless one?
 
-> You will learn to classify any attribute by its measurement scale (nominal, ordinal, interval, ratio) and by whether it is discrete, continuous, or binary — knowledge that determines which statistics and encodings are valid for each column.
+> In this nugget, you'll learn to classify attributes by their measurement scales (nominal, ordinal, interval, ratio). You'll also learn to distinguish discrete, continuous, or binary attributes. By being able to make these distinctions, you'll know which statistics and operations are valid for each column.
 
 ## Table of Contents
 
@@ -40,7 +40,7 @@ You can say one value is 5 units more than another, and that gap is meaningful a
 
 **Ratio scale** adds a true zero, making multiplication and division meaningful. Most physical measurement quantities are ratio-scale: length, mass, voltage, time duration, angular displacement.
 
-> **Common errors**: Applying an operation the scale does not support produces numbers that look real but mean nothing. The most common errors: computing the mean of nominal codes (the codes are just labels), treating ordinal gaps as equal intervals (e.g., averaging a 1–5 survey scale — technically wrong, but widely done and often acceptable for exploratory work), and computing ratios on interval data (e.g., claiming 20°C is "twice as warm" as 10°C).
+> **Common errors**: Applying an operation the scale does not support produces numbers that look real but mean nothing. The most common errors: computing the mean of nominal codes (the codes are just labels), treating ordinal gaps as equal intervals (e.g., averaging a 1–5 survey scale: technically wrong, but widely done and often acceptable for exploratory work), and computing ratios on interval data (e.g., claiming 20°C is "twice as warm" as 10°C).
 
 The scale also controls which encoding choices make sense when preparing data for a model: nominal attributes need one-hot or dummy encoding; ordinal attributes can sometimes be passed as ordered integers; interval and ratio attributes can be fed directly to numeric models, typically after scaling. You will apply these rules in [🖝 Structural Cleaning and Encoding](../part-04-data-preparation/02-cleaning-encoding.md).
 
@@ -72,11 +72,11 @@ A **binary attribute** is a special case of discrete with exactly two values: tr
 
 ## Summary
 
-- Every column in a dataset is an attribute. Its measurement scale — nominal, ordinal, interval, or ratio — determines what operations and statistics are valid.
+- Every column in a dataset is an attribute. Its measurement scale (nominal, ordinal, interval, or ratio) determines what operations and statistics are valid.
 - The four scales form a hierarchy: each level adds one capability, from distinctness only (nominal) to full arithmetic (ratio).
 - Common errors: averaging nominal codes, treating ordinal gaps as equal, or computing ratios on interval data.
 - Encoding choices for models follow from the scale: nominal needs one-hot encoding, ordinal can sometimes use ordered integers, numeric attributes need scaling.
-- Separately, attributes are discrete, continuous, or binary — describing how many values they can take, not what operations apply.
+- Attributes can be discrete, continuous, or binary. These categories describe how many value the attribute can take, not what operations apply.
 - Identifying attribute types is one of the first steps in any EDA workflow.
 
 As always: Happy learning, happy life! 🫶
@@ -86,4 +86,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Why Data Work Dominates](01-why-data-work.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Datasets -->](03-datasets.md)
 
-Script v1.4 (2026-06-10) · FGN
+Script v1.4.1 (2026-06-23) · FGN

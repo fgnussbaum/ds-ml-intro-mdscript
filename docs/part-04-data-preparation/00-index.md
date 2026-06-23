@@ -1,4 +1,4 @@
-> **Navigation:** [<-- Part III: Data Understanding](../part-03-data-understanding/00-index.md) | [Main Index](../index.md) | [Part V: 1st Pass - Supervised Learning -->](../part-05-supervised-learning/00-index.md)
+> **Navigation:** [<-- Part III: Data Understanding](../part-03-data-understanding/00-index.md) | [Main Index](../index.md) | [Part V: Supervised Learning -->](../part-05-supervised-learning/00-index.md)
 
 ---
 
@@ -21,4 +21,4 @@ Raw data rarely arrives ready for modeling. This part covers foundational prepar
 
 ---
 
-Script v1.4 (2026-06-10) · FGN
+Script v1.4.1 (2026-06-23) · FGN

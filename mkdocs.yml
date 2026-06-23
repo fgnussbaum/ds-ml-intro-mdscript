@@ -46,7 +46,7 @@ nav:
     - Data Splits: part-04-data-preparation/04-data-splits.md
     - Data Preparation Checklist: part-04-data-preparation/05-prep-checklist.md
     - Data Preparation Best Practices: part-04-data-preparation/06-prep-principles.md
-  - "Part V: 1st Pass - Supervised Learning":
+  - "Part V: Supervised Learning":
     - Overview: part-05-supervised-learning/00-index.md
     - Supervised Learning: part-05-supervised-learning/01-supervised-learning.md
     - Linear Regression: part-05-supervised-learning/02-linear-regression.md
@@ -58,6 +58,7 @@ nav:
     - Classification Evaluation: part-05-supervised-learning/08-classification-evaluation.md
     - Decision Trees: part-05-supervised-learning/09-decision-trees.md
     - Random Forests: part-05-supervised-learning/10-random-forests.md
+    - Logistic Regression: part-05-supervised-learning/11-logistic-regression.md
   - "Part VI: Principles That Transfer (Reflection)":
     - Overview: part-06-reflection/00-index.md
     - Generalization: part-06-reflection/01-generalization.md
@@ -65,9 +66,9 @@ nav:
     - Baselines and the Good-Enough Bar: part-06-reflection/03-baselines.md
     - Choosing and Aligning Metrics: part-06-reflection/04-aligning-metrics.md
     - Explainability: part-06-reflection/05-explainability.md
-  - "Part VII: 2nd Pass - Unsupervised Learning":
+  - "Part VII: Unsupervised Learning":
     - Overview: part-07-unsupervised-learning/00-index.md
-    - Framing Unsupervised Learning: part-07-unsupervised-learning/01-unsupervised-learning.md
+    - Unsupervised Learning: part-07-unsupervised-learning/01-unsupervised-learning.md
     - k-Means Clustering: part-07-unsupervised-learning/02-k-means-clustering.md
     - Anomaly Detection: part-07-unsupervised-learning/03-anomaly-detection.md
     - Isolation Forests: part-07-unsupervised-learning/04-isolation-forests.md
@@ -75,7 +76,6 @@ nav:
     - Overview: part-zz-appendix/00-index.md
     - Beyond Tabular Data: part-zz-appendix/01-beyond-tabular-eda.md
     - Preparing Non-Tabular Data: part-zz-appendix/02-beyond-tabular-prep.md
-    - Logistic Regression: part-zz-appendix/03-logistic-regression.md
-    - "Regression: Interpretation and Assumptions": part-zz-appendix/04-regression-depth.md
-    - Statistical Significance: part-zz-appendix/05-statistical-significance.md
-    - Support Vector Machines: part-zz-appendix/06-support-vector-machines.md
+    - "Regression: Interpretation and Assumptions": part-zz-appendix/03-regression-depth.md
+    - Statistical Significance: part-zz-appendix/04-statistical-significance.md
+    - Support Vector Machines: part-zz-appendix/05-support-vector-machines.md

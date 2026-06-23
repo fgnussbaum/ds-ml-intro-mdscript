@@ -4,7 +4,7 @@
 
 # Anomaly Detection
 
-**Requires**: [Framing Unsupervised Learning](01-unsupervised-learning.md)
+**Requires**: [Unsupervised Learning](01-unsupervised-learning.md)
 
 **Motivation**: You are monitoring a production machine and want to flag readings that look unusual before they become failures. The difficulty is that you have very few labeled examples of faults: most of the time the machine runs normally, and a fault is precisely what has not happened yet. Anomaly detection is the branch of unsupervised learning built for this situation. Its goal is to find observations that do not fit the pattern of the rest, without a labeled training set to learn from.
 
@@ -111,4 +111,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- k-Means Clustering](02-k-means-clustering.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Isolation Forests -->](04-isolation-forests.md)
 
-Script v1.4 (2026-06-10) · FGN
+Script v1.4.1 (2026-06-23) · FGN

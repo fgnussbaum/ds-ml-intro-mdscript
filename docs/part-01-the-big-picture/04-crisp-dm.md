@@ -6,7 +6,7 @@
 
 **Motivation**: Knowing what machine learning is does not tell you how a real project unfolds from first question to deployed result. Most tutorials start at modeling. But modeling is only one step in a longer process, and skipping the steps before and after it is one of the most common reasons data-science projects fail. You **don't** want projects to fail because the **process** was not right.
 
-> In this nugget you will get to know CRISP-DM (which stands for the handy _"Cross-Industry Standard Process for Data Mining"_). This process will be a good live orientation tool throughout your own project and data-science work. You'll learn the six standard CRISP-DM phases plus two useful extensions.
+> In this nugget you will get to know **CRISP-DM** (which stands for the handy _"Cross-Industry Standard Process for Data Mining"_). This process will be a good live orientation tool throughout your own project and data-science work. You'll learn the six standard CRISP-DM phases plus two useful extensions.
 
 ## Table of Contents
 
@@ -27,7 +27,7 @@ The phases do not run strictly in sequence. Most real projects loop back, someti
 
 ### Business Understanding
 
-> See [🖝 Part II](../part-02-ds-projects/00-index.md) in this course.
+> See [🖝 Part II: Data-Science Projects](../part-02-ds-projects/00-index.md), [🖝 Part IX: Closing the Loop - Projects in Practice](../part-09-projects-in-practice/00-index.md).
 
 Here you define what you actually want to achieve.
 
@@ -45,31 +45,31 @@ If you don't like to think of it exclusively as _business_ understanding, consid
 
 ### Data Understanding
 
-> See [🖝 Part III](../part-03-data-understanding/00-index.md) in this course.
+> See [🖝 Part III: Data Understanding](../part-03-data-understanding/00-index.md) in this course.
 
 Data understanding is where you collect initial data and begin exploring it. You describe what you have, look for quality issues, and ask whether the data can support the goal you defined. Many projects discover at this stage that the original question needs adjusting.
 
 ### Data Preparation
 
-> See [🖝 Part IV](../part-04-data-preparation/00-index.md) in this course.
+> See [🖝 Part IV: Data Preparation](../part-04-data-preparation/00-index.md) in this course.
 
 Data preparation covers everything needed to turn raw data into a form a model can use: selecting relevant attributes, cleaning errors and missing values, constructing new features, integrating multiple sources, and formatting the result. In practice, this phase consumes more time than any other.
 
 ### Modeling
 
-> See TBD.
+> See [🖝 Part V: Supervised Learning](../part-05-supervised-learning/00-index.md), [🖝 Part VII: Unsupervised Learning](../part-07-unsupervised-learning/00-index.md), [🖝 Part VIII: Deep Learning](../part-08-deep-learning/00-index.md).
 
 Modeling is where you select and apply techniques, build models, and assess them against the test design established earlier. This is the phase most people picture when they hear "machine learning."
 
 ### Evaluation
 
-> See TBD.
+> See [🖝 Part V: Supervised Learning](../part-05-supervised-learning/00-index.md), [🖝 Part VII: Unsupervised Learning](../part-07-unsupervised-learning/00-index.md), [🖝 Part VIII: Deep Learning](../part-08-deep-learning/00-index.md).
 
 Evaluation is not a single check at the end. You evaluate the model against the original business objectives, review the whole process for overlooked steps or flawed assumptions, and decide whether to deploy, iterate further, or stop.
 
 ### Deployment
 
-> See TBD.
+> See [🖝 Part IX: Closing the Loop - Projects in Practice](../part-09-projects-in-practice/00-index.md).
 
 The deployment turns a model into something useful. Depending on the project, this might mean a written report, a dashboard, an automated alert system, or a fully integrated production service.
 
@@ -136,4 +136,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- AI Ethics: A Primer](03-ethics-and-responsibility.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Academia vs. Business Data Science -->](05-academia-vs-business-ds.md)
 
-Script v1.4 (2026-06-10) · FGN
+Script v1.4.1 (2026-06-23) · FGN

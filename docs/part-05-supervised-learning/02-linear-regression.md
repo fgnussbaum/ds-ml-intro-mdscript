@@ -98,7 +98,7 @@ A perfect model yields $R^2 = 1$, and the baseline model that always predicts th
 
 > **Discussion 2:** Is trying to predict `tip` from `total_bill` really an interesting question? Or could there actually ba a far more interesting question? (Data science is about finding good questions: Here's one - can you spot it?)
 
-See also [🖝 Regression: Interpretation and Assumptions](../part-zz-appendix/04-regression-depth.md) for additional details and aspects of evaluation.
+See also [🖝 Regression: Interpretation and Assumptions](../part-zz-appendix/03-regression-depth.md) for additional details and aspects of evaluation.
 
 ---
 
@@ -146,4 +146,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Supervised Learning](01-supervised-learning.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Gradient Descent -->](03-gradient-descent.md)
 
-Script v1.4 (2026-06-10) · FGN
+Script v1.4.1 (2026-06-23) · FGN

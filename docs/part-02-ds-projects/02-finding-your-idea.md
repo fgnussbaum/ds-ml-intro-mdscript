@@ -135,4 +135,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Why a Project?](01-why-a-project.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Working as a Team on a DS Project -->](03-team-project-basics.md)
 
-Script v1.4 (2026-06-10) · FGN
+Script v1.4.1 (2026-06-23) · FGN

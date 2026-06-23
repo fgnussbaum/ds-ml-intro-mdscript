@@ -1,10 +1,10 @@
-> **Navigation:** [<-- Choosing and Aligning Metrics](04-aligning-metrics.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part VII: 2nd Pass - Unsupervised Learning -->](../part-07-unsupervised-learning/00-index.md)
+> **Navigation:** [<-- Choosing and Aligning Metrics](04-aligning-metrics.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part VII: Unsupervised Learning -->](../part-07-unsupervised-learning/00-index.md)
 
 ---
 
 # Explainability
 
-**Requires**: [Random Forests](../part-05-supervised-learning/10-random-forests.md)
+**Requires**: [Start Simple](02-start-simple.md) · [Random Forests](../part-05-supervised-learning/10-random-forests.md)
 
 **Motivation**: Your model predicts something, but can a human understand why? Models that are **explainable/interpretable** help both the people who act on their decisions and those affected by them, like a patient receiving an AI-assisted diagnosis. As a rule of thumb, more complex models are less interpretable: this is yet another reason to [🖝 Start Simple](../part-06-reflection/02-start-simple.md), since something like a [🖝 Random Forests](../part-05-supervised-learning/10-random-forests.md), with its thousands of branches, already resists explanation almost as much as a black-box neural network. Beyond debugging and calibrating trust, explainability is increasingly becoming a legal requirement.
 
@@ -51,7 +51,7 @@ For the comparison of coefficients across features, the input features must be s
 
 > **Note:** Correlated features complicate coefficient interpretation. If two features are highly correlated, the coefficient of each reflects their shared contribution in a way that can be misleading individually. This is a limitation of linear model coefficients as explanations.
 
-For [🖝 Logistic Regression](../part-zz-appendix/03-logistic-regression.md), coefficients describe the log-odds of the positive class. The direction (positive/negative) is directly interpretable, but the magnitude requires care.
+For [🖝 Logistic Regression](../part-05-supervised-learning/11-logistic-regression.md), coefficients describe the log-odds of the positive class. The direction (positive/negative) is directly interpretable, but the magnitude requires care.
 
 ### Decision trees: the decision path
 
@@ -109,6 +109,6 @@ As always: Happy learning, happy life! 🫶
 
 ---
 
-> **Navigation:** [<-- Choosing and Aligning Metrics](04-aligning-metrics.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part VII: 2nd Pass - Unsupervised Learning -->](../part-07-unsupervised-learning/00-index.md)
+> **Navigation:** [<-- Choosing and Aligning Metrics](04-aligning-metrics.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part VII: Unsupervised Learning -->](../part-07-unsupervised-learning/00-index.md)
 
-Script v1.4 (2026-06-10) · FGN
+Script v1.4.1 (2026-06-23) · FGN

@@ -32,7 +32,7 @@ Simpler models:
 - **Are easier to explain to stakeholders**: A shallow decision tree can be shown as a flowchart in a presentation. The internals of a [🖝 Random Forests](../part-05-supervised-learning/10-random-forests.md) ensemble cannot.
 - **Require less data**: Since simpler models usually have less parameters, they are less likely to overfit. This means they often work better when data is limited.
 - **Are easier to train**: Not only is training faster, failures are also easier to debug. When a [🖝 Linear Regression](../part-05-supervised-learning/02-linear-regression.md) gives a poor result, the reasons are often visible in the residuals or the coefficient values. When a blackbox deep learning model fails, diagnosis is much harder.
-- **Deploy faster and cost less**: A [🖝 Logistic Regression](../part-zz-appendix/03-logistic-regression.md) runs in microseconds on any hardware. A large neural network requires a GPU and careful infrastructure.
+- **Deploy faster and cost less**: A [🖝 Logistic Regression](../part-05-supervised-learning/11-logistic-regression.md) runs in microseconds on any hardware. A large neural network requires a GPU and careful infrastructure.
 - **Are easier to maintain**: As data distributions shift over time, a simple model is easier to retrain, update, and explain to future maintainers.
 
 ---
@@ -80,7 +80,9 @@ A log like that costs little to maintain, but you'll keep a better overview of y
 
 ## The Complexity Ladder
 
-The following practical hierarchy of model complexity applies to most supervised learning problems with tabular data. Start with a baseline, see the next nugget [🖝 Baselines and the Good-Enough Bar](../part-06-reflection/03-baselines.md). Then and only step up only when evidence demands it.
+Already in [🖝 What Is Artificial Intelligence?](../part-01-the-big-picture/02-intro-ai.md) we discussed a "design hierarchy" for AI. Let's pick this discussion up with a practical hierarchy of model complexity that applies to most supervised learning problems with tabular data:
+
+First, start with a baseline, see the next nugget [🖝 Baselines and the Good-Enough Bar](../part-06-reflection/03-baselines.md). Then and only step up only when evidence demands it.
 
 <p><center><img src="../media/infographics/simplicity_ladder.png" alt="" width="740px"/></center></p>
 
@@ -105,4 +107,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Generalization](01-generalization.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Baselines and the Good-Enough Bar -->](03-baselines.md)
 
-Script v1.4 (2026-06-10) · FGN
+Script v1.4.1 (2026-06-23) · FGN

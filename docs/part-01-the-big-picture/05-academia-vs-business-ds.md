@@ -75,7 +75,7 @@ At the same time, this course does not skip the inner-loop methods. You will lea
 
 For this course, I'd like to encourage you to work on a personal project alongside. The idea is to have a small but complete engineering data-science project. You define a question, assess the data, build a model, evaluate it honestly, and present the result.
 
-The benchmark-style shortcut is not the goal: We don't simply want to download a clean dataset and score a model against a preset metric. We'll try to move beyond. This is harder than standard tutorials. It is also closer to real work. We'll discuss how to find and initiate personal projects in [🖝 Part II: Personal Data-Science Projects](../part-02-ds-projects/00-index.md).
+The benchmark-style shortcut is not the goal: We don't simply want to download a clean dataset and score a model against a preset metric. We'll try to move beyond. This is harder than standard tutorials. It is also closer to real work. We'll discuss how to find and initiate personal projects in [🖝 Part II: Data-Science Projects](../part-02-ds-projects/00-index.md).
 
 ---
 
@@ -94,4 +94,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- CRISP-DM](04-crisp-dm.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part II: Data-Science Projects -->](../part-02-ds-projects/00-index.md)
 
-Script v1.4 (2026-06-10) · FGN
+Script v1.4.1 (2026-06-23) · FGN

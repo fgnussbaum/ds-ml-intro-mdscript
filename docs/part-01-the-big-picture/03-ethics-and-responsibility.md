@@ -8,7 +8,7 @@
 
 Building AI systems well includes building them *responsibly*. A model can score well on every benchmark and still cause harm in deployment. **We don't want that.** So, what does it mean to build AI responsibly? And what does society, and increasingly the law, expect from those who do?
 
-> In this nugget you will encounter three challenges that run through all of AI practice: misaligned objectives, anthropomorphism, and algorithmic bias. You will also get a first look at the EU AI Act — the world's first comprehensive AI regulation — and what its risk classification means for the systems you build.
+> In this nugget, you'll encounter three challenges that run through all of AI practice: misaligned objectives, anthropomorphism, and algorithmic bias. You'll also get a first look at the EU AI Act: the world's first comprehensive AI regulation.
 
 ## Table of Contents
 
@@ -54,7 +54,7 @@ The same dynamic is present today with large language models. Fluent, confident 
 
 For practitioners, this has a concrete implication: testing whether output "sounds right" is not the same as testing whether it *is* right. Users will over-trust outputs. Developers are not immune.
 
-> Anthropomorphism is just one category of human biases. We have many more when interacting with AI systems. I listed some of them here: [✪ Biases when working with chatbots](https://fgnussbaum.com/ai-digital/collaborating-with-chatbots/).
+> Anthropomorphism is just one category of human biases. We have many more when interacting with AI systems. I listed some of them here: [✪ Biases when working with chatbots](https://fgnussbaum.com/blog/collaborating-with-chatbots.html).
 
 Our human biases do not only affect our work with chatbots, large language models, or in fact any AI model. Some of these biases also translate into biases in AI models themselves.
 
@@ -112,4 +112,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- What Is Artificial Intelligence?](02-intro-ai.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [CRISP-DM -->](04-crisp-dm.md)
 
-Script v1.4 (2026-06-10) · FGN
+Script v1.4.1 (2026-06-23) · FGN

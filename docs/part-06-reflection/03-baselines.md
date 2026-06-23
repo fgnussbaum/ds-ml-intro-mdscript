@@ -4,7 +4,7 @@
 
 # Baselines and the Good-Enough Bar
 
-**Requires**: 
+**Requires**: [Start Simple](02-start-simple.md)
 
 **Motivation**: In [🖝 Start Simple](../part-06-reflection/02-start-simple.md) you saw that complexity must be earned: step up only when simpler models fall short. But fall short relative to what? Model development relies on two reference points that serve different purposes. First, the baseline floor: what a model that learned nothing at all would achieve. Second, there is a good-enough bar: the minimum performance the application actually requires. The first provides a development signal. The second is a deployment criterion.
 
@@ -78,4 +78,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Start Simple](02-start-simple.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Choosing and Aligning Metrics -->](04-aligning-metrics.md)
 
-Script v1.4 (2026-06-10) · FGN
+Script v1.4.1 (2026-06-23) · FGN

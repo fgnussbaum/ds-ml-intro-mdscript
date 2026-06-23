@@ -1,10 +1,10 @@
-> **Navigation:** [<-- Framing Unsupervised Learning](01-unsupervised-learning.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Anomaly Detection -->](03-anomaly-detection.md)
+> **Navigation:** [<-- Unsupervised Learning](01-unsupervised-learning.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Anomaly Detection -->](03-anomaly-detection.md)
 
 ---
 
 # k-Means Clustering
 
-**Requires**: [Framing Unsupervised Learning](01-unsupervised-learning.md) · [Hyperparameter Optimization](../part-05-supervised-learning/06-hyperparameters.md)
+**Requires**: [Unsupervised Learning](01-unsupervised-learning.md) · [Hyperparameter Optimization](../part-05-supervised-learning/06-hyperparameters.md)
 
 **Motivation**: You have a dataset, where you are interested in "natural" groups in the data: something like distinct segments in a survey population or different operating modes in a machine. You don't know yet how many groups there are or where they are. Clustering is the tool for this. How does an algorithm find groups in data without being told what a group looks like?
 
@@ -108,6 +108,6 @@ As always: Happy learning, happy life! 🫶
 
 ---
 
-> **Navigation:** [<-- Framing Unsupervised Learning](01-unsupervised-learning.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Anomaly Detection -->](03-anomaly-detection.md)
+> **Navigation:** [<-- Unsupervised Learning](01-unsupervised-learning.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Anomaly Detection -->](03-anomaly-detection.md)
 
-Script v1.4 (2026-06-10) · FGN
+Script v1.4.1 (2026-06-23) · FGN

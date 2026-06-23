@@ -2,7 +2,7 @@
 
 ---
 
-# Framing Unsupervised Learning
+# Unsupervised Learning
 
 **Requires**: [Supervised Learning](../part-05-supervised-learning/01-supervised-learning.md) · [CRISP-DM](../part-01-the-big-picture/04-crisp-dm.md)
 
@@ -115,4 +115,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [k-Means Clustering -->](02-k-means-clustering.md)
 
-Script v1.4 (2026-06-10) · FGN
+Script v1.4.1 (2026-06-23) · FGN

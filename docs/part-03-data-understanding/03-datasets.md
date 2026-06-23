@@ -6,9 +6,9 @@
 
 **Requires**: [Data Types and Measurement Scales](02-data-types.md)
 
-**Motivation**: You know that data arrives as collections of typed attributes. But before you can profile, clean, or model a dataset, you need to understand its overall shape: how many records, how many columns, and whether the structure itself creates challenges. This nugget answers: what does first contact with a new dataset look like in practice?
+**Motivation**: In [🖝 Data Types and Measurement Scales](../part-03-data-understanding/02-data-types.md), we covered "typed" attributes. Zooming out now, a **dataset** may contain many attributes. Before anything else, you need to understand the overall characteristics of a dataset: how many records, how many columns, and whether the structure itself creates challenges. This nugget answers: what does first contact with a new dataset look like in practice?
 
-> You will learn the structural properties of tabular datasets — dimensionality, sparsity, and resolution — and practice the first-inspection workflow in pandas using `df.head()`, `df.info()`, and `df.shape` on the ESS Well-Being dataset that will serve as the running example throughout this part.
+> Here, you'll learn the structural properties of tabular datasets: dimensionality, sparsity, and resolution. You'll see first-inspection workflows in Python pandas using `df.head()`, `df.info()`, and `df.shape` on the ESS Well-Being dataset.
 
 > **Note:** This nugget covers tabular data, the dominant format in this course. For non-tabular formats (images, text, time series, and spatial data), see [🖝 Beyond Tabular Data](../part-zz-appendix/01-beyond-tabular-eda.md).
 
@@ -16,12 +16,11 @@
 
 - [From Attributes to a Dataset](#from-attributes-to-a-dataset)
 - [Loading and First Inspection](#loading-and-first-inspection)
-- [Running Examples](#running-examples)
 - [Summary](#summary)
 
 ## From Attributes to a Dataset
 
-You know what a single attribute is. Now, a **dataset** is a collection of objects, each described by the same set of attributes.
+A **dataset** is a collection of objects, each described by the same set of attributes. 
 Specifically, for tabular datasets,
 
 - the rows correspond to the objects (which are also called records, data objects, instances, or observations),
@@ -48,6 +47,29 @@ Now, let's discuss some of the most important structural properties that dataset
 ---
 
 ## Loading and First Inspection
+
+Before we dive in, Let's introduce a dataset that we use throughout.
+
+_TODO: Source link._
+
+### ESS 11 Well-Being Dataset (Germany)
+
+The **European Social Survey (ESS)** is a large cross-national survey conducted every two years. The dataset used here is the German subset of Round 11, with approximately 2,400 respondents.
+
+We don't use all attributes of the dataset. Also, for presentation in this script, some attributes have been renamed for improved readability and some of their scales recoded. Here are the most important attributes that we'll use:
+
+| Column/Attribute | Scale | Values |
+|--------|-------|--------|
+| `happiness` | Quasi-continuous (0–10) | 0 = extremely unhappy, 10 = extremely happy |
+| `health` | Ordinal | 1 = very bad, 5 = very good |
+| `social_meeting_freq` | Ordinal | 1 = never, 7 = every day |
+| `gender` | Binary (nominal) | 0 = Female, 1 = Male |
+| `age_group` | Ordinal | 1 = 15–24, 7 = 75+ |
+| `religiosity` | Quasi-continuous (0–10) | 0 = not religious, 10 = very religious |
+| `close_social_ties` | Ordinal | 0 = none, 6 = 10 or more |
+| `climate_worry` | Ordinal | 1 = not at all worried, 5 = extremely worried |
+
+### First steps with a new dataset
 
 The first thing you do with any new dataset is load it and examine its structure.
 Here's a walkthrough for the **ESS 11 Well-Being (Germany)** dataset.
@@ -107,28 +129,6 @@ df.dtypes   # dtype per column
 
 ---
 
-## Running Examples
-### ESS 11 Well-Being Dataset (Germany)
-
-We'll actually use the ESS dataset from above as a running example in this script. Time to introduce it a little more:
-
-The **European Social Survey (ESS)** is a large cross-national survey conducted every two years. The dataset used here is the German subset of Round 11, with approximately 2,400 respondents.
-
-We don't use all attributes of the dataset. Also, for presentation in this script, some attributes have been renamed for improved readability and some of their scales recoded. Here are the most important attributes that we'll use:
-
-| Column/Attribute | Scale | Values |
-|--------|-------|--------|
-| `happiness` | Quasi-continuous (0–10) | 0 = extremely unhappy, 10 = extremely happy |
-| `health` | Ordinal | 1 = very bad, 5 = very good |
-| `social_meeting_freq` | Ordinal | 1 = never, 7 = every day |
-| `gender` | Binary (nominal) | 0 = Female, 1 = Male |
-| `age_group` | Ordinal | 1 = 15–24, 7 = 75+ |
-| `religiosity` | Quasi-continuous (0–10) | 0 = not religious, 10 = very religious |
-| `close_social_ties` | Ordinal | 0 = none, 6 = 10 or more |
-| `climate_worry` | Ordinal | 1 = not at all worried, 5 = extremely worried |
-
----
-
 ## Summary
 
 - A tabular dataset organizes records as rows and attributes as columns.
@@ -143,4 +143,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Data Types and Measurement Scales](02-data-types.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [EDA: Descriptive Statistics -->](04-eda-descriptive-stats.md)
 
-Script v1.4 (2026-06-10) · FGN
+Script v1.4.1 (2026-06-23) · FGN

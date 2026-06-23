@@ -21,7 +21,7 @@
 
 Data science projects do not map cleanly to the formal roles you would find in a software engineering team. Think instead in terms of responsibilities that need to be covered at some point in every project.
 
-**Domain expert.** The person who understands what the data represents. They catch when a result is physically implausible, translate the problem statement into concrete data questions, and validate whether outputs make sense. In an engineering group, this often applies to everyone — which is an advantage, not a complication.
+**Domain expert.** The person who understands what the data represents. They catch when a result is physically implausible, translate the problem statement into concrete data questions, and validate whether outputs make sense.
 
 **Technical lead.** The person who sets up the shared environment, manages the notebook or scripts, and takes point on the more demanding implementation steps. They keep the code runnable and reproducible.
 
@@ -29,7 +29,7 @@ Data science projects do not map cleanly to the formal roles you would find in a
 
 In a group of three or four, one person typically covers two of these. The important thing is that every responsibility is named explicitly rather than assumed.
 
-> **Important:** Unowned responsibilities tend to not get done (properly).
+> **Important:** Unowned responsibilities tend to not get done properly.
 
 ---
 
@@ -76,7 +76,7 @@ WHO does WHAT by WHEN.
 
 **Keep a shared decision log.** A simple document that records what you tried, what worked, and what you decided to stop doing. **This is not overhead**: it prevents relitigating decisions and repeating dead ends. It is also a direct input to your final documentation.
 
-**Timebox blockers.** When someone is stuck, set a time limit before asking the group for help. Spending three hours on a bug that a teammate resolves in ten minutes is not persistence, it is a coordination failure. Agree in advance on a reasonable threshold — often 30 minutes is enough.
+**Timebox blockers.** When someone is stuck, set a time limit before asking the group for help. Spending three hours on a bug that a teammate resolves in ten minutes is not persistence, it is a coordination failure. Agree in advance on a reasonable threshold: often 30 minutes is enough.
 
 > **Discussion:** What makes it hard to say "I'm stuck" in a group? What would make it easier?
 
@@ -96,4 +96,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Finding Your Idea](02-finding-your-idea.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Reality-Checking Your Idea -->](04-reality-checking-your-idea.md)
 
-Script v1.4 (2026-06-10) · FGN
+Script v1.4.1 (2026-06-23) · FGN

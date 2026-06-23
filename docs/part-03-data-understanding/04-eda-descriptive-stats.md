@@ -6,9 +6,9 @@
 
 **Requires**: [Datasets](03-datasets.md)
 
-**Motivation**: You have loaded the ESS dataset and know its shape and column types. The next question is: what are the typical values, and how much do they vary? This nugget introduces the summary statistics that answer those questions — and the pandas shortcut that computes them all at once.
+**Motivation**: After first inspection of a dataset as in [🖝 Datasets](../part-03-data-understanding/03-datasets.md), the next question is: what are the typical values, and how much do they vary?
 
-> You will learn to read `df.describe()` fluently and understand the statistics behind it: mean and median as measures of center, variance and standard deviation as measures of spread, and the five-number summary as a more robust alternative that the boxplot will later make visual.
+> In this nugget, you'll get to know summary statistics that answer those questions. We'll also consider Python pandas shortcuts that computes them all at once, like `df.describe()`. You'll learn about mean and median as measures of center, variance and standard deviation as measures of spread, and the five-number summary as a more robust alternative that the boxplot will later make visual.
 
 ## Table of Contents
 
@@ -138,4 +138,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Datasets](03-datasets.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [EDA: Data Quality -->](05-eda-data-quality.md)
 
-Script v1.4 (2026-06-10) · FGN
+Script v1.4.1 (2026-06-23) · FGN

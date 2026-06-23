@@ -6,9 +6,9 @@
 
 **Requires**: [EDA: Descriptive Statistics](04-eda-descriptive-stats.md)
 
-**Motivation**: Summary statistics and first inspection give you the shape of the data. But numbers that appear in a column are not necessarily correct numbers. This nugget asks: what can go wrong at the level of individual measurements, records, and the collection process itself — and how do you recognize it?
+**Motivation**: Summary statistics and first inspection give you the shape of the data. But numbers that appear in a column are not necessarily correct numbers. What can go wrong at the level of individual measurements, records, and the collection process itself? How do you recognize it?
 
-> You will learn to classify data quality problems by their source — measurement errors, collection errors, and application-level concerns — and understand the key distinction between random and systematic missingness, which determines what handling strategy is appropriate.
+> Here, you'll learn to classify data quality problems by their source: measurement errors, collection errors, and application-level concerns. You'll understand the key distinction between random and systematic missingness, which determines what handling strategy is appropriate.
 
 ## Table of Contents
 
@@ -98,4 +98,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- EDA: Descriptive Statistics](04-eda-descriptive-stats.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [EDA: Distributions -->](06-eda-distributions.md)
 
-Script v1.4 (2026-06-10) · FGN
+Script v1.4.1 (2026-06-23) · FGN

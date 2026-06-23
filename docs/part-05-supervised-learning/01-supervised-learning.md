@@ -52,7 +52,7 @@ For reference, here's an overview of both supervised learning families:
 |-|-----------|---------------|
 | Output type | Continuous number | Discrete category |
 | Evaluation metrics | MSE, RMSE, R² | Accuracy, precision, recall, F1:  [🖝 Classification Evaluation](../part-05-supervised-learning/08-classification-evaluation.md) |
-| Typical algorithms | [🖝 Linear Regression](../part-05-supervised-learning/02-linear-regression.md) | [🖝 Decision Trees](../part-05-supervised-learning/09-decision-trees.md), [🖝 Support Vector Machines](../part-zz-appendix/06-support-vector-machines.md), [🖝 Logistic Regression](../part-zz-appendix/03-logistic-regression.md) |
+| Typical algorithms | [🖝 Linear Regression](../part-05-supervised-learning/02-linear-regression.md) | [🖝 Decision Trees](../part-05-supervised-learning/09-decision-trees.md), [🖝 Support Vector Machines](../part-zz-appendix/05-support-vector-machines.md), [🖝 Logistic Regression](../part-05-supervised-learning/11-logistic-regression.md) |
 
 The line between regression and classification can sometimes blur. Ordinal ratings (1–5 Likert scale) sit somewhere between the two, and many algorithms handle both. When in doubt, ask: does the distance between output values carry meaning? A happiness score of 8 is meaningfully more than 6. A category label "supported" is not numerically greater than "not supported".
 
@@ -89,4 +89,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [Linear Regression -->](02-linear-regression.md)
 
-Script v1.4 (2026-06-10) · FGN
+Script v1.4.1 (2026-06-23) · FGN

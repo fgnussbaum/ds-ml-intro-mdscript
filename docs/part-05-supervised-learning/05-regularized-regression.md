@@ -100,4 +100,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Underfitting and Overfitting](04-under-overfitting.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Hyperparameter Optimization -->](06-hyperparameters.md)
 
-Script v1.4 (2026-06-10) · FGN
+Script v1.4.1 (2026-06-23) · FGN

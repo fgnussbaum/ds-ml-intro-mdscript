@@ -78,6 +78,7 @@ The trade-off can be seen via precision-recall curves (their behavior is best ex
 Next, **F1** is the harmonic mean of precision and recall. It penalizes extreme imbalance between the two:
 
 $$F1 = \frac{2 \cdot\text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}$$
+
 <!-- = \frac{2}{1/\text{Precision} + 1/\text{Recall}} -->
 
 A model with precision = 0.9 and recall = 0.1 gets $F1 = 0.18$. In contrast, using arithmetic mean would give use a value of 0.5.
@@ -130,4 +131,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Classification Tasks](07-classification-tasks.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Decision Trees -->](09-decision-trees.md)
 
-Script v1.4 (2026-06-10) · FGN
+Script v1.4.1 (2026-06-23) · FGN

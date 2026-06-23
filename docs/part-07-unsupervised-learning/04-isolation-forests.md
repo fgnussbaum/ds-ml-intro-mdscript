@@ -1,4 +1,4 @@
-> **Navigation:** [<-- Anomaly Detection](03-anomaly-detection.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part VIII: 3rd Pass — Deep Learning -->](../part-08-deep-learning/00-index.md)
+> **Navigation:** [<-- Anomaly Detection](03-anomaly-detection.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part VIII: Deep Learning -->](../part-08-deep-learning/00-index.md)
 
 ---
 
@@ -55,7 +55,7 @@ Two properties make isolation forests a reliable default for model-based anomaly
 - First, they make no distributional assumption: no assumed mean, spread, or shape. Therefore, they work directly on any given data.
 - Second, they operate across all features simultaneously, so they catch anomalies that are unusual only in combination: a sensor reading that looks fine in isolation but is suspicious given what other sensors report at the same time.
 
-This makes isolation forests a strong first choice when you have no labels (or very few), no strong prior on the distribution, and a moderately sized tabular dataset. When the normal pattern is highly complex or structured and isolation forests don't produce meaningful results, you may consider an autoencoder-based approach instead, see [🖝 Autoencoder-Based Detection](../part-08-deep-learning/06-autoencoder.md).
+This makes isolation forests a strong first choice when you have no labels (or very few), no strong prior on the distribution, and a moderately sized tabular dataset. When the normal pattern is highly complex or structured and isolation forests don't produce meaningful results, you may consider an autoencoder-based approach instead, see [🖝 Autoencoders](../part-08-deep-learning/06-autoencoder.md).
 
 ---
 
@@ -71,7 +71,7 @@ If you have labeled anomalies, those labels should be held out before fitting th
 
 Anomalies are rare by definition. In a dataset where 1% of observations are anomalies, predicting "normal" for every single observation achieves 99% accuracy while detecting zero anomalies. Therefore, accuracy is useless under extreme class imbalance.
 
-With a held-out labeled set, you can compute precision and recall across thresholds and choose the operating point that matches your use case (compare [🖝 Classification Evaluation](../part-05-supervised-learning/08-classification-evaluation.md)). 
+With a held-out labeled set, you can compute precision and recall across thresholds and choose the operating point that matches your use case (compare [🖝 Classification Evaluation](../part-05-supervised-learning/08-classification-evaluation.md)).
 The plot below shows an example for tuning the contamination parameter for the isolation forest on the `kddcup99` dataset:
 
 <p><center><img src="../media/plots-kddcup/kddcup99_contamination_sensitivity.png" alt="PR F1 curve" width="740px"/></center></p>
@@ -91,7 +91,7 @@ Domain validation is the correct check for any anomaly detector operating in a n
 
 > **Discussion:** You deploy an isolation forest on a manufacturing line and a domain expert reviews the first 50 flagged observations: 35 look like genuine anomalies, 15 look like normal production variance. How would you adjust your approach (e.g., the `contamination` parameter, the threshold, or the feature set)? And in what order?
 
-*See also: [🖝 Autoencoder-Based Detection](../part-08-deep-learning/06-autoencoder.md) for when the normal pattern is highly complex and a deep learning approach to reconstruction error is warranted.*
+*See also: [🖝 Autoencoders](../part-08-deep-learning/06-autoencoder.md) for when the normal pattern is highly complex and a deep learning approach to reconstruction error is warranted.*
 
 ---
 
@@ -107,6 +107,6 @@ As always: Happy learning, happy life! 🫶
 
 ---
 
-> **Navigation:** [<-- Anomaly Detection](03-anomaly-detection.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part VIII: 3rd Pass — Deep Learning -->](../part-08-deep-learning/00-index.md)
+> **Navigation:** [<-- Anomaly Detection](03-anomaly-detection.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part VIII: Deep Learning -->](../part-08-deep-learning/00-index.md)
 
-Script v1.4 (2026-06-10) · FGN
+Script v1.4.1 (2026-06-23) · FGN

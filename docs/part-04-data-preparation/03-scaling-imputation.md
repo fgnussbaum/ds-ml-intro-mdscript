@@ -95,12 +95,15 @@ Min-max scaling, also called min-max normalization, scales features to have new 
 
 Min-max scaling is a linear transformation.
 The most common special case maps values to the interval $[0, 1]$ using the formula
+
 $$x' = \frac{x - \min_x}{\max_x - \min_x}.$$
+
 The difference in the enumerator offsets the whole feature to have min=0, then we normalize by the range.
 
 More generally, we can map a feature $x$ to a target range $[a,b]$ using the minimum and maximum of the original feature column $x$:
 
 $$x' = \frac{x - \min_x}{\max_x - \min_x}(b - a) + a,$$
+
 The first term is still the same and scales to $[0,1]$, then we apply another linear transformation to obtain the new range $[a, b]$.
 
 Min-max scaling preserves the shape of the original distribution. However:
@@ -131,4 +134,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Structural Cleaning and Encoding](02-cleaning-encoding.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Data Splits -->](04-data-splits.md)
 
-Script v1.4 (2026-06-10) · FGN
+Script v1.4.1 (2026-06-23) · FGN

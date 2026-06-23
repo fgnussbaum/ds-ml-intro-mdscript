@@ -19,7 +19,7 @@
 
 In a nutshell, an AI system takes inputs, performs mathematical computations (more or less black box), and produces outputs.
 
-![AI system: inputs → model → outputs](../media/selfmade/ai-input-blackbox-output.jpg)
+<p><center><img src="../media/selfmade/ai-input-blackbox-output.jpg" alt="AI system: inputs → model → outputs" width="740px"/></center></p>
 
 What distinguishes different systems is *how* the computations are carried out. Here's an overview of three nested key concepts:
 
@@ -38,9 +38,11 @@ The next section explains how to approach problems which call for data-driven so
 ## A Design Hierarchy: From Rules to AI
 
 ### Simplicity First. Always.
-When building a data-driven solution, the first question to ask is not "Which model should I use?". It is rather: "How simple can I make this?"
+When building a data-driven solution, the first question to ask is not "Which model should I use?". It is rather: "How simple can I make this?".
 
 **Why?** Simple solutions are easier to explain, easier to debug, and easier to trust. A model that no one can interpret is a liability the moment something goes wrong. Therefore, start as simple as the problem allows, and only add complexity when the simpler approach breaks down.
+
+This is such an important principle that we'll revisit it later in [🖝 Start Simple](../part-06-reflection/02-start-simple.md). Here, let's have a first look at a design hierarchy.
 
 ### Rule-Based Systems
 
@@ -70,7 +72,7 @@ When you combine statistics, engineering, and domain judgment along with ML meth
 
 In this course you will use data-science and machine learning methods as _instruments_. Understanding what they do, when to use them, and how they can fail matters most.
 
-Now, to understand why and how these methods ermerged, a brief look at the field's history helps.
+Now, to understand why and how these methods ermerged, here's a brief look at the field's history.
 
 ---
 
@@ -84,13 +86,15 @@ What eventually turned the field around was data and compute. Larger datasets an
 
 Key milestones worth knowing:
 
-- **1950** — Alan Turing proposes the Turing Test as an operational substitute for the question "Can a machine think?"
-- **1956** — Dartmouth Workshop coins the term "artificial intelligence."
-- **1960s–1980s** — Logic-based and rule-based systems; expert systems peak, then hit limits.
-- **1986** — Backpropagation algorithm revives neural network research.
-- **1990s–2000s** — Statistical machine learning (SVMs, random forests) becomes dominant in practice.
-- **2012** — Deep convolutional networks win the ImageNet challenge by a large margin; the deep learning era begins.
-- **2017–present** — Transformer architectures, large language models, generative AI.
+| Time | Description |
+|---|---|
+| 1950 | Alan Turing proposes the Turing Test as an operational substitute for the question "Can a machine think?" |
+| 1956 | Dartmouth Workshop coins the term "artificial intelligence." |
+| 1960s–1980s | Logic-based and rule-based systems; expert systems peak, then hit limits. |
+| 1986 | Backpropagation algorithm revives neural network research. |
+| 1990s–2000s | Statistical machine learning (SVMs, random forests) becomes dominant in practice. |
+| 2012 | Deep convolutional networks win the ImageNet challenge by a large margin; the deep learning era begins. |
+| 2017–present | Transformer architectures, large language models, generative AI. |
 
 For your work, the practical upshot is this: you are inheriting a generation of tools that have been tested on serious problems. You do not need to understand their full history to use them well, but knowing it helps you recognize why certain design choices were made and where the limits are.
 
@@ -98,9 +102,9 @@ For your work, the practical upshot is this: you are inheriting a generation of 
 
 ## Summary
 
-- AI, ML, deep learning are nested concepts — not synonyms. The table in "Key Concepts at a Glance" is the reference.
+- AI, ML, deep learning are nested concepts, not synonyms. The table in "Key Concepts at a Glance" is the reference.
 - Start as simple as the problem allows: rule-based systems are transparent and fast. Escalate to ML only when rules become unmaintainable.
-- Among solutions that perform well enough, prefer the one that is easiest to interpret — complexity must be justified.
+- Among solutions that perform well enough, prefer the one that is easiest to interpret: Complexity must be justified.
 - AI has passed through cycles of optimism and setback. Increasing availability of data and compute cause the increasing success from the 2010s onward.
 
 As always: Happy learning, happy life! 🫶
@@ -110,4 +114,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Course Orientation](01-course-orientation.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [AI Ethics: A Primer -->](03-ethics-and-responsibility.md)
 
-Script v1.4 (2026-06-10) · FGN
+Script v1.4.1 (2026-06-23) · FGN

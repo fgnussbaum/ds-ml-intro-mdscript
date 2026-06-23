@@ -1,4 +1,4 @@
-> **Navigation:** [<-- Part V: 1st Pass - Supervised Learning](../part-05-supervised-learning/00-index.md) | [Main Index](../index.md) | [Part VII: 2nd Pass - Unsupervised Learning -->](../part-07-unsupervised-learning/00-index.md)
+> **Navigation:** [<-- Part V: Supervised Learning](../part-05-supervised-learning/00-index.md) | [Main Index](../index.md) | [Part VII: Unsupervised Learning -->](../part-07-unsupervised-learning/00-index.md)
 
 ---
 
@@ -14,10 +14,10 @@ After your first end-to-end pass through supervised learning, this part steps ba
 |---|--------|---------------|
 | 1 | [Generalization](01-generalization.md) | [Classification Tasks](../part-05-supervised-learning/07-classification-tasks.md) · [Data Splits](../part-04-data-preparation/04-data-splits.md) · [Underfitting and Overfitting](../part-05-supervised-learning/04-under-overfitting.md) |
 | 2 | [Start Simple](02-start-simple.md) | [Generalization](01-generalization.md) |
-| 3 | [Baselines and the Good-Enough Bar](03-baselines.md) | `simplicity-first` |
+| 3 | [Baselines and the Good-Enough Bar](03-baselines.md) | [Start Simple](02-start-simple.md) |
 | 4 | [Choosing and Aligning Metrics](04-aligning-metrics.md) | [Baselines and the Good-Enough Bar](03-baselines.md) · [Classification Evaluation](../part-05-supervised-learning/08-classification-evaluation.md) |
-| 5 | [Explainability](05-explainability.md) | `simplicity-first` · [Random Forests](../part-05-supervised-learning/10-random-forests.md) |
+| 5 | [Explainability](05-explainability.md) | [Start Simple](02-start-simple.md) · [Random Forests](../part-05-supervised-learning/10-random-forests.md) |
 
 ---
 
-Script v1.4 (2026-06-10) · FGN
+Script v1.4.1 (2026-06-23) · FGN

@@ -6,9 +6,9 @@
 
 **Requires**: [EDA: Distributions](06-eda-distributions.md)
 
-**Motivation**: Histograms and boxplots describe each variable in isolation. But the interesting questions in data science are often relational: do people who rate their health higher also tend to report more happiness? Does age relate to climate worry? Does social contact matter for well-being? Answering these questions requires tools for examining **interactions** of variables.
+**Motivation**: Histograms and boxplots from [🖝 EDA: Distributions](../part-03-data-understanding/06-eda-distributions.md) describe variables in isolation. But the interesting questions in data science are often relational: Do people who rate their health higher also tend to report more happiness? Does age relate to climate worry? Does social contact matter for well-being? Answering these questions requires tools for examining **interactions** of variables.
 
-> In this nugget you will learn to read and construct scatter plots and pair plots for exploring pairwise relationships, quantify those relationships with Pearson correlation, and know when Spearman is the better choice.
+> In this nugget you'll learn to read and construct scatter plots and pair plots for exploring pairwise relationships, quantify those relationships with Pearson correlation, and know when Spearman is the better choice.
 
 ## Table of Contents
 
@@ -30,7 +30,12 @@ Here's an example for the seaborn Penguins dataset:
 
 In Python you can use `plt.scatter(x_var, y_var, ...)` from `matplotlib` to draw a scatter plot.
 
-Reading a scatter plot: look for direction (do points slope up or down?), clusters (are there distinct subgroups that diverge from the overall trend?), outliers (isolated points far from the main cloud), and shape (linear, curved, or absent). TODO: continuous data example
+**Reading a scatter plot:** look for
+
+- direction (do points slope up or down?),
+- clusters (are there distinct subgroups that diverge from the overall trend?),
+- outliers (isolated points far from the main cloud), and
+- shape (linear, curved, or absent).
 
 <!-- The relationship is: slope = r × (std_health / std_age). The Pearson r is the slope you'd get if both variables were z-scored first. The sign and direction of the trend line are fully determined by r, just rescaled to the raw units of the axes.-->
 
@@ -119,4 +124,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- EDA: Distributions](06-eda-distributions.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Data Understanding: Best Practices -->](08-eda-best-practices.md)
 
-Script v1.4 (2026-06-10) · FGN
+Script v1.4.1 (2026-06-23) · FGN
