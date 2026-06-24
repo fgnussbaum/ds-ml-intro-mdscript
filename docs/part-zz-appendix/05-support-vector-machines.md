@@ -12,6 +12,8 @@
 
 > **Context:** This nugget covers **classification**. SVMs can also be applied to regression (support vector regression), but the classification case is the canonical use and the focus here.
 
+TBD: Rework
+
 ## Table of Contents
 
 - [The Maximum-Margin Classifier: The Intuition](#the-maximum-margin-classifier-the-intuition)
@@ -80,4 +82,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Statistical Significance](04-statistical-significance.md) | [Part Index](00-index.md) | [Main Index](../index.md)
 
-Script v1.4.1 (2026-06-23) · FGN
+Script v1.5 (2026-06-24) · FGN

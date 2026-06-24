@@ -72,6 +72,10 @@ nav:
     - k-Means Clustering: part-07-unsupervised-learning/02-k-means-clustering.md
     - Anomaly Detection: part-07-unsupervised-learning/03-anomaly-detection.md
     - Isolation Forests: part-07-unsupervised-learning/04-isolation-forests.md
+  - "Part VIII: Deep Learning":
+    - Overview: part-08-deep-learning/00-index.md
+    - When Shallow Models Fail: part-08-deep-learning/01-when-shallow-fails.md
+    - Building Blocks of Deep Networks: part-08-deep-learning/02-deep-networks.md
   - Appendix:
     - Overview: part-zz-appendix/00-index.md
     - Beyond Tabular Data: part-zz-appendix/01-beyond-tabular-eda.md

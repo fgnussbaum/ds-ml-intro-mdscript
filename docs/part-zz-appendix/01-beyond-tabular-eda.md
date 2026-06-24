@@ -8,6 +8,8 @@
 
 > You will learn to recognize the structural properties of images, video, text, time series, and spatial data, understand why each format requires tools beyond standard tabular workflows. For each type you'll see what the EDA mindset looks like when applied to the respective type of data.
 
+TBD: Rework
+
 ## Table of Contents
 
 - [When Tabular Isn't Enough](#when-tabular-isnt-enough)
@@ -121,4 +123,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [Preparing Non-Tabular Data -->](02-beyond-tabular-prep.md)
 
-Script v1.4.1 (2026-06-23) · FGN
+Script v1.5 (2026-06-24) · FGN

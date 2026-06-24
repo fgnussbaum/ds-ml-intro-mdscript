@@ -111,4 +111,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Choosing and Aligning Metrics](04-aligning-metrics.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part VII: Unsupervised Learning -->](../part-07-unsupervised-learning/00-index.md)
 
-Script v1.4.1 (2026-06-23) · FGN
+Script v1.5 (2026-06-24) · FGN

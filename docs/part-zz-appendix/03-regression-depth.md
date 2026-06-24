@@ -12,6 +12,8 @@
 
 > **Context:** This nugget extends [🖝 Linear Regression](../part-05-supervised-learning/02-linear-regression.md). You should be comfortable with fitting a multi-variable model and reading MSE and RMSE before working through this material.
 
+TBD: Rework
+
 ## Table of Contents
 
 - [R²: What the Number Really Means](#r²-what-the-number-really-means)
@@ -123,4 +125,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Preparing Non-Tabular Data](02-beyond-tabular-prep.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Statistical Significance -->](04-statistical-significance.md)
 
-Script v1.4.1 (2026-06-23) · FGN
+Script v1.5 (2026-06-24) · FGN

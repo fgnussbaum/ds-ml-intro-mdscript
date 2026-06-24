@@ -134,4 +134,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Structural Cleaning and Encoding](02-cleaning-encoding.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Data Splits -->](04-data-splits.md)
 
-Script v1.4.1 (2026-06-23) · FGN
+Script v1.5 (2026-06-24) · FGN

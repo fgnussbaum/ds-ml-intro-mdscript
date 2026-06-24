@@ -23,4 +23,4 @@ Before you can train a model, you need to understand what you have. This part bu
 
 ---
 
-Script v1.4.1 (2026-06-23) · FGN
+Script v1.5 (2026-06-24) · FGN

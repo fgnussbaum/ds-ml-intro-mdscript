@@ -138,4 +138,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Baselines and the Good-Enough Bar](03-baselines.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Explainability -->](05-explainability.md)
 
-Script v1.4.1 (2026-06-23) · FGN
+Script v1.5 (2026-06-24) · FGN

@@ -68,4 +68,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Working as a Team on a DS Project](03-team-project-basics.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [What a Finished Project Looks Like -->](05-project-scope.md)
 
-Script v1.4.1 (2026-06-23) · FGN
+Script v1.5 (2026-06-24) · FGN

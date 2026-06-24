@@ -12,6 +12,8 @@
 
 > **Context:** This nugget covers **regression** — specifically, how to assess whether the coefficients your model learned are trustworthy. The same hypothesis-testing framework applies to classification settings, but the connection to regression coefficients is the most direct.
 
+TBD: Rework
+
 ## Table of Contents
 
 - [p-Values and the Null Hypothesis](#p-values-and-the-null-hypothesis)
@@ -80,4 +82,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Regression: Interpretation and Assumptions](03-regression-depth.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Support Vector Machines -->](05-support-vector-machines.md)
 
-Script v1.4.1 (2026-06-23) · FGN
+Script v1.5 (2026-06-24) · FGN

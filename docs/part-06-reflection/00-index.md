@@ -20,4 +20,4 @@ After your first end-to-end pass through supervised learning, this part steps ba
 
 ---
 
-Script v1.4.1 (2026-06-23) · FGN
+Script v1.5 (2026-06-24) · FGN

@@ -78,4 +78,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Start Simple](02-start-simple.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Choosing and Aligning Metrics -->](04-aligning-metrics.md)
 
-Script v1.4.1 (2026-06-23) · FGN
+Script v1.5 (2026-06-24) · FGN

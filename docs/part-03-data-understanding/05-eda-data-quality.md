@@ -98,4 +98,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- EDA: Descriptive Statistics](04-eda-descriptive-stats.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [EDA: Distributions -->](06-eda-distributions.md)
 
-Script v1.4.1 (2026-06-23) · FGN
+Script v1.5 (2026-06-24) · FGN

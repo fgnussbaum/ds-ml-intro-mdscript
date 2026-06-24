@@ -10,6 +10,8 @@
 
 > You will see how each non-tabular data type requires a specific conversion step before any model can operate on it, how the fit-on-train discipline from [🖝 Data Splits](../part-04-data-preparation/04-data-splits.md) carries through unchanged, and where sklearn pipelines extend naturally versus where you need different tooling.
 
+TBD: Rework
+
 ## Table of Contents
 
 - [Images and Video](#images-and-video)
@@ -166,4 +168,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Beyond Tabular Data](01-beyond-tabular-eda.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Regression: Interpretation and Assumptions -->](03-regression-depth.md)
 
-Script v1.4.1 (2026-06-23) · FGN
+Script v1.5 (2026-06-24) · FGN

@@ -86,4 +86,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Why Data Work Dominates](01-why-data-work.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Datasets -->](03-datasets.md)
 
-Script v1.4.1 (2026-06-23) · FGN
+Script v1.5 (2026-06-24) · FGN

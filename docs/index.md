@@ -13,7 +13,7 @@ Jump to: [Course Parts](#course-parts) · [Additional Notes](#additional-notes-a
 
 ## Course Parts
 
-This course is organized in parts. Each parts has several "nuggets": small digestable pieces, usually focussing on one key topic.
+This course is organized in parts. Each parts has several "nuggets": small digestible pieces, usually focussing on one key topic.
 
 | Part | Topics | Nuggets |
 |------|--------|---------|
@@ -80,3 +80,5 @@ Saying such big words, I hope you'll find this script generally to be a good exa
 ---
 
 As always: Happy learning, happy life! 🫶
+
+Frank G Nussbaum

@@ -131,4 +131,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Classification Tasks](07-classification-tasks.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Decision Trees -->](09-decision-trees.md)
 
-Script v1.4.1 (2026-06-23) · FGN
+Script v1.5 (2026-06-24) · FGN

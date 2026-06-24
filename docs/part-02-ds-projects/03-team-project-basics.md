@@ -96,4 +96,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Finding Your Idea](02-finding-your-idea.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Reality-Checking Your Idea -->](04-reality-checking-your-idea.md)
 
-Script v1.4.1 (2026-06-23) · FGN
+Script v1.5 (2026-06-24) · FGN

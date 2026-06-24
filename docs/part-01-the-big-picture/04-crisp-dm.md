@@ -136,4 +136,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- AI Ethics: A Primer](03-ethics-and-responsibility.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Academia vs. Business Data Science -->](05-academia-vs-business-ds.md)
 
-Script v1.4.1 (2026-06-23) · FGN
+Script v1.5 (2026-06-24) · FGN

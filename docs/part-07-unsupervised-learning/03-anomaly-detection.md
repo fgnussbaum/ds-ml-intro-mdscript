@@ -111,4 +111,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- k-Means Clustering](02-k-means-clustering.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Isolation Forests -->](04-isolation-forests.md)
 
-Script v1.4.1 (2026-06-23) · FGN
+Script v1.5 (2026-06-24) · FGN

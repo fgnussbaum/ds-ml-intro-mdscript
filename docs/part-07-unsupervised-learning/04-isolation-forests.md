@@ -109,4 +109,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Anomaly Detection](03-anomaly-detection.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part VIII: Deep Learning -->](../part-08-deep-learning/00-index.md)
 
-Script v1.4.1 (2026-06-23) · FGN
+Script v1.5 (2026-06-24) · FGN
