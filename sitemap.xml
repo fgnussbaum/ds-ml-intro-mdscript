@@ -2,274 +2,286 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/index.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-01-the-big-picture/00-index.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-01-the-big-picture/01-course-orientation.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-01-the-big-picture/02-intro-ai.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-01-the-big-picture/03-ethics-and-responsibility.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-01-the-big-picture/04-crisp-dm.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-01-the-big-picture/05-academia-vs-business-ds.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-02-ds-projects/00-index.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-02-ds-projects/01-why-a-project.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-02-ds-projects/02-finding-your-idea.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-02-ds-projects/03-team-project-basics.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-02-ds-projects/04-reality-checking-your-idea.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-02-ds-projects/05-project-scope.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-03-data-understanding/00-index.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-03-data-understanding/01-why-data-work.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-03-data-understanding/02-data-types.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-03-data-understanding/03-datasets.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-03-data-understanding/04-eda-descriptive-stats.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-03-data-understanding/05-eda-data-quality.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-03-data-understanding/06-eda-distributions.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-03-data-understanding/07-eda-correlation-visualizations.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-03-data-understanding/07-eda-correlations.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-03-data-understanding/08-eda-best-practices.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-04-data-preparation/00-index.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-04-data-preparation/01-feature-engineering.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-04-data-preparation/02-cleaning-encoding.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-04-data-preparation/03-scaling-imputation.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-04-data-preparation/04-data-splits.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-04-data-preparation/04-prep-best-practices.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-04-data-preparation/05-prep-checklist.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-04-data-preparation/06-prep-principles.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-05-supervised-learning/00-index.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-05-supervised-learning/01-supervised-learning.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-05-supervised-learning/02-linear-regression.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-05-supervised-learning/02-train-test-split.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-05-supervised-learning/03-gradient-descent.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-05-supervised-learning/03-linear-regression.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-05-supervised-learning/04-gradient-descent.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-05-supervised-learning/04-under-overfitting.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-05-supervised-learning/05-regularized-regression.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-05-supervised-learning/06-hyperparameter-optimization.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-05-supervised-learning/06-hyperparameters.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-05-supervised-learning/07-classification-tasks.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-05-supervised-learning/08-classification-evaluation.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-05-supervised-learning/09-decision-trees.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-05-supervised-learning/10-random-forests.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-05-supervised-learning/11-logistic-regression.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-06-reflection/00-index.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-06-reflection/01-generalization.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-06-reflection/02-start-simple.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-06-reflection/03-baselines.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-06-reflection/04-aligning-metrics.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-06-reflection/05-explainability.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-07-unsupervised-learning/00-index.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-07-unsupervised-learning/01-unsupervised-learning.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-07-unsupervised-learning/02-k-means-clustering.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-07-unsupervised-learning/03-anomaly-detection.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-07-unsupervised-learning/04-isolation-forests.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
+    </url>
+    <url>
+         <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-08-deep-learning/00-index.html</loc>
+         <lastmod>2026-06-24</lastmod>
+    </url>
+    <url>
+         <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-08-deep-learning/01-when-shallow-fails.html</loc>
+         <lastmod>2026-06-24</lastmod>
+    </url>
+    <url>
+         <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-08-deep-learning/02-deep-networks.html</loc>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-zz-appendix/00-index.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-zz-appendix/01-beyond-tabular-eda.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-zz-appendix/02-beyond-tabular-prep.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-zz-appendix/03-logistic-regression.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-zz-appendix/03-regression-depth.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-zz-appendix/04-regression-depth.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-zz-appendix/04-statistical-significance.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-zz-appendix/05-statistical-significance.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-zz-appendix/05-support-vector-machines.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
     <url>
          <loc>https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-zz-appendix/06-support-vector-machines.html</loc>
-         <lastmod>2026-06-23</lastmod>
+         <lastmod>2026-06-24</lastmod>
     </url>
 </urlset>

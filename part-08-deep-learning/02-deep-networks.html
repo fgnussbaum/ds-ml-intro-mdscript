@@ -8,9 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-zz-appendix/05-statistical-significance.html">
+        <link rel="canonical" href="https://fgnussbaum.github.io/ds-ml-intro-mdscript/part-08-deep-learning/02-deep-networks.html">
       
       
+        <link rel="prev" href="01-when-shallow-fails.html">
+      
+      
+        <link rel="next" href="../part-zz-appendix/00-index.html">
       
       
         
@@ -21,7 +25,7 @@
     
     
       
-        <title>05 statistical significance - Intro to Data Science & ML</title>
+        <title>Building Blocks of Deep Networks - Intro to Data Science & ML</title>
       
     
     
@@ -82,7 +86,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#statistical-significance" class="md-skip">
+        <a href="#building-blocks-of-deep-networks" class="md-skip">
           Skip to content
         </a>
       
@@ -118,7 +122,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              05 statistical significance
+              Building Blocks of Deep Networks
             
           </span>
         </div>
@@ -2044,18 +2048,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
         
           
           <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
@@ -2076,7 +2082,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
@@ -2094,7 +2100,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-08-deep-learning/00-index.html" class="md-nav__link">
+      <a href="00-index.html" class="md-nav__link">
         
   
   
@@ -2122,7 +2128,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../part-08-deep-learning/01-when-shallow-fails.html" class="md-nav__link">
+      <a href="01-when-shallow-fails.html" class="md-nav__link">
         
   
   
@@ -2147,10 +2153,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../part-08-deep-learning/02-deep-networks.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Building Blocks of Deep Networks
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="02-deep-networks.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2166,6 +2199,98 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#table-of-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Table of Contents
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#single-neuron-weighted-sum-and-activation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Single Neuron: Weighted Sum and Activation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#layers-and-network-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Layers and Network Architecture
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Layers and Network Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#architecture-choices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Architecture choices
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#training-backpropagation-and-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Training: Backpropagation and Optimization
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2232,7 +2357,7 @@
   
   
     <li class="md-nav__item">
-      <a href="00-index.html" class="md-nav__link">
+      <a href="../part-zz-appendix/00-index.html" class="md-nav__link">
         
   
   
@@ -2260,7 +2385,7 @@
   
   
     <li class="md-nav__item">
-      <a href="01-beyond-tabular-eda.html" class="md-nav__link">
+      <a href="../part-zz-appendix/01-beyond-tabular-eda.html" class="md-nav__link">
         
   
   
@@ -2288,7 +2413,7 @@
   
   
     <li class="md-nav__item">
-      <a href="02-beyond-tabular-prep.html" class="md-nav__link">
+      <a href="../part-zz-appendix/02-beyond-tabular-prep.html" class="md-nav__link">
         
   
   
@@ -2316,7 +2441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="03-regression-depth.html" class="md-nav__link">
+      <a href="../part-zz-appendix/03-regression-depth.html" class="md-nav__link">
         
   
   
@@ -2344,7 +2469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="04-statistical-significance.html" class="md-nav__link">
+      <a href="../part-zz-appendix/04-statistical-significance.html" class="md-nav__link">
         
   
   
@@ -2372,7 +2497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="05-support-vector-machines.html" class="md-nav__link">
+      <a href="../part-zz-appendix/05-support-vector-machines.html" class="md-nav__link">
         
   
   
@@ -2438,10 +2563,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#p-values-and-the-null-hypothesis" class="md-nav__link">
+  <a href="#single-neuron-weighted-sum-and-activation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        p-Values and the Null Hypothesis
+        Single Neuron: Weighted Sum and Activation
       
     </span>
   </a>
@@ -2449,21 +2574,38 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#type-i-and-type-ii-errors-in-a-regression-context" class="md-nav__link">
+  <a href="#layers-and-network-architecture" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Type I and Type II Errors in a Regression Context
+        Layers and Network Architecture
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Layers and Network Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#architecture-choices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Architecture choices
       
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#when-is-a-regression-result-meaningful" class="md-nav__link">
+  <a href="#training-backpropagation-and-optimization" class="md-nav__link">
     <span class="md-ellipsis">
       
-        When Is a Regression Result Meaningful?
+        Training: Backpropagation and Optimization
       
     </span>
   </a>
@@ -2499,82 +2641,91 @@
 
 
 <blockquote>
-<p><strong>Navigation:</strong> <a href="04-regression-depth.html">&lt;-- Regression: Interpretation and Assumptions</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="06-support-vector-machines.html">Support Vector Machines --&gt;</a></p>
+<p><strong>Navigation:</strong> <a href="01-when-shallow-fails.html">&lt;-- When Shallow Models Fail</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="03-cnns.md">Convolutional Neural Networks (CNNs) --&gt;</a></p>
 </blockquote>
 <hr />
-<h1 id="statistical-significance">Statistical Significance</h1>
-<p><strong>Requires</strong>: <a href="../part-05-supervised-learning/02-linear-regression.html">Linear Regression</a></p>
-<p><strong>Motivation</strong>: Your regression model says that a one-point increase in self-rated health corresponds to a 0.4-point increase in happiness. But is that relationship real, or could it have appeared by chance in this particular sample of a few thousand respondents? A model metric like <span class="arithmatex">\(R^2\)</span> tells you how well the model fits the data. A significance test tells you whether the fitted pattern is likely to persist in new data, or whether it is an artifact of sampling noise.</p>
+<h1 id="building-blocks-of-deep-networks">Building Blocks of Deep Networks</h1>
+<p><strong>Requires</strong>: <a href="01-when-shallow-fails.html">When Shallow Models Fail</a></p>
+<p><strong>Motivation</strong>: In <a href="01-when-shallow-fails.html">🖝 When Shallow Models Fail</a>, you saw that learning features is usually necessary for raw images, audio, and sequences. "Learning features automatically" needs appropriate models. What is the smallest building block of a neural network, how do they gain the ability to learn complex features, and how do models update based on prediction errors?</p>
 <blockquote>
-<p>In this optional nugget you will learn what a p-value means, how Type I and Type II errors arise in a regression context, and when statistical significance translates — and when it does not translate — to practical usefulness.</p>
-<p><strong>Context:</strong> This nugget covers <strong>regression</strong> — specifically, how to assess whether the coefficients your model learned are trustworthy. The same hypothesis-testing framework applies to classification settings, but the connection to regression coefficients is the most direct.</p>
+<p>You'll see how a single neuron computes a prediction, how stacking neurons into layers builds increasingly abstract representations, and how backpropagation and gradient descent are used for adjusting weights (training). You will also meet some common techniques applied during training: dropout and early stopping. Both control overfitting in deep networks.</p>
+<p><strong>Interactive demo note:</strong> You can play around with a simple classification neural network in the <strong>Neural Networks</strong> demo from my <a href="https://github.com/fgnussbaum/ds-ml-interactive-demos">✪ interactive data-science demos</a> repository.</p>
 </blockquote>
 <h2 id="table-of-contents">Table of Contents</h2>
 <ul>
-<li><a href="#p-values-and-the-null-hypothesis">p-Values and the Null Hypothesis</a></li>
-<li><a href="#type-i-and-type-ii-errors-in-a-regression-context">Type I and Type II Errors in a Regression Context</a></li>
-<li><a href="#when-is-a-regression-result-meaningful">When Is a Regression Result Meaningful?</a></li>
+<li><a href="#single-neuron-weighted-sum-and-activation">Single Neuron: Weighted Sum and Activation</a></li>
+<li><a href="#layers-and-network-architecture">Layers and Network Architecture</a></li>
+<li><a href="#training-backpropagation-and-optimization">Training: Backpropagation and Optimization</a></li>
 <li><a href="#summary">Summary</a></li>
 </ul>
-<h2 id="p-values-and-the-null-hypothesis">p-Values and the Null Hypothesis</h2>
-<p>For any regression coefficient <span class="arithmatex">\(w_j\)</span>, you can ask: "What if the true effect were zero? How likely is it that I would observe a coefficient this large just by chance in a random sample?"</p>
-<p>This is the <strong>null hypothesis</strong> <span class="arithmatex">\(H_0\)</span>: <span class="arithmatex">\(w_j = 0\)</span> — the feature has no relationship with the target in the population. The <strong>p-value</strong> is the probability of observing a coefficient at least as extreme as <span class="arithmatex">\(w_j\)</span> if <span class="arithmatex">\(H_0\)</span> were true.</p>
-<p>A small p-value means: it would be very unlikely to see this result if there were truly no effect. By convention, a threshold <span class="arithmatex">\(\alpha = 0.05\)</span> is used. If the p-value is below 0.05, you <strong>reject</strong> <span class="arithmatex">\(H_0\)</span> and call the effect statistically significant. If it is above 0.05, you <strong>fail to reject</strong> <span class="arithmatex">\(H_0\)</span> — you cannot conclude there is an effect, but you also have not proved there is none.</p>
-<p>Most regression frameworks report p-values for each coefficient automatically. Python's <code>statsmodels</code> includes them in the regression summary table. Scikit-learn's <code>LinearRegression</code> does not compute them by default — use <code>statsmodels</code> when you need significance tests.</p>
+<h2 id="single-neuron-weighted-sum-and-activation">Single Neuron: Weighted Sum and Activation</h2>
+<p>A <strong>neuron</strong> takes a vector of inputs <span class="arithmatex">\(\mathbf{x} = (x_1, x_2, \ldots, x_n)\)</span>, multiplies each input by a <strong>weight</strong> <span class="arithmatex">\(w_i\)</span>, sums the results, adds a <strong>bias</strong> <span class="arithmatex">\(b\)</span>, and passes the sum through a nonlinear function:</p>
+<div class="arithmatex">\[\begin{align*}
+z &amp;= w_1 x_1 + w_2 x_2 + \cdots + w_n x_n + b = \mathbf{w}^\top \mathbf{x} + b \\
+a &amp;= f(z)
+\end{align*}\]</div>
+<p>The function <span class="arithmatex">\(f\)</span> is called the <strong>activation function</strong>. It is the nonlinear element of deep networks. Without it, stacking neurons would still produce a linear model because any combination of weighted sums is itself a weighted sum. However, nonlinearity is crucial for being able to represent complex functions.</p>
+<p>Two activation functions dominate modern practice:</p>
+<ul>
+<li><strong>ReLU</strong> (Rectified Linear Unit): <span class="arithmatex">\(f(z) = \max(0, z)\)</span>. Outputs <span class="arithmatex">\(z\)</span> for positive inputs, zero otherwise. Fast to compute, does not saturate for positive inputs, and trains well in deep networks. The practical default for hidden layers.</li>
+<li><strong>Sigmoid</strong>: <span class="arithmatex">\(f(z) = 1 / (1 + e^{-z})\)</span>, which squashes output to <span class="arithmatex">\((0, 1)\)</span>. Used for output neurons in binary classification to produce a probability score. It is rarely used elsewhere in neural networks today because gradients become very small for large <span class="arithmatex">\(|z|\)</span> (the saturation problem). A single neuron with a sigmoid output is essentially <a href="../part-05-supervised-learning/11-logistic-regression.html">🖝 Logistic Regression</a>.</li>
+<li><strong>Tanh</strong>: <span class="arithmatex">\(f(z) = \tanh(z)\)</span>, which squashes output to <span class="arithmatex">\((-1, 1)\)</span>. Zero-centered (unlike sigmoid), which can make learning slightly faster. Like sigmoid, it saturates for large <span class="arithmatex">\(|z|\)</span>, so it is less common in deep hidden layers but still used in some recurrent networks.</li>
+</ul>
+<p><center><img src="../media/plots/activation_functions.png" alt="side-by-side plots of sigmoid, ReLU, tanh activation functions" width="780px"/></center></p>
+
+<p>With an activation function, the nonlinearity is already there. However, the power of neural networks comes from combining many neurons in layers.</p>
+<hr />
+<h2 id="layers-and-network-architecture">Layers and Network Architecture</h2>
+<p>When neurons are stacked side by side they form a <strong>layer</strong>. The output of one layer becomes the input to the next. A network with one or more intermediate layers between the inputs and the output is called a <strong>deep network</strong>, where "deep" refers to the number of layers.</p>
+<p>Here's an example from the interactive demo: a fully connected network for binary classification, with one input layer of <span class="arithmatex">\(2\)</span> features, two hidden layers of neurons, and one output neuron with a sigmoid activation. The output is the model's predicted probability that the input belongs to the positive class.</p>
+<p><center><img src="../media/demos-screenshots/neural-network.png" alt="simple neural network" width="740px"/></center></p>
+
+<p>To compute the output of a neural network, a <strong>forward pass</strong> is used. Computations flow from left to right: each layer transforms its input into a new representation by applying its weights and activation. Each transformation extracts more abstract structure from the input.</p>
+<h3 id="architecture-choices">Architecture choices</h3>
+<p>The example above is just one of many. For building actual applications with neurals networks, there are many architectures to choose frmo. Some work better than others, some are designed for specific prediction tasks and data domains.</p>
 <blockquote>
-<p><strong>Note:</strong> "Reject <span class="arithmatex">\(H_0\)</span> at <span class="arithmatex">\(\alpha = 0.05\)</span>" is a decision rule, not a probability that the effect is real. It means: "If there were no effect, I would see a result this extreme in at most 5% of random samples." It says nothing about whether the effect is large or practically important.</p>
+<p>The architecture part of deep learning is essentially just about stacking together highly parametrized components to form expressive trainable functions. This is done in a sophisticated way.</p>
 </blockquote>
+<p>Standard architectural choices include the numbers and types of layers, the number of neurons per layer, and the activation function at each layer. The output layer and the <strong>loss function</strong> are chosen jointly to match the prediction task:</p>
+<ul>
+<li><strong>Binary classification</strong>: one output neuron with sigmoid activation, using binary cross-entropy loss as introduced in <a href="../part-05-supervised-learning/11-logistic-regression.html">🖝 Logistic Regression</a>.</li>
+<li><strong>Multi-class classification</strong>: one output neuron per class with softmax activation (outputs sum to 1), using categorical cross-entropy as loss.</li>
+<li><strong>Regression</strong>: one output neuron with no activation (linear output); loss is mean squared error as introduced in <a href="../part-05-supervised-learning/02-linear-regression.html">🖝 Linear Regression</a>.</li>
+</ul>
+<p>As with all machine learning models already discussed in this course, the loss measures how "good" the network's predictions are. Training minimizes this loss across all examples by adjusting the weights, which are the trainable parameters.</p>
 <hr />
-<h2 id="type-i-and-type-ii-errors-in-a-regression-context">Type I and Type II Errors in a Regression Context</h2>
-<p>The hypothesis testing framework exposes two ways to be wrong:</p>
-<table>
-<thead>
-<tr>
-<th>Decision</th>
-<th><span class="arithmatex">\(H_0\)</span> true (no effect exists)</th>
-<th><span class="arithmatex">\(H_0\)</span> false (effect exists)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Reject <span class="arithmatex">\(H_0\)</span></td>
-<td><strong>Type I error</strong></td>
-<td>Correct</td>
-</tr>
-<tr>
-<td>Fail to reject <span class="arithmatex">\(H_0\)</span></td>
-<td>Correct</td>
-<td><strong>Type II error</strong></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Type I error</strong> (rate <span class="arithmatex">\(\alpha\)</span>): you conclude an effect exists when it does not. Setting <span class="arithmatex">\(\alpha = 0.05\)</span> bounds this error rate at 5% — but only if you run a single test. Running many tests on the same data without correction inflates the Type I error rate.</p>
-<p><strong>Type II error</strong> (rate <span class="arithmatex">\(\beta\)</span>): you miss a real effect. The probability of avoiding this error is called <strong>power</strong> (<span class="arithmatex">\(1 - \beta\)</span>). Power increases with sample size: larger samples make it easier to detect real effects.</p>
-<p>Sample size matters in both directions. With 200,000 respondents, tiny and practically meaningless effects become statistically significant. With 30 observations, even large effects may not reach significance. This is why statistical significance must always be read alongside sample size and the size of the estimated effect.</p>
-<hr />
-<h2 id="when-is-a-regression-result-meaningful">When Is a Regression Result Meaningful?</h2>
-<p>Statistical significance is not the same as practical importance. Three questions to ask together:</p>
-<p><strong>1. Is the effect statistically significant?</strong> A p-value below <span class="arithmatex">\(\alpha\)</span> tells you the pattern is unlikely to be random noise.</p>
-<p><strong>2. How large is the effect?</strong> The coefficient magnitude and its confidence interval. A statistically significant coefficient of 0.01 (happiness increases by 0.01 points per year of education) may be too small to act on.</p>
-<p><strong>3. Does the effect matter in context?</strong> A 0.4-point increase in happiness per health-rating point may be meaningful for public health policy. It may not be enough to justify an expensive individual intervention.</p>
+<h2 id="training-backpropagation-and-optimization">Training: Backpropagation and Optimization</h2>
+<p>Training adjusts all weights in the network to minimize the loss. This requires the gradient of the loss with respect to every weight. Intuitively, the gradient informs the optimizer which direction to step.</p>
+<p><strong>Backpropagation</strong> computes these gradients efficiently. Starting from the output, it applies the chain rule of calculus layer by layer, propagating the gradient signal backward through the network. The result is the exact gradient for every weight, computed in one backward pass.</p>
+<!-- Figure: the same fully connected network with arrows showing the forward pass (data flowing right) and the backward pass (gradient signal flowing left). Caption: "Forward pass computes predictions; backward pass propagates error gradients to every weight." -->
+
 <blockquote>
-<p><strong>Tip:</strong> In exploratory data science work, rather than chasing significance thresholds, focus on the coefficient with its confidence interval. The p-value is a property of the data and sample size. The coefficient and its range are properties of the phenomenon you are studying.</p>
-<p><strong>Discussion:</strong> A data scientist reports: "Income is a statistically significant predictor of happiness (p &lt; 0.001, <span class="arithmatex">\(R^2 = 0.02\)</span>)", based on a survey of 200,000 people. Is this an important finding? What additional information would you need to assess its practical value?</p>
+<p><strong>Note:</strong> Backpropagation is not a learning algorithm on its own. It computes gradients. <a href="../part-05-supervised-learning/03-gradient-descent.html">🖝 Gradient Descent</a>-like algorithms do the updating. The two work together: backprop computes the direction, the optimizer takes the step.</p>
+</blockquote>
+<p>With gradients in hand, <strong>gradient descent</strong> updates each weight by a small step opposite to the gradient. This is the same algorithm from <a href="../part-05-supervised-learning/03-gradient-descent.html">🖝 Gradient Descent</a>, now applied to all parameters simultaneously.</p>
+<p>The practical default optimizer for deep networks is <strong>Adam</strong> (Adaptive Moment Estimation). Adam extends gradient descent with per-parameter adaptive learning rates and momentum, which makes it converge faster on most tasks and requires less manual tuning of the learning rate.</p>
+<p>To avoid overfitting during training, two standard techniques are:</p>
+<ul>
+<li><strong>Dropout</strong> randomly zeroes a fraction of neurons during each training step, forcing the network to develop redundant representations rather than relying on individual neurons.</li>
+<li><strong>Early stopping</strong> monitors validation loss during training and saves the model at its minimum.</li>
+</ul>
+<blockquote>
+<p><strong>Discussion:</strong> Dropout adds noise to training; early stopping halts optimization before convergence. Both improve generalization despite seemingly making training worse or shorter. Why does adding noise or stopping early prevent overfitting, and what assumption about the training data do both interventions exploit?</p>
 </blockquote>
 <hr />
 <h2 id="summary">Summary</h2>
 <ul>
-<li>The null hypothesis (<span class="arithmatex">\(H_0\)</span>) assumes no effect. The p-value measures how unlikely the observed result would be if <span class="arithmatex">\(H_0\)</span> were true.</li>
-<li>A p-value below <span class="arithmatex">\(\alpha = 0.05\)</span> means the effect is statistically significant: unlikely to be sampling noise.</li>
-<li>Type I error (false positive) is bounded by <span class="arithmatex">\(\alpha\)</span>. Type II error (missing a real effect) decreases as sample size grows.</li>
-<li>Statistical significance does not equal practical importance. Always assess effect size and domain relevance alongside the p-value.</li>
+<li>A neuron computes a weighted sum of its inputs, adds a bias, and passes the result through an activation function. The nonlinearity, sigmoid for output probabilities and ReLU for hidden layers, is what allows networks to represent non-linear relationships.</li>
+<li>Deep networks stack neurons into layers. Architecture choices, number of layers, neurons per layer, and activation functions, determine the network's capacity. The output layer and loss function are chosen jointly to match the task: cross-entropy for classification, mean squared error for regression.</li>
+<li>The forward pass builds progressively more abstract representations. Backpropagation computes gradients for all weights simultaneously by applying the chain rule from output to input. Gradient descent, or in practice the Adam optimizer, uses these gradients to update all weights.</li>
+<li>Dropout and early stopping are standard training-time techniques to reduce overfitting.</li>
 </ul>
 <p>As always: Happy learning, happy life! 🫶</p>
 <hr />
 <blockquote>
-<p><strong>Navigation:</strong> <a href="04-regression-depth.html">&lt;-- Regression: Interpretation and Assumptions</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="06-support-vector-machines.html">Support Vector Machines --&gt;</a></p>
+<p><strong>Navigation:</strong> <a href="01-when-shallow-fails.html">&lt;-- When Shallow Models Fail</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="03-cnns.md">Convolutional Neural Networks (CNNs) --&gt;</a></p>
 </blockquote>
-<p>Script v1.4 (2026-06-10) · FGN</p>
+<p>Script v1.5 (2026-06-24) · FGN</p>
 
 
 
