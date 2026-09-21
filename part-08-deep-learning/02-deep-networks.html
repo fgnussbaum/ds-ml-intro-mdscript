@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -30,7 +30,7 @@
     
     
   
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
       
 
@@ -3189,7 +3189,7 @@
 </ul>
 <h2 id="single-neuron-weighted-sum-and-activation">Single Neuron: Weighted Sum and Activation</h2>
 <p>Here's a visual layout of a <strong>neuron</strong> that follows the familiar structure from <a href="../part-05-supervised-learning/11-logistic-regression.html">🖝 Logistic Regression</a>:</p>
-<p><center><img src="../media/plots/single_neuron.png" alt="Full Logistic Regression Compute flow (b=w_0)" width="500px"/></center></p>
+<p><center><img src="../media/single_neuron.png" alt="Full Logistic Regression Compute flow (b=w_0)" style="width:66%"/></center></p>
 
 <p>A <strong>neuron</strong> takes a vector of inputs <span class="arithmatex">\(\mathbf{x} = (x_1, x_2, \ldots, x_n)\)</span>, multiplies each input by a <strong>weight</strong> <span class="arithmatex">\(w_i\)</span>, sums the results, adds a <strong>bias</strong> <span class="arithmatex">\(b\)</span>, and passes the sum through a nonlinear function:</p>
 <div class="arithmatex">\[\begin{align*}
@@ -3203,14 +3203,14 @@ a &amp;= f(z)
 <li><strong>Sigmoid</strong>: <span class="arithmatex">\(f(z) = 1 / (1 + e^{-z})\)</span>, which squashes output to <span class="arithmatex">\((0, 1)\)</span>. Used for output neurons in binary classification to produce a probability score. It is rarely used elsewhere in neural networks today because gradients become very small for large <span class="arithmatex">\(|z|\)</span> (the saturation problem). A single neuron with a sigmoid output is essentially <a href="../part-05-supervised-learning/11-logistic-regression.html">🖝 Logistic Regression</a>.</li>
 <li><strong>Tanh</strong>: <span class="arithmatex">\(f(z) = \tanh(z)\)</span>, which squashes output to <span class="arithmatex">\((-1, 1)\)</span>. Zero-centered (unlike sigmoid), which can make learning slightly faster. Like sigmoid, it saturates for large <span class="arithmatex">\(|z|\)</span>, so it is less common in deep hidden layers but still used in some recurrent networks.</li>
 </ul>
-<p><center><img src="../media/plots/activation_functions.png" alt="side-by-side plots of sigmoid, ReLU, tanh activation functions" width="780px"/></center></p>
+<p><center><img src="../media/activation_functions.png" alt="side-by-side plots of sigmoid, ReLU, tanh activation functions" style="width:100%"/></center></p>
 
 <p>Activation functions provide nonlinearity. However, the power of neural networks comes from combining many neurons in layers.</p>
 <hr />
 <h2 id="layers-and-network-architecture">Layers and Network Architecture</h2>
 <p>When neurons are stacked side by side they form a <strong>layer</strong>. The output of one layer becomes the input to the next. A network with one or more intermediate layers between the inputs and the output is called a <strong>deep network</strong>, where "deep" refers to the number of layers.</p>
 <p>Here's an example from the interactive demo: a fully connected network for binary classification, with one input layer of <span class="arithmatex">\(2\)</span> features, two hidden layers of neurons, and one output neuron with a sigmoid activation. The output is the model's predicted probability that the input belongs to the positive class.</p>
-<p><center><img src="../media/demos-screenshots/neural-network.png" alt="simple neural network" width="740px"/></center></p>
+<p><center><img src="../media/neural-network.png" alt="simple neural network" style="width:80%"/></center></p>
 
 <p>To compute the output of a neural network, a <strong>forward pass</strong> is used (see also the figure in the training section below). Computations flow from left to right: each layer transforms its input into a new representation by applying its weights and activation. Each transformation extracts more abstract structure from the input.</p>
 <h3 id="architecture-choices">Architecture choices</h3>
@@ -3231,7 +3231,7 @@ a &amp;= f(z)
 <p><strong>Backpropagation</strong>, introduced in <a href="../references.html#rumelhart1986">(Rumelhart et al., 1986)</a>, computes these gradients efficiently. Starting from the output, it applies the chain rule of calculus layer by layer, propagating the gradient signal backward through the network. The result is the exact gradient for every weight, computed in one backward pass.</p>
 <!-- Figure: the same fully connected network with arrows showing the forward pass (data flowing right) and the backward pass (gradient signal flowing left). Caption: "Forward pass computes predictions; backward pass propagates error gradients to every weight." -->
 
-<p><center><img src="../media/plots/forward_backward_pass.png" alt="forward and backward pass, fully connected classification network" width="790px"/></center></p>
+<p><center><img src="../media/forward_backward_pass.png" alt="forward and backward pass, fully connected classification network" style="width:100%"/></center></p>
 
 <blockquote>
 <p><strong>Note:</strong> Backpropagation is not a learning algorithm on its own, it just computes gradients. <a href="../part-05-supervised-learning/03-gradient-descent.html">🖝 Gradient Descent</a>-like algorithms clarify how actual updates to parameters are carried out. The two work together: "backprop" computes the direction, the optimizer takes the step.</p>
@@ -3258,7 +3258,7 @@ a &amp;= f(z)
 <blockquote>
 <p><strong>Navigation:</strong> <a href="01-when-shallow-fails.html">&lt;-- When Shallow Models Fail</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="03-cnns.html">Convolutional Neural Networks (CNNs) --&gt;</a></p>
 </blockquote>
-<p>Script v1.8 (2026-08-19) · FGN</p>
+<p>Script v1.8.2 (2026-09-21) · FGN</p>
 
 
 
@@ -3311,7 +3311,7 @@ a &amp;= f(z)
       <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       

@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -30,7 +30,7 @@
     
     
   
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
       
 
@@ -3155,7 +3155,7 @@
 <h2 id="the-pretrained-model-idea">The Pretrained Model Idea</h2>
 <p>When a deep network trains on a large dataset, it learns a general-purpose feature hierarchy. For images, this means edge detectors, texture patterns, shape components. These are representations that describe visual structure at multiple levels of abstraction, as you saw in <a href="04-dl-representations.html">🖝 What Deep Networks Learn: Representations</a>. These representations must not belong to the specific classes the model was trained on.</p>
 <p>This is why it becomes interesting to use a <strong>pretrained model</strong>, that is, a network that has already been trained on a large dataset. You can take this model (specifically, its weights) and adapt it to your task by replacing or retraining the final output layer. This reuses the feature extractor from the pre-trained model:</p>
-<p><center><img src="../media/plots/transfer_learning.png" width="740px"/></center></p>
+<p><center><img src="../media/transfer_learning.png" alt="" style="width:100%"/></center></p>
 
 <p>In the head, you might adjust to your new task: For example, you might only want to classify three types of surface defects instead of the 1000 ImageNet categories that the pretrained model was trained to classify.
 Indeed, <strong>ImageNet</strong> <a href="../references.html#deng2009">(Deng et al., 2009)</a> (a dataset of 1.2 million images across 1,000 classes) is a canonical source for pretrained models: Models like ResNet, EfficientNet, and VGG were trained on ImageNet and are freely available.</p>
@@ -3224,7 +3224,7 @@ Indeed, <strong>ImageNet</strong> <a href="../references.html#deng2009">(Deng et
 <blockquote>
 <p><strong>Navigation:</strong> <a href="04-dl-representations.html">&lt;-- What Deep Networks Learn: Representations</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="06-autoencoder.html">Autoencoders --&gt;</a></p>
 </blockquote>
-<p>Script v1.8 (2026-08-19) · FGN</p>
+<p>Script v1.8.2 (2026-09-21) · FGN</p>
 
 
 
@@ -3277,7 +3277,7 @@ Indeed, <strong>ImageNet</strong> <a href="../references.html#deng2009">(Deng et
       <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       

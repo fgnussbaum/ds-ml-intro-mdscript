@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -30,7 +30,7 @@
     
     
   
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
       
 
@@ -3188,7 +3188,7 @@
 </ul>
 <h2 id="convolution-as-local-pattern-detection">Convolution as Local Pattern Detection</h2>
 <p>A <strong>convolutional layer</strong> applies a small filter (also called a <strong>kernel</strong>) to a local region of the input image, slides it across the entire image, and produces a <strong>feature map</strong>. The filter is a small grid of weights that is learned during training, for example a <span class="arithmatex">\(3 \times 3\)</span> matrix, show by the orange box in the figure. This architecture traces back to the neocognitron <a href="../references.html#fukushima1980">(Fukushima, 1980)</a>, which introduced convolution and downsampling layers for shift-invariant pattern recognition; LeCun et al. later combined this architecture with backpropagation training for handwritten digit recognition <a href="../references.html#lecun1998">(LeCun et al., 1998)</a>.</p>
-<p><center><img src="../media/plots/conv_filter_diagram.png" alt="a 5×5 image with a 3×3 filter sliding over it. Arrows show the filter position and the corresponding output value in the feature map" width="500px"/></center></p>
+<p><center><img src="../media/conv_filter_diagram.png" alt="a 5×5 image with a 3×3 filter sliding over it. Arrows show the filter position and the corresponding output value in the feature map" style="width:75%"/></center></p>
 
 <p>The filter slides across the image in steps (<strong>strides</strong>). At each position, it computes a weighted sum of the pixel values it currently covers. The result at each position is one value in the output feature map. Each filter learns to detect one type of local pattern.</p>
 <blockquote>
@@ -3202,17 +3202,17 @@ This classic hand-designed filter is called the <a href="https://en.wikipedia.or
 <li><strong>Weight sharing</strong>: the same filter weights are applied at every spatial position. A filter that detects a vertical edge detects it wherever it appears in the image, without separate weights per location.</li>
 <li><strong>Pooling</strong>: after convolution, a <strong>max pooling</strong> operation downsamples the feature map by taking the maximum value in each local region. This reduces spatial resolution, retains the strongest activations, and gives the network some invariance to small translations.</li>
 </ul>
-<p><center><img src="../media/plots/max_pooling_diagram.png" alt="" width="500px"/></center></p>
+<p><center><img src="../media/max_pooling_diagram.png" alt="" style="width:75%"/></center></p>
 
 <blockquote>
 <p><strong>Analogy:</strong> Think of a filter as a stamp. You press the same stamp at every location on the image. Where the stamp matches the underlying pattern, the output is high; where it does not match, the output is low. The network learns what shape the stamp should be.</p>
 </blockquote>
 <p>Stacking convolutional layers builds hierarchical representations. Early layers detect simple local patterns (edges, textures). Later layers combine those patterns into more complex structures (shapes, parts, objects). The idea is that the "receptive field" of a filter increases the deeper the layer. We'll discuss this further in the next nugget <a href="04-dl-representations.html">🖝 What Deep Networks Learn: Representations</a>, here</p>
-<p><center><img src="../media/plots/cnn_depth_diagram.png" alt="visualization of filters and activations at increasing depths in a CNN. Layer 1: oriented edges and color gradients. Layer 2: corners and simple textures. Layer 3-4: more complex texture patterns and object parts" width="790px"/></center></p>
+<p><center><img src="../media/cnn_depth_diagram.png" alt="visualization of filters and activations at increasing depths in a CNN. Layer 1: oriented edges and color gradients. Layer 2: corners and simple textures. Layer 3-4: more complex texture patterns and object parts" style="width:100%"/></center></p>
 
 <p>This feature hierarchy is the computational realization of the feature learning you saw in <a href="01-when-shallow-fails.html">🖝 When Shallow Models Fail</a>.
 Here's another visualization of how the receptive field increases:</p>
-<p><center><img src="../media/plots/receptive_field_growth.png" alt="receptive field increases" width="790px"/></center></p>
+<p><center><img src="../media/receptive_field_growth.png" alt="receptive field increases" style="width:90%"/></center></p>
 
 <hr />
 <h2 id="image-classification-and-softmax-function">Image Classification and Softmax-Function</h2>
@@ -3221,7 +3221,7 @@ Here's another visualization of how the receptive field increases:</p>
 <div class="arithmatex">\[a_k = \frac{e^{z_k}}{\sum_{j=1}^{K} e^{z_j}} \quad \text{for } k = 1, \ldots, K.\]</div>
 <p>Here, for <span class="arithmatex">\(K\)</span> classes, the output neurons compute weighted sums <span class="arithmatex">\(z_1, \ldots, z_K\)</span> as usual, and softmax turns them into probabilities: <span class="arithmatex">\(a_k\)</span> is the predicted probability of class <span class="arithmatex">\(k\)</span>, and all outputs sum to 1, that is, <span class="arithmatex">\(\sum_k a_k = 1\)</span>.</p>
 <p>Below is a practical example: defect detection on a production line. A suitable camera system captures images of manufactured parts. For the training, each image is labeled "OK" or "defective". A CNN trains on labeled examples and learns to recognize the visual patterns that indicate a defect: This could be a scratch, a crack, or particles. At inference time, the trained model processes each new image and produces a probability of being defective as output.</p>
-<p><center><img src="../media/plots/defect_detection_pipeline.png" alt="sketch of a defect detection pipeline — camera → image → CNN → "OK / Defective" output with confidence score." width="790px"/></center></p>
+<p><center><img src="../media/defect_detection_pipeline.png" alt="sketch of a defect detection pipeline — camera → image → CNN → "OK / Defective" output with confidence score." style="width:100%"/></center></p>
 
 <p>The same architecture can handle multi-class problems (using the softmax function above). For example, a dataset with ten different defect types becomes a 10-class classification problem. The CNN structure remains the same, only the size of the output layer changes. Evaluation then uses multi-class metrics, as discussed in <a href="../part-05-supervised-learning/09-decision-trees.html">🖝 Decision Trees</a>.</p>
 <hr />
@@ -3243,7 +3243,7 @@ The different task families just add different output heads for their specific p
 <p><strong>Instance segmentation</strong> extends semantic segmentation by distinguishing individual object instances. Two adjacent objects of the same class get different instance masks. Mask R-CNN is the standard architecture.</p>
 </li>
 </ul>
-<p><center><img src="../media/plots/cv_task_families.png" alt=" overview graphic showing the five task families side by side — a single image annotated five ways: (1) label only, (2) bounding boxes, (3) pixel-level class colors, (4) per-instance masks, (5) keypoint dots." width="780px"/></center></p>
+<p><center><img src="../media/cv_task_families.png" alt="overview graphic showing the five task families side by side — a single image annotated five ways: (1) label only, (2) bounding boxes, (3) pixel-level class colors, (4) per-instance masks, (5) keypoint dots." style="width:100%"/></center></p>
 
 <p>Beyond the four families mentioned above:</p>
 <ul>
@@ -3270,7 +3270,7 @@ The different task families just add different output heads for their specific p
 <blockquote>
 <p><strong>Navigation:</strong> <a href="02-deep-networks.html">&lt;-- Building Blocks of Deep Networks</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="04-dl-representations.html">What Deep Networks Learn: Representations --&gt;</a></p>
 </blockquote>
-<p>Script v1.8 (2026-08-19) · FGN</p>
+<p>Script v1.8.2 (2026-09-21) · FGN</p>
 
 
 
@@ -3323,7 +3323,7 @@ The different task families just add different output heads for their specific p
       <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       

@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -30,7 +30,7 @@
     
     
   
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
       
 
@@ -3222,7 +3222,8 @@
 <li><strong>Accuracy</strong>: the closeness of measurements to the true value. Requires both low noise and low bias.</li>
 </ul>
 <p>Here's a "dartboard" for illustration.</p>
-<p><img alt="Dartboard: Precision, bias accuracy" src="../media/plots/precision_bias_accuracy_2d.png" /></p>
+<p><center><img src="../media/precision_bias_accuracy_2d.png" alt="Dartboard: Precision, bias accuracy" style="width:95%"/></center></p>
+
 <h3 id="data-collection-errors">Data collection errors</h3>
 <p>Next, we have data collection errors. Unlike measurement errors, they arise from failures in the collection process: omitting records that should be present, or including records that should not be.</p>
 <blockquote>
@@ -3240,7 +3241,8 @@
 <h2 id="missing-values">Missing Values</h2>
 <p>Missing values are nearly universal in real datasets. The <code>count</code> row in <code>df.describe()</code> is your first check: it shows the number of non-null values per column (see <a href="04-eda-descriptive-stats.html">🖝 EDA: Descriptive Statistics</a>). Any column where count falls below the total row count contains missing values. But <code>df.describe()</code> does not always make this visible at a glance. A column can have an apparently normal mean and standard deviation and still carry 15% missing data you have not noticed.</p>
 <p>When there are many variables, a dedicated missing-value plot is an option. Here's one for a few variables from the ESS dataset. There are only few missing values for most columns (note the x-axis shows only a small range below 1%).</p>
-<p><img alt="Missing values bar chart for the ESS well-being dataset" src="../media/plots-ess/ess_wellbeing_missing_values.png" /></p>
+<p><center><img src="../media/ess_wellbeing_missing_values.png" alt="Missing values bar chart for the ESS well-being dataset" style="width:95%"/></center></p>
+
 <p>Understanding <em>why</em> values are missing matters more than just knowing how many are missing. The main question is whether missing values are random or systematic:</p>
 <ul>
 <li><strong>Random</strong>: Missingness is unrelated to any variable. A sensor randomly dropping readings is random missing data. The remaining data is still representative. No bias.</li>
@@ -3275,7 +3277,7 @@
 <blockquote>
 <p><strong>Navigation:</strong> <a href="04-eda-descriptive-stats.html">&lt;-- EDA: Descriptive Statistics</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="06-eda-distributions.html">EDA: Distributions --&gt;</a></p>
 </blockquote>
-<p>Script v1.8 (2026-08-19) · FGN</p>
+<p>Script v1.8.2 (2026-09-21) · FGN</p>
 
 
 
@@ -3328,7 +3330,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       

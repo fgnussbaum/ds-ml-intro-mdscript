@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -30,7 +30,7 @@
     
     
   
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
       
 
@@ -3274,7 +3274,7 @@
 <p>Many classifiers work in two steps: first they compute a continuous <strong>score</strong> for each example (a probability estimate, a distance, or a raw output), then they convert that score into a class label by comparing it to a <strong>threshold</strong> <span class="arithmatex">\(\tau\)</span>:</p>
 <div class="arithmatex">\[\hat{y} = \begin{cases} 1 &amp; \text{if score} \geq \tau \\ 0 &amp; \text{otherwise} \end{cases}\]</div>
 <p>The <strong>classification</strong> demo from the <a href="https://github.com/fgnussbaum/ds-ml-interactive-demos">✪ interactive data-science demos</a> repository illustrates the idea:</p>
-<p><center><img src="../media/demos-screenshots/cf-threshold-85.png" alt="" width="740px"/></center></p>
+<p><center><img src="../media/cf-threshold-85.png" alt="" style="width:100%"/></center></p>
 
 <p>In this chart, each point corresponds to a training example: circles are the negative class, squares are the positive class. The slider controls <span class="arithmatex">\(\tau\)</span>, and every point above it is predicted positive. Examples that are classified incorrect are crossed out.</p>
 <ul>
@@ -3305,7 +3305,7 @@
 <p>A model trained on noisy labels will partially learn the noise. The effect is usually manageable but worth tracking. In cases of real ambiguity, it could even be interesting to carry this uncertainty on to predictions.</p>
 <p><em>Here's an example from our own work <a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/b1a77a501bf32f8c7348fe39da2cf8c6-Paper-Conference.pdf">🔭 Fine-Grained Sampling
 in Stochastic Segmentation Networks (NeurIPS 2022)</a>. The visual teaser below shows different uncertainty components for landcover classification (image segmentation).</em></p>
-<p><center><img src="../media/papers/ssn-landcover-factors.jpg" alt="Factors of SSN" width="450px"/></center></p>
+<p><center><img src="../media/ssn-landcover-factors.jpg" alt="Factors of SSN" style="width:40%"/></center></p>
 
 <h3 id="class-imbalance">Class imbalance</h3>
 <p>In most detection tasks, the positive class is rare: fraud accounts for a small fraction of all transactions, diseases affect a minority of patients, defects occur in a small share of manufactured units.</p>
@@ -3329,7 +3329,7 @@ in Stochastic Segmentation Networks (NeurIPS 2022)</a>. The visual teaser below 
 <blockquote>
 <p><strong>Navigation:</strong> <a href="06-hyperparameters.html">&lt;-- Hyperparameter Optimization</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="08-classification-evaluation.html">Classification Evaluation --&gt;</a></p>
 </blockquote>
-<p>Script v1.8 (2026-08-19) · FGN</p>
+<p>Script v1.8.2 (2026-09-21) · FGN</p>
 
 
 
@@ -3382,7 +3382,7 @@ in Stochastic Segmentation Networks (NeurIPS 2022)</a>. The visual teaser below 
       <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       

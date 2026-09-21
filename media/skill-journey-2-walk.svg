@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 856 770">
+  <style>
+    svg { --fgn-accent: #00662c; --fgn-fg: #2b2422; }
+    @media (prefers-color-scheme: dark) { svg { --fgn-accent: #5bae6f; --fgn-fg: #ece5e1; } }
+    .stone { fill: var(--fgn-accent); }
+    .step { fill: none; stroke: var(--fgn-fg); stroke-width: 8.0;
+             stroke-linecap: round; stroke-linejoin: round; }
+  </style>
+  <style data-fgn-draw="">
+    svg { --draw-total: 2s; --draw-dur: .18s; }
+    .draw { stroke-dasharray: 1; }
+    @media (prefers-reduced-motion: no-preference) {
+      .draw { animation: fgn-draw var(--draw-dur) linear both;
+              animation-delay: calc(var(--at) * var(--draw-total)); }
+    }
+    @keyframes fgn-draw { from { stroke-dashoffset: 1 } to { stroke-dashoffset: 0 } }
+    .pop { transform-box: fill-box; transform-origin: center; }
+    @media (prefers-reduced-motion: no-preference) {
+      .pop { animation: fgn-pop var(--draw-dur) ease-out both;
+             animation-delay: calc(var(--at) * var(--draw-total)); }
+    }
+    @keyframes fgn-pop { from { opacity: 0; transform: scale(.3) }
+                        to { opacity: 1; transform: scale(1) } }
+  </style><circle class="stone" fill="#00662c" stroke="none" cx="238.0" cy="520.0" r="14.0" />
+  <text x="178.0" y="580.0" text-anchor="middle" dominant-baseline="central" font-size="70" font-family="'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif">🤯</text>
+  <path class="step draw" stroke="#2b2422" d="M 260.8 516.8 Q 285.2 507.2 311.3 509.7 L 300.2 501.2 L 311.3 509.7 L 298.8 516.0" pathLength="1" style="--at:0" />
+  <circle class="stone pop" fill="#00662c" stroke="none" cx="334.1" cy="506.5" r="14.0" style="--at:0.04" />
+  <path class="step draw" stroke="#2b2422" d="M 356.7 502.2 Q 386.7 494.0 417.6 490.7 L 405.0 484.6 L 417.6 490.7 L 406.5 499.4" pathLength="1" style="--at:0.08" />
+  <circle class="stone pop" fill="#00662c" stroke="none" cx="440.2" cy="486.5" r="14.0" style="--at:0.12" />
+  <path class="step draw" stroke="#2b2422" d="M 439.8 463.5 Q 439.1 447.9 439.2 432.2 L 431.7 444.1 L 439.2 432.2 L 446.5 444.1" pathLength="1" style="--at:0.16" />
+  <circle class="stone pop" fill="#00662c" stroke="none" cx="438.7" cy="409.2" r="14.0" style="--at:0.2" />
+  <path class="step draw" stroke="#2b2422" d="M 419.3 396.9 Q 403.9 387.8 389.1 377.7 L 394.7 390.5 L 389.1 377.7 L 403.1 378.3" pathLength="1" style="--at:0.24" />
+  <circle class="stone pop" fill="#00662c" stroke="none" cx="369.7" cy="365.3" r="14.0" style="--at:0.28" />
+  <path class="step draw" stroke="#2b2422" d="M 390.2 354.9 Q 409.1 343.3 429.6 334.9 L 415.8 332.5 L 429.6 334.9 L 421.5 346.2" pathLength="1" style="--at:0.32" />
+  <circle class="stone pop" fill="#00662c" stroke="none" cx="450.1" cy="324.4" r="14.0" style="--at:0.36" />
+  <path class="step draw" stroke="#2b2422" d="M 466.9 340.2 Q 474.2 350.4 484.8 357.2 L 478.7 344.6 L 484.8 357.2 L 470.8 357.1" pathLength="1" style="--at:0.4" />
+  <circle class="stone pop" fill="#00662c" stroke="none" cx="501.5" cy="373.0" r="14.0" style="--at:0.44" />
+  <path class="step draw" stroke="#2b2422" d="M 510.9 352.0 Q 518.7 326.8 532.4 304.2 L 519.9 310.5 L 532.4 304.2 L 532.6 318.2" pathLength="1" style="--at:0.48" />
+  <circle class="stone pop" fill="#00662c" stroke="none" cx="541.9" cy="283.2" r="14.0" style="--at:0.52" />
+  <path class="step draw" stroke="#2b2422" d="M 528.1 264.8 Q 515.0 235.5 490.6 214.5 L 494.8 227.9 L 490.6 214.5 L 504.5 216.6" pathLength="1" style="--at:0.56" />
+  <circle class="stone pop" fill="#00662c" stroke="none" cx="476.9" cy="196.1" r="14.0" style="--at:0.6" />
+  <path class="step draw" stroke="#2b2422" d="M 497.6 186.1 Q 522.3 171.7 548.8 161.2 L 535.1 158.7 L 548.8 161.2 L 540.5 172.5" pathLength="1" style="--at:0.64" />
+  <circle class="stone pop" fill="#00662c" stroke="none" cx="569.6" cy="151.2" r="14.0" style="--at:0.68" />
+  <path class="step draw" stroke="#2b2422" d="M 578.6 172.4 Q 583.0 192.2 594.3 209.0 L 593.9 195.0 L 594.3 209.0 L 581.5 203.3" pathLength="1" style="--at:0.72" />
+  <circle class="stone pop" fill="#00662c" stroke="none" cx="603.4" cy="230.1" r="14.0" style="--at:0.76" />
+  <path class="step draw" stroke="#2b2422" d="M 624.6 221.4 Q 648.9 212.4 672.5 201.7 L 658.6 199.8 L 672.5 201.7 L 664.7 213.3" pathLength="1" style="--at:0.8" />
+  <circle class="stone pop" fill="#00662c" stroke="none" cx="693.8" cy="192.9" r="14.0" style="--at:0.84" />
+  <path class="step draw" stroke="#2b2422" d="M 680.6 174.1 Q 673.6 163.1 665.8 152.8 L 667.0 166.7 L 665.8 152.8 L 678.9 157.8" pathLength="1" style="--at:0.88" />
+  <circle class="stone pop" fill="#00662c" stroke="none" cx="652.6" cy="133.9" r="14.0" style="--at:0.92" />
+  <path class="step draw" stroke="#2b2422" d="M 674.1 125.8 Q 694.6 119.0 714.4 110.4 L 700.6 108.3 L 714.4 110.4 L 706.5 121.9" pathLength="1" style="--at:0.96" />
+  <g class="pop" style="--at:1">
+  <circle class="stone" fill="#00662c" stroke="none" cx="735.9" cy="102.2" r="14.0" />
+  <text x="797.9" y="56.2" text-anchor="middle" dominant-baseline="central" font-size="70" font-family="'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif">🏅</text>
+  </g>
+</svg>

@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -30,7 +30,7 @@
     
     
   
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
       
 
@@ -3184,7 +3184,7 @@
 <p><strong>Step 2: Update.</strong> Recompute each centroid as the mean of all observations currently assigned to it:</p>
 <div class="arithmatex">\[\boldsymbol{\mu}_j = \frac{1}{|C_j|} \sum_{\mathbf{x}_i \in C_j} \mathbf{x}_i\]</div>
 <p>Repeat these alternating steps until the assignments no longer change. This is guaranteed to converge: the total within-cluster sum of squared distances (called <strong>inertia</strong>, see below) can only decrease or stay the same at each step, so the algorithm must terminate.</p>
-<p><center><img src="../media/demos-screenshots/kmeans_four_panel_unequal_k4.png" alt="" width="760px"/></center></p>
+<p><center><img src="../media/kmeans_four_panel_unequal_k4.png" alt="" style="width:100%"/></center></p>
 
 <p>This plot show intermediate results of a k-means run on a dataset with four "overlapping blobs". (1) a random initialization, (2) visualization of the assignment step, (3) recomputed centroid means, and (4) the final result after convergence. For the final results, also shaded background is shown. These are the so-called <strong>Voronoi-cells</strong> that partition the whole space into cluster regions.</p>
 <p>K-means is very sensitive to initialization. Different starting positions for the centroids can lead to different final clusters. The standard practice is to run k-means multiple times with different random initializations and keep the run with the lowest final inertia.</p>
@@ -3192,7 +3192,7 @@
 <h2 id="evaluating-clusters-and-choosing-k">Evaluating Clusters and Choosing k</h2>
 <p>Choosing <span class="arithmatex">\(k\)</span> is the central hyperparameter decision in k-means. While you can generally follow the procedure in <a href="../part-05-supervised-learning/06-hyperparameters.html">🖝 Hyperparameter Optimization</a>, there are no held-out labels to compare against as in supervised learning. You need different criteria/metrics:</p>
 <p><strong>Inertia</strong> measures total within-cluster spread: The sum of squared distances from each point to its assigned centroid. Lower inertia means tighter clusters. The problem is that inertia always decreases as <span class="arithmatex">\(k\)</span> increases: Setting <span class="arithmatex">\(k = n\)</span> produces zero inertia trivially. Inertia alone cannot tell you the right <span class="arithmatex">\(k\)</span>. That's why two other methods are commonly used.</p>
-<p><center><img src="../media/demos-screenshots/kmeans_elbow_unequal.png" alt="" width="740px"/></center></p>
+<p><center><img src="../media/kmeans_elbow_unequal.png" alt="" style="width:100%"/></center></p>
 
 <p>First, the <strong>elbow method</strong> plots inertia against <span class="arithmatex">\(k\)</span> and looks for a bend where the rate of improvement slows sharply ("biggest angle"). The "elbow" suggests a <span class="arithmatex">\(k\)</span> beyond which adding clusters captures noise rather than structure.</p>
 <p>In practice the elbow is often gradual rather than sharp, which is why you need a second criterion.
@@ -3211,7 +3211,7 @@ The <strong>silhouette score</strong> gives that. For each observation <span cla
 <h2 id="assumptions-and-failure-modes">Assumptions and Failure Modes</h2>
 <p>k-Means assumes that clusters are roughly spherical, roughly equally sized, and that each observation belongs to exactly one cluster. When these assumptions are violated, the results can be misleading in ways that are not obvious from the metrics alone.</p>
 <p>Elongated or crescent-shaped clusters will be cut arbitrarily by k-means, because the algorithm can only separate <em>convex</em> regions. Clusters of very different sizes or densities cause centroids to drift: the centroid of a large or sparse cluster pulls toward a smaller or denser neighbor. A handful of outliers can shift a centroid away from the true center of its cluster, distorting every assignment in it. The following final solutions of k-means runs seek to demonstrate these "pitfalls".</p>
-<p><center><img src="../media/demos-screenshots/kmeans_failure_modes.png" alt="kmeans failure modes" width="760px"/></center></p>
+<p><center><img src="../media/kmeans_failure_modes.png" alt="kmeans failure modes" style="width:100%"/></center></p>
 
 <p>This data already is 2D, but typically you run k-means on data with higher dimensions. In these cases, it can sometimes be helpful to plot a 2D projection of the data (e.g., the first two principal components) with cluster assignments colored. Check whether clusters look visually plausible.</p>
 <p>When hard assignment is not enough, for instance, when an observation sits ambiguously between two groups and you want an assignment probability for each, then <strong>Gaussian Mixture Models (GMMs)</strong> are a natural extension of k-means (see, e.g., <a href="https://en.wikipedia.org/wiki/Mixture_model">🔗 Mixture models</a>). GMMs model each cluster as a Gaussian distribution and output probabilistic memberships rather than hard labels.</p>
@@ -3232,7 +3232,7 @@ The <strong>silhouette score</strong> gives that. For each observation <span cla
 <blockquote>
 <p><strong>Navigation:</strong> <a href="01-unsupervised-learning.html">&lt;-- Unsupervised Learning</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="03-anomaly-detection.html">Anomaly Detection --&gt;</a></p>
 </blockquote>
-<p>Script v1.8 (2026-08-19) · FGN</p>
+<p>Script v1.8.2 (2026-09-21) · FGN</p>
 
 
 
@@ -3285,7 +3285,7 @@ The <strong>silhouette score</strong> gives that. For each observation <span cla
       <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       

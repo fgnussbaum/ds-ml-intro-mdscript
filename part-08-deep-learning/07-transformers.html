@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -30,7 +30,7 @@
     
     
   
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
       
 
@@ -3319,7 +3319,7 @@
 <div class="arithmatex">\[z_i = \sum_j w_{ij}\, v_j.\]</div>
 <p>So the representation gets contributions from other tokens proportionally to the attention computed to those tokens.</p>
 <p>Also observe that nothing in the two formula refers to distance in the sequence, so any token is equally reachable (e.g., token 1 and 40 are exactly as reachable as immediate neighbors).</p>
-<p><center><img src="../media/plots/attention_mechanism.png" width="740px"/></center></p>
+<p><center><img src="../media/attention_mechanism.png" alt="" style="width:100%"/></center></p>
 
 <p>The figure shows the same sentence twice, changing only which token is the query. Relevance is not a fixed property of the sentence, it is computed per query token: the pronoun "it" draws mostly on "cat", while the verb "sat" draws on its subject "cat" and its location "mat". Which tokens end up connected is learned during training, it is not hardwired.</p>
 <p>In practice, multiple attention heads are used: <strong>multi-head attention</strong>. One of its major advantages is that it can run several attention operations in parallel, each with its own learned query, key, and value matrices. The outputs are concatenated and projected back to the model's internal dimension. Multiple heads let the model attend to different types of relationship within the same layer (for example: syntactic relationships like subject-verb agreement, coreference like pronouns and their antecedents, or positional proximity).</p>
@@ -3336,7 +3336,7 @@
 </ul>
 <p>Each sublayer is wrapped in an <strong>Add &amp; Norm</strong> step, which adds the sublayer's input back to its output and then applies layer normalization.
 Within an architecture, transformer blocks are stacked on top of each other, as in the left part of the following figure:</p>
-<p><center><img src="../media/plots/transformer_architecture.png" width="740px"/></center></p>
+<p><center><img src="../media/transformer_architecture.png" alt="" style="width:100%"/></center></p>
 
 <p>Here are some additional architectural details:</p>
 <p><strong>Positional encoding</strong> adds a representation of each token's position to its embedding. This is useful because pure attention has no notion of order, so without this addition, the model would treat the input as an unordered set. The positional encoding can be a fixed sinusoidal function or a learned embedding.</p>
@@ -3398,7 +3398,7 @@ Within an architecture, transformer blocks are stacked on top of each other, as 
 <blockquote>
 <p><strong>Navigation:</strong> <a href="06-autoencoder.html">&lt;-- Autoencoders</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="08-dl-in-practice.html">Deep Learning in Practice: Choosing and Applying --&gt;</a></p>
 </blockquote>
-<p>Script v1.8 (2026-08-19) · FGN</p>
+<p>Script v1.8.2 (2026-09-21) · FGN</p>
 
 
 
@@ -3451,7 +3451,7 @@ Within an architecture, transformer blocks are stacked on top of each other, as 
       <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       

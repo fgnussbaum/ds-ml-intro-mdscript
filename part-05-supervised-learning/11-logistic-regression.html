@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -30,7 +30,7 @@
     
     
   
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
       
 
@@ -3164,7 +3164,7 @@
 <div class="arithmatex">\[\sigma(z) = \frac{1}{1 + e^{-z}}\]</div>
 <p>where <span class="arithmatex">\(z = h_{\mathbf{w}}(\mathbf{x})\)</span> is the linear combination of features and weights. The sigmoid function maps any real number to the interval <span class="arithmatex">\((0, 1)\)</span>. This produces valid probability values, and it is differentiable everywhere, making <a href="03-gradient-descent.html">🖝 Gradient Descent</a> applicable.</p>
 <p>Here's a visual comparison of both step function vs. our solution, the sigmoid function:</p>
-<p><center><img src="../media/plots/step_vs_sigmoid.png" alt="step vs. sigmoid function" width="740px"/></center></p>
+<p><center><img src="../media/step_vs_sigmoid.png" alt="step vs. sigmoid function" style="width:95%"/></center></p>
 
 <p>The properties of the sigmoid funciton <span class="arithmatex">\(\sigma(z)\)</span> are:</p>
 <ul>
@@ -3177,7 +3177,7 @@
 <p><strong>Dinstinction linear/logistic regression:</strong> <a href="02-linear-regression.html">🖝 Linear Regression</a> outputs <span class="arithmatex">\(h_{\mathbf{w}}(\mathbf{x})\)</span> directly: an unbounded number interpreted as a continuous target value. In contrast, <strong>logistic regression</strong> feeds the same linear combination <span class="arithmatex">\(z\)</span> through <span class="arithmatex">\(\sigma\)</span>, outputting a probability score in <span class="arithmatex">\((0, 1)\)</span> for the "positive" class.</p>
 </blockquote>
 <p>You can also follow this distinction in the full compute flow for a single prediction using logistic regression, as shown here:</p>
-<p><center><img src="../media/plots/logistic_neuron.png" alt="Full Logistic Regression Compute flow (b=w_0)" width="740px"/></center></p>
+<p><center><img src="../media/logistic_neuron.png" alt="Full Logistic Regression Compute flow (b=w_0)" style="width:75%"/></center></p>
 
 <hr />
 <h2 id="cross-entropy-loss">Cross-Entropy Loss</h2>
@@ -3189,7 +3189,7 @@
 <li>When <span class="arithmatex">\(y = 0\)</span>: the loss is <span class="arithmatex">\(-\log(1 - \hat{p})\)</span>. The same logic applies in reverse.</li>
 </ul>
 <p>This behavior is visualized here:</p>
-<p><center><img src="../media/plots/cross_entropy_loss.png" alt="CE loss. Left for y=0/y=1, Right: contrasting with MSE" width="740px"/></center></p>
+<p><center><img src="../media/cross_entropy_loss.png" alt="CE loss. Left for y=0/y=1, Right: contrasting with MSE" style="width:100%"/></center></p>
 
 <p>The second panel in this plot shows why MSE (mean squared error), the loss function from <a href="02-linear-regression.html">🖝 Linear Regression</a>, is poorly suited for classification: It does not penalize "confident" but wrong predictions enough because it is bounded.</p>
 <p>The cross-entropy loss is differentiable with respect to the weights, so <a href="03-gradient-descent.html">🖝 Gradient Descent</a> can minimize it. The gradient has a clean closed form that makes weight updates efficient to compute.</p>
@@ -3213,7 +3213,7 @@
 <blockquote>
 <p><strong>Navigation:</strong> <a href="10-random-forests.html">&lt;-- Random Forests</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="../part-06-reflection/00-index.html">Part VI: Principles That Transfer (Reflection) --&gt;</a></p>
 </blockquote>
-<p>Script v1.8 (2026-08-19) · FGN</p>
+<p>Script v1.8.2 (2026-09-21) · FGN</p>
 
 
 
@@ -3266,7 +3266,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       

@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -30,7 +30,7 @@
     
     
   
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
       
 
@@ -3218,7 +3218,7 @@ However, real anomalies are often multivariate: Individual feature values may be
 </ul>
 <p>Formally, the number of splits required for an observation is its <strong>isolation depth</strong>. Averaging the isolation depth across many trees gives an average isolation depth.
 The followig plot shows isolation depth for in a 2D feature space for a single isolation tree (left) and an isolation forest (right).</p>
-<p><center><img src="../media/plots-kddcup/if_explainer_BC_count--same-srv-rate.png" alt="" width="740px"/></center></p>
+<p><center><img src="../media/if_explainer_BC_count--same-srv-rate.png" alt="" style="width:100%"/></center></p>
 
 <p>The <code>kddcup99</code> dataset contains labeled network connection records from a simulated Air Force LAN, tagged as normal or one of several attack types (DoS, probe, R2L, U2R). The two plotted features are <code>count</code> (connections to the same host in a 2-second window) and <code>same_srv_rate</code> (fraction of those hitting the same port), which together separate major attack families from normal traffic.</p>
 <p>The average isolation depth across the forest becomes a continuous <strong>anomaly score</strong> by normalizing against the depth a typical point would reach: short relative depth scores near 1 (anomalous), long relative depth scores near 0 (normal). This normalization keeps the score comparable regardless of dataset size.</p>
@@ -3247,7 +3247,7 @@ labels = iso.predict(X_test)
 <p>Anomalies are rare by definition. In a dataset where 1% of observations are anomalies, predicting "normal" for every single observation achieves 99% accuracy while detecting zero anomalies. Therefore, accuracy is useless under extreme class imbalance.</p>
 <p>With a held-out labeled set, you can compute precision and recall across thresholds and choose the operating point that matches your use case (compare <a href="../part-05-supervised-learning/08-classification-evaluation.html">🖝 Classification Evaluation</a>).
 The plot below shows an example for tuning the contamination parameter for the isolation forest on the <code>kddcup99</code> dataset:</p>
-<p><center><img src="../media/plots-kddcup/kddcup99_contamination_sensitivity.png" alt="PR F1 curve" width="740px"/></center></p>
+<p><center><img src="../media/kddcup99_contamination_sensitivity.png" alt="PR F1 curve" style="width:80%"/></center></p>
 
 <p>The metrics precision and recall in the anomaly detection context read as:</p>
 <ul>
@@ -3275,7 +3275,7 @@ The plot below shows an example for tuning the contamination parameter for the i
 <blockquote>
 <p><strong>Navigation:</strong> <a href="03-anomaly-detection.html">&lt;-- Anomaly Detection</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="../part-08-deep-learning/00-index.html">Part VIII: Deep Learning --&gt;</a></p>
 </blockquote>
-<p>Script v1.8 (2026-08-19) · FGN</p>
+<p>Script v1.8.2 (2026-09-21) · FGN</p>
 
 
 
@@ -3328,7 +3328,7 @@ The plot below shows an example for tuning the contamination parameter for the i
       <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       

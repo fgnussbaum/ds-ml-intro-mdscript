@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -30,7 +30,7 @@
     
     
   
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
       
 
@@ -3154,7 +3154,7 @@
 </ul>
 <h2 id="the-limits-of-linear-and-tree-based-models">The Limits of Linear and Tree-Based Models</h2>
 <p>A concrete example: classifying whether a 5×5 image (25 pixels) shows a cross. Let's consider using <a href="../part-05-supervised-learning/09-decision-trees.html">🖝 Decision Trees</a> for such a task. Decision trees learn non-linear boundaries by splitting features one at a time. For tabular data this is effective. For pixel grids, the splits happen on individual pixel values: A split like "pixel (3,4) &lt;= 0.5" is almost always meaningless in isolation. The tree has no structural prior about spatial locality: two adjacent pixels are no more related in its eyes than two pixels in opposite corners.</p>
-<p><center><img src="../media/plots/pixel_decision_tree.png" alt="5×5 pixel grid with a simple shape, alongside a decision tree making splits on individual pixel values. A decision tree has no concept of spatial neighbors: every pixel is an independent feature." width="740px"/></center></p>
+<p><center><img src="../media/pixel_decision_tree.png" alt="5×5 pixel grid with a simple shape, alongside a decision tree making splits on individual pixel values. A decision tree has no concept of spatial neighbors: every pixel is an independent feature." style="width:100%"/></center></p>
 
 <p>The issue described here is sometimes described as the <strong>locality problem</strong>: the information in an image is carried by local groups of pixels, not individual pixels. Any model that treats features as independent misses this structure entirely.</p>
 <p>The same limitations apply to linear models like <a href="../part-05-supervised-learning/02-linear-regression.html">🖝 Linear Regression</a> and <a href="../part-05-supervised-learning/11-logistic-regression.html">🖝 Logistic Regression</a>. They assume that the target depends on the features through a linear combination. When a boundary in the input space is a straight line (or hyperplane), linear models are well-suited. Even when the boundary is a "smooth" curve, you can often get close with manual <a href="../part-04-data-preparation/01-feature-engineering.html">🖝 Feature Engineering</a>: squaring a term, computing ratios, etc.</p>
@@ -3227,7 +3227,7 @@
 <blockquote>
 <p><strong>Navigation:</strong> <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="02-deep-networks.html">Building Blocks of Deep Networks --&gt;</a></p>
 </blockquote>
-<p>Script v1.8 (2026-08-19) · FGN</p>
+<p>Script v1.8.2 (2026-09-21) · FGN</p>
 
 
 
@@ -3280,7 +3280,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       

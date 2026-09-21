@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -30,7 +30,7 @@
     
     
   
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
       
 
@@ -3219,8 +3219,7 @@
 <hr />
 <h1 id="generalization">Generalization</h1>
 <p><strong>Requires</strong>: <a href="../part-05-supervised-learning/07-classification-tasks.html">Classification Tasks</a> · <a href="../part-04-data-preparation/04-data-splits.html">Data Splits</a> · <a href="../part-05-supervised-learning/04-under-overfitting.html">Underfitting and Overfitting</a></p>
-<p><strong>Motivation</strong>: Coming from part 5, you already know that training scores "flatter" and test scores tell the "truth". Now, there
-s are some important observations: First, a single held-out split is a noisy estimate, and second consulting the test set repeatedly during development quietly contaminates it. Therefore, you need a principled evaluation strategy that works throughout model development, not just for the final evaluation at the end.</p>
+<p><strong>Motivation</strong>: Coming from part 5, you already know that training scores "flatter" and test scores tell the "truth". Now, there are some important observations: First, a single held-out split is a noisy estimate, and second consulting the test set repeatedly during development quietly contaminates it. Therefore, you need a principled evaluation strategy that works throughout model development, not just for the final evaluation at the end.</p>
 <blockquote>
 <p>In this nugget, you'll learn why training error is a biased estimator of generalization error and what cross-validation does to correct it. Learning curves and validation curves translate the bias-variance diagnosis from <a href="../part-05-supervised-learning/04-under-overfitting.html">🖝 Underfitting and Overfitting</a> into actionable tools.</p>
 </blockquote>
@@ -3240,11 +3239,11 @@ In the next section, we discuss a related validation strategy.</p>
 <h2 id="cross-validation">Cross-Validation</h2>
 <p><strong>Cross-validation (CV)</strong> is a way to estimate generalization performance using the training data itself, leaving the test set untouched.</p>
 <p>Specifically, in <strong>k-fold cross-validation</strong>, the training data is divided into <span class="arithmatex">\(k\)</span> equally sized folds. The model is trained <span class="arithmatex">\(k\)</span> times: each time, one fold serves as the validation set and the remaining <span class="arithmatex">\(k-1\)</span> folds are used for training. The <span class="arithmatex">\(k\)</span> scores are averaged into a single stable estimate for the generalization error.</p>
-<p><center><img src="../media/plots/cv_kfold_diagram.png" alt="k-fold cross-validation diagram (k=5). 5x5 matrix; training data split into 5 equal horizontal bands." width="740px"/></center></p>
+<p><center><img src="../media/cv_kfold_diagram.png" alt="k-fold cross-validation diagram (k=5). 5x5 matrix; training data split into 5 equal horizontal bands." style="width:80%"/></center></p>
 
 <p>A typical choice is <span class="arithmatex">\(k = 5\)</span> or <span class="arithmatex">\(k = 10\)</span>. Larger <span class="arithmatex">\(k\)</span> gives a more stable estimate at the cost of having to fit more models.</p>
 <p>How much more stable can CV results be? The following figure for the <a href="https://www.kaggle.com/datasets/uciml/autompg-dataset">🔗 MPG dataset</a> gives a hint (task: predicting <code>mpg</code> - miles per gallon):</p>
-<p><center><img src="../media/plots-mpg/mpg_cv_stability.png" alt="cv stability" width="450px"/></center></p>
+<p><center><img src="../media/mpg_cv_stability.png" alt="cv stability" style="width:60%"/></center></p>
 
 <p>To obtain this figure, for each of 30 random seeds,  respectively a model was trained using (a) a single random 80/20 split and (b) 5-fold cross cross validation (CV). So the box plot shows the distributions of generalization RMSE scores across these 30 trials, respectively. Both produce similar means. What differs is spread.</p>
 <p>Here, if a model was trained on single split (left box plot), it scored in a range that is an order of magnitude larger than for five-fold CV (right box plot). This shows that unlucky splits can distort results, especially for small datasets where small sample numbers can cause substantial deviation from the underlying true distribution of the population.</p>
@@ -3254,7 +3253,7 @@ In the next section, we discuss a related validation strategy.</p>
 <p>Even with an evaluation strategy in place, you still need diagnostic tools to understand <em>why</em> a model generalizes well or not. Here, we discuss two commonly used curve types for that purpose. The examples still use the MPG dataset, trying to predict <code>mpg</code> using regression <a href="../part-05-supervised-learning/09-decision-trees.html">🖝 Decision Trees</a>.</p>
 <h3 id="learning-curves">Learning Curves</h3>
 <p>A <strong>learning curve</strong> plots train vs. validation/CV error as the number of training examples increases for a fixed model.</p>
-<p><center><img src="../media/plots-mpg/mpg_learning_curves.png" alt="learning curves decision trees: left: high bias (max_depth=2); right: high variance (fully grown tree)" width="740px"/></center></p>
+<p><center><img src="../media/mpg_learning_curves.png" alt="learning curves decision trees: left: high bias (max_depth=2); right: high variance (fully grown tree)" style="width:100%"/></center></p>
 
 <p>The left panel (max_depth=2) shows the high-bias signature:</p>
 <ul>
@@ -3268,7 +3267,7 @@ In the next section, we discuss a related validation strategy.</p>
 </ul>
 <h3 id="validation-curves">Validation Curves</h3>
 <p>A <strong>validation curve</strong> replaces training size with a complexity hyperparameter on the x-axis, making the bias-variance trade-off directly visible. We already saw that in <a href="../part-05-supervised-learning/04-under-overfitting.html">🖝 Underfitting and Overfitting</a>. Here's another example from the MPG dataset:</p>
-<p><center><img src="../media/plots-mpg/mpg_validation_curve.png" alt="train/val error curve" width="740px"/></center></p>
+<p><center><img src="../media/mpg_validation_curve.png" alt="train/val error curve" style="width:75%"/></center></p>
 
 <p>The MPG curve for decision tree depth shows three zones.</p>
 <ul>
@@ -3307,7 +3306,7 @@ It is even possible to combine different regularization terms. For example, Elas
 <blockquote>
 <p><strong>Navigation:</strong> <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="02-start-simple.html">Start Simple --&gt;</a></p>
 </blockquote>
-<p>Script v1.8 (2026-08-19) · FGN</p>
+<p>Script v1.8.2 (2026-09-21) · FGN</p>
 
 
 
@@ -3360,7 +3359,7 @@ It is even possible to combine different regularization terms. For example, Elas
       <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       

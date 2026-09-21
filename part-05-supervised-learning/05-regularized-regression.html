@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -30,7 +30,7 @@
     
     
   
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
       
 
@@ -3179,7 +3179,7 @@ model.fit(X_train, y_train)
 <li>The L2 penalty has a smooth shape: a down-hill optimizer like <a href="03-gradient-descent.html">🖝 Gradient Descent</a> can usually improve a weight slightly without hitting a corner.</li>
 <li>The L1 penalty has a diamond shape: its corners sit exactly at coordinates where some weights are zero. Because of their sharpness, corners are often the optimum for the full loss function, too.</li>
 </ul>
-<p><center><img src="../media/plots/l1-vs-l2-norms.png" alt="left: L2 norm ball (circle), right: L1 norm ball (diamond)" width="740px"/></center></p>
+<p><center><img src="../media/l1-vs-l2-norms.png" alt="left: L2 norm ball (circle), right: L1 norm ball (diamond)" style="width:90%"/></center></p>
 
 <p>L1 therefore performs <strong>implicit feature selection</strong>: predictors whose weights reach exactly zero are dropped from the model, and the solution is <strong>sparse</strong>. Unlike Ridge, which shrinks all coefficients proportionally, Lasso tends to zero one correlated predictor while retaining another. This makes it well-suited when you suspect only a few features are genuinely informative.</p>
 <p>In scikit-learn, L1-penalized linear regression is called <strong>Lasso</strong>:</p>
@@ -3206,7 +3206,7 @@ model.fit(X_train, y_train)
 <blockquote>
 <p><strong>Navigation:</strong> <a href="04-under-overfitting.html">&lt;-- Underfitting and Overfitting</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="06-hyperparameters.html">Hyperparameter Optimization --&gt;</a></p>
 </blockquote>
-<p>Script v1.8 (2026-08-19) · FGN</p>
+<p>Script v1.8.2 (2026-09-21) · FGN</p>
 
 
 
@@ -3259,7 +3259,7 @@ model.fit(X_train, y_train)
       <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       

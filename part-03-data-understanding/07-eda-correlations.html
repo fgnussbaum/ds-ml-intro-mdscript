@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -30,7 +30,7 @@
     
     
   
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
       
 
@@ -3212,7 +3212,7 @@
 <h2 id="scatter-plots">Scatter Plots</h2>
 <p>The first tool is the <strong>scatter plot</strong>: each observation is drawn as a point, with one variable on the horizontal axis and the other on the vertical axis. This gives a cloud of points that reveals structure of the joint distribution.</p>
 <p>Here's an example for the seaborn Penguins dataset:</p>
-<center><img src="../media/plots-penguins/penguins_flipper_vs_bill.png" alt="scatter plot" width="600px"/></center>
+<center><img src="../media/penguins_flipper_vs_bill.png" alt="scatter plot" width="600px"/></center>
 
 <blockquote>
 <p>A scatter plot is most useful for numeric/continuous data. In this example, we have discrete/ordinal data from our ESS data set. We can still use a scatter plot, but some values will be plotted on top of each other.</p>
@@ -3246,7 +3246,8 @@
 <p>Correlation identifies pairs worth investigating. It does <strong>not</strong> establish causation.</p>
 </blockquote>
 <p>A <strong>correlation heatmap</strong> extends pairwise correlation to all variable pairs simultaneously, representing each coefficient as a color cell.</p>
-<p><img alt="Pearson correlation heatmap for the ESS well-being dataset" src="../media/plots-ess/ess_wellbeing_correlation_heatmap_pearson.png" /></p>
+<p><center><img src="../media/ess_wellbeing_correlation_heatmap_pearson.png" alt="Pearson correlation heatmap for the ESS well-being dataset" style="width:60%"/></center></p>
+
 <p>Reading this heatmap for the ESS well-being data:</p>
 <ul>
 <li><strong>Happiness and health</strong>: <span class="arithmatex">\(r = +0.34\)</span>, the strongest signal in the dataset. Respondents who rate their health higher also tend to report higher happiness.</li>
@@ -3294,7 +3295,8 @@
 <hr />
 <h2 id="pair-plots">Pair Plots</h2>
 <p>For a dataset with several variables, a <strong>pair plot</strong> extends the scatter plot to all variable pairs at once. Single-variable histograms  appear along the diagonal; scatter plots occupy the off-diagonal cells.</p>
-<p><img alt="Pair plot for the ESS well-being dataset" src="../media/plots-ess/ess_wellbeing_pairplot.png" /></p>
+<p><center><img src="../media/ess_wellbeing_pairplot.png" alt="Pair plot for the ESS well-being dataset" style="width:80%"/></center></p>
+
 <p>For a dataset with three to ten variables, a pair plot gives a complete first look at pairwise structure in a single figure. Beyond - well it depends on the size of your screen.</p>
 <blockquote>
 <p>Use pair plots to identify which pairs are worth a closer scatter-plot examination and which heatmap cells carry real signal.</p>
@@ -3313,7 +3315,7 @@
 <blockquote>
 <p><strong>Navigation:</strong> <a href="06-eda-distributions.html">&lt;-- EDA: Distributions</a> | <a href="00-index.html">Part Index</a> | <a href="../index.html">Main Index</a> | <a href="08-eda-best-practices.html">Data Understanding: Best Practices --&gt;</a></p>
 </blockquote>
-<p>Script v1.8 (2026-08-19) · FGN</p>
+<p>Script v1.8.2 (2026-09-21) · FGN</p>
 
 
 
@@ -3366,7 +3368,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
