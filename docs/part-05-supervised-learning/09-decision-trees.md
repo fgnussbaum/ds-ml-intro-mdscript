@@ -26,7 +26,7 @@ A **decision tree** is a flowchart. Each internal node tests one feature against
 
 Let's take a look at an example. The Palmer Penguins dataset has three species (Adelie: _blue_, Chinstrap: _orange_, Gentoo: _green_), four features, and 333 samples. Here's a decision tree of depth 2 trained on the dataset. Colors in each node show the class proportions among the training examples that reached that node:
 
-<p><center><img src="../media/demos-screenshots/dt-depth2-penguins.png" alt="decision tree: colors indicate proportion of class at each node" width="600px"/></center></p>
+<p><center><img src="../media/dt-depth2-penguins.png" alt="decision tree: colors indicate proportion of class at each node" style="width:75%"/></center></p>
 
 - The root splits on **flipper length ≤ 207.5 mm**: examples above the threshold flow right, the examples that land here are almost exclusively Gentoo.
 - The right branch splits on **bill depth ≤ 17.6** next, which perfectly separates the Gentoo class on the training data.
@@ -54,7 +54,7 @@ _See also: [🖝 Generalization](../part-06-reflection/01-generalization.md)._
 
 First of all, the concept of a confusion matrix from [🖝 Classification Evaluation](../part-05-supervised-learning/08-classification-evaluation.md) generalizes straight-forward to a multi-class setting:
 
-<p><center><img src="../media/demos-screenshots/dt-confusionmatrix.png" alt="multi-class confusion matrix" width="450px"/></center></p>
+<p><center><img src="../media/dt-confusionmatrix.png" alt="multi-class confusion matrix" style="width:50%"/></center></p>
 
 Now, let's take a look at the classification metrics.
 Up to this point, precision, recall, and F1 were defined for a **binary** problem with one positive class. Many real tasks have more than two classes: species, product categories, medical diagnoses. Decision trees handle multi-class problems natively, since leaves can predict any class, but evaluation needs to extend as well.
@@ -73,7 +73,7 @@ Chinstrap shows the weakest precision (0.81): some Adelie or Gentoo examples are
 
 The column `n` counts actual examples of each class in the test set. Note: A class with few test examples (small `n`) gives an unreliable estimate of its metrics.
 
-TODO: the other metrics in the report (not shown in table)...
+- [ ] TODO: the other metrics in the report (not shown in table)
 
 > **Tip:** The `macro avg` row averages the per-class metrics without weighting by class size. The `weighted avg` weights by `n`. For imbalanced classes, `weighted avg` can mask poor performance on minority classes, so keep both in view.
 
@@ -160,4 +160,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Classification Evaluation](08-classification-evaluation.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Random Forests -->](10-random-forests.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

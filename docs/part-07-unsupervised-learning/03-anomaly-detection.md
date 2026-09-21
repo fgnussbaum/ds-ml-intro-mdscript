@@ -67,7 +67,7 @@ $$z = \frac{x - \mu}{\sigma}$$
 Observations above a certain threshold are flagged as anomalies, for example $|z| > 3$. This works well when the data is approximately normally distributed. For scientific measurements that follow a near-Gaussian distribution (voltages, temperatures in stable conditions, spectroscopic intensities) the z-score is often the right starting point.
 Here's an example from the interactive demo that marks a few anormal (server) response times using a z-score:
 
-<p><center><img src="../media/demos-screenshots/ad_z_baseline.png" alt="SPC chart with z-score-limit" width="600px"/></center></p>
+<p><center><img src="../media/ad_z_baseline.png" alt="SPC chart with z-score-limit" style="width:75%"/></center></p>
 
 > **Warning:** The z-score is sensitive to the very outliers it is trying to detect. A single extreme value inflates the mean and standard deviation, making the score less sensitive to moderately unusual points. Compute it on a clean reference period rather than on the full dataset when possible.
 
@@ -111,4 +111,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- k-Means Clustering](02-k-means-clustering.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Isolation Forests -->](04-isolation-forests.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

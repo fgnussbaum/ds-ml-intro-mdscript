@@ -94,4 +94,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- CRISP-DM](04-crisp-dm.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part II: Data-Science Projects -->](../part-02-ds-projects/00-index.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

@@ -69,7 +69,7 @@ Here, $\alpha$ now acts as the _weight_ of the penalty term. Crucially, $\alpha$
 
 Here are the RMSE error curves for train/val sets of the diabetes dataset. Only the range $\alpha\in[0, 0.1]$ is shown with a fine **grid step size** of $10^{-3}$:
 
-<p><center><img src="../media/demos-screenshots/diabetes-error-curves.png" alt="Error curves (train/val data) for alpha in [0,1] for Ridge/Lasso" width="740px"/></center></p>
+<p><center><img src="../media/diabetes-error-curves.png" alt="Error curves (train/val data) for alpha for Ridge/Lasso" style="width:100%"/></center></p>
 
 Observe that the training error (blue) increases as $\alpha$ increases. This is because more regularization give the model less opportunity to fit the training data closely. The validation error curve respectively shows a sweet spot where regularization improves generalization the most.
 
@@ -79,7 +79,7 @@ Grid search finds this sweet spot for $\alpha$ automatically. However, efficienc
 
 Next, the coefficient paths reveal what is happening inside the model as $\alpha$ varies.
 
-<p><center><img src="../media/demos-screenshots/diabetes-coefficient-pathsL1L2.png" alt="coefficient paths of L2 (left) and L1 (right) across alpha ranges" width="740px"/></center></p>
+<p><center><img src="../media/diabetes-coefficient-pathsL1L2.png" alt="coefficient paths of L2 (left) and L1 (right) across alpha ranges" style="width:100%"/></center></p>
 
 Ridge (L2, left) shrinks all coefficients gradually toward zero without eliminating any. Lasso (L1, right) drives several coefficients to exactly zero at higher $\alpha$ values, selecting a sparse subset of features. This matches the theoretical behavior that we discussed in [🖝 Regularized Regression](../part-05-supervised-learning/05-regularized-regression.md).
 
@@ -122,4 +122,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Regularized Regression](05-regularized-regression.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Classification Tasks -->](07-classification-tasks.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

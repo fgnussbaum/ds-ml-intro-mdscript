@@ -6,8 +6,7 @@
 
 **Requires**: [Classification Tasks](../part-05-supervised-learning/07-classification-tasks.md) · [Data Splits](../part-04-data-preparation/04-data-splits.md) · [Underfitting and Overfitting](../part-05-supervised-learning/04-under-overfitting.md)
 
-**Motivation**: Coming from part 5, you already know that training scores "flatter" and test scores tell the "truth". Now, there
-s are some important observations: First, a single held-out split is a noisy estimate, and second consulting the test set repeatedly during development quietly contaminates it. Therefore, you need a principled evaluation strategy that works throughout model development, not just for the final evaluation at the end.
+**Motivation**: Coming from part 5, you already know that training scores "flatter" and test scores tell the "truth". Now, there are some important observations: First, a single held-out split is a noisy estimate, and second consulting the test set repeatedly during development quietly contaminates it. Therefore, you need a principled evaluation strategy that works throughout model development, not just for the final evaluation at the end.
 
 > In this nugget, you'll learn why training error is a biased estimator of generalization error and what cross-validation does to correct it. Learning curves and validation curves translate the bias-variance diagnosis from [🖝 Underfitting and Overfitting](../part-05-supervised-learning/04-under-overfitting.md) into actionable tools.
 
@@ -34,13 +33,13 @@ In the next section, we discuss a related validation strategy.
 
 Specifically, in **k-fold cross-validation**, the training data is divided into $k$ equally sized folds. The model is trained $k$ times: each time, one fold serves as the validation set and the remaining $k-1$ folds are used for training. The $k$ scores are averaged into a single stable estimate for the generalization error.
 
-<p><center><img src="../media/plots/cv_kfold_diagram.png" alt="k-fold cross-validation diagram (k=5). 5x5 matrix; training data split into 5 equal horizontal bands." width="740px"/></center></p>
+<p><center><img src="../media/cv_kfold_diagram.png" alt="k-fold cross-validation diagram (k=5). 5x5 matrix; training data split into 5 equal horizontal bands." style="width:80%"/></center></p>
 
 A typical choice is $k = 5$ or $k = 10$. Larger $k$ gives a more stable estimate at the cost of having to fit more models.
 
 How much more stable can CV results be? The following figure for the [🔗 MPG dataset](https://www.kaggle.com/datasets/uciml/autompg-dataset) gives a hint (task: predicting `mpg` - miles per gallon):
 
-<p><center><img src="../media/plots-mpg/mpg_cv_stability.png" alt="cv stability" width="450px"/></center></p>
+<p><center><img src="../media/mpg_cv_stability.png" alt="cv stability" style="width:60%"/></center></p>
 
 To obtain this figure, for each of 30 random seeds,  respectively a model was trained using (a) a single random 80/20 split and (b) 5-fold cross cross validation (CV). So the box plot shows the distributions of generalization RMSE scores across these 30 trials, respectively. Both produce similar means. What differs is spread.
 
@@ -58,7 +57,7 @@ Even with an evaluation strategy in place, you still need diagnostic tools to un
 
 A **learning curve** plots train vs. validation/CV error as the number of training examples increases for a fixed model.
 
-<p><center><img src="../media/plots-mpg/mpg_learning_curves.png" alt="learning curves decision trees: left: high bias (max_depth=2); right: high variance (fully grown tree)" width="740px"/></center></p>
+<p><center><img src="../media/mpg_learning_curves.png" alt="learning curves decision trees: left: high bias (max_depth=2); right: high variance (fully grown tree)" style="width:100%"/></center></p>
 
 The left panel (max_depth=2) shows the high-bias signature:
 
@@ -74,7 +73,7 @@ The right panel (fully grown tree) shows the high-variance signature:
 
 A **validation curve** replaces training size with a complexity hyperparameter on the x-axis, making the bias-variance trade-off directly visible. We already saw that in [🖝 Underfitting and Overfitting](../part-05-supervised-learning/04-under-overfitting.md). Here's another example from the MPG dataset:
 
-<p><center><img src="../media/plots-mpg/mpg_validation_curve.png" alt="train/val error curve" width="740px"/></center></p>
+<p><center><img src="../media/mpg_validation_curve.png" alt="train/val error curve" style="width:75%"/></center></p>
 
 The MPG curve for decision tree depth shows three zones.
 
@@ -126,4 +125,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [Start Simple -->](02-start-simple.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

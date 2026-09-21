@@ -30,7 +30,7 @@ A single isolation tree is computed as follows: Pick a feature at random, then p
 Formally, the number of splits required for an observation is its **isolation depth**. Averaging the isolation depth across many trees gives an average isolation depth.
 The followig plot shows isolation depth for in a 2D feature space for a single isolation tree (left) and an isolation forest (right).
 
-<p><center><img src="../media/plots-kddcup/if_explainer_BC_count--same-srv-rate.png" alt="" width="740px"/></center></p>
+<p><center><img src="../media/if_explainer_BC_count--same-srv-rate.png" alt="" style="width:100%"/></center></p>
 
 The `kddcup99` dataset contains labeled network connection records from a simulated Air Force LAN, tagged as normal or one of several attack types (DoS, probe, R2L, U2R). The two plotted features are `count` (connections to the same host in a 2-second window) and `same_srv_rate` (fraction of those hitting the same port), which together separate major attack families from normal traffic.
 
@@ -74,7 +74,7 @@ Anomalies are rare by definition. In a dataset where 1% of observations are anom
 With a held-out labeled set, you can compute precision and recall across thresholds and choose the operating point that matches your use case (compare [🖝 Classification Evaluation](../part-05-supervised-learning/08-classification-evaluation.md)).
 The plot below shows an example for tuning the contamination parameter for the isolation forest on the `kddcup99` dataset:
 
-<p><center><img src="../media/plots-kddcup/kddcup99_contamination_sensitivity.png" alt="PR F1 curve" width="740px"/></center></p>
+<p><center><img src="../media/kddcup99_contamination_sensitivity.png" alt="PR F1 curve" style="width:80%"/></center></p>
 
 The metrics precision and recall in the anomaly detection context read as:
 
@@ -109,4 +109,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Anomaly Detection](03-anomaly-detection.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part VIII: Deep Learning -->](../part-08-deep-learning/00-index.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

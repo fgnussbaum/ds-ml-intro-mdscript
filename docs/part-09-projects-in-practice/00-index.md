@@ -24,4 +24,4 @@ This part closes the course arc. You have run CRISP-DM through multiple problem 
 
 ---
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

@@ -21,7 +21,7 @@ Most data-science tutorials start with a model. CRISP-DM starts before that, at 
 
 **CRISP-DM** (Cross-Industry Standard Process for Data Mining) is a process framework introduced by Chapman et al. in 1999. It describes the full lifecycle of a data-mining or data-science project in six phases. The framework remains widely used in industry because it includes everything a project needs, not just the 'technically interesting' parts.
 
-![CRISP-DM](../media/selfmade/crisp_dm_extended.jpg)
+<p><center><img src="../media/crisp_dm_extended.jpg" alt="CRISP-DM" style="width:95%"/></center></p>
 
 The phases do not run strictly in sequence. Most real projects loop back, sometimes multiple times. Let's review the phases.
 
@@ -136,4 +136,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- AI Ethics: A Primer](03-ethics-and-responsibility.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Academia vs. Business Data Science -->](05-academia-vs-business-ds.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

@@ -28,7 +28,7 @@ The remedy is diversification: train many trees, each on a slightly different sa
 
 Here's a visualization of a random forest from the [✪ interactive decision tree demo](https://github.com/fgnussbaum/ds-ml-interactive-demos). You can see that trees have different sizes and performances:
 
-<p><center><img src="../media/demos-screenshots/dt-forestgrid.png" alt="feature importances" width="740px"/></center></p>
+<p><center><img src="../media/dt-forestgrid.png" alt="feature importances" style="width:75%"/></center></p>
 
 ### How does the 'random' in random forests work?
 
@@ -57,7 +57,7 @@ For any given sample, a random forests classifies it by combining the prediction
 
 A decision tree is interpretable precisely because it is compact: one flowchart, one root split that identifies the feature with the highest information gain (see [🖝 Decision Trees](../part-05-supervised-learning/09-decision-trees.md)). A forest is not. With hundreds of trees there is no single flowchart to read and no single root to point to. How do you recover a global view of which features matter?
 
-<p><center><img src="../media/demos-screenshots/dt-rf-feature-importance.jpg" alt="feature importances" width="740px"/></center></p>
+<p><center><img src="../media/dt-rf-feature-importance.jpg" alt="feature importances" style="width:75%"/></center></p>
 
 **Feature importance** provides an answer. Continuing our example from [🖝 Decision Trees](../part-05-supervised-learning/09-decision-trees.md), the plot above shows feature importances for a random forest (100 trees) trained on the Penguins dataset. We get an indication that `bill length` may be the most important feature on the training data for performing the classification task.
 
@@ -124,4 +124,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Decision Trees](09-decision-trees.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Logistic Regression -->](11-logistic-regression.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

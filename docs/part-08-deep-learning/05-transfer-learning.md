@@ -23,7 +23,7 @@ When a deep network trains on a large dataset, it learns a general-purpose featu
 
 This is why it becomes interesting to use a **pretrained model**, that is, a network that has already been trained on a large dataset. You can take this model (specifically, its weights) and adapt it to your task by replacing or retraining the final output layer. This reuses the feature extractor from the pre-trained model:
 
-<p><center><img src="../media/plots/transfer_learning.png" width="740px"/></center></p>
+<p><center><img src="../media/transfer_learning.png" alt="" style="width:100%"/></center></p>
 
 In the head, you might adjust to your new task: For example, you might only want to classify three types of surface defects instead of the 1000 ImageNet categories that the pretrained model was trained to classify.
 Indeed, **ImageNet** [(Deng et al., 2009)](../references.md#deng2009) (a dataset of 1.2 million images across 1,000 classes) is a canonical source for pretrained models: Models like ResNet, EfficientNet, and VGG were trained on ImageNet and are freely available.
@@ -87,4 +87,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- What Deep Networks Learn: Representations](04-dl-representations.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Autoencoders -->](06-autoencoder.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

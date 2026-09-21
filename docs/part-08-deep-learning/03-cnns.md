@@ -21,7 +21,7 @@
 
 A **convolutional layer** applies a small filter (also called a **kernel**) to a local region of the input image, slides it across the entire image, and produces a **feature map**. The filter is a small grid of weights that is learned during training, for example a $3 \times 3$ matrix, show by the orange box in the figure. This architecture traces back to the neocognitron [(Fukushima, 1980)](../references.md#fukushima1980), which introduced convolution and downsampling layers for shift-invariant pattern recognition; LeCun et al. later combined this architecture with backpropagation training for handwritten digit recognition [(LeCun et al., 1998)](../references.md#lecun1998).
 
-<p><center><img src="../media/plots/conv_filter_diagram.png" alt="a 5×5 image with a 3×3 filter sliding over it. Arrows show the filter position and the corresponding output value in the feature map" width="500px"/></center></p>
+<p><center><img src="../media/conv_filter_diagram.png" alt="a 5×5 image with a 3×3 filter sliding over it. Arrows show the filter position and the corresponding output value in the feature map" style="width:75%"/></center></p>
 
 The filter slides across the image in steps (**strides**). At each position, it computes a weighted sum of the pixel values it currently covers. The result at each position is one value in the output feature map. Each filter learns to detect one type of local pattern.
 
@@ -37,18 +37,18 @@ CNNs embody two design choices that keep the parameter count manageable:
 - **Weight sharing**: the same filter weights are applied at every spatial position. A filter that detects a vertical edge detects it wherever it appears in the image, without separate weights per location.
 - **Pooling**: after convolution, a **max pooling** operation downsamples the feature map by taking the maximum value in each local region. This reduces spatial resolution, retains the strongest activations, and gives the network some invariance to small translations.
 
-<p><center><img src="../media/plots/max_pooling_diagram.png" alt="" width="500px"/></center></p>
+<p><center><img src="../media/max_pooling_diagram.png" alt="" style="width:75%"/></center></p>
 
 > **Analogy:** Think of a filter as a stamp. You press the same stamp at every location on the image. Where the stamp matches the underlying pattern, the output is high; where it does not match, the output is low. The network learns what shape the stamp should be.
 
 Stacking convolutional layers builds hierarchical representations. Early layers detect simple local patterns (edges, textures). Later layers combine those patterns into more complex structures (shapes, parts, objects). The idea is that the "receptive field" of a filter increases the deeper the layer. We'll discuss this further in the next nugget [🖝 What Deep Networks Learn: Representations](../part-08-deep-learning/04-dl-representations.md), here
 
-<p><center><img src="../media/plots/cnn_depth_diagram.png" alt="visualization of filters and activations at increasing depths in a CNN. Layer 1: oriented edges and color gradients. Layer 2: corners and simple textures. Layer 3-4: more complex texture patterns and object parts" width="790px"/></center></p>
+<p><center><img src="../media/cnn_depth_diagram.png" alt="visualization of filters and activations at increasing depths in a CNN. Layer 1: oriented edges and color gradients. Layer 2: corners and simple textures. Layer 3-4: more complex texture patterns and object parts" style="width:100%"/></center></p>
 
 This feature hierarchy is the computational realization of the feature learning you saw in [🖝 When Shallow Models Fail](../part-08-deep-learning/01-when-shallow-fails.md).
 Here's another visualization of how the receptive field increases:
 
-<p><center><img src="../media/plots/receptive_field_growth.png" alt="receptive field increases" width="790px"/></center></p>
+<p><center><img src="../media/receptive_field_growth.png" alt="receptive field increases" style="width:90%"/></center></p>
 
 ---
 
@@ -64,7 +64,7 @@ Here, for $K$ classes, the output neurons compute weighted sums $z_1, \ldots, z_
 
 Below is a practical example: defect detection on a production line. A suitable camera system captures images of manufactured parts. For the training, each image is labeled "OK" or "defective". A CNN trains on labeled examples and learns to recognize the visual patterns that indicate a defect: This could be a scratch, a crack, or particles. At inference time, the trained model processes each new image and produces a probability of being defective as output.
 
-<p><center><img src="../media/plots/defect_detection_pipeline.png" alt="sketch of a defect detection pipeline — camera → image → CNN → "OK / Defective" output with confidence score." width="790px"/></center></p>
+<p><center><img src="../media/defect_detection_pipeline.png" alt="sketch of a defect detection pipeline — camera → image → CNN → "OK / Defective" output with confidence score." style="width:100%"/></center></p>
 
 The same architecture can handle multi-class problems (using the softmax function above). For example, a dataset with ten different defect types becomes a 10-class classification problem. The CNN structure remains the same, only the size of the output layer changes. Evaluation then uses multi-class metrics, as discussed in [🖝 Decision Trees](../part-05-supervised-learning/09-decision-trees.md).
 
@@ -85,7 +85,7 @@ The main task families:
 
 - **Instance segmentation** extends semantic segmentation by distinguishing individual object instances. Two adjacent objects of the same class get different instance masks. Mask R-CNN is the standard architecture.
 
-<p><center><img src="../media/plots/cv_task_families.png" alt=" overview graphic showing the five task families side by side — a single image annotated five ways: (1) label only, (2) bounding boxes, (3) pixel-level class colors, (4) per-instance masks, (5) keypoint dots." width="780px"/></center></p>
+<p><center><img src="../media/cv_task_families.png" alt="overview graphic showing the five task families side by side — a single image annotated five ways: (1) label only, (2) bounding boxes, (3) pixel-level class colors, (4) per-instance masks, (5) keypoint dots." style="width:100%"/></center></p>
 
 Beyond the four families mentioned above:
 
@@ -111,4 +111,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Building Blocks of Deep Networks](02-deep-networks.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [What Deep Networks Learn: Representations -->](04-dl-representations.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

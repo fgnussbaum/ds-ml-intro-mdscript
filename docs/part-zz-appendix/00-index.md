@@ -4,7 +4,7 @@
 
 # Appendix
 
-# TODO: write correct appendix intro (current 00-index.md has a copy-paste from part-05)
+- [ ] TODO: write appendix description
 
 ---
 
@@ -20,4 +20,4 @@
 
 ---
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

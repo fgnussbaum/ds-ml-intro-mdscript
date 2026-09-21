@@ -37,7 +37,7 @@ The definitions in detail:
 
 In the **classification** demo from [✪ interactive data-science demos](https://github.com/fgnussbaum/ds-ml-interactive-demos) you can also explore the confusion matrix and what it change while you adjust the threshold slider:
 
-<p><center><img src="../media/demos-screenshots/cf-confusionmatrix-85.png" alt="Confusion Matrix" width="220px"/></center></p>
+<p><center><img src="../media/cf-confusionmatrix-85.png" alt="Confusion Matrix" style="width:60%"/></center></p>
 
 > **Tipp:** A confusion matrix immediately reveals the potential pitfall of a classifier that just predicts the majority class (common for imbalanced classes). In the confusion matrix, one entire row will be empty or near-empty.
 
@@ -60,7 +60,7 @@ $$\text{Recall} =  \frac{\text{TP}}{\text{P}} = \frac{\text{TP}}{\text{TP} + \te
 
 Here's an illustration of both metrics, using Venn diagrams:
 
-<p><center><img src="../media/plots/classification_metrics_venn_precision_recall_balanced.png" alt="Precision and Recall" width="740px"/></center></p>
+<p><center><img src="../media/classification_metrics_venn_precision_recall_balanced.png" alt="Precision and Recall" style="width:90%"/></center></p>
 
 ### Precision-recall trade-off
 
@@ -71,7 +71,7 @@ Precision and recall together represent a trade-off:
 
 The trade-off can be seen via precision-recall curves (their behavior is best explored with the interactive demo):
 
-<p><center><img src="../media/demos-screenshots/cf-pr-tradeoff-curves.png" alt="PR trade-off" width="740px"/></center></p>
+<p><center><img src="../media/cf-pr-tradeoff-curves.png" alt="PR trade-off" style="width:100%"/></center></p>
 
 ### F1 as a compromise between precision and recall
 
@@ -88,7 +88,7 @@ Therefore, the harmonic mean penalizes strong discrepancy between precision and 
 
 Finally, here's another view to build some intuition about the quantities that appear in the confusion matrix and the metric definitions. It shows how quantities _flow_ into one another: from $\text{Total}$ (all examples) → $\text{P}$ and $\text{N}$ (the number of _actual_ positive/negative examples) → $\text{TP}$, $\text{FN}$, $\text{FP}$, $\text{TN}$ (the confusion matrix cells, red arrows indicate "error" paths) → $\text{P'}$ and $\text{N'}$ (the number of examples that where _predicted_ as positve/negative) → $\text{Total}$ again (all predictions).
 
-<p><center><img src="../media/demos-screenshots/cf-all-quantities.png" alt="All Quantities and how they flow into each other" width="740px"/></center></p>
+<p><center><img src="../media/cf-all-quantities.png" alt="All Quantities and how they flow into each other" style="width:100%"/></center></p>
 
 The left side in this diagram coresponds to the ground truth (actual labels) and the right side to "what the model predicts".
 
@@ -131,4 +131,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Classification Tasks](07-classification-tasks.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Decision Trees -->](09-decision-trees.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

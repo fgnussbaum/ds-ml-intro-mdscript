@@ -93,4 +93,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Model Drift and Monitoring](06-model-drift-monitoring.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Troubleshooting, Pitfalls, and When to Ask for Help -->](08-troubleshooting-pitfalls.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

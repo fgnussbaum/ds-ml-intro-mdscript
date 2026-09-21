@@ -20,4 +20,4 @@ This part orients you to the course, introduces artificial intelligence and data
 
 ---
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

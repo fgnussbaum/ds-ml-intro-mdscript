@@ -58,7 +58,7 @@ So the representation gets contributions from other tokens proportionally to the
 
 Also observe that nothing in the two formula refers to distance in the sequence, so any token is equally reachable (e.g., token 1 and 40 are exactly as reachable as immediate neighbors).
 
-<p><center><img src="../media/plots/attention_mechanism.png" width="740px"/></center></p>
+<p><center><img src="../media/attention_mechanism.png" alt="" style="width:100%"/></center></p>
 
 The figure shows the same sentence twice, changing only which token is the query. Relevance is not a fixed property of the sentence, it is computed per query token: the pronoun "it" draws mostly on "cat", while the verb "sat" draws on its subject "cat" and its location "mat". Which tokens end up connected is learned during training, it is not hardwired.
 
@@ -80,7 +80,7 @@ A transformer block has two sublayers in a fixed order:
 Each sublayer is wrapped in an **Add & Norm** step, which adds the sublayer's input back to its output and then applies layer normalization.
 Within an architecture, transformer blocks are stacked on top of each other, as in the left part of the following figure:
 
-<p><center><img src="../media/plots/transformer_architecture.png" width="740px"/></center></p>
+<p><center><img src="../media/transformer_architecture.png" alt="" style="width:100%"/></center></p>
 
 Here are some additional architectural details:
 
@@ -173,4 +173,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Autoencoders](06-autoencoder.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Deep Learning in Practice: Choosing and Applying -->](08-dl-in-practice.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

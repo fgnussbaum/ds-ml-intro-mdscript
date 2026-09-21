@@ -59,7 +59,7 @@ Don't hand a fifty-page notebook to someone who needs three sentences and a reco
 
 Keep visuals clean. Cluttered, over-labeled figures fail for similar reasons as jargon: They overwelm easily and as such risk the audience "tuning out".
 
-<p><center><img src="../media/plots/stakeholder_visual_two_ways.png" alt="the same result shown two ways, a dense technical plot vs. a stripped-down decision-brief version, to illustrate matching a visual to the audience" width="500px"/></center></p>
+<p><center><img src="../media/stakeholder_visual_two_ways.png" alt="the same result shown two ways, a dense technical plot vs. a stripped-down decision-brief version, to illustrate matching a visual to the audience" style="width:100%"/></center></p>
 
 In some way, the visualization skills from [🖝 Part III: Data Understanding](../part-03-data-understanding/00-index.md) transfer, now aimed at persuasion and storytelling rather than exploration.
 
@@ -104,4 +104,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Pitching a Data-Science Idea](02-pitching-a-ds-idea.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [From Script to Production System -->](04-script-to-production.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

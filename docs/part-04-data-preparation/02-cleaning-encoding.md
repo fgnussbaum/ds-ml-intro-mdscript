@@ -77,4 +77,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Feature Engineering](01-feature-engineering.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Scaling and Imputation -->](03-scaling-imputation.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

@@ -1,6 +1,7 @@
 # Intro to Data Science & Machine Learning
 
 This course is for students who want to build practical data science skills. You will learn to run a full data science project from question to conclusion, guided by the CRISP-DM process throughout. By the end, you'll have gathered experience in
+
 - discovering worthwhile challenges to address (innovation mindset),
 - cleaning and exploring datasets, as well as training and evaluating models,
 - communicating results honestly and well with stakeholders.
@@ -17,16 +18,16 @@ This course is organized in parts. Each parts has several "nuggets": small diges
 
 | Part | Topics | Nuggets |
 |------|--------|---------|
-| [Part I: The Big Picture](part-01-the-big-picture/00-index.md) | AI and data science definitions, CRISP-DM process map, academia vs. business DS | 5 |
-| [Part II: Data-Science Projects](part-02-ds-projects/00-index.md) | Why a personal project, idea generation, feasibility checking, scoping a result | 4 |
-| [Part III: Data Understanding](part-03-data-understanding/00-index.md) | Data work reality, attribute types, exploratory data analysis (EDA) | 8 |
-| [Part IV: Data Preparation](part-04-data-preparation/00-index.md) | Train-test splits, transformations, cleaning and encoding, data-processing pipelines | 6 |
-| [Part V: Supervised Learning](part-05-supervised-learning/00-index.md) | Regression, gradient descent, regularization, hyperparameters, classification, tree models, logistic regression | 11 |
-| [Part VI: Principles That Transfer (Reflection)](part-06-reflection/00-index.md) | Generalization, simplicity, baselines, aligning metrics, explainability | 5 |
-| [Part VII: Unsupervised Learning](part-07-unsupervised-learning/00-index.md) | Clustering, anomaly detection, k-means, isolation forests | 4 |
-| [Part VIII: Deep Learning](part-08-deep-learning/00-index.md) | deep networks, CNNs, representations, transfer learning, autoencoder, transformers | 8 |
-| [🖝 Part IX: Projects in Practice](../part-09-projects-in-practice/00-index.md) | pitching projects, stakeholders, production requirements, monitoring, troubleshooting, outlook | 9 |
-| [Appendix](part-zz-appendix/00-index.md) | beyond tabular, regression in depth, SVMs (note: all pending revision) | x |
+| [🖝 Part I: The Big Picture](part-01-the-big-picture/00-index.md) | AI and data science definitions, CRISP-DM process map, academia vs. business DS | 5 |
+| [🖝 Part II: Data-Science Projects](part-02-ds-projects/00-index.md) | Why a personal project, idea generation, feasibility checking, scoping a result | 4 |
+| [🖝 Part III: Data Understanding](part-03-data-understanding/00-index.md) | Data work reality, attribute types, exploratory data analysis (EDA) | 8 |
+| [🖝 Part IV: Data Preparation](part-04-data-preparation/00-index.md) | Train-test splits, transformations, cleaning and encoding, data-processing pipelines | 6 |
+| [🖝 Part V: Supervised Learning](part-05-supervised-learning/00-index.md) | Regression, gradient descent, regularization, hyperparameters, classification, tree models, logistic regression | 11 |
+| [🖝 Part VI: Principles That Transfer (Reflection)](part-06-reflection/00-index.md) | Generalization, simplicity, baselines, aligning metrics, explainability | 5 |
+| [🖝 Part VII: Unsupervised Learning](part-07-unsupervised-learning/00-index.md) | Clustering, anomaly detection, k-means, isolation forests | 4 |
+| [🖝 Part VIII: Deep Learning](part-08-deep-learning/00-index.md) | deep networks, CNNs, representations, transfer learning, autoencoder, transformers | 8 |
+| [🖝 Part IX: Projects in Practice](part-09-projects-in-practice/00-index.md) | pitching projects, stakeholders, production requirements, monitoring, troubleshooting, outlook | 9 |
+| [🖝 Appendix](part-zz-appendix/00-index.md) | beyond tabular, regression in depth, SVMs (note: all pending revision) | x |
 
 Course script is mostly done but still work in progress; you'll likely find a few unresolved TODOs along the way.
 
@@ -38,11 +39,11 @@ Course script is mostly done but still work in progress; you'll likely find a fe
 
 When learning something new and challenging, consistency is key.
 
-<p><center><img src="media/selfmade/skill_learning_journey.jpg" alt="Skill Learning Journey" width="250px"/></center></p>
+<p><center><img src="media/skill-journey-2-walk.svg" alt="" style="width:50%"/></center></p>
 
 There's no _magic_ abbreviation to learning skills.
 
-- Even "intelligent" AI tools don't provide a shortcut to personal skill mastery, which needs to be earned the classic way: actively taking on the cognitive challenges met during the learning journey. Learning requires friction.
+- Even "intelligent" AI tools don't provide a shortcut to personal skill mastery, which needs to be earned the classic way: actively meeting cognitive challenges during the learning journey: Learning requires friction.
 - This is true for this course and data science. In fact, it is true for any skill.
 
 Grow beyond yourself - and enjoy the journey.
@@ -62,10 +63,12 @@ Grow beyond yourself - and enjoy the journey.
 _Parts_ of this course have been drafted with AI support. When using AI tools, I aim at carefully reviewing content and adding my personal touch.
 
 How I work with AI and what I use it for:
+
 - to generate a first draft of prose, which I then review. Most of the time, I revise quite a lot - the closer I get to a final draft, the less AI is involved.
-- to program autoformatting and pipeline tools. This includes automation for creating navigation bars, building table of contents, part indices, audits for formatting and consistency (e.g., cross link audits, media, section audits), deploy scripts: All of that is governed by Python scripts.
+- to code autoformatting and pipeline tools. This includes automation for creating navigation bars, building table of contents, part indices, audits for formatting and consistency, deploy scripts: All of that is governed by Python scripts.
 
 What is not AI:
+
 - The overall course structure. It's guided by purely human intent. I baked into this course what my experience called out to be necessary for **practical** learning.
 
 > **If you discover errors:** In any case, this script may contain errors. I take full responsibility. If you notice errors or inconsistencies, please let me know. I'm happy to revise.

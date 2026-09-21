@@ -19,7 +19,7 @@
 
 In a nutshell, an AI system takes inputs, performs mathematical computations (more or less black box), and produces outputs.
 
-<p><center><img src="../media/selfmade/ai-input-blackbox-output.jpg" alt="AI system: inputs → model → outputs" width="740px"/></center></p>
+<p><center><img src="../media/mind-ai.svg" alt="" style="width:50%"/></center></p>
 
 What distinguishes different systems is *how* the computations are carried out. Here's an overview of three nested key concepts:
 
@@ -36,7 +36,6 @@ The next section explains how to approach problems which call for data-driven so
 ---
 
 ## A Design Hierarchy: From Rules to AI
-
 ### Simplicity First. Always.
 When building a data-driven solution, the first question to ask is not "Which model should I use?". It is rather: "How simple can I make this?".
 
@@ -114,4 +113,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Course Orientation](01-course-orientation.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [AI Ethics: A Primer -->](03-ethics-and-responsibility.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

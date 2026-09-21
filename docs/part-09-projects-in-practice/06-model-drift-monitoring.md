@@ -79,4 +79,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Interface Design and Integration](05-interface-design-integration.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Ethics and Accountability in Production -->](07-ethics-accountability.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

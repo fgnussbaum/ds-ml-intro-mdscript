@@ -25,7 +25,7 @@ A **histogram** groups values into equally spaced intervals called bins and show
 
 Plotting many variables at once gives a rapid overview of them, here for some variables of the ESS well-being data:
 
-![Histogram grid for ESS, age with KDE](../media/plots-ess/ess_distributions_grid.png)
+<p><center><img src="../media/ess_distributions_grid.png" alt="" style="width:100%"/></center></p>
 
 For two variables, age and religiosity, there's also a smooth curve overlayed. This is a so-called kernel density estimate (KDE), which can be used if the right bin width is unclear (it makes less sense for data that has few values anyway).
 Now let's take a look at what shapes we find in these plots:
@@ -48,7 +48,7 @@ A boxplot encodes the **five-number summary** (minimum, Q1, median, Q3, maximum)
 
 The **box** spans from Q1 to Q3, covering the middle 50% of the data. This span is the **interquartile range (IQR)**. The **line inside the box** is the median. The **whiskers** extend from Q1 down to $Q1 - 1.5 \times \text{IQR}$ and from Q3 up to $Q3 + 1.5 \times \text{IQR}$, or to the furthest observed data point within those bounds, whichever is closer. Points beyond the whiskers are plotted individually as potential outliers.
 
-![Boxplots for happiness, age, and religiosity](../media/plots-ess/ess_distributions_boxplots.png)
+<p><center><img src="../media/ess_distributions_boxplots.png" alt="Boxplots for happiness, age, and religiosity" style="width:100%"/></center></p>
 
 Religiosity shows the widest spread and the most pronounced skew. The boxplot for happiness confirms the left skew seen in the histogram: the median sits closer to the top of the box than the bottom. Boxplots are compact enough to place several side by side for comparing spread across variables or groups.
 
@@ -75,7 +75,7 @@ Histograms and boxplots show the distribution of a variable across all records c
 
 **Faceted histograms** produce one histogram per group, arranged in a grid with a shared x-axis so that shapes are directly comparable. Here is an example of the happiness distribution after grouping the whole population by their indicated health values.
 
-![Facette](../media/plots-ess/ess_distributions_happiness_by_health_faceted.png)
+<p><center><img src="../media/ess_distributions_happiness_by_health_faceted.png" alt="Facette" style="width:75%"/></center></p>
 
 Based on the grouping value, the happiness distribution is shifting. Group differences, like the shift in center, spread and shape observed here, indicate an association between the variables. Group comparisons are therefore a natural bridge from distribution analysis to correlation analysis, which we will check out next: [🖝 EDA: Correlations](../part-03-data-understanding/07-eda-correlations.md).
 
@@ -95,4 +95,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- EDA: Data Quality](05-eda-data-quality.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [EDA: Correlations -->](07-eda-correlations.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

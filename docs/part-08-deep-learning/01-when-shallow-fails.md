@@ -21,7 +21,7 @@
 
 A concrete example: classifying whether a 5×5 image (25 pixels) shows a cross. Let's consider using [🖝 Decision Trees](../part-05-supervised-learning/09-decision-trees.md) for such a task. Decision trees learn non-linear boundaries by splitting features one at a time. For tabular data this is effective. For pixel grids, the splits happen on individual pixel values: A split like "pixel (3,4) <= 0.5" is almost always meaningless in isolation. The tree has no structural prior about spatial locality: two adjacent pixels are no more related in its eyes than two pixels in opposite corners.
 
-<p><center><img src="../media/plots/pixel_decision_tree.png" alt="5×5 pixel grid with a simple shape, alongside a decision tree making splits on individual pixel values. A decision tree has no concept of spatial neighbors: every pixel is an independent feature." width="740px"/></center></p>
+<p><center><img src="../media/pixel_decision_tree.png" alt="5×5 pixel grid with a simple shape, alongside a decision tree making splits on individual pixel values. A decision tree has no concept of spatial neighbors: every pixel is an independent feature." style="width:100%"/></center></p>
 
 The issue described here is sometimes described as the **locality problem**: the information in an image is carried by local groups of pixels, not individual pixels. Any model that treats features as independent misses this structure entirely.
 
@@ -81,4 +81,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [Building Blocks of Deep Networks -->](02-deep-networks.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

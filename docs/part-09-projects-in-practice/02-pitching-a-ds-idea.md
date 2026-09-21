@@ -6,9 +6,9 @@
 
 **Requires**: [CRISP-DM Retrospective: From Coursework to Real Projects](01-crisp-dm-retrospective.md) · [Reality-Checking Your Idea](../part-02-ds-projects/04-reality-checking-your-idea.md)
 
-**Motivation**: Back in part II, we reality-checked ideas quickly and roughly to decide what was worth pursuing. In organizational contexts, a single personal conviction is not enough: someone controls the budget, the data access, and the people's time you need. So you need to get commitments. How do you turn a promising idea into something a decision-maker will actually fund?
+**Motivation**: Back in part II, we reality-checked ideas quickly and roughly to decide what was worth pursuing. In organizational contexts, a single personal conviction is not enough: someone controls the budget, the data access, and the time of people. So you need to get commitments. How do you turn a promising idea into something decision-makers will actually fund?
 
-> This nugget covers the Pitch act. It usually includes presenting arguments for a project in a structured way. Many organizations and settings use a "business case" for this, which is why in this nugget , a simple four-part structure for building one, and how to present it to an audience that does not have a technical background.
+> This nugget covers the "Pitch act". It involves presenting arguments in some structured way. Many organizations and settings use a "business case" for this. That's way in this nugget, you'll find a simple four-part structure for building one, alongside tips for presenting it.
 
 ## Table of Contents
 
@@ -19,17 +19,16 @@
 
 ## Why the Pitch and Business Cases Exists
 
-A large majority of data-science projects never make it into production, often not due to model failures, but because the work was disconnected from real needs [(Nussbaum, 2025)](../references.md#nussbaum2025planpitch). A formal pitch like a **business case** guards against this type of disconnection. It forces you to state what problem you are solving, what it is worth, and what you need. Thereby, a pitch/business case acts as a signal whether an idea is ready.
+A large majority of data-science projects never make it into production, often not due to model failures, but because the work was disconnected from real needs [(Nussbaum, 2025)](../references.md#nussbaum2025planpitch). A formal pitch like a **business case** guards against this type of disconnection. It forces you to state what problem you are solving, what it is worth, and what you need. Therefore, the pitch/business case acts as a filter whether an idea is ready (yet).
 
 This is the same as in [🖝 Reality-Checking Your Idea](../part-02-ds-projects/04-reality-checking-your-idea.md), just scaled up.
-The question is no longer just  "is this doable at all?", but whether it is worth committing potentially significant resources to it. This requires a solid business understanding and value estimates that are certain enough, realistic, and promising [(Nussbaum, 2025)](../references.md#nussbaum2025planpitch).
+The question is no just whether something is doable, but whether it is worth committing potentially significant resources to it. This requires a solid business understanding and value estimates that are certain enough, realistic, and promising [(Nussbaum, 2025)](../references.md#nussbaum2025planpitch).
 
 ---
 
 ## Structure of a Business Case
 
-Depending on the organization or setting, a business case or pitch can take different forms. Some organizations have their own templates for business cases.
-However, the goal is always the same: convince people who control resources to "buy in". For this purpose, a business case usually answers four questions:
+Depending on the organization or setting, a business case or pitch can take different forms. Some organizations have their own templates for business cases. The goal is always the same: convince people who control resources to "buy in". For this purpose, a business case usually answers four questions:
 
 | Part | Question it answers |
 |---|---|
@@ -67,7 +66,7 @@ Especially for a pitch, it is helpful to anticipate objections so you can preemp
 
 ## Summary
 
-- A business case exists to justify committing real resources and to align stakeholders before large investments. Writing it honestly is also a filter on your own idea.
+- A business case exists to justify committing real resources and to align stakeholders before large investments. Writing it honestly is also a filter on the idea.
 - A good default four-part structure: problem (the concrete question), value (benefit minus cost), feasibility (evidence you can build it), and ask (the specific decision you need).
 - The value estimate reuses the cost thinking from metric alignment and adds the benefit side. Keep it simple and explicit.
 - Pitching is audience-first: lead with the core message, use an emotional hook to earn attention. Pre-empt objections.
@@ -79,4 +78,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- CRISP-DM Retrospective: From Coursework to Real Projects](01-crisp-dm-retrospective.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Stakeholder Communication -->](03-stakeholder-communication.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

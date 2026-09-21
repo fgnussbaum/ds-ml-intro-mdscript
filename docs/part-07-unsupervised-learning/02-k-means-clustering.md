@@ -36,7 +36,7 @@ $$\boldsymbol{\mu}_j = \frac{1}{|C_j|} \sum_{\mathbf{x}_i \in C_j} \mathbf{x}_i$
 
 Repeat these alternating steps until the assignments no longer change. This is guaranteed to converge: the total within-cluster sum of squared distances (called **inertia**, see below) can only decrease or stay the same at each step, so the algorithm must terminate.
 
-<p><center><img src="../media/demos-screenshots/kmeans_four_panel_unequal_k4.png" alt="" width="760px"/></center></p>
+<p><center><img src="../media/kmeans_four_panel_unequal_k4.png" alt="" style="width:100%"/></center></p>
 
 This plot show intermediate results of a k-means run on a dataset with four "overlapping blobs". (1) a random initialization, (2) visualization of the assignment step, (3) recomputed centroid means, and (4) the final result after convergence. For the final results, also shaded background is shown. These are the so-called **Voronoi-cells** that partition the whole space into cluster regions.
 
@@ -50,7 +50,7 @@ Choosing $k$ is the central hyperparameter decision in k-means. While you can ge
 
 **Inertia** measures total within-cluster spread: The sum of squared distances from each point to its assigned centroid. Lower inertia means tighter clusters. The problem is that inertia always decreases as $k$ increases: Setting $k = n$ produces zero inertia trivially. Inertia alone cannot tell you the right $k$. That's why two other methods are commonly used.
 
-<p><center><img src="../media/demos-screenshots/kmeans_elbow_unequal.png" alt="" width="740px"/></center></p>
+<p><center><img src="../media/kmeans_elbow_unequal.png" alt="" style="width:100%"/></center></p>
 
 First, the **elbow method** plots inertia against $k$ and looks for a bend where the rate of improvement slows sharply ("biggest angle"). The "elbow" suggests a $k$ beyond which adding clusters captures noise rather than structure.
 
@@ -79,7 +79,7 @@ k-Means assumes that clusters are roughly spherical, roughly equally sized, and 
 
 Elongated or crescent-shaped clusters will be cut arbitrarily by k-means, because the algorithm can only separate _convex_ regions. Clusters of very different sizes or densities cause centroids to drift: the centroid of a large or sparse cluster pulls toward a smaller or denser neighbor. A handful of outliers can shift a centroid away from the true center of its cluster, distorting every assignment in it. The following final solutions of k-means runs seek to demonstrate these "pitfalls".
 
-<p><center><img src="../media/demos-screenshots/kmeans_failure_modes.png" alt="kmeans failure modes" width="760px"/></center></p>
+<p><center><img src="../media/kmeans_failure_modes.png" alt="kmeans failure modes" style="width:100%"/></center></p>
 
 This data already is 2D, but typically you run k-means on data with higher dimensions. In these cases, it can sometimes be helpful to plot a 2D projection of the data (e.g., the first two principal components) with cluster assignments colored. Check whether clusters look visually plausible.
 
@@ -110,4 +110,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Unsupervised Learning](01-unsupervised-learning.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Anomaly Detection -->](03-anomaly-detection.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

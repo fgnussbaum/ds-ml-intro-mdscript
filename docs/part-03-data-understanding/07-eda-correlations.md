@@ -24,7 +24,7 @@ The first tool is the **scatter plot**: each observation is drawn as a point, wi
 
 Here's an example for the seaborn Penguins dataset:
 
-<center><img src="../media/plots-penguins/penguins_flipper_vs_bill.png" alt="scatter plot" width="600px"/></center>
+<center><img src="../media/penguins_flipper_vs_bill.png" alt="scatter plot" width="600px"/></center>
 
 > A scatter plot is most useful for numeric/continuous data. In this example, we have discrete/ordinal data from our ESS data set. We can still use a scatter plot, but some values will be plotted on top of each other.
 
@@ -63,7 +63,7 @@ For practical EDA work, values above $0.3$ or below $-0.3$ are often worth inves
 
 A **correlation heatmap** extends pairwise correlation to all variable pairs simultaneously, representing each coefficient as a color cell.
 
-![Pearson correlation heatmap for the ESS well-being dataset](../media/plots-ess/ess_wellbeing_correlation_heatmap_pearson.png)
+<p><center><img src="../media/ess_wellbeing_correlation_heatmap_pearson.png" alt="Pearson correlation heatmap for the ESS well-being dataset" style="width:60%"/></center></p>
 
 Reading this heatmap for the ESS well-being data:
 
@@ -101,7 +101,7 @@ Pearson correlation can sometimes be misleading:
 
 For a dataset with several variables, a **pair plot** extends the scatter plot to all variable pairs at once. Single-variable histograms  appear along the diagonal; scatter plots occupy the off-diagonal cells.
 
-![Pair plot for the ESS well-being dataset](../media/plots-ess/ess_wellbeing_pairplot.png)
+<p><center><img src="../media/ess_wellbeing_pairplot.png" alt="Pair plot for the ESS well-being dataset" style="width:80%"/></center></p>
 
 For a dataset with three to ten variables, a pair plot gives a complete first look at pairwise structure in a single figure. Beyond - well it depends on the size of your screen.
 
@@ -124,4 +124,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- EDA: Distributions](06-eda-distributions.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Data Understanding: Best Practices -->](08-eda-best-practices.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

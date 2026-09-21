@@ -46,7 +46,7 @@ $$\hat{y} = \begin{cases} 1 & \text{if score} \geq \tau \\ 0 & \text{otherwise} 
 
 The **classification** demo from the [✪ interactive data-science demos](https://github.com/fgnussbaum/ds-ml-interactive-demos) repository illustrates the idea:
 
-<p><center><img src="../media/demos-screenshots/cf-threshold-85.png" alt="" width="740px"/></center></p>
+<p><center><img src="../media/cf-threshold-85.png" alt="" style="width:100%"/></center></p>
 
 In this chart, each point corresponds to a training example: circles are the negative class, squares are the positive class. The slider controls $\tau$, and every point above it is predicted positive. Examples that are classified incorrect are crossed out.
 
@@ -88,7 +88,7 @@ A model trained on noisy labels will partially learn the noise. The effect is us
 _Here's an example from our own work [🔭 Fine-Grained Sampling
 in Stochastic Segmentation Networks (NeurIPS 2022)](https://proceedings.neurips.cc/paper_files/paper/2022/file/b1a77a501bf32f8c7348fe39da2cf8c6-Paper-Conference.pdf). The visual teaser below shows different uncertainty components for landcover classification (image segmentation)._
 
-<p><center><img src="../media/papers/ssn-landcover-factors.jpg" alt="Factors of SSN" width="450px"/></center></p>
+<p><center><img src="../media/ssn-landcover-factors.jpg" alt="Factors of SSN" style="width:40%"/></center></p>
 
 ### Class imbalance
 
@@ -120,4 +120,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Hyperparameter Optimization](06-hyperparameters.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Classification Evaluation -->](08-classification-evaluation.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

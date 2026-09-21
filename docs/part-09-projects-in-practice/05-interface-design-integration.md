@@ -82,4 +82,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- From Script to Production System](04-script-to-production.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Model Drift and Monitoring -->](06-model-drift-monitoring.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

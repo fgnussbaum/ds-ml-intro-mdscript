@@ -41,7 +41,7 @@ where $z = h_{\mathbf{w}}(\mathbf{x})$ is the linear combination of features and
 
 Here's a visual comparison of both step function vs. our solution, the sigmoid function:
 
-<p><center><img src="../media/plots/step_vs_sigmoid.png" alt="step vs. sigmoid function" width="740px"/></center></p>
+<p><center><img src="../media/step_vs_sigmoid.png" alt="step vs. sigmoid function" style="width:95%"/></center></p>
 
 The properties of the sigmoid funciton $\sigma(z)$ are:
 
@@ -55,7 +55,7 @@ To, sum up:
 
 You can also follow this distinction in the full compute flow for a single prediction using logistic regression, as shown here:
 
-<p><center><img src="../media/plots/logistic_neuron.png" alt="Full Logistic Regression Compute flow (b=w_0)" width="740px"/></center></p>
+<p><center><img src="../media/logistic_neuron.png" alt="Full Logistic Regression Compute flow (b=w_0)" style="width:75%"/></center></p>
 
 ---
 
@@ -72,7 +72,7 @@ where $y \in \{0, 1\}$ is the true label and $\hat{p} = \sigma(z)$ is the predic
 
 This behavior is visualized here:
 
-<p><center><img src="../media/plots/cross_entropy_loss.png" alt="CE loss. Left for y=0/y=1, Right: contrasting with MSE" width="740px"/></center></p>
+<p><center><img src="../media/cross_entropy_loss.png" alt="CE loss. Left for y=0/y=1, Right: contrasting with MSE" style="width:100%"/></center></p>
 
 The second panel in this plot shows why MSE (mean squared error), the loss function from [🖝 Linear Regression](../part-05-supervised-learning/02-linear-regression.md), is poorly suited for classification: It does not penalize "confident" but wrong predictions enough because it is bounded.
 
@@ -105,4 +105,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Random Forests](10-random-forests.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part VI: Principles That Transfer (Reflection) -->](../part-06-reflection/00-index.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

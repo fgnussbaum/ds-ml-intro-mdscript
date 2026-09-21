@@ -34,7 +34,7 @@ The following related concepts describe the costs of measurement errors:
 
 Here's a "dartboard" for illustration.
 
-![Dartboard: Precision, bias accuracy](../media/plots/precision_bias_accuracy_2d.png)
+<p><center><img src="../media/precision_bias_accuracy_2d.png" alt="Dartboard: Precision, bias accuracy" style="width:95%"/></center></p>
 
 ### Data collection errors
 
@@ -57,7 +57,7 @@ Missing values are nearly universal in real datasets. The `count` row in `df.des
 
 When there are many variables, a dedicated missing-value plot is an option. Here's one for a few variables from the ESS dataset. There are only few missing values for most columns (note the x-axis shows only a small range below 1%).
 
-![Missing values bar chart for the ESS well-being dataset](../media/plots-ess/ess_wellbeing_missing_values.png)
+<p><center><img src="../media/ess_wellbeing_missing_values.png" alt="Missing values bar chart for the ESS well-being dataset" style="width:95%"/></center></p>
 
 Understanding *why* values are missing matters more than just knowing how many are missing. The main question is whether missing values are random or systematic:
 
@@ -98,4 +98,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- EDA: Descriptive Statistics](04-eda-descriptive-stats.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [EDA: Distributions -->](06-eda-distributions.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

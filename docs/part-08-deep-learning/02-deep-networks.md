@@ -23,7 +23,7 @@
 
 Here's a visual layout of a **neuron** that follows the familiar structure from [🖝 Logistic Regression](../part-05-supervised-learning/11-logistic-regression.md):
 
-<p><center><img src="../media/plots/single_neuron.png" alt="Full Logistic Regression Compute flow (b=w_0)" width="500px"/></center></p>
+<p><center><img src="../media/single_neuron.png" alt="Full Logistic Regression Compute flow (b=w_0)" style="width:66%"/></center></p>
 
 A **neuron** takes a vector of inputs $\mathbf{x} = (x_1, x_2, \ldots, x_n)$, multiplies each input by a **weight** $w_i$, sums the results, adds a **bias** $b$, and passes the sum through a nonlinear function:
 
@@ -40,7 +40,7 @@ Two activation functions dominate modern practice:
 - **Sigmoid**: $f(z) = 1 / (1 + e^{-z})$, which squashes output to $(0, 1)$. Used for output neurons in binary classification to produce a probability score. It is rarely used elsewhere in neural networks today because gradients become very small for large $|z|$ (the saturation problem). A single neuron with a sigmoid output is essentially [🖝 Logistic Regression](../part-05-supervised-learning/11-logistic-regression.md).
 - **Tanh**: $f(z) = \tanh(z)$, which squashes output to $(-1, 1)$. Zero-centered (unlike sigmoid), which can make learning slightly faster. Like sigmoid, it saturates for large $|z|$, so it is less common in deep hidden layers but still used in some recurrent networks.
 
-<p><center><img src="../media/plots/activation_functions.png" alt="side-by-side plots of sigmoid, ReLU, tanh activation functions" width="780px"/></center></p>
+<p><center><img src="../media/activation_functions.png" alt="side-by-side plots of sigmoid, ReLU, tanh activation functions" style="width:100%"/></center></p>
 
 Activation functions provide nonlinearity. However, the power of neural networks comes from combining many neurons in layers.
 
@@ -52,7 +52,7 @@ When neurons are stacked side by side they form a **layer**. The output of one l
 
 Here's an example from the interactive demo: a fully connected network for binary classification, with one input layer of $2$ features, two hidden layers of neurons, and one output neuron with a sigmoid activation. The output is the model's predicted probability that the input belongs to the positive class.
 
-<p><center><img src="../media/demos-screenshots/neural-network.png" alt="simple neural network" width="740px"/></center></p>
+<p><center><img src="../media/neural-network.png" alt="simple neural network" style="width:80%"/></center></p>
 
 To compute the output of a neural network, a **forward pass** is used (see also the figure in the training section below). Computations flow from left to right: each layer transforms its input into a new representation by applying its weights and activation. Each transformation extracts more abstract structure from the input.
 
@@ -80,7 +80,7 @@ Training adjusts all weights in the network to minimize the loss. This requires 
 
 <!-- Figure: the same fully connected network with arrows showing the forward pass (data flowing right) and the backward pass (gradient signal flowing left). Caption: "Forward pass computes predictions; backward pass propagates error gradients to every weight." -->
 
-<p><center><img src="../media/plots/forward_backward_pass.png" alt="forward and backward pass, fully connected classification network" width="790px"/></center></p>
+<p><center><img src="../media/forward_backward_pass.png" alt="forward and backward pass, fully connected classification network" style="width:100%"/></center></p>
 
 > **Note:** Backpropagation is not a learning algorithm on its own, it just computes gradients. [🖝 Gradient Descent](../part-05-supervised-learning/03-gradient-descent.md)-like algorithms clarify how actual updates to parameters are carried out. The two work together: "backprop" computes the direction, the optimizer takes the step.
 
@@ -109,4 +109,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- When Shallow Models Fail](01-when-shallow-fails.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Convolutional Neural Networks (CNNs) -->](03-cnns.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

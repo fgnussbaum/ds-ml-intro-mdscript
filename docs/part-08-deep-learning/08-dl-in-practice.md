@@ -47,7 +47,7 @@ Before committing to a deep learning approach, audit these constraints:
 
 To complete the picture, here's our figure from [🖝 Start Simple](../part-06-reflection/02-start-simple.md) again:
 
-<p><center><img src="../media/infographics/complexity_cost.png" alt="" width="740px"/></center></p>
+<p><center><img src="../media/complexity_cost.png" alt="" style="width:75%"/></center></p>
 
 ---
 
@@ -96,4 +96,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Transformers](07-transformers.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Part IX: Projects in Practice -->](../part-09-projects-in-practice/00-index.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

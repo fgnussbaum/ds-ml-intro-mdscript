@@ -22,7 +22,7 @@
 As we saw in [🖝 Convolutional Neural Networks (CNNs)](../part-08-deep-learning/03-cnns.md), a single convolutional layer detects local patterns w.r.t. its input. Due to this locality, a single convolutional layer cannot "know" about objects. Instead, the real power comes from stacking layers. Later layers do not see raw pixels: they outputs from previous layers - be it corners, edge or texture maps, shapes, parts, objects: whatever abstraction is already present in the input layer.
 The following graphic illustrates thir hierarchical feature extraction:
 
-<p><center><img src="../media/plots/cnn_depth_diagram.png" alt="visualization of filters and activations at increasing depths in a CNN. Layer 1: oriented edges and color gradients. Layer 2: corners and simple textures. Layer 3-4: more complex texture patterns and object parts" width="790px"/></center></p>
+<p><center><img src="../media/cnn_depth_diagram.png" alt="visualization of filters and activations at increasing depths in a CNN. Layer 1: oriented edges and color gradients. Layer 2: corners and simple textures. Layer 3-4: more complex texture patterns and object parts" style="width:100%"/></center></p>
 
 In real applications there'll usuall be more layers than just the four used here for illustration.
 What matters for practice is that depth enables composition: complex concepts are built out of simpler ones, and the building is supposed to happen automatically during training.
@@ -31,7 +31,7 @@ What matters for practice is that depth enables composition: complex concepts ar
 
 > **Note (limits of the intuition):** The hierarchy is learned, not designed. You do not specify that layer 3 should detect curves. It is completely up to the training process to discover whether and where "curves" might be detected or represented inside a network.
 
-<!-- JODO: representation theorem - shallow models could in principle learn everything too... -->
+<!-- TODO: representation theorem - shallow models could in principle learn everything too... -->
 
 The same principle (hierarchical feature extraction) applies to non-image data modalities as well, for example:
 
@@ -77,7 +77,7 @@ The procedure is:
 
 Here's are two example visualizations of an embedding space from a trained [🖝 Autoencoders](../part-08-deep-learning/06-autoencoder.md) for the Fashion MNIST dataset.
 
-<p><center><img src="../media/demos-screenshots/ae-2dims-tsne.png" alt="left: first two components of a latent space for the fashion MNIST dataset. Right: t-SNE plot, revealing more structure" width="780px"/></center></p>
+<p><center><img src="../media/ae-2dims-tsne.png" alt="left: first two components of a latent space for the fashion MNIST dataset. Right: t-SNE plot, revealing more structure" style="width:90%"/></center></p>
 
 The plot reveals how the network "sees" the data.
 The left side simply visualizes the first two embedding dimensions, whereas the right side shows a t-SNE projection.
@@ -105,4 +105,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Convolutional Neural Networks (CNNs)](03-cnns.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Transfer Learning -->](05-transfer-learning.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

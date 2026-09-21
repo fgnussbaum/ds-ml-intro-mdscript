@@ -54,7 +54,7 @@ The bottleneck ist the low-dimensional layer $\mathbf{z}$ between encoder and de
 - For normal inputs, this representation captures the structure efficiently (though it may cut away "high-frequency features" like sharp edges).
 - For anomalous inputs, the bottleneck discards the unusual details, and reconstruction fails.
 
-<p><center><img src="../media/plots/autoencoder_architecture_compact.png" width="740px"/></center></p>
+<p><center><img src="../media/autoencoder_architecture_compact.png" alt="" style="width:90%"/></center></p>
 
 The encoder is also a feature extractor. The bottleneck $\mathbf{z}$ tends to capture the most structure-relevant information in the input. Since it contains semantic information, the bottleneck can therefore be used for clustering, visualization (e.g., via t-SNE), or as input to a downstream classifier if some labels later become available. This dual use, anomaly detection and representation learning, makes autoencoders a flexible building block.
 
@@ -87,4 +87,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Transfer Learning](05-transfer-learning.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Transformers -->](07-transformers.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

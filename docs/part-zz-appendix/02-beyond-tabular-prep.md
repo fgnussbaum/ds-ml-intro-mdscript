@@ -168,4 +168,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Beyond Tabular Data](01-beyond-tabular-eda.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Regression: Interpretation and Assumptions -->](03-regression-depth.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

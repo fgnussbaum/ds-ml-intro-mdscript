@@ -20,7 +20,7 @@
 
 A **dummy baseline** is the performance achievable by a model that uses no learned relationships between features and target. For classification and regression the standard choices are majority class and mean, respectively:
 
-<p><center><img src="../media/plots/baselines.png" alt="" width="740px"/></center></p>
+<p><center><img src="../media/baselines.png" alt="" style="width:100%"/></center></p>
 
 - The **dummy classifier** predicts the majority class for every input. Its accuracy equals the proportion of the most frequent class in the training set.
 - The **dummy regressor** predicts the mean of the training targets for every input. Its mean squared error (=MSE) equals the variance of the training target.
@@ -61,7 +61,7 @@ Domain requirements inform which metrics to use. Metrics must be chosen before t
 
 Taken together, the baseline floor and the good-enough bar anchor modeling decisions: One establishes that the model has learned something. The other defines what the application actually needs, which we'll explore further in the next nugget [🖝 Choosing and Aligning Metrics](../part-06-reflection/04-aligning-metrics.md).
 
-TODO: link business nugget (Part IX).
+See also [🖝 Model Drift and Monitoring](../part-09-projects-in-practice/06-model-drift-monitoring.md) and [🖝 Ethics and Accountability in Production](../part-09-projects-in-practice/07-ethics-accountability.md) in the last part of this course.
 
 ---
 
@@ -78,4 +78,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Start Simple](02-start-simple.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Choosing and Aligning Metrics -->](04-aligning-metrics.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

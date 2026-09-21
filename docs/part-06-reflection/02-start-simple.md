@@ -25,7 +25,7 @@ In the 14th century, the philosopher William of Ockham articulated what became k
 
 This is a universal principle. It applies to machine learning in particular. The reason is that adding model complexity also adds costs:
 
-<p><center><img src="../media/infographics/complexity_cost.png" alt="" width="740px"/></center></p>
+<p><center><img src="../media/complexity_cost.png" alt="" style="width:80%"/></center></p>
 
 Simpler models:
 
@@ -40,7 +40,7 @@ Simpler models:
 The right question when facing a new problem is not "What is the most powerful model?", but "What is the least complex model that solves this problem adequately?"
 Complex models are like a _hammer_: powerful, but not the best tool for everything:
 
-<p><center><img src="../media/ai/hammer_screw_lm.jpg" alt="Hammer beating screw. AI-generated" width="150px"/></center></p>
+<p><center><img src="../media/hammer_screw_lm.jpg" alt="Hammer beating screw. AI-generated" style="width:20%"/></center></p>
 
 In everyday life, when communicating with stakeholders, you can often replace "complex models" by "AI" in the hammer analogy above. AI is often too complex a solution. Many problems can be solved in much simpler and better ways. As an AI expert, you'll often tell stakeholders who might believe "AI can solve everything" when it actually should not.
 
@@ -84,7 +84,7 @@ Already in [🖝 What Is Artificial Intelligence?](../part-01-the-big-picture/02
 
 First, start with a baseline, see the next nugget [🖝 Baselines and the Good-Enough Bar](../part-06-reflection/03-baselines.md). Then and only step up only when evidence demands it.
 
-<p><center><img src="../media/infographics/simplicity_ladder.png" alt="" width="740px"/></center></p>
+<p><center><img src="../media/simplicity_ladder.png" alt="" style="width:75%"/></center></p>
 
 The evidence to step up typically is **persistent underfitting**: Both training and validation/CV errors are high, the gap between them is small, and adding more data does not help. In contrast, if the problem is **overfitting** (large training-validation gap), adding complexity will make it worse.
 
@@ -107,4 +107,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Generalization](01-generalization.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Baselines and the Good-Enough Bar -->](03-baselines.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

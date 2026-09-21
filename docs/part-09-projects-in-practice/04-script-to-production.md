@@ -97,4 +97,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Stakeholder Communication](03-stakeholder-communication.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Interface Design and Integration -->](05-interface-design-integration.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

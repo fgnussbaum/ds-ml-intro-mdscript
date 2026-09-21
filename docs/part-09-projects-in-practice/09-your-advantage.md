@@ -45,9 +45,9 @@ A fair question, given everything you just read: Does anything change with AI en
 I'd say yes:
 
 - AI can be like a superpower on tasks inside its competence and like a liability just outside it, and only someone with real domain judgment can tell which side of that line a given task (or AI-driven result) is on [(Dell'Acqua et al., 2026)](../references.md#dellacqua2026).
-- For this reason, domain expertise, not tool skill, has emerged as the strongest predictor of whether an AI-assisted task actually succeeds. This pattern holds across many professions, not only engineering or programming [(Hitzig et al., 2026)](../references.md#hitzig2026). 
+- For this reason, domain expertise, not tool skill, has emerged as the strongest predictor of whether an AI-assisted task actually succeeds. This pattern holds across many professions, not only engineering or programming [(Hitzig et al., 2026)](../references.md#hitzig2026).
 
-> **Skills to build alongside strong AI:** Not "know every method" (can't beat AI on that), but being able to scope problems precisely enough such that goals and limits are unambiguous. Moreover, being able to evaluate results to catch drift from goals and detecting inaccuracies and errors. 
+> **Skills to build alongside strong AI:** Not "know every method" (can't beat AI on that), but being able to scope problems precisely enough such that goals and limits are unambiguous. Moreover, being able to evaluate results to catch drift from goals and detecting inaccuracies and errors.
 
 This means that the "vertical bar" is not only still relevant, it now tells you when to trust the machine and when not to. This should sound familiar: it's Business Understanding and Evaluation from [🖝 CRISP-DM](../part-01-the-big-picture/04-crisp-dm.md), now doing double duty as **AI literacy**.
 
@@ -92,4 +92,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Troubleshooting, Pitfalls, and When to Ask for Help](08-troubleshooting-pitfalls.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Appendix -->](../part-zz-appendix/00-index.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

@@ -99,4 +99,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Scaling and Imputation](03-scaling-imputation.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Data Preparation Checklist -->](05-prep-checklist.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

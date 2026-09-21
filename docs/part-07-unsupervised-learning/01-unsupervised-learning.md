@@ -25,7 +25,7 @@ In [🖝 Supervised Learning](../part-05-supervised-learning/01-supervised-learn
 
 **Unsupervised learning** removes the target column entirely. You have a dataset of observations, and you want to discover structure in it: natural groups, unusual instances, or compact representations. The task is to find structure without being specifically told what to look for.
 
-<p><center><img src="../media/plots/supervised_vs_unsupervised.png" alt="" width="500px"/></center></p>
+<p><center><img src="../media/supervised_vs_unsupervised.png" alt="" style="width:66%"/></center></p>
 
 In many real situations, labels simply do not exist yet.
 
@@ -115,4 +115,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [Part Index](00-index.md) | [Main Index](../index.md) | [k-Means Clustering -->](02-k-means-clustering.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

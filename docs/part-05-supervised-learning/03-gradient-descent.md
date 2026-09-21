@@ -25,7 +25,9 @@ Let's begin with the simple example from the preceding [🖝 Linear Regression](
 
 At any point on the curve, the **gradient** is the derivative of the loss with respect to $w_1$: it points in the direction that increases the loss most steeply. The core idea is that stepping in the *opposite* direction decreases the loss. These opposite directions are marked by the orange arrows in the following figures:
 
-<p><center><img src="../media/demos-screenshots/gd-small.png" alt="left: bigger gradient arrow because more steep" height="370px"/> <img src="../media/demos-screenshots/gd-tiny.png" alt="right: small gradient arrow because flat/close to minimum" height="370px"/></center></p>
+<p><center><img src="../media/gd-small.png" alt="left: bigger gradient arrow because more steep"/> <img src="../media/gd-tiny.png" alt="right: small gradient arrow because flat/close to minimum"/></center></p>
+
+- [ ] TODO: figure placement
 
 These two screenshots are taken from the gradient descent demo from my [✪ interactive data-science demos](https://github.com/fgnussbaum/ds-ml-interactive-demos), where you can interactively explore gradient descent for the simple regression scenario. The MSE loss function for just the slope parameter is a parabola (here $\theta=w_1$). The length of the orange arrows represents the gradient magnitude:
 
@@ -50,7 +52,7 @@ Choosing the learning rate $\alpha$ is one of the first practical decisions you 
 
 With two parameters, slope $w_1$ and intercept $w_0$, the loss is no longer a curve but a **surface** over the $(w_0, w_1)$ plane. Because MSE remains a sum of squared terms, the surface is _bowl_-shaped: smooth, convex, with a single global minimum.
 
-<p><center><img src="../media/demos-screenshots/gd-contour-plot.png" alt="Loss surface for a two-parameter linear model, showing a bowl-shaped surface with contour lines and an arrow tracing the gradient descent path to the minimum" width="740px"/></center></p>
+<p><center><img src="../media/gd-contour-plot.png" alt="Loss surface for a two-parameter linear model, showing a bowl-shaped surface with contour lines and an arrow tracing the gradient descent path to the minimum" style="width:90%"/></center></p>
 
 A **contour plot** shows this surface from above. Each ring marks a constant loss value, and rings closer to the center correspond to lower loss. Gradient descent traces a path on this surface, always stepping in the steepest downhill direction (which happens to be **perpendicular** to the contour lines).
 
@@ -82,4 +84,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- Linear Regression](02-linear-regression.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [Underfitting and Overfitting -->](04-under-overfitting.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

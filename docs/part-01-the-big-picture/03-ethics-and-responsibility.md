@@ -32,7 +32,6 @@ In the sequel, we'll identify three places where things go wrong and closes with
 ---
 
 ## Key Challenges
-
 ### Value Alignment
 
 Every machine learning model optimizes for something: a loss function, a metric, a score. The alignment problem is the gap between *what we wrote down and how it is interpreted* and *what we actually care about*.
@@ -122,4 +121,4 @@ As always: Happy learning, happy life! 🫶
 
 > **Navigation:** [<-- What Is Artificial Intelligence?](02-intro-ai.md) | [Part Index](00-index.md) | [Main Index](../index.md) | [CRISP-DM -->](04-crisp-dm.md)
 
-Script v1.8 (2026-08-19) · FGN
+Script v1.8.2 (2026-09-21) · FGN

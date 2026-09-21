@@ -1,4 +1,4 @@
-<!-- Generated from reference-registry.yaml — do not edit manually -->
+<!-- Generated from the course references note — do not edit manually -->
 
 # References
 
